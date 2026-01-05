@@ -10,6 +10,10 @@ from gspread.cell import Cell
 DATA18_URL_INDEX = 21
 
 
+# Column P (0-based index 15) → Duration
+DURATION_INDEX = 15
+
+
 def merge_urls(old: str, new: str) -> str:
     """
     Merge URLs from the existing sheet cell and the incoming JSON value.
@@ -66,6 +70,19 @@ def update_existing_row(
     for c in updateable_columns:
         new_val = new_row[c]
         old_val = old_row[c]
+
+        # 🔒 Special case: Duration (Column P)
+        # If user already entered duration, NEVER overwrite it
+        if c == DURATION_INDEX:
+            if str(old_val).strip():
+                # User has manually set duration → preserve it
+                continue
+            # Else: sheet is empty → allow JSON value to fill
+            if str(new_val).strip():
+                batch_cells.append(
+                    Cell(row=target_rownum, col=c + 1, value=new_val)
+                )
+            continue
 
         # 🔥 Special case: Data18 / IAFD URL column
         # We MERGE instead of overwrite to preserve manual edits
