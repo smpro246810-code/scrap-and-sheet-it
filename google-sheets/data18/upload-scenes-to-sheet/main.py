@@ -17,6 +17,7 @@ from scene_flatten import flatten_scene_to_row
 from sheet_state import build_sceneid_index, find_empty_template_rows
 from sheet_writer import update_existing_row, write_new_row_from_template
 
+
 # ============================================================
 # Sheet layout configuration
 # ============================================================
@@ -31,6 +32,7 @@ UPDATEABLE_COLUMNS = {
     11,                     # L: TeleLink
     *range(13, 22),         # N–V: Quality → Data18 / IAFD URL
 }
+
 
 # ============================================================
 # File paths
@@ -76,11 +78,11 @@ NETWORKS_FILE = (
     / "studios-from-sheet.json"
 )
 
+
 # ============================================================
 # Load reference data
 # ============================================================
 
-# Normalized performer name sets for gender classification
 male_performers = {
     normalize_name(p["name"]) for p in (safe_load_json(MALE_FILE) or [])
 }
@@ -88,7 +90,6 @@ trans_performers = {
     normalize_name(p["name"]) for p in (safe_load_json(TRANS_FILE) or [])
 }
 
-# Mapping: site → parent network
 networks = safe_load_json(NETWORKS_FILE) or []
 site_to_network = {
     normalize_name(s["title"]): n["title"]
@@ -96,17 +97,12 @@ site_to_network = {
     for s in n.get("sites", [])
 }
 
+
 # ============================================================
 # Utility helpers
 # ============================================================
 
 def select_json_file() -> Path:
-    """
-    Prompt the user to select a performer JSON file interactively.
-
-    Returns:
-        Path: Selected JSON file path
-    """
     files = sorted(SCENES_DIR.glob("*.json"))
     answer = inquirer.prompt([
         inquirer.List(
@@ -119,49 +115,13 @@ def select_json_file() -> Path:
 
 
 def load_scenes(path: Path) -> List[dict]:
-    """
-    Load scene list from a JSON file.
-
-    Args:
-        path: Path to performer scene JSON
-
-    Returns:
-        List[dict]: Scene objects
-    """
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def normalize_rows(sheet_values: List[List[str]]) -> List[List[str]]:
-    """
-    Normalize existing sheet rows to MAX_COLS length.
-
-    - Skips header row
-    - Pads rows with empty strings to avoid index errors
-
-    Args:
-        sheet_values: Raw values returned by Google Sheets API
-
-    Returns:
-        List[List[str]]: Normalized data rows
-    """
     rows = sheet_values[1:]
     return [r + [""] * (MAX_COLS - len(r)) for r in rows]
-
-
-def extract_scene_id_from_sheet_row(row: List[str]) -> str:
-    """
-    Extract and normalize scene ID from a sheet row.
-
-    Scene ID is always stored in Column C.
-
-    Args:
-        row: Sheet row values
-
-    Returns:
-        str: Normalized scene ID
-    """
-    return norm_scene_id(row[2]) if len(row) > 2 else ""
 
 
 # ============================================================
@@ -169,80 +129,93 @@ def extract_scene_id_from_sheet_row(row: List[str]) -> str:
 # ============================================================
 
 def update_google_sheet_from_file(hyperlinks_enabled: bool):
-    """
-    Main entry point for syncing scene JSON data into Google Sheets.
-
-    Workflow:
-    1. User selects performer JSON file
-    2. Sheet tab is opened/created
-    3. JSON scenes are flattened into sheet rows
-    4. Existing scenes are updated selectively
-    5. New scenes are inserted into template rows
-    """
     json_file = select_json_file()
     pornstar = extract_pornstar_from_filename(json_file)
 
     ws = get_worksheet(pornstar)
     scenes = load_scenes(json_file)
 
-    # Convert scenes → sheet-ready rows
-    rows = [
-        flatten_scene_to_row(
+    # --------------------------------------------------------
+    # Flatten scenes → (row, performer_links)
+    # --------------------------------------------------------
+
+    rows: List[list] = []
+    performer_link_maps: List[dict] = []
+
+    for scene in scenes:
+        row, performer_links = flatten_scene_to_row(
             scene,
             pornstar,
             male_performers,
             trans_performers,
             site_to_network,
             hyperlinks_enabled,
-            lambda x: x,  # title formatter placeholder
+            lambda x: x,
         )
-        for scene in scenes
-    ]
+        rows.append(row + [""] * (MAX_COLS - len(row)))
+        performer_link_maps.append(performer_links)
 
-    # Ensure every generated row has consistent column length
-    rows = [row + [""] * (MAX_COLS - len(row)) for row in rows]
+    # --------------------------------------------------------
+    # Read sheet state
+    # --------------------------------------------------------
 
-    # Read current sheet state
     sheet_values = ws.get_all_values(value_render_option="FORMULA")
     existing_rows = normalize_rows(sheet_values)
 
-    # Build lookup structures
     scene_index = build_sceneid_index(existing_rows)
     free_rows = find_empty_template_rows(existing_rows)
 
-    batch: List[Cell] = []
-    free_idx = 0
+    # --------------------------------------------------------
+    # Prepare batch updates
+    # --------------------------------------------------------
 
-    for row in rows:
+    batch_cells: List[Cell] = []
+    rich_text_requests: list = []
+    free_idx = 0
+    sheet_id = ws._properties["sheetId"]
+
+    # --------------------------------------------------------
+    # Apply updates
+    # --------------------------------------------------------
+
+    for i, row in enumerate(rows):
         sid = norm_scene_id(row[2])
 
-        # ----------------------------------------
-        # Existing scene → selective update
-        # ----------------------------------------
+        # Existing scene → update
         if sid in scene_index:
             rnum = scene_index[sid]
             update_existing_row(
-                batch,
+                batch_cells,
+                rich_text_requests,
+                sheet_id,
                 rnum,
                 row,
                 existing_rows[rnum - 2],
                 UPDATEABLE_COLUMNS,
+                performer_link_maps[i],
             )
 
-        # ----------------------------------------
-        # New scene → write into template row
-        # ----------------------------------------
+        # New scene → template row
         elif free_idx < len(free_rows):
             write_new_row_from_template(
-                batch,
+                batch_cells,
                 free_rows[free_idx],
                 row,
                 22,  # TeleLabel column index
             )
             free_idx += 1
 
-    # Apply all updates in one batch request
-    ws.update_cells(batch, value_input_option="USER_ENTERED")
+    # --------------------------------------------------------
+    # Execute batch writes
+    # --------------------------------------------------------
+
+    if batch_cells:
+        ws.update_cells(batch_cells, value_input_option="USER_ENTERED")
+
+    if rich_text_requests:
+        ws.spreadsheet.batch_update({
+            "requests": rich_text_requests
+        })
 
 
 # ============================================================
