@@ -45,8 +45,8 @@ FIXED_DATA18_STUDIOS_FILE = (
 SPREADSHEET_NAME = "MY PORN"
 WORKSHEET_NAME = "Data18 Studios"
 
-COLUMN_START = 3   # Column C
-COLUMN_END = 80    # Column CC
+COLUMN_START = 3  # Column C
+COLUMN_END = 80  # Column CC
 MAX_SITES_PER_ROW = COLUMN_END - COLUMN_START + 1
 
 SCOPES = [
@@ -57,6 +57,7 @@ SCOPES = [
 # ============================================================
 # GOOGLE SHEETS AUTH
 # ============================================================
+
 
 def get_worksheet():
     """
@@ -79,9 +80,11 @@ def get_worksheet():
             cols=100,
         )
 
+
 # ============================================================
 # DATA LOADING
 # ============================================================
+
 
 def load_processed_studios() -> List[Dict[str, Any]]:
     """
@@ -105,9 +108,11 @@ def load_processed_studios() -> List[Dict[str, Any]]:
 
     return normal + others
 
+
 # ============================================================
 # FORMATTING HELPERS
 # ============================================================
+
 
 def to_title_case(value: str) -> str:
     """
@@ -139,9 +144,11 @@ def to_title_case(value: str) -> str:
 
     return " ".join(formatted)
 
+
 # ============================================================
 # ROW BUILDER
 # ============================================================
+
 
 def build_rows(studios: List[Dict[str, Any]]) -> List[List[str]]:
     """
@@ -160,15 +167,17 @@ def build_rows(studios: List[Dict[str, Any]]) -> List[List[str]]:
         ]
 
         for i in range(0, len(sites), MAX_SITES_PER_ROW):
-            chunk = sites[i:i + MAX_SITES_PER_ROW]
+            chunk = sites[i : i + MAX_SITES_PER_ROW]
             prefix = group_name if i == 0 else f"→ {group_name}"
             rows.append([prefix, ""] + chunk)
 
     return rows
 
+
 # ============================================================
 # GOOGLE SHEETS UPDATE
 # ============================================================
+
 
 def update_google_sheet() -> None:
     worksheet = get_worksheet()
@@ -189,6 +198,7 @@ def update_google_sheet() -> None:
     )
 
     print(f"✅ Updated sheet: {SPREADSHEET_NAME} → {WORKSHEET_NAME}")
+
 
 # ============================================================
 # ENTRY POINT

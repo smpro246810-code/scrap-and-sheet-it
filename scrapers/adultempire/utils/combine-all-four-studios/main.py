@@ -21,11 +21,7 @@ from typing import Dict, List, Any
 # ============================================================
 
 # Central studios-scraper data directory
-STUDIOS_DATA_DIR = (
-    Path(__file__).resolve().parents[2]
-    / "studios-scraper"
-    / "data"
-)
+STUDIOS_DATA_DIR = Path(__file__).resolve().parents[2] / "studios-scraper" / "data"
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
@@ -66,6 +62,7 @@ CATEGORIES: Dict[str, Dict[str, str]] = {
 # IO UTILITIES
 # ============================================================
 
+
 def load_json(path: Path) -> List[Dict[str, Any]]:
     """
     Safely load a JSON file.
@@ -90,6 +87,7 @@ def write_json(path: Path, data: List[Dict[str, Any]]):
 # DATA NORMALIZATION
 # ============================================================
 
+
 def index_by_title(data: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
     """
     Convert a list of studio objects into a dict keyed by title.
@@ -110,6 +108,7 @@ def collect_all_titles(indexes: List[Dict[str, Any]]) -> List[str]:
 # ============================================================
 # COMBINATION LOGIC
 # ============================================================
+
 
 def combine_studios() -> List[Dict[str, Any]]:
     """
@@ -145,6 +144,7 @@ def combine_studios() -> List[Dict[str, Any]]:
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main():
     combined_data = combine_studios()

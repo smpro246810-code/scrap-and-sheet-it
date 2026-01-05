@@ -40,6 +40,7 @@ API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJNci4gV2hpdGUiLCJzdWIi
 
 HEADERS = {"ApiKey": API_KEY, "Accept": "application/json"}
 
+
 # ---------------------------------------------------
 # LOGGING
 # ---------------------------------------------------
@@ -51,7 +52,7 @@ def log(msg, level="info"):
         "info": Fore.CYAN + Style.BRIGHT,
         "success": Fore.GREEN + Style.BRIGHT,
         "warning": Fore.YELLOW + Style.BRIGHT,
-        "error": Fore.RED + Style.BRIGHT
+        "error": Fore.RED + Style.BRIGHT,
     }
 
     color = colors.get(level, Fore.WHITE)
@@ -73,9 +74,7 @@ def log(msg, level="info"):
 # ---------------------------------------------------
 def gql(query, variables=None):
     r = requests.post(
-        STASH_URL,
-        json={"query": query, "variables": variables},
-        headers=HEADERS
+        STASH_URL, json={"query": query, "variables": variables}, headers=HEADERS
     )
     if r.status_code != 200:
         log(f"HTTP {r.status_code}: {r.text}", "error")
@@ -138,7 +137,7 @@ def convert_height_to_cm(height):
 
 
 def extract_urls(link_list):
-    """ Extract URL list only """
+    """Extract URL list only"""
     urls = []
     for item in link_list:
         if isinstance(item, dict) and "url" in item:
@@ -147,7 +146,7 @@ def extract_urls(link_list):
 
 
 def convert_rating100(r):
-    """ Convert FreeOnes star rating → Stash rating100 """
+    """Convert FreeOnes star rating → Stash rating100"""
     if not r:
         return None
     try:
@@ -162,7 +161,7 @@ def convert_rating100(r):
 def build_payload(name, data):
     payload = {
         "name": name,
-        "gender": "FEMALE",     # RULE
+        "gender": "FEMALE",  # RULE
         "details": data.get("Bio"),
         "ethnicity": data.get("Ethnicity"),
         "eye_color": data.get("Eye Color"),
@@ -170,7 +169,7 @@ def build_payload(name, data):
         "career_length": data.get("Career"),
         "alias_list": data.get("Aliases") or [],
         "urls": extract_urls(data.get("Links", [])),
-        "rating100": convert_rating100(data.get("Rating"))
+        "rating100": convert_rating100(data.get("Rating")),
     }
 
     # -----------------------------------------

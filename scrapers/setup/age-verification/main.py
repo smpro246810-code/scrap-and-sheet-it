@@ -34,6 +34,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # DEBUGGING / FORENSICS
 # ============================================================
 
+
 def save_debug_capture(
     driver,
     label: str = "age_gate_unresolved",
@@ -61,20 +62,24 @@ def save_debug_capture(
     except Exception as e:
         logger and logger.warning(f"⚠️ HTML dump failed: {e}")
 
+
 # ============================================================
 # DATA MODEL
 # ============================================================
+
 
 @dataclass
 class SiteProfile:
     """
     Declarative definition of an age-gate profile.
     """
+
     domain_pattern: re.Pattern
     detect_texts: List[str] = field(default_factory=list)
     click_targets: List[Tuple[str, str]] = field(default_factory=list)
     post_click_sleep: float = 3.0
     custom_handler: Optional[Callable] = None
+
 
 # ============================================================
 # PROFILE REGISTRY
@@ -82,54 +87,67 @@ class SiteProfile:
 
 _SITE_PROFILES: List[SiteProfile] = []
 
+
 def register_site_profile(profile: SiteProfile) -> None:
     _SITE_PROFILES.append(profile)
+
 
 # ============================================================
 # BUILT-IN SITE PROFILES
 # ============================================================
 
-register_site_profile(SiteProfile(
-    domain_pattern=re.compile(r"(?:^|\.)adultempire\.com$", re.I),
-    detect_texts=[
-        "agree to terms and enter the site",
-        "age confirmation",
-        "i agree - enter",
-        "enter the site",
-    ],
-    click_targets=[
-        (By.ID, "ageConfirmationButton"),
-        (By.XPATH, "//button[@id='ageConfirmationButton']"),
-        (By.XPATH, "//button[contains(., 'Enter')]"),
-        (By.XPATH, "//button[contains(., 'ENTER')]"),
-    ],
-    post_click_sleep=4.0,
-))
+register_site_profile(
+    SiteProfile(
+        domain_pattern=re.compile(r"(?:^|\.)adultempire\.com$", re.I),
+        detect_texts=[
+            "agree to terms and enter the site",
+            "age confirmation",
+            "i agree - enter",
+            "enter the site",
+        ],
+        click_targets=[
+            (By.ID, "ageConfirmationButton"),
+            (By.XPATH, "//button[@id='ageConfirmationButton']"),
+            (By.XPATH, "//button[contains(., 'Enter')]"),
+            (By.XPATH, "//button[contains(., 'ENTER')]"),
+        ],
+        post_click_sleep=4.0,
+    )
+)
 
-register_site_profile(SiteProfile(
-    domain_pattern=re.compile(r"(?:^|\.)data18\.com$", re.I),
-    detect_texts=[
-        "adults only",
-        "enter - data18.com",
-        "age verification",
-    ],
-    click_targets=[
-        (By.XPATH, "//button[contains(., 'ENTER - data18.com')]"),
-        (By.XPATH, "//a[contains(., 'ENTER - data18.com')]"),
-        (By.XPATH, "//button[contains(., 'Enter')]"),
-        (By.XPATH, "//button[contains(., 'ENTER')]"),
-    ],
-    post_click_sleep=5.0,
-))
+register_site_profile(
+    SiteProfile(
+        domain_pattern=re.compile(r"(?:^|\.)data18\.com$", re.I),
+        detect_texts=[
+            "adults only",
+            "enter - data18.com",
+            "age verification",
+        ],
+        click_targets=[
+            (By.XPATH, "//button[contains(., 'ENTER - data18.com')]"),
+            (By.XPATH, "//a[contains(., 'ENTER - data18.com')]"),
+            (By.XPATH, "//button[contains(., 'Enter')]"),
+            (By.XPATH, "//button[contains(., 'ENTER')]"),
+        ],
+        post_click_sleep=5.0,
+    )
+)
 
 # ============================================================
 # GENERIC FALLBACK DEFINITIONS
 # ============================================================
 
 _GENERIC_TEXT_MARKERS = [
-    "adults only", "age verification", "are you 18", "over 18",
-    "you must be 18", "agree to terms", "enter site",
-    "enter the site", "age confirm", "age gate",
+    "adults only",
+    "age verification",
+    "are you 18",
+    "over 18",
+    "you must be 18",
+    "agree to terms",
+    "enter site",
+    "enter the site",
+    "age confirm",
+    "age gate",
 ]
 
 _GENERIC_CLICK_XPATHS = [
@@ -146,6 +164,7 @@ _GENERIC_CLICK_XPATHS = [
 # ============================================================
 # INTERNAL UTILITIES
 # ============================================================
+
 
 def _domain_from_url(url: str) -> str:
     match = re.search(r"://([^/]+)", url)
@@ -190,9 +209,11 @@ def _generic_fallback(driver, logger: logging.Logger) -> bool:
 
     return False
 
+
 # ============================================================
 # PUBLIC API
 # ============================================================
+
 
 def ensure_age_verification(
     driver,
@@ -238,6 +259,7 @@ def ensure_age_verification(
 
     logger.info("✅ No age verification detected.")
     return True
+
 
 # ============================================================
 # END OF FILE

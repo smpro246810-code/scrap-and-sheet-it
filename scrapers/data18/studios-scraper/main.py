@@ -54,6 +54,7 @@ AGE_VERIFICATION_PATH = (
 # LOGGING
 # ============================================================
 
+
 def setup_logger() -> logging.Logger:
     logging.basicConfig(
         level=logging.INFO,
@@ -61,11 +62,13 @@ def setup_logger() -> logging.Logger:
     )
     return logging.getLogger(__name__)
 
+
 logger = setup_logger()
 
 # ============================================================
 # AGE VERIFICATION (SAFE DYNAMIC LOAD)
 # ============================================================
+
 
 def load_age_verification():
     if not AGE_VERIFICATION_PATH.exists():
@@ -90,13 +93,12 @@ def ensure_age_verification_fallback(driver, logger=None):
         logger.info("Age verification module unavailable; skipping check.")
 
 
-ensure_age_verification = (
-    load_age_verification() or ensure_age_verification_fallback
-)
+ensure_age_verification = load_age_verification() or ensure_age_verification_fallback
 
 # ============================================================
 # SELENIUM DRIVER
 # ============================================================
+
 
 def create_driver(headless: bool = True) -> webdriver.Chrome:
     options = Options()
@@ -119,9 +121,11 @@ def create_driver(headless: bool = True) -> webdriver.Chrome:
         options=options,
     )
 
+
 # ============================================================
 # SCROLLING (LAZY LOAD SUPPORT)
 # ============================================================
+
 
 def deep_scroll_until_stable(driver, max_scrolls=20, pause=0.6, logger=None):
     last_height = driver.execute_script("return document.body.scrollHeight")
@@ -146,6 +150,7 @@ def deep_scroll_until_stable(driver, max_scrolls=20, pause=0.6, logger=None):
 # ============================================================
 # PARSING (PURE FUNCTION)
 # ============================================================
+
 
 def parse_studio_page(html: str, logger: logging.Logger) -> List[Dict]:
     """
@@ -182,9 +187,11 @@ def parse_studio_page(html: str, logger: logging.Logger) -> List[Dict]:
 
     return results
 
+
 # ============================================================
 # SCRAPING PIPELINE (PAGINATION)
 # ============================================================
+
 
 def scrape_all_studios(driver: webdriver.Chrome, logger: logging.Logger):
     results = []
@@ -220,9 +227,11 @@ def scrape_all_studios(driver: webdriver.Chrome, logger: logging.Logger):
 
     return results
 
+
 # ============================================================
 # OUTPUT
 # ============================================================
+
 
 def save_json(data: List[Dict], path: Path, logger: logging.Logger):
     path.write_text(
@@ -231,9 +240,11 @@ def save_json(data: List[Dict], path: Path, logger: logging.Logger):
     )
     logger.info(f"💾 Saved {len(data)} records → {path}")
 
+
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main():
     logger.info(f"🌐 Starting Data18 scraper at: {TARGET_URL}")
@@ -256,6 +267,7 @@ def main():
     finally:
         driver.quit()
         logger.info("👋 Browser closed. Session ended.")
+
 
 if __name__ == "__main__":
     main()

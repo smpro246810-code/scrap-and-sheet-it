@@ -20,7 +20,7 @@ def load_json(file_path):
 def extract_all_titles(networks_data):
     """Extract all network and site titles (flattened and normalized)."""
     titles = set()
-    
+
     for entry in networks_data:
         if "title" in entry and entry["title"]:
             titles.add(entry["title"].lower().strip())
@@ -47,9 +47,11 @@ def fuzzy_match(title, title_set, threshold=0.85):
 def find_missing_studios_with_fuzzy():
     combined_studios = load_json(COMBINED_FILE)
     networks_studios = load_json(NETWORKS_FILE)
-    
+
     network_titles = extract_all_titles(networks_studios)
-    combined_titles = {studio['title'].lower().strip(): studio for studio in combined_studios}
+    combined_titles = {
+        studio["title"].lower().strip(): studio for studio in combined_studios
+    }
 
     missing = []
     duplicates_or_variants = {}
@@ -58,7 +60,7 @@ def find_missing_studios_with_fuzzy():
         if title not in network_titles:
             # Try to find fuzzy matches
             fuzzy_matches = fuzzy_match(title, network_titles)
-            
+
             if fuzzy_matches:
                 duplicates_or_variants[title] = fuzzy_matches
             else:

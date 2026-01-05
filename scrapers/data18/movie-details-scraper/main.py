@@ -56,6 +56,7 @@ DATA18_BASE = "https://www.data18.com"
 # LOGGING
 # ============================================================
 
+
 def setup_logger() -> logging.Logger:
     logging.basicConfig(
         level=logging.INFO,
@@ -63,11 +64,13 @@ def setup_logger() -> logging.Logger:
     )
     return logging.getLogger(__name__)
 
+
 logger = setup_logger()
 
 # ============================================================
 # AGE VERIFICATION (SAFE DYNAMIC LOAD)
 # ============================================================
+
 
 def load_age_verification():
     if not AGE_VERIFICATION_PATH.exists():
@@ -92,13 +95,12 @@ def ensure_age_verification_fallback(driver, logger=None):
         logger.info("Age verification module unavailable; skipping check.")
 
 
-ensure_age_verification = (
-    load_age_verification() or ensure_age_verification_fallback
-)
+ensure_age_verification = load_age_verification() or ensure_age_verification_fallback
 
 # ============================================================
 # SELENIUM DRIVER
 # ============================================================
+
 
 def create_driver(headless: bool = True) -> webdriver.Chrome:
     options = Options()
@@ -125,9 +127,11 @@ def create_driver(headless: bool = True) -> webdriver.Chrome:
         logger.error(f"🚨 WebDriver initialization failed: {e}")
         raise
 
+
 # ============================================================
 # SAFE HELPERS (LOGIC UNCHANGED)
 # ============================================================
+
 
 def safe_get_text(tag: Optional[Tag]) -> str:
     if tag:
@@ -137,7 +141,9 @@ def safe_get_text(tag: Optional[Tag]) -> str:
 
 
 def safe_next_sibling_text(tag: Optional[Tag]) -> str:
-    sibling: Optional[Union[Tag, NavigableString, str]] = getattr(tag, "next_sibling", None)
+    sibling: Optional[Union[Tag, NavigableString, str]] = getattr(
+        tag, "next_sibling", None
+    )
 
     if isinstance(sibling, (NavigableString, str)):
         return str(sibling).strip()
@@ -160,9 +166,11 @@ def is_server_error_page(driver: webdriver.Chrome) -> bool:
     ]
     return any(sig in html for sig in bad_signals)
 
+
 # ============================================================
 # CORE PARSER (ALL SCRAPING LOGIC PRESERVED)
 # ============================================================
+
 
 def parse_movie_page(html: str) -> Dict[str, Any]:
     """
@@ -224,9 +232,11 @@ def parse_movie_page(html: str) -> Dict[str, Any]:
 
     return result
 
+
 # ============================================================
 # OUTPUT
 # ============================================================
+
 
 def save_movie_info(data: Dict[str, Any], movie_title: str) -> Path:
     safe_title = movie_title.lower().replace(" ", "_")
@@ -240,9 +250,11 @@ def save_movie_info(data: Dict[str, Any], movie_title: str) -> Path:
     logger.info(f"💾 Saved movie info → {path}")
     return path
 
+
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main() -> None:
     MOVIE_URL = "https://www.data18.com/movies/1257888-curvy-girls-10"
@@ -269,6 +281,7 @@ def main() -> None:
     finally:
         driver.quit()
         logger.info("👋 Browser closed.")
+
 
 if __name__ == "__main__":
     main()

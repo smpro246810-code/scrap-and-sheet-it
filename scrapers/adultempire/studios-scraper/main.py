@@ -48,9 +48,7 @@ def ensure_age_verification_fallback(driver, logger=None):
         logger.info("Age verification module unavailable; skipping check.")
 
 
-ensure_age_verification = (
-    load_age_verification() or ensure_age_verification_fallback
-)
+ensure_age_verification = load_age_verification() or ensure_age_verification_fallback
 
 
 # ============================================================
@@ -94,6 +92,7 @@ STUDIO_CATEGORIES = {
 # LOGGING
 # ============================================================
 
+
 def setup_logger() -> logging.Logger:
     logging.basicConfig(
         level=logging.INFO,
@@ -105,6 +104,7 @@ def setup_logger() -> logging.Logger:
 # ============================================================
 # SELENIUM
 # ============================================================
+
 
 def create_driver(visible: bool = True) -> webdriver.Chrome:
     options = Options()
@@ -146,6 +146,7 @@ def deep_scroll_until_stable(driver, max_scrolls=20, pause=0.6, logger=None):
 # PARSER (GENERIC)
 # ============================================================
 
+
 def parse_studios(
     html: str,
     count_field: str,
@@ -174,11 +175,7 @@ def parse_studios(
         count_tag = parent_li.find("small")
         if count_tag:
             try:
-                count = int(
-                    count_tag.get_text(strip=True)
-                    .strip("()")
-                    .replace(",", "")
-                )
+                count = int(count_tag.get_text(strip=True).strip("()").replace(",", ""))
             except ValueError:
                 pass
 
@@ -196,6 +193,7 @@ def parse_studios(
 # ============================================================
 # SCRAPER PIPELINE (SINGLE SESSION)
 # ============================================================
+
 
 def scrape_all_categories(
     categories: Dict[str, Dict],
@@ -233,6 +231,7 @@ def scrape_all_categories(
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main():
     logger = setup_logger()

@@ -13,13 +13,7 @@ from google.oauth2.service_account import Credentials
 
 BASE_DIR = Path(__file__).resolve().parents[3]
 
-DATA_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "data18"
-    / "upload-scenes-to-sheet"
-    / "data"
-)
+DATA_DIR = BASE_DIR / "google-sheets" / "data18" / "upload-scenes-to-sheet" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / "google-sheets" / "credentials.json"
@@ -31,6 +25,7 @@ SPREADSHEET_NAME = "MY PORN"
 # ============================================================
 # Text normalization helpers
 # ============================================================
+
 
 def to_title_case(value: Optional[str]) -> Optional[str]:
     """
@@ -79,7 +74,7 @@ def normalize_whitespace(text: str) -> str:
     """
     if not isinstance(text, str):
         return text
-    return " ".join(text.replace("\u00A0", " ").split())
+    return " ".join(text.replace("\u00a0", " ").split())
 
 
 def normalize_name(name: str) -> str:
@@ -103,7 +98,7 @@ def normalize_name(name: str) -> str:
     """
     if not isinstance(name, str):
         return ""
-    return " ".join(name.replace("\u00A0", " ").strip().lower().split())
+    return " ".join(name.replace("\u00a0", " ").strip().lower().split())
 
 
 def extract_pornstar_from_filename(json_file_path: Path) -> str:
@@ -174,6 +169,7 @@ def apply_network_alias(name: str) -> str:
 # Duration & Scene ID helpers
 # ============================================================
 
+
 def convert_duration(duration: Optional[str]) -> str:
     """
     Convert duration strings into human-readable format.
@@ -199,22 +195,26 @@ def convert_duration(duration: Optional[str]) -> str:
         if m.group(3):
             h, m_, s = int(m.group(1)), int(m.group(2)), int(m.group(3))
             return ", ".join(
-                p for p in [
+                p
+                for p in [
                     f"{h} hr" if h else "",
                     f"{m_} min" if m_ else "",
                     f"{s} sec" if s else "",
-                ] if p
+                ]
+                if p
             )
         else:
             mins, secs = int(m.group(1)), int(m.group(2))
             hrs = mins // 60
             mins %= 60
             return ", ".join(
-                p for p in [
+                p
+                for p in [
                     f"{hrs} hr" if hrs else "",
                     f"{mins} min" if mins else "",
                     f"{secs} sec" if secs else "",
-                ] if p
+                ]
+                if p
             )
 
     if re.search(r"\b(hr|min|sec)\b", duration):
@@ -241,7 +241,7 @@ def norm_scene_id(v: Any) -> str:
     if v is None:
         return ""
     s = str(v)
-    for ch in ["\u00A0", "\u200B", "\u200E", "\u200F"]:
+    for ch in ["\u00a0", "\u200b", "\u200e", "\u200f"]:
         s = s.replace(ch, "")
     return " ".join(s.strip().split())
 
@@ -249,6 +249,7 @@ def norm_scene_id(v: Any) -> str:
 # ============================================================
 # JSON helpers
 # ============================================================
+
 
 def safe_load_json(path: Path) -> Any:
     """
@@ -274,6 +275,7 @@ def safe_load_json(path: Path) -> Any:
 # ============================================================
 # Google Sheets helpers
 # ============================================================
+
 
 def make_hyperlink(url: str, text: str, enabled: bool) -> str:
     """
@@ -310,13 +312,17 @@ def get_worksheet(worksheet_name: str):
         gspread Worksheet object
     """
     if not GOOGLE_CREDENTIALS_FILE.exists():
-        raise FileNotFoundError(f"Credentials file not found: {GOOGLE_CREDENTIALS_FILE}")
+        raise FileNotFoundError(
+            f"Credentials file not found: {GOOGLE_CREDENTIALS_FILE}"
+        )
 
     scopes = [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive",
     ]
-    creds = Credentials.from_service_account_file(GOOGLE_CREDENTIALS_FILE, scopes=scopes)
+    creds = Credentials.from_service_account_file(
+        GOOGLE_CREDENTIALS_FILE, scopes=scopes
+    )
     gc = gspread.authorize(creds)
     sh = gc.open(SPREADSHEET_NAME)
 
@@ -333,6 +339,7 @@ def get_worksheet(worksheet_name: str):
 # ============================================================
 # CLI argument parsing
 # ============================================================
+
 
 def parse_args():
     """

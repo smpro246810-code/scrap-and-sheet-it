@@ -6,11 +6,11 @@ from helpers import norm_scene_id
 # ============================================================
 MAX_COLS = 24
 
-ID_INDEX = 0                 # Column A → ID (template)
-THUMBNAIL_IMAGE_INDEX = 9    # Column J → Banner (template)
-TELESAVE_INDEX = 11          # Column K → TeleSave? (template)
-QUALITY_INDEX = 13           # Column M → Quality? (template)
-TELELABEL_INDEX = 23         # Column W → TeleLabel (template)
+ID_INDEX = 0  # Column A → ID (template)
+THUMBNAIL_IMAGE_INDEX = 9  # Column J → Banner (template)
+TELESAVE_INDEX = 11  # Column K → TeleSave? (template)
+QUALITY_INDEX = 13  # Column M → Quality? (template)
+TELELABEL_INDEX = 23  # Column W → TeleLabel (template)
 
 # Columns that are allowed to contain data in a "template row"
 # without disqualifying it from being considered empty.

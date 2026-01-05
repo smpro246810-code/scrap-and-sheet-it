@@ -34,11 +34,7 @@ from googleapiclient.discovery import build
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 DATA_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "utils"
-    / "extract-profilepics-from-sheet"
-    / "data"
+    BASE_DIR / "google-sheets" / "utils" / "extract-profilepics-from-sheet" / "data"
 )
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -48,13 +44,14 @@ OUTPUT_JSON_FILE = DATA_DIR / "pornstars-profilepics-from-sheet.json"
 SPREADSHEET_NAME = "MY PORN"
 WORKSHEET_NAME = "Pornstars"
 
-COL_NAME = 1    # Column B
+COL_NAME = 1  # Column B
 COL_IMAGE = 30  # Column AE
 
 
 # ============================================================
 # GOOGLE AUTH & SERVICES
 # ============================================================
+
 
 def get_credentials(scopes: List[str]) -> Credentials:
     return Credentials.from_service_account_file(
@@ -76,13 +73,9 @@ def get_sheets_service():
 def find_spreadsheet_id_by_name(name: str) -> str:
     drive = get_drive_service()
     query = (
-        f"name = '{name}' "
-        "and mimeType = 'application/vnd.google-apps.spreadsheet'"
+        f"name = '{name}' " "and mimeType = 'application/vnd.google-apps.spreadsheet'"
     )
-    result = drive.files().list(
-        q=query,
-        fields="files(id,name)"
-    ).execute()
+    result = drive.files().list(q=query, fields="files(id,name)").execute()
 
     files = result.get("files", [])
     if not files:
@@ -95,13 +88,18 @@ def find_spreadsheet_id_by_name(name: str) -> str:
 # SHEET DATA ACCESS
 # ============================================================
 
+
 def fetch_sheet_rows(spreadsheet_id: str, sheet_name: str) -> List[Dict[str, Any]]:
     service = get_sheets_service()
-    response = service.spreadsheets().get(
-        spreadsheetId=spreadsheet_id,
-        ranges=[sheet_name],
-        fields="sheets(data(rowData(values(userEnteredValue,hyperlink,textFormatRuns))))",
-    ).execute()
+    response = (
+        service.spreadsheets()
+        .get(
+            spreadsheetId=spreadsheet_id,
+            ranges=[sheet_name],
+            fields="sheets(data(rowData(values(userEnteredValue,hyperlink,textFormatRuns))))",
+        )
+        .execute()
+    )
 
     return response["sheets"][0]["data"][0].get("rowData", [])
 
@@ -109,6 +107,7 @@ def fetch_sheet_rows(spreadsheet_id: str, sheet_name: str) -> List[Dict[str, Any
 # ============================================================
 # CELL PARSING UTILITIES
 # ============================================================
+
 
 def extract_text(cell: Dict[str, Any]) -> str:
     value = cell.get("userEnteredValue", {})
@@ -139,6 +138,7 @@ def extract_hyperlinks(cell: Dict[str, Any]) -> List[str]:
 # CORE PARSING LOGIC
 # ============================================================
 
+
 def parse_pornstars(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     pornstars: List[Dict[str, Any]] = []
 
@@ -151,14 +151,14 @@ def parse_pornstars(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         if not name:
             continue
 
-        images = extract_hyperlinks(
-            cells[COL_IMAGE] if len(cells) > COL_IMAGE else {}
-        )
+        images = extract_hyperlinks(cells[COL_IMAGE] if len(cells) > COL_IMAGE else {})
 
-        pornstars.append({
-            "name": name,
-            "image": images,
-        })
+        pornstars.append(
+            {
+                "name": name,
+                "image": images,
+            }
+        )
 
     return pornstars
 
@@ -167,17 +167,16 @@ def parse_pornstars(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 # OUTPUT
 # ============================================================
 
+
 def write_json(path: Path, data: Any) -> None:
-    path.write_text(
-        json.dumps(data, indent=2, ensure_ascii=False),
-        encoding="utf-8"
-    )
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"✅ JSON saved to: {path}")
 
 
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main():
     print("🔍 Locating spreadsheet...")

@@ -8,14 +8,15 @@ from helpers import normalize_name
 # Column index constants
 # ============================================================
 
-DATA18_URL_INDEX = 21        # Column V
-DURATION_INDEX = 15          # Column P
-PERFORMER_COLUMNS = {4, 5}   # Columns E & F
+DATA18_URL_INDEX = 21  # Column V
+DURATION_INDEX = 15  # Column P
+PERFORMER_COLUMNS = {4, 5}  # Columns E & F
 
 
 # ============================================================
 # Rich text → RAW API request builder
 # ============================================================
+
 
 def build_performer_rich_text_request(
     sheet_id: int,
@@ -42,9 +43,7 @@ def build_performer_rich_text_request(
         }
 
         if url:
-            run["format"] = {
-                "link": {"uri": url}
-            }
+            run["format"] = {"link": {"uri": url}}
 
         text_runs.append(run)
         index += len(line)
@@ -54,14 +53,16 @@ def build_performer_rich_text_request(
 
     return {
         "updateCells": {
-            "rows": [{
-                "values": [{
-                    "userEnteredValue": {
-                        "stringValue": cell_text
-                    },
-                    "textFormatRuns": text_runs,
-                }]
-            }],
+            "rows": [
+                {
+                    "values": [
+                        {
+                            "userEnteredValue": {"stringValue": cell_text},
+                            "textFormatRuns": text_runs,
+                        }
+                    ]
+                }
+            ],
             "fields": "userEnteredValue,textFormatRuns",
             "start": {
                 "sheetId": sheet_id,
@@ -76,6 +77,7 @@ def build_performer_rich_text_request(
 # URL merge helper
 # ============================================================
 
+
 def merge_urls(old: str, new: str) -> str:
     old_urls = {u.strip() for u in str(old).split("\n") if u.strip()}
     new_urls = {u.strip() for u in str(new).split("\n") if u.strip()}
@@ -85,6 +87,7 @@ def merge_urls(old: str, new: str) -> str:
 # ============================================================
 # Existing row update
 # ============================================================
+
 
 def update_existing_row(
     batch_cells: List[Cell],
@@ -122,30 +125,25 @@ def update_existing_row(
             if str(old_val).strip():
                 continue
             if str(new_val).strip():
-                batch_cells.append(
-                    Cell(row=target_rownum, col=c + 1, value=new_val)
-                )
+                batch_cells.append(Cell(row=target_rownum, col=c + 1, value=new_val))
             continue
 
         # 🔥 URL merge
         if c == DATA18_URL_INDEX:
             merged = merge_urls(old_val, new_val)
             if merged != (old_val or ""):
-                batch_cells.append(
-                    Cell(row=target_rownum, col=c + 1, value=merged)
-                )
+                batch_cells.append(Cell(row=target_rownum, col=c + 1, value=merged))
             continue
 
         # Default overwrite
         if (new_val or "") != (old_val or ""):
-            batch_cells.append(
-                Cell(row=target_rownum, col=c + 1, value=new_val)
-            )
+            batch_cells.append(Cell(row=target_rownum, col=c + 1, value=new_val))
 
 
 # ============================================================
 # New row from template
 # ============================================================
+
 
 def write_new_row_from_template(
     batch_cells: List[Cell],
@@ -156,6 +154,4 @@ def write_new_row_from_template(
     for c, value in enumerate(row_with_offset):
         if c == telelabel_index:
             continue
-        batch_cells.append(
-            Cell(row=sheet_rownum, col=c + 1, value=value)
-        )
+        batch_cells.append(Cell(row=sheet_rownum, col=c + 1, value=value))

@@ -34,6 +34,7 @@ mutation PerformerUpdate($id: ID!, $image: String!) {
 }
 """
 
+
 # -----------------------------
 # GRAPHQL REQUEST WRAPPER
 # -----------------------------
@@ -42,8 +43,11 @@ def gql(query, variables):
         "ApiKey": API_KEY,
         "Accept": "application/json",
     }
-    resp = requests.post(STASH_URL, json={"query": query, "variables": variables}, headers=headers)
+    resp = requests.post(
+        STASH_URL, json={"query": query, "variables": variables}, headers=headers
+    )
     return resp.json()
+
 
 # -----------------------------
 # MAIN LOGIC

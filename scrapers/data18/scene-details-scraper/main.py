@@ -45,7 +45,9 @@ def load_age_verification():
     if not AGE_VERIFICATION_PATH.exists():
         return None
 
-    spec = importlib.util.spec_from_file_location("age_verification", str(AGE_VERIFICATION_PATH))
+    spec = importlib.util.spec_from_file_location(
+        "age_verification", str(AGE_VERIFICATION_PATH)
+    )
     if not spec or not spec.loader:
         return None
 
@@ -74,16 +76,19 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+
 # ---------------- LOGGER ----------------
 def setup_logger():
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s | %(levelname)s | %(message)s",
-        handlers=[logging.StreamHandler()]
+        handlers=[logging.StreamHandler()],
     )
     return logging.getLogger(__name__)
 
+
 logger = setup_logger()
+
 
 # ---------------- DRIVER SETUP ----------------
 def create_driver(headless=False):
@@ -110,7 +115,10 @@ def create_driver(headless=False):
     )
     options.add_argument(f"user-agent={ua}")
 
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    return webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()), options=options
+    )
+
 
 # ---------------- HELPERS ----------------
 def is_server_error_page(driver):
@@ -131,13 +139,11 @@ def is_server_error_page(driver):
     ]
     return any(sig in html for sig in bad_signals)
 
+
 def resolve_external_link(url, logger=None):
     """Follow redirect from data18.com/g/... to real site."""
     if not url:
-        return {
-            "original_site_redirect_url": None,
-            "original_site_final_url": None
-        }
+        return {"original_site_redirect_url": None, "original_site_final_url": None}
 
     result = {
         "original_site_redirect_url": url,
@@ -183,11 +189,13 @@ def resolve_external_link(url, logger=None):
         result["original_site_final_url"] = url
         return result
 
+
 def safe_attr(value: Any) -> str:
     """Converts a BeautifulSoup attribute value into a plain string."""
     if isinstance(value, list):
         value = " ".join(v for v in value if isinstance(v, str))
     return str(value or "").strip()
+
 
 def safe_lower(value: Any) -> str:
     """Lowercase safely."""
@@ -195,10 +203,12 @@ def safe_lower(value: Any) -> str:
         value = " ".join(v for v in value if isinstance(v, str))
     return str(value or "").lower()
 
+
 def extract_scene_number(value: str) -> int:
     """Extract the first integer from a string, return 0 if not found."""
     match = re.search(r"(\d+)", value or "")
     return int(match.group(1)) if match else 0
+
 
 def format_duration(raw_duration: str) -> str:
     """
@@ -240,7 +250,9 @@ def parse_scene_details(html, scene_url, logger):
     soup = BeautifulSoup(html, "html.parser")
 
     # --- Detect if this is a movie scene ---
-    movie_div = soup.find("div", style=re.compile("position: relative; margin-bottom: 3px"))
+    movie_div = soup.find(
+        "div", style=re.compile("position: relative; margin-bottom: 3px")
+    )
     is_movie = bool(movie_div)
 
     # --- Initialize result ---
@@ -257,7 +269,9 @@ def parse_scene_details(html, scene_url, logger):
 
     # --- Duration & Movie Segment ---
     if is_movie:
-        dur_tag = soup.find(lambda tag: tag.name == "p" and "Duration" in tag.get_text())
+        dur_tag = soup.find(
+            lambda tag: tag.name == "p" and "Duration" in tag.get_text()
+        )
         if dur_tag:
             bold = dur_tag.find("b")
             if bold:
@@ -265,11 +279,16 @@ def parse_scene_details(html, scene_url, logger):
                 result["duration"] = format_duration(raw_duration)
             span = dur_tag.find("span", class_="genmed")
             if span:
-                match = re.search(r"(\d{2}:\d{2}:\d{2}\s*-\s*\d{2}:\d{2}:\d{2})", span.get_text(strip=True))
+                match = re.search(
+                    r"(\d{2}:\d{2}:\d{2}\s*-\s*\d{2}:\d{2}:\d{2})",
+                    span.get_text(strip=True),
+                )
                 if match:
                     result["movie_segment"] = match.group(1)
     else:
-        duration_match = re.search(r'Duration:\s*<b>([\d:]+)</b>', str(soup), re.IGNORECASE)
+        duration_match = re.search(
+            r"Duration:\s*<b>([\d:]+)</b>", str(soup), re.IGNORECASE
+        )
         if duration_match:
             raw_duration = duration_match.group(1)
             result["duration"] = format_duration(raw_duration)
@@ -332,8 +351,8 @@ def parse_scene_details(html, scene_url, logger):
         miniseries_episodes = []
 
         # We'll collect the labels first, then add the "current" items once we know both.
-        current_scene_label = None   # e.g., "Scene 1"
-        current_episode_label = None # e.g., "Episode 5"
+        current_scene_label = None  # e.g., "Scene 1"
+        current_episode_label = None  # e.g., "Episode 5"
 
         if related_div:
             # Extract movie scenes under class="moviequick Scrollable"
@@ -346,7 +365,7 @@ def parse_scene_details(html, scene_url, logger):
                         "title": safe_attr(link.get("title")),
                         "scene_number": None,
                         "thumbnail": None,
-                        "performers": []
+                        "performers": [],
                     }
 
                     num_tag = link.find("b")
@@ -359,7 +378,11 @@ def parse_scene_details(html, scene_url, logger):
 
                     performers_div = link.find("div", class_="genmed")
                     if performers_div:
-                        performers = [p.strip() for p in performers_div.stripped_strings if p.strip()]
+                        performers = [
+                            p.strip()
+                            for p in performers_div.stripped_strings
+                            if p.strip()
+                        ]
                         rel_scene["performers"] = performers
 
                     movie_related_scenes.append(rel_scene)
@@ -371,21 +394,27 @@ def parse_scene_details(html, scene_url, logger):
                 and "#fff8f9" in safe_lower(tag.get("style"))
             )
             if current_scene_div:
-                match = re.search(r"(Scene\s*\d+)", current_scene_div.get_text(strip=True), re.IGNORECASE)
+                match = re.search(
+                    r"(Scene\s*\d+)",
+                    current_scene_div.get_text(strip=True),
+                    re.IGNORECASE,
+                )
                 if match:
                     current_scene_label = match.group(1)  # e.g., "Scene 1"
 
             # Extract miniseries episodes under class="relatedminiserie scroll"
             miniseries_div = related_div.find("div", class_="relatedminiserie")
             if miniseries_div:
-                episode_links = miniseries_div.find_all("a", href=re.compile(r"/scenes/"))
+                episode_links = miniseries_div.find_all(
+                    "a", href=re.compile(r"/scenes/")
+                )
                 for link in episode_links:
                     ep_scene = {
                         "url": safe_attr(link.get("href")),
                         "title": safe_attr(link.get("title")),
                         "episode_number": None,
                         "thumbnail": None,
-                        "performers": []
+                        "performers": [],
                     }
 
                     num_tag = link.find("b")
@@ -398,7 +427,11 @@ def parse_scene_details(html, scene_url, logger):
 
                     performers_div = link.find("div", class_="genmed")
                     if performers_div:
-                        performers = [p.strip() for p in performers_div.stripped_strings if p.strip()]
+                        performers = [
+                            p.strip()
+                            for p in performers_div.stripped_strings
+                            if p.strip()
+                        ]
                         ep_scene["performers"] = performers
 
                     miniseries_episodes.append(ep_scene)
@@ -410,7 +443,11 @@ def parse_scene_details(html, scene_url, logger):
                     and "#fff8f9" in safe_lower(tag.get("style"))
                 )
                 if current_ep_div:
-                    match = re.search(r"(Episode\s*\d+)", current_ep_div.get_text(strip=True), re.IGNORECASE)
+                    match = re.search(
+                        r"(Episode\s*\d+)",
+                        current_ep_div.get_text(strip=True),
+                        re.IGNORECASE,
+                    )
                     if match:
                         current_episode_label = match.group(1)  # e.g., "Episode 5"
 
@@ -418,22 +455,30 @@ def parse_scene_details(html, scene_url, logger):
             if current_scene_label:
                 # Title prefers Episode X; falls back to Scene Y if no episode label found
                 title_label = current_episode_label or current_scene_label
-                movie_related_scenes.append({
-                    "title": f"{movie_title}: {title_label}",
-                    "scene_number": current_scene_label,   # keep the actual scene label here
-                    "is_current_scene": True
-                })
+                movie_related_scenes.append(
+                    {
+                        "title": f"{movie_title}: {title_label}",
+                        "scene_number": current_scene_label,  # keep the actual scene label here
+                        "is_current_scene": True,
+                    }
+                )
 
             if current_episode_label:
-                miniseries_episodes.append({
-                    "title": f"{movie_title}: {current_episode_label}",
-                    "episode_number": current_episode_label,
-                    "is_current_episode": True
-                })
+                miniseries_episodes.append(
+                    {
+                        "title": f"{movie_title}: {current_episode_label}",
+                        "episode_number": current_episode_label,
+                        "is_current_episode": True,
+                    }
+                )
 
             # Sort lists
-            movie_related_scenes.sort(key=lambda s: extract_scene_number(s.get("scene_number", "")))
-            miniseries_episodes.sort(key=lambda s: extract_scene_number(s.get("episode_number", "")))
+            movie_related_scenes.sort(
+                key=lambda s: extract_scene_number(s.get("scene_number", ""))
+            )
+            miniseries_episodes.sort(
+                key=lambda s: extract_scene_number(s.get("episode_number", ""))
+            )
 
         # If no episodes exist, trim down current_movie_scene structure
         if not miniseries_episodes:
@@ -457,10 +502,10 @@ def parse_scene_details(html, scene_url, logger):
             movie_info["total_episodes"] = len(miniseries_episodes)
             movie_info["episodes"] = miniseries_episodes
 
-
         result["movie"] = movie_info
 
     return result
+
 
 # ---------------- SAVE TO JSON ----------------
 def save_details_to_json(data, scene_id):
@@ -483,13 +528,18 @@ def save_details_to_json(data, scene_id):
         except Exception:
             pass
 
-    json_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    json_path.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     logger.info(f"💾 Saved {len(data)} records to {json_path}")
     return json_path
 
+
 # ---------------- MAIN ----------------
 def main():
-    scene_id = input("Enter the Data18 scene ID (e.g. 391785 or 1350558-the-brazzers-podcast-episode-5): ").strip()
+    scene_id = input(
+        "Enter the Data18 scene ID (e.g. 391785 or 1350558-the-brazzers-podcast-episode-5): "
+    ).strip()
     if not scene_id:
         print("❌ Invalid input. Please enter a scene ID.")
         return
@@ -511,17 +561,16 @@ def main():
 
         html = driver.page_source
 
-
         result = parse_scene_details(html, TEST_SCENE_URL, logger)
 
         save_details_to_json([result], scene_id)
-
 
     except Exception as e:
         logger.error(f"🚨 Error fetching details: {e}", exc_info=True)
 
     # finally:
     #     driver.quit()
+
 
 if __name__ == "__main__":
     main()

@@ -29,6 +29,7 @@ SHEETS_SCOPE = ["https://www.googleapis.com/auth/spreadsheets"]
 # AUTHENTICATION
 # =====================================================================
 
+
 def get_sheets_service():
     """
     Return an authenticated Google Sheets API service instance.
@@ -39,20 +40,26 @@ def get_sheets_service():
     )
     return build("sheets", "v4", credentials=creds)
 
+
 # =====================================================================
 # DATA FETCHING
 # =====================================================================
+
 
 def fetch_raw_rows(sheet_name: str) -> List[Dict[str, Any]]:
     """
     Fetch full rowData (values + hyperlinks) from a worksheet.
     """
     service = get_sheets_service()
-    result = service.spreadsheets().get(
-        spreadsheetId=SPREADSHEET_ID,
-        ranges=[f"{sheet_name}!A2:ZZ"],
-        fields="sheets(data(rowData(values(userEnteredValue,textFormatRuns,hyperlink))))",
-    ).execute()
+    result = (
+        service.spreadsheets()
+        .get(
+            spreadsheetId=SPREADSHEET_ID,
+            ranges=[f"{sheet_name}!A2:ZZ"],
+            fields="sheets(data(rowData(values(userEnteredValue,textFormatRuns,hyperlink))))",
+        )
+        .execute()
+    )
 
     sheets = result.get("sheets", [])
     if not sheets:
@@ -61,9 +68,11 @@ def fetch_raw_rows(sheet_name: str) -> List[Dict[str, Any]]:
     data = sheets[0].get("data", [])
     return data[0].get("rowData", []) if data else []
 
+
 # =====================================================================
 # TEXT FORMATTING
 # =====================================================================
+
 
 def smart_title_case(text: str) -> str:
     """
@@ -91,9 +100,11 @@ def smart_title_case(text: str) -> str:
 
     return " ".join(words)
 
+
 # =====================================================================
 # CELL TRANSFORMATION
 # =====================================================================
+
 
 def format_cell(cell: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -116,46 +127,42 @@ def format_cell(cell: Dict[str, Any]) -> Dict[str, Any]:
 
     return {"userEnteredValue": {"stringValue": formatted_text}}
 
+
 # =====================================================================
 # SHEET MANAGEMENT
 # =====================================================================
+
 
 def ensure_target_sheet(service) -> None:
     """
     Ensure the target worksheet exists.
     """
-    meta = service.spreadsheets().get(
-        spreadsheetId=SPREADSHEET_ID
-    ).execute()
+    meta = service.spreadsheets().get(spreadsheetId=SPREADSHEET_ID).execute()
 
     existing = {s["properties"]["title"] for s in meta["sheets"]}
 
     if TARGET_SHEET not in existing:
         service.spreadsheets().batchUpdate(
             spreadsheetId=SPREADSHEET_ID,
-            body={
-                "requests": [
-                    {"addSheet": {"properties": {"title": TARGET_SHEET}}}
-                ]
-            },
+            body={"requests": [{"addSheet": {"properties": {"title": TARGET_SHEET}}}]},
         ).execute()
         print(f"✅ Created worksheet: {TARGET_SHEET}")
     else:
         print(f"ℹ️ Worksheet '{TARGET_SHEET}' already exists — overwriting.")
 
+
 def get_sheet_id(service, title: str) -> int:
     """
     Resolve numeric sheetId from sheet title.
     """
-    meta = service.spreadsheets().get(
-        spreadsheetId=SPREADSHEET_ID
-    ).execute()
+    meta = service.spreadsheets().get(spreadsheetId=SPREADSHEET_ID).execute()
 
     for sheet in meta["sheets"]:
         if sheet["properties"]["title"] == title:
             return sheet["properties"]["sheetId"]
 
     raise ValueError(f"❌ Sheet '{title}' not found")
+
 
 def resize_sheet(service, sheet_id: int, rows: int, cols: int) -> None:
     """
@@ -181,9 +188,11 @@ def resize_sheet(service, sheet_id: int, rows: int, cols: int) -> None:
         },
     ).execute()
 
+
 # =====================================================================
 # BATCH WRITE
 # =====================================================================
+
 
 def write_formatted_sheet(rows: List[List[Dict[str, Any]]]) -> None:
     """
@@ -218,9 +227,11 @@ def write_formatted_sheet(rows: List[List[Dict[str, Any]]]) -> None:
 
     print(f"✅ Updated '{TARGET_SHEET}' with {len(rows)} formatted rows.")
 
+
 # =====================================================================
 # MAIN WORKFLOW
 # =====================================================================
+
 
 def main() -> None:
     print("📥 Fetching source sheet...")
@@ -248,6 +259,7 @@ def main() -> None:
 
     write_formatted_sheet(formatted_rows)
     print("🎉 Done!")
+
 
 # =====================================================================
 # ENTRY POINT

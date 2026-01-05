@@ -39,7 +39,9 @@ HEADERS = {
 }
 
 # Input JSON (produced earlier by your fetch script)
-INPUT_JSON = SCRIPT_DIR.parent / "stash" / "tag_categories_with_tags.json"  # ../stash/...
+INPUT_JSON = (
+    SCRIPT_DIR.parent / "stash" / "tag_categories_with_tags.json"
+)  # ../stash/...
 OUTPUT_REPORT = SCRIPT_DIR / "upload_tags_report.json"
 
 # Directory containing images to map to categories.
@@ -49,10 +51,11 @@ IMAGE_DIR = SCRIPT_DIR / "category_images"
 
 # TEST LIMITS (set small for testing). None => no limit
 CATEGORY_LIMIT = None  # e.g. 2
-TAG_LIMIT = None       # e.g. 5
+TAG_LIMIT = None  # e.g. 5
 
 # Allowed image file extensions
 IMAGE_EXTS = [".png", ".jpg", ".jpeg", ".webp", ".gif"]
+
 
 # ---------------- Logging utilities ----------------
 def _log_to_file(msg: str):
@@ -63,21 +66,26 @@ def _log_to_file(msg: str):
     except Exception:
         pass
 
+
 def info(msg: str):
     print(msg)
     _log_to_file("[INFO] " + msg)
+
 
 def success(msg: str):
     print(msg)
     _log_to_file("[SUCCESS] " + msg)
 
+
 def warn(msg: str):
     print(msg)
     _log_to_file("[WARNING] " + msg)
 
+
 def error(msg: str):
     print(msg)
     _log_to_file("[ERROR] " + msg)
+
 
 # ---------------- GraphQL queries / mutations ----------------
 FIND_TAGS = """
@@ -106,10 +114,18 @@ mutation TagUpdate($input: TagUpdateInput!) {
 }
 """
 
+
 # ---------------- GraphQL helper ----------------
-def gql(query: str, variables: dict, headers: dict = HEADERS, timeout: int = 30) -> Optional[Dict[str, Any]]:
+def gql(
+    query: str, variables: dict, headers: dict = HEADERS, timeout: int = 30
+) -> Optional[Dict[str, Any]]:
     try:
-        resp = requests.post(GRAPHQL_URL, json={"query": query, "variables": variables}, headers=headers, timeout=timeout)
+        resp = requests.post(
+            GRAPHQL_URL,
+            json={"query": query, "variables": variables},
+            headers=headers,
+            timeout=timeout,
+        )
     except Exception as e:
         error(f"HTTP request failed: {e}")
         return None
@@ -118,6 +134,7 @@ def gql(query: str, variables: dict, headers: dict = HEADERS, timeout: int = 30)
     except Exception:
         error(f"Non-JSON response (HTTP {resp.status_code}): {resp.text}")
         return None
+
 
 # ---------------- Image helpers ----------------
 def find_image_for_name(name: str, image_dir: Path) -> Optional[Path]:
@@ -149,6 +166,7 @@ def find_image_for_name(name: str, image_dir: Path) -> Optional[Path]:
                 return f
     return None
 
+
 def file_to_data_url(path: Path) -> Optional[str]:
     try:
         mime, _ = mimetypes.guess_type(str(path))
@@ -161,6 +179,7 @@ def file_to_data_url(path: Path) -> Optional[str]:
         warn(f"Failed to convert image {path} to data URL: {e}")
         return None
 
+
 # ---------------- Tag helpers ----------------
 def find_tag_by_name(name: str) -> Optional[Dict[str, Any]]:
     res = gql(FIND_TAGS, {"name": name})
@@ -172,11 +191,13 @@ def find_tag_by_name(name: str) -> Optional[Dict[str, Any]]:
     tags = res.get("data", {}).get("findTags", {}).get("tags", [])
     return tags[0] if tags else None
 
+
 def _contains_unknown_field_error(resp: Dict[str, Any], field_name: str) -> bool:
     if not resp or "errors" not in resp:
         return False
     js = json.dumps(resp["errors"]).lower()
     return field_name.lower() in js or "unknown field" in js
+
 
 def create_tag_with_retry(payload: dict) -> Optional[Dict[str, Any]]:
     """Attempt to create; if server complains about stash_ids or image, retry without them."""
@@ -188,20 +209,25 @@ def create_tag_with_retry(payload: dict) -> Optional[Dict[str, Any]]:
         # try removing stash_ids first
         if _contains_unknown_field_error(res, "stash_ids") and "stash_ids" in payload:
             payload2 = {k: v for k, v in payload.items() if k != "stash_ids"}
-            warn(f"Server rejected 'stash_ids' on create for '{payload.get('name')}', retrying without stash_ids")
+            warn(
+                f"Server rejected 'stash_ids' on create for '{payload.get('name')}', retrying without stash_ids"
+            )
             res2 = gql(TAG_CREATE, {"input": payload2})
             if res2 and "errors" not in res2 and res2.get("data", {}).get("tagCreate"):
                 return res2["data"]["tagCreate"]
         # try removing image if server rejects it
         if _contains_unknown_field_error(res, "image") and "image" in payload:
             payload2 = {k: v for k, v in payload.items() if k != "image"}
-            warn(f"Server rejected 'image' on create for '{payload.get('name')}', retrying without image")
+            warn(
+                f"Server rejected 'image' on create for '{payload.get('name')}', retrying without image"
+            )
             res2 = gql(TAG_CREATE, {"input": payload2})
             if res2 and "errors" not in res2 and res2.get("data", {}).get("tagCreate"):
                 return res2["data"]["tagCreate"]
         error(f"GraphQL create errors for '{payload.get('name')}' -> {res['errors']}")
         return None
     return res.get("data", {}).get("tagCreate")
+
 
 def update_tag_with_retry(payload: dict) -> Optional[Dict[str, Any]]:
     res = gql(TAG_UPDATE, {"input": payload})
@@ -211,14 +237,18 @@ def update_tag_with_retry(payload: dict) -> Optional[Dict[str, Any]]:
         # remove stash_ids if complained
         if _contains_unknown_field_error(res, "stash_ids") and "stash_ids" in payload:
             payload2 = {k: v for k, v in payload.items() if k != "stash_ids"}
-            warn(f"Server rejected 'stash_ids' on update for '{payload.get('name')}', retrying without stash_ids")
+            warn(
+                f"Server rejected 'stash_ids' on update for '{payload.get('name')}', retrying without stash_ids"
+            )
             res2 = gql(TAG_UPDATE, {"input": payload2})
             if res2 and "errors" not in res2 and res2.get("data", {}).get("tagUpdate"):
                 return res2["data"]["tagUpdate"]
         # remove image if complained
         if _contains_unknown_field_error(res, "image") and "image" in payload:
             payload2 = {k: v for k, v in payload.items() if k != "image"}
-            warn(f"Server rejected 'image' on update for '{payload.get('name')}', retrying without image")
+            warn(
+                f"Server rejected 'image' on update for '{payload.get('name')}', retrying without image"
+            )
             res2 = gql(TAG_UPDATE, {"input": payload2})
             if res2 and "errors" not in res2 and res2.get("data", {}).get("tagUpdate"):
                 return res2["data"]["tagUpdate"]
@@ -226,7 +256,14 @@ def update_tag_with_retry(payload: dict) -> Optional[Dict[str, Any]]:
         return None
     return res.get("data", {}).get("tagUpdate")
 
-def ensure_tag(name: str, description: Optional[str] = None, parent_ids: Optional[List[str]] = None, stash_ids: Optional[List[dict]] = None, image_data_url: Optional[str] = None) -> Optional[str]:
+
+def ensure_tag(
+    name: str,
+    description: Optional[str] = None,
+    parent_ids: Optional[List[str]] = None,
+    stash_ids: Optional[List[dict]] = None,
+    image_data_url: Optional[str] = None,
+) -> Optional[str]:
     """
     Ensure tag exists: find by exact name -> update (set description/parent_ids/image) or create.
     Returns local tag id or None on failure.
@@ -268,6 +305,7 @@ def ensure_tag(name: str, description: Optional[str] = None, parent_ids: Optiona
             warn(f"Create failed for tag: {name}")
             return None
 
+
 # ---------------- Main flow ----------------
 def main():
     if not INPUT_JSON.exists():
@@ -296,16 +334,28 @@ def main():
         info(group_display)
 
         # Create/find group tag (no description by default)
-        group_tag_id = ensure_tag(group_display, description=None, parent_ids=None, stash_ids=None, image_data_url=None)
+        group_tag_id = ensure_tag(
+            group_display,
+            description=None,
+            parent_ids=None,
+            stash_ids=None,
+            image_data_url=None,
+        )
         if not group_tag_id:
-            warn(f"Create/find failed for group tag '{group_display}' - continuing (children may fail).")
+            warn(
+                f"Create/find failed for group tag '{group_display}' - continuing (children may fail)."
+            )
 
         categories = data.get(group_name) or []
         if CATEGORY_LIMIT:
             categories = categories[:CATEGORY_LIMIT]
         info(f"  Processing {len(categories)} categories for group {group_name}")
 
-        group_report = {"group": group_name, "group_tag_id": group_tag_id, "categories": []}
+        group_report = {
+            "group": group_name,
+            "group_tag_id": group_tag_id,
+            "categories": [],
+        }
 
         for cat in categories:
             # category may be dict or string
@@ -313,7 +363,7 @@ def main():
             if not cat_name:
                 continue
             cat_display = f"Category - {cat_name}"
-            info(f"  {cat_display}")   # EXACT format required
+            info(f"  {cat_display}")  # EXACT format required
 
             # optional description
             cat_desc = None
@@ -328,10 +378,20 @@ def main():
 
             # create/find category tag with parent -> group_tag_id
             parent_ids = [group_tag_id] if group_tag_id else None
-            category_tag_id = ensure_tag(cat_display, description=cat_desc, parent_ids=parent_ids, stash_ids=None, image_data_url=image_data_url)
+            category_tag_id = ensure_tag(
+                cat_display,
+                description=cat_desc,
+                parent_ids=parent_ids,
+                stash_ids=None,
+                image_data_url=image_data_url,
+            )
             if not category_tag_id:
                 warn(f"Create/find failed for category tag '{cat_display}'.")
-            cat_report = {"category": cat_name, "category_tag_id": category_tag_id, "tags": []}
+            cat_report = {
+                "category": cat_name,
+                "category_tag_id": category_tag_id,
+                "tags": [],
+            }
 
             # iterate tags inside category
             tag_list = []
@@ -341,7 +401,9 @@ def main():
             normalized_tags = []
             for t in tag_list:
                 if isinstance(t, dict):
-                    normalized_tags.append({"name": t.get("name"), "description": t.get("description")})
+                    normalized_tags.append(
+                        {"name": t.get("name"), "description": t.get("description")}
+                    )
                 else:
                     normalized_tags.append({"name": str(t), "description": None})
             if TAG_LIMIT:
@@ -357,7 +419,13 @@ def main():
                 # set parent to category tag
                 pids = [category_tag_id] if category_tag_id else None
                 # create/update tag (no image mapping for individual tags by default)
-                tag_id = ensure_tag(tname, description=tdesc, parent_ids=pids, stash_ids=None, image_data_url=None)
+                tag_id = ensure_tag(
+                    tname,
+                    description=tdesc,
+                    parent_ids=pids,
+                    stash_ids=None,
+                    image_data_url=None,
+                )
                 cat_report["tags"].append({"name": tname, "id": tag_id})
 
             group_report["categories"].append(cat_report)
@@ -373,6 +441,7 @@ def main():
         warn(f"Could not save report: {e}")
 
     success("ALL TAGS UPLOADED (attempted).")
+
 
 if __name__ == "__main__":
     main()

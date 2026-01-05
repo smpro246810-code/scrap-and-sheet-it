@@ -54,6 +54,7 @@ SCOPES = [
 # AUTHENTICATION
 # ============================================================
 
+
 def get_worksheet():
     """
     Authenticate and return the target worksheet.
@@ -76,9 +77,11 @@ def get_worksheet():
             cols=1,
         )
 
+
 # ============================================================
 # DATA LOADING
 # ============================================================
+
 
 def load_studios() -> List[Dict[str, Any]]:
     """
@@ -87,9 +90,11 @@ def load_studios() -> List[Dict[str, Any]]:
     with open(COMBINED_STUDIOS_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 # ============================================================
 # UTILITIES
 # ============================================================
+
 
 def safe_str(value: Any) -> str:
     """
@@ -97,9 +102,11 @@ def safe_str(value: Any) -> str:
     """
     return "" if value is None else str(value)
 
+
 # ============================================================
 # DATA TRANSFORMATION
 # ============================================================
+
 
 def build_sheet_rows(studios: List[Dict[str, Any]]) -> List[List[str]]:
     """
@@ -108,33 +115,41 @@ def build_sheet_rows(studios: List[Dict[str, Any]]) -> List[List[str]]:
     header = [
         "ID",
         "Title",
-        "Clips URL", "# Clips",
-        "DVDs URL", "# DVDs",
-        "VODs URL", "# VODs",
-        "Blu-rays URL", "# Blu-rays",
+        "Clips URL",
+        "# Clips",
+        "DVDs URL",
+        "# DVDs",
+        "VODs URL",
+        "# VODs",
+        "Blu-rays URL",
+        "# Blu-rays",
     ]
 
     rows: List[List[str]] = [header]
 
     for idx, studio in enumerate(studios, start=1):
-        rows.append([
-            safe_str(idx),
-            safe_str(studio.get("title")),
-            safe_str(studio.get("clips_url")),
-            safe_str(studio.get("num_clips")),
-            safe_str(studio.get("dvds_url")),
-            safe_str(studio.get("num_dvds")),
-            safe_str(studio.get("vods_url")),
-            safe_str(studio.get("num_vods")),
-            safe_str(studio.get("blurays_url")),
-            safe_str(studio.get("num_blurays")),
-        ])
+        rows.append(
+            [
+                safe_str(idx),
+                safe_str(studio.get("title")),
+                safe_str(studio.get("clips_url")),
+                safe_str(studio.get("num_clips")),
+                safe_str(studio.get("dvds_url")),
+                safe_str(studio.get("num_dvds")),
+                safe_str(studio.get("vods_url")),
+                safe_str(studio.get("num_vods")),
+                safe_str(studio.get("blurays_url")),
+                safe_str(studio.get("num_blurays")),
+            ]
+        )
 
     return rows
+
 
 # ============================================================
 # GOOGLE SHEETS UPDATE
 # ============================================================
+
 
 def update_google_sheet() -> None:
     """
@@ -163,6 +178,7 @@ def update_google_sheet() -> None:
 
     print(f"✅ Updated '{WORKSHEET_NAME}' with {row_count - 1} studios")
     print(f"🧹 Sheet resized to {row_count} rows × {col_count} columns")
+
 
 # ============================================================
 # ENTRY POINT

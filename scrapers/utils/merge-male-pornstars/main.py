@@ -16,20 +16,10 @@ from typing import Any, Dict, List
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 ADULTEMPIRE_FILE = (
-    BASE_DIR
-    / "adultempire"
-    / "pornstars-scraper"
-    / "data"
-    / "male-pornstars.json"
+    BASE_DIR / "adultempire" / "pornstars-scraper" / "data" / "male-pornstars.json"
 )
 
-DATA18_FILE = (
-    BASE_DIR
-    / "data18"
-    / "pornstars-scraper"
-    / "data"
-    / "male-pornstars.json"
-)
+DATA18_FILE = BASE_DIR / "data18" / "pornstars-scraper" / "data" / "male-pornstars.json"
 
 DATA_DIR = BASE_DIR / "utils" / "merge-male-pornstars" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -38,6 +28,7 @@ OUTPUT_FILE = DATA_DIR / "merged-male-pornstars.json"
 
 
 # ---------------- HELPERS ----------------
+
 
 def load_json(path: Path) -> Any:
     """Load JSON data from a file."""
@@ -60,6 +51,7 @@ def strip_name(data: Dict[str, Any]) -> Dict[str, Any]:
 
 
 # ---------------- CORE MERGE LOGIC ----------------
+
 
 def merge_pornstar_lists(
     data18_list: List[Dict[str, Any]],
@@ -103,6 +95,7 @@ def merge_pornstar_lists(
 
 
 # ---------------- MAIN ----------------
+
 
 def main() -> None:
     print("🔍 Loading data files...")

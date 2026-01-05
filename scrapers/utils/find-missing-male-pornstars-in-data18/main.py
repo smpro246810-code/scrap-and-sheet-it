@@ -5,33 +5,19 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 ADULTEMPIRE_FILE = (
-    BASE_DIR
-    / "adultempire"
-    / "pornstars-scraper"
-    / "data"
-    / "male-pornstars.json"
+    BASE_DIR / "adultempire" / "pornstars-scraper" / "data" / "male-pornstars.json"
 )
 
-DATA18_FILE = (
-    BASE_DIR
-    / "data18"
-    / "pornstars-scraper"
-    / "data"
-    / "male-pornstars.json"
-)
+DATA18_FILE = BASE_DIR / "data18" / "pornstars-scraper" / "data" / "male-pornstars.json"
 
-DATA_DIR = (
-    BASE_DIR
-    / "utils"
-    / "find-missing-male-pornstars-in-data18"
-    / "data"
-)
+DATA_DIR = BASE_DIR / "utils" / "find-missing-male-pornstars-in-data18" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 OUTPUT_FILE = DATA_DIR / "missing-male-pornstars-in-data18.json"
 
 
 # ---------------- HELPERS ----------------
+
 
 def load_json(path):
     """Load JSON data from a file."""
@@ -53,13 +39,15 @@ def find_missing_performers(data18_list, adultempire_list):
     """
     data18_names = {p["name"].lower() for p in data18_list if p.get("name")}
     missing = [
-        p for p in adultempire_list
+        p
+        for p in adultempire_list
         if p.get("name") and p["name"].lower() not in data18_names
     ]
     return missing
 
 
 # ---------------- MAIN ----------------
+
 
 def main():
     print("🔍 Loading data files...")

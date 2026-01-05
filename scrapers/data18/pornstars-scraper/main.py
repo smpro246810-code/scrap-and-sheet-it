@@ -69,28 +69,27 @@ SCRAPE_TARGETS = {
     },
 }
 
+
 def select_scrape_mode() -> str:
     """
     Interactive terminal menu for selecting scrape mode.
     """
-    choices = [
-        (cfg["label"], key)
-        for key, cfg in SCRAPE_TARGETS.items()
-    ]
+    choices = [(cfg["label"], key) for key, cfg in SCRAPE_TARGETS.items()]
 
-    answer = inquirer.prompt([
-        inquirer.List(
-            "mode",
-            message="Select scraping mode",
-            choices=choices,
-        )
-    ])
+    answer = inquirer.prompt(
+        [
+            inquirer.List(
+                "mode",
+                message="Select scraping mode",
+                choices=choices,
+            )
+        ]
+    )
 
     if not answer:
         raise RuntimeError("No option selected. Aborting.")
 
     return answer["mode"]
-
 
 
 def load_existing_data(path: Path):
@@ -149,6 +148,7 @@ def save_checkpoint(
 # LOGGING
 # ============================================================
 
+
 def setup_logger() -> logging.Logger:
     logging.basicConfig(
         level=logging.INFO,
@@ -156,11 +156,13 @@ def setup_logger() -> logging.Logger:
     )
     return logging.getLogger(__name__)
 
+
 logger = setup_logger()
 
 # ============================================================
 # AGE VERIFICATION (SAFE DYNAMIC LOAD)
 # ============================================================
+
 
 def load_age_verification():
     if not AGE_VERIFICATION_PATH.exists():
@@ -185,13 +187,12 @@ def ensure_age_verification_fallback(driver, logger=None):
         logger.info("Age verification module unavailable; skipping check.")
 
 
-ensure_age_verification = (
-    load_age_verification() or ensure_age_verification_fallback
-)
+ensure_age_verification = load_age_verification() or ensure_age_verification_fallback
 
 # ============================================================
 # SELENIUM DRIVER
 # ============================================================
+
 
 def create_driver(headless: bool = True) -> webdriver.Chrome:
     options = Options()
@@ -214,9 +215,11 @@ def create_driver(headless: bool = True) -> webdriver.Chrome:
         options=options,
     )
 
+
 # ============================================================
 # SCROLLING (ADAPTIVE)
 # ============================================================
+
 
 def deep_scroll_until_stable(
     driver: webdriver.Chrome,
@@ -245,9 +248,11 @@ def deep_scroll_until_stable(
 
         last_height = new_height
 
+
 # ============================================================
 # PARSER (PURE FUNCTION)
 # ============================================================
+
 
 def parse_one_page(html: str, logger: logging.Logger) -> List[Dict[str, Any]]:
     """
@@ -287,11 +292,7 @@ def parse_one_page(html: str, logger: logging.Logger) -> List[Dict[str, Any]]:
 
             if "Movies" in stats_text:
                 try:
-                    movies = int(
-                        stats_text.split("Movies")[1]
-                        .strip("[] ")
-                        .strip()
-                    )
+                    movies = int(stats_text.split("Movies")[1].strip("[] ").strip())
                 except (ValueError, IndexError):
                     pass
 
@@ -310,9 +311,11 @@ def parse_one_page(html: str, logger: logging.Logger) -> List[Dict[str, Any]]:
 
     return results
 
+
 # ============================================================
 # SCRAPING PIPELINE (RETRIES + PAGINATION)
 # ============================================================
+
 
 def scrape_all_male_pornstars(
     driver: webdriver.Chrome,
@@ -392,9 +395,11 @@ def scrape_all_male_pornstars(
 
     return results
 
+
 # ============================================================
 # OUTPUT
 # ============================================================
+
 
 def save_json(data: List[Dict[str, Any]], path: Path, logger: logging.Logger):
     path.write_text(
@@ -403,9 +408,11 @@ def save_json(data: List[Dict[str, Any]], path: Path, logger: logging.Logger):
     )
     logger.info(f"💾 Data saved to {path}")
 
+
 # ============================================================
 # ENTRY POINT
 # ============================================================
+
 
 def main():
     try:
@@ -437,7 +444,6 @@ def main():
             mode=mode,
             expected_per_page=expected_per_page,
         )
-
 
         logger.info(f"🎉 Finished! Total scraped: {len(data)}")
         save_json(data, output_file, logger)

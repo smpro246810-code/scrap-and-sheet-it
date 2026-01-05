@@ -57,6 +57,7 @@ init(autoreset=True)
 # LOGGING
 # ============================================================
 
+
 def log(message: str, level: str = "info", console: bool = True):
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
     tag = f"[{level.upper()}]"
@@ -68,7 +69,9 @@ def log(message: str, level: str = "info", console: bool = True):
     }
 
     if console:
-        print(f"{colors.get(level, Fore.WHITE)}{timestamp} {tag:<10}{Style.RESET_ALL} {message}")
+        print(
+            f"{colors.get(level, Fore.WHITE)}{timestamp} {tag:<10}{Style.RESET_ALL} {message}"
+        )
 
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"[{timestamp}] {tag} {message}\n")
@@ -76,9 +79,15 @@ def log(message: str, level: str = "info", console: bool = True):
 
 class LoggerAdapter:
     """Compatibility adapter for age-verification module."""
-    def info(self, msg): log(msg, "info")
-    def warning(self, msg): log(msg, "warning")
-    def error(self, msg): log(msg, "error")
+
+    def info(self, msg):
+        log(msg, "info")
+
+    def warning(self, msg):
+        log(msg, "warning")
+
+    def error(self, msg):
+        log(msg, "error")
 
 
 # ============================================================
@@ -88,6 +97,7 @@ class LoggerAdapter:
 AGE_VERIFICATION_PATH = (
     PROJECT_ROOT / "scrapers" / "setup" / "age-verification" / "main.py"
 )
+
 
 def load_age_verification():
     if not AGE_VERIFICATION_PATH.exists():
@@ -109,13 +119,12 @@ def ensure_age_verification_fallback(driver, logger=None):
         logger.info("Age verification unavailable; skipping.")
 
 
-ensure_age_verification = (
-    load_age_verification() or ensure_age_verification_fallback
-)
+ensure_age_verification = load_age_verification() or ensure_age_verification_fallback
 
 # ============================================================
 # SELENIUM DRIVER
 # ============================================================
+
 
 def create_driver(headless: bool = True) -> webdriver.Chrome:
     options = Options()
@@ -138,9 +147,11 @@ def create_driver(headless: bool = True) -> webdriver.Chrome:
         options=options,
     )
 
+
 # ============================================================
 # PARSERS (PURE FUNCTIONS)
 # ============================================================
+
 
 def parse_performers(html: str) -> List[Dict]:
     soup = BeautifulSoup(html, "html.parser")
@@ -153,11 +164,13 @@ def parse_performers(html: str) -> List[Dict]:
             continue
 
         img = a.find("img", alt=True)
-        results.append({
-            "name": a["label"].strip(),
-            "profile_url": f"https://www.adultempire.com{a['href']}",
-            "image_url": img["src"] if img else ""
-        })
+        results.append(
+            {
+                "name": a["label"].strip(),
+                "profile_url": f"https://www.adultempire.com{a['href']}",
+                "image_url": img["src"] if img else "",
+            }
+        )
 
     return sorted(results, key=lambda x: x["name"].lower())
 
@@ -167,15 +180,14 @@ def extract_sex_filters(html: str) -> Dict[str, str]:
     for block in soup.select("div.refine-set"):
         header = block.find("h4")
         if header and header.get_text(strip=True) == "Sex":
-            return {
-                a["title"]: a["href"]
-                for a in block.select("a[title][href]")
-            }
+            return {a["title"]: a["href"] for a in block.select("a[title][href]")}
     return {}
+
 
 # ============================================================
 # SCRAPERS
 # ============================================================
+
 
 def scrape_first_page(driver, url: str) -> List[Dict]:
     log(f"🌐 Scraping first page: {url}")
@@ -215,9 +227,11 @@ def clear_filter(driver) -> bool:
     except Exception:
         return False
 
+
 # ============================================================
 # STORAGE
 # ============================================================
+
 
 def save_json(data: List[Dict], filename: str):
     path = DATA_DIR / filename
@@ -225,9 +239,11 @@ def save_json(data: List[Dict], filename: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
     log(f"💾 Saved {len(data)} records → {path}", "success")
 
+
 # ============================================================
 # MAIN ORCHESTRATION
 # ============================================================
+
 
 def main():
     log("🎬 AdultEmpire Performer Scraper Started")
@@ -248,7 +264,7 @@ def main():
             choice = inquirer.select(
                 message="Select category:",
                 choices=list(filters.keys()) + ["Quit"],
-                pointer="👉"
+                pointer="👉",
             ).execute()
 
             if choice == "Quit":
@@ -257,7 +273,7 @@ def main():
             mode = inquirer.select(
                 message="Scrape mode:",
                 choices=["First page", "All pages"],
-                pointer="👉"
+                pointer="👉",
             ).execute()
 
             start_url = urljoin(BASE_LIST_URL, filters[choice])
@@ -279,6 +295,7 @@ def main():
     finally:
         driver.quit()
         log("👋 Browser closed. Session ended.")
+
 
 # ============================================================
 # ENTRY POINT

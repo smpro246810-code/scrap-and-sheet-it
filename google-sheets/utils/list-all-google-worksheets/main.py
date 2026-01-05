@@ -46,11 +46,7 @@ FEMALE_AND_TRANS_PORNSTARS_FILE = (
 SPREADSHEET_NAME = "MY PORN"
 
 OUTPUT_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "utils"
-    / "list-all-google-worksheets"
-    / "data"
+    BASE_DIR / "google-sheets" / "utils" / "list-all-google-worksheets" / "data"
 )
 
 OUTPUT_FEMALE_AND_TRANS_FILE = OUTPUT_DIR / "female-and-trans-pornstar-worksheets.json"
@@ -65,6 +61,7 @@ SHEETS_SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 # ============================================================
 # AUTH HELPERS
 # ============================================================
+
 
 def get_credentials(scopes: List[str]) -> Credentials:
     return Credentials.from_service_account_file(
@@ -82,9 +79,11 @@ def get_sheets_api():
     creds = get_credentials(SHEETS_SCOPES)
     return build("sheets", "v4", credentials=creds)
 
+
 # ============================================================
 # GOOGLE SHEETS DISCOVERY
 # ============================================================
+
 
 def find_spreadsheet_id(spreadsheet_name: str) -> str:
     """
@@ -96,10 +95,14 @@ def find_spreadsheet_id(spreadsheet_name: str) -> str:
         "and mimeType = 'application/vnd.google-apps.spreadsheet'"
     )
 
-    result = drive.files().list(
-        q=query,
-        fields="files(id,name)",
-    ).execute()
+    result = (
+        drive.files()
+        .list(
+            q=query,
+            fields="files(id,name)",
+        )
+        .execute()
+    )
 
     files = result.get("files", [])
     if not files:
@@ -107,9 +110,11 @@ def find_spreadsheet_id(spreadsheet_name: str) -> str:
 
     return files[0]["id"]
 
+
 # ============================================================
 # WORKSHEET LOADING
 # ============================================================
+
 
 def load_all_worksheets(spreadsheet_id: str) -> List[Dict[str, Any]]:
     """
@@ -118,28 +123,36 @@ def load_all_worksheets(spreadsheet_id: str) -> List[Dict[str, Any]]:
     Preserves UI / creation order using `index`.
     """
     sheets_api = get_sheets_api()
-    info = sheets_api.spreadsheets().get(
-        spreadsheetId=spreadsheet_id,
-        includeGridData=False,
-    ).execute()
+    info = (
+        sheets_api.spreadsheets()
+        .get(
+            spreadsheetId=spreadsheet_id,
+            includeGridData=False,
+        )
+        .execute()
+    )
 
     worksheets: List[Dict[str, Any]] = []
 
     for sheet in info.get("sheets", []):
         props = sheet.get("properties", {})
-        worksheets.append({
-            "title": props.get("title"),
-            "hidden": props.get("hidden", False),
-            "sheet_id": props.get("sheetId"),
-            "index": props.get("index", 0),
-        })
+        worksheets.append(
+            {
+                "title": props.get("title"),
+                "hidden": props.get("hidden", False),
+                "sheet_id": props.get("sheetId"),
+                "index": props.get("index", 0),
+            }
+        )
 
     worksheets.sort(key=lambda x: x["index"])
     return worksheets
 
+
 # ============================================================
 # FEMALE_AND_TRANS PORNSTAR LOADING
 # ============================================================
+
 
 def normalize(text: str) -> str:
     return " ".join(text.strip().lower().split())
@@ -151,13 +164,9 @@ def load_female_and_trans_pornstar_names() -> Set[str]:
     from Data18 female-and-trans-pornstars.json.
     """
     if not FEMALE_AND_TRANS_PORNSTARS_FILE.exists():
-        raise RuntimeError(
-            f"Pornstar file missing: {FEMALE_AND_TRANS_PORNSTARS_FILE}"
-        )
+        raise RuntimeError(f"Pornstar file missing: {FEMALE_AND_TRANS_PORNSTARS_FILE}")
 
-    raw = json.loads(
-        FEMALE_AND_TRANS_PORNSTARS_FILE.read_text(encoding="utf-8")
-    )
+    raw = json.loads(FEMALE_AND_TRANS_PORNSTARS_FILE.read_text(encoding="utf-8"))
 
     data = raw.get("data", [])
     if not isinstance(data, list):
@@ -165,15 +174,13 @@ def load_female_and_trans_pornstar_names() -> Set[str]:
             "Invalid female-and-trans-pornstars.json format: 'data' must be a list"
         )
 
-    return {
-        normalize(entry.get("name", ""))
-        for entry in data
-        if entry.get("name")
-    }
+    return {normalize(entry.get("name", "")) for entry in data if entry.get("name")}
+
 
 # ============================================================
 # FILTERING
 # ============================================================
+
 
 def filter_female_and_trans_pornstar_sheets(
     worksheets: List[Dict[str, Any]],
@@ -182,11 +189,8 @@ def filter_female_and_trans_pornstar_sheets(
     """
     Keep only worksheets whose titles match pornstar names.
     """
-    return [
-        ws
-        for ws in worksheets
-        if normalize(ws.get("title", "")) in pornstar_names
-    ]
+    return [ws for ws in worksheets if normalize(ws.get("title", "")) in pornstar_names]
+
 
 def filter_except_female_and_trans_pornstar_sheets(
     worksheets: List[Dict[str, Any]],
@@ -196,14 +200,14 @@ def filter_except_female_and_trans_pornstar_sheets(
     Keep worksheets whose titles do NOT match female pornstar names.
     """
     return [
-        ws
-        for ws in worksheets
-        if normalize(ws.get("title", "")) not in pornstar_names
+        ws for ws in worksheets if normalize(ws.get("title", "")) not in pornstar_names
     ]
+
 
 # ============================================================
 # JSON OUTPUT
 # ============================================================
+
 
 def save_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -213,9 +217,11 @@ def save_json(path: Path, data: Any) -> None:
     )
     print(f"💾 Saved: {path}")
 
+
 # ============================================================
 # MAIN FLOW
 # ============================================================
+
 
 def main() -> None:
     print("🔍 Loading female-and-trans pornstar list")
@@ -231,17 +237,19 @@ def main() -> None:
     print(f"✔ Total worksheets found: {len(all_worksheets)}")
 
     # -------- Interactive Selection --------
-    answer = inquirer.prompt([
-        inquirer.List(
-            "mode",
-            message="Select which worksheets to save",
-            choices=[
-                "Only FEMALE-AND-TRANS pornstar worksheets",
-                "Except FEMALE-AND-TRANS pornstar worksheets",
-                "ALL available worksheets",
-            ],
-        )
-    ])
+    answer = inquirer.prompt(
+        [
+            inquirer.List(
+                "mode",
+                message="Select which worksheets to save",
+                choices=[
+                    "Only FEMALE-AND-TRANS pornstar worksheets",
+                    "Except FEMALE-AND-TRANS pornstar worksheets",
+                    "ALL available worksheets",
+                ],
+            )
+        ]
+    )
 
     if not answer:
         print("❌ No option selected.")
@@ -273,6 +281,7 @@ def main() -> None:
         save_json(OUTPUT_ALL_FILE, all_worksheets)
 
     print("\n🎉 DONE.")
+
 
 # ============================================================
 # ENTRY POINT

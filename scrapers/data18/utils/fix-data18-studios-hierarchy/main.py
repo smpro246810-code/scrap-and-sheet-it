@@ -25,16 +25,17 @@ DATA_DIR = BASE_DIR / "utils" / "fix-data18-studios-hierarchy" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_FILE = DATA_DIR / "fixed-data18-studios.json"
 
+
 # ===== HELPER FUNCTION =====
 def get_parent_url(url: str) -> str:
     """Extract parent studio URL from a substudio URL.
-    
+
     Data18 uses URL hierarchy like: /studios/parent_studio/substudio/
     This extracts the parent_studio portion to group related studios.
-    
+
     Args:
         url: Full URL of a substudio (e.g., https://www.data18.com/studios/parent/child/).
-    
+
     Returns:
         Parent studio URL (e.g., https://www.data18.com/studios/parent/).
     """
@@ -59,22 +60,20 @@ others = []  # Studios that don't fit parent-child structure
 # Categorize studios: identify parent studios (1-level URL) vs substudios (2+ levels)
 for studio in studios:
     url = studio["url"]
-    if url.count("/") > 4:  # Multiple path segments indicate a substudio (parent/child structure)
+    if (
+        url.count("/") > 4
+    ):  # Multiple path segments indicate a substudio (parent/child structure)
         parent_url = get_parent_url(url)  # Extract parent URL
         if parent_url not in grouped_studios:
-            grouped_studios[parent_url] = {
-                "parent": None,
-                "children": []
-            }
-        grouped_studios[parent_url]["children"].append(studio)  # Add substudio to parent's children
+            grouped_studios[parent_url] = {"parent": None, "children": []}
+        grouped_studios[parent_url]["children"].append(
+            studio
+        )  # Add substudio to parent's children
     else:
         # Single-level URL indicates a parent/independent studio
         parent_url = url
         if parent_url not in grouped_studios:
-            grouped_studios[parent_url] = {
-                "parent": studio,
-                "children": []
-            }
+            grouped_studios[parent_url] = {"parent": studio, "children": []}
         else:
             # Update parent info if new entry for existing parent
             grouped_studios[parent_url]["parent"] = studio
@@ -93,29 +92,33 @@ for parent_url, data in grouped_studios.items():
             "title": parent["title"],
             "url": parent["url"],
             "num_scenes": parent["num_scenes"],
-            "sites": children  # Array of substudio objects
+            "sites": children,  # Array of substudio objects
         }
         output_data.append(entry)
     else:
         # CASE 2: Studios without complete parent-child relationship
         if parent:  # Parent exists but has no substudios - treat as standalone
-            others.append({
-                "title": parent["title"],
-                "url": parent["url"],
-                "num_scenes": parent["num_scenes"]
-            })
+            others.append(
+                {
+                    "title": parent["title"],
+                    "url": parent["url"],
+                    "num_scenes": parent["num_scenes"],
+                }
+            )
         else:
             # No parent found (orphaned substudios) - treat as standalone
             others.extend(children)
 
 # Add "Others" group if any unrelated studios exist
 if others:
-    output_data.append({
-        "title": "Others",
-        "url": None,
-        "num_scenes": None,
-        "sites": others  # Catchall for studios that don't fit hierarchy
-    })
+    output_data.append(
+        {
+            "title": "Others",
+            "url": None,
+            "num_scenes": None,
+            "sites": others,  # Catchall for studios that don't fit hierarchy
+        }
+    )
 
 # ===== WRITE HIERARCHICAL OUTPUT =====
 # Save to JSON with formatting for readability
@@ -125,4 +128,3 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as output_file:
 print(f"✅ Grouped studios JSON saved to: {OUTPUT_FILE}")
 print(f"📊 Total hierarchies: {len(output_data)}")
 print(f"📝 Input studios: {len(studios)}")
-

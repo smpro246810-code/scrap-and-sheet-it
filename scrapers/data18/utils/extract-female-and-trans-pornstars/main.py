@@ -48,6 +48,7 @@ OUTPUT_FILE = DATA_DIR / "female-and-trans-pornstars.json"
 # HELPERS
 # ============================================================
 
+
 def normalize(text: str) -> str:
     """Normalize strings for safe comparison."""
     return " ".join(text.lower().strip().split())
@@ -79,6 +80,7 @@ def extract_male_identifiers(male_data: List[Dict]) -> Set[str]:
 # CORE LOGIC
 # ============================================================
 
+
 def extract_non_male_pornstars(
     all_pornstars: List[Dict],
     male_identifiers: Set[str],
@@ -106,6 +108,7 @@ def extract_non_male_pornstars(
 # SAVE OUTPUT
 # ============================================================
 
+
 def save_json(path: Path, payload: Dict):
     path.write_text(
         json.dumps(payload, indent=2, ensure_ascii=False),
@@ -117,6 +120,7 @@ def save_json(path: Path, payload: Dict):
 # ============================================================
 # MAIN
 # ============================================================
+
 
 def main():
     print("📥 Loading datasets...")

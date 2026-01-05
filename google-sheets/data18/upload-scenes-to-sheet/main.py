@@ -27,10 +27,10 @@ MAX_COLS = 23
 # Columns that are allowed to be updated when a scene already exists
 # (0-based indexing, aligned with flatten_scene_to_row output)
 UPDATEABLE_COLUMNS = {
-    1,                      # B: Pornstar
-    *range(2, 9),           # C–I: Scene ID → Title
-    11,                     # L: TeleLink
-    *range(13, 22),         # N–V: Quality → Data18 / IAFD URL
+    1,  # B: Pornstar
+    *range(2, 9),  # C–I: Scene ID → Title
+    11,  # L: TeleLink
+    *range(13, 22),  # N–V: Quality → Data18 / IAFD URL
 }
 
 
@@ -40,13 +40,7 @@ UPDATEABLE_COLUMNS = {
 
 BASE_DIR = Path(__file__).resolve().parents[3]
 
-SCENES_DIR = (
-    BASE_DIR
-    / "scrapers"
-    / "data18"
-    / "main-scraper"
-    / "data"
-)
+SCENES_DIR = BASE_DIR / "scrapers" / "data18" / "main-scraper" / "data"
 SCENES_DIR.mkdir(parents=True, exist_ok=True)
 
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / "google-sheets" / "credentials.json"
@@ -83,18 +77,14 @@ NETWORKS_FILE = (
 # Load reference data
 # ============================================================
 
-male_performers = {
-    normalize_name(p["name"]) for p in (safe_load_json(MALE_FILE) or [])
-}
+male_performers = {normalize_name(p["name"]) for p in (safe_load_json(MALE_FILE) or [])}
 trans_performers = {
     normalize_name(p["name"]) for p in (safe_load_json(TRANS_FILE) or [])
 }
 
 networks = safe_load_json(NETWORKS_FILE) or []
 site_to_network = {
-    normalize_name(s["title"]): n["title"]
-    for n in networks
-    for s in n.get("sites", [])
+    normalize_name(s["title"]): n["title"] for n in networks for s in n.get("sites", [])
 }
 
 
@@ -102,15 +92,18 @@ site_to_network = {
 # Utility helpers
 # ============================================================
 
+
 def select_json_file() -> Path:
     files = sorted(SCENES_DIR.glob("*.json"))
-    answer = inquirer.prompt([
-        inquirer.List(
-            "file",
-            message="Select performer JSON:",
-            choices=[f.name for f in files],
-        )
-    ])
+    answer = inquirer.prompt(
+        [
+            inquirer.List(
+                "file",
+                message="Select performer JSON:",
+                choices=[f.name for f in files],
+            )
+        ]
+    )
     return SCENES_DIR / answer["file"]
 
 
@@ -127,6 +120,7 @@ def normalize_rows(sheet_values: List[List[str]]) -> List[List[str]]:
 # ============================================================
 # Main update logic
 # ============================================================
+
 
 def update_google_sheet_from_file(hyperlinks_enabled: bool):
     json_file = select_json_file()
@@ -213,9 +207,7 @@ def update_google_sheet_from_file(hyperlinks_enabled: bool):
         ws.update_cells(batch_cells, value_input_option="USER_ENTERED")
 
     if rich_text_requests:
-        ws.spreadsheet.batch_update({
-            "requests": rich_text_requests
-        })
+        ws.spreadsheet.batch_update({"requests": rich_text_requests})
 
 
 # ============================================================

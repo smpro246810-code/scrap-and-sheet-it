@@ -16,9 +16,9 @@ OUTPUT_JSON = ROOT_DIR / "stash" / "tag_categories_with_tags.json"
 # -----------------
 # TEST LIMITS
 # -----------------
-GROUP_LIMIT = 2          # number of groups (ACTION, PEOPLE, SCENE …)
-CATEGORY_LIMIT = 2       # number of categories per group
-TAG_LIMIT = 2            # number of tags per category
+GROUP_LIMIT = 2  # number of groups (ACTION, PEOPLE, SCENE …)
+CATEGORY_LIMIT = 2  # number of categories per group
+TAG_LIMIT = 2  # number of tags per category
 
 # ---------------------------------------------------------
 # QUERIES
@@ -56,15 +56,11 @@ query Tags($input: TagQueryInput!) {
 # HELPERS
 # ---------------------------------------------------------
 
+
 def gql(query, variables=None):
-    headers = {
-        "Cookie": COOKIE_HEADER,
-        "Content-Type": "application/json"
-    }
+    headers = {"Cookie": COOKIE_HEADER, "Content-Type": "application/json"}
     resp = requests.post(
-        GRAPHQL_URL,
-        json={"query": query, "variables": variables},
-        headers=headers
+        GRAPHQL_URL, json={"query": query, "variables": variables}, headers=headers
     )
     data = resp.json()
     if "errors" in data:
@@ -76,6 +72,7 @@ def gql(query, variables=None):
 # ---------------------------------------------------------
 # FETCH TAGS FOR ONE CATEGORY
 # ---------------------------------------------------------
+
 
 def fetch_tags_for_category(category_id, tag_limit=None):
     tags = []
@@ -89,7 +86,7 @@ def fetch_tags_for_category(category_id, tag_limit=None):
                 "page": page,
                 "per_page": per_page,
                 "sort": "NAME",
-                "direction": "ASC"
+                "direction": "ASC",
             }
         }
 
@@ -116,6 +113,7 @@ def fetch_tags_for_category(category_id, tag_limit=None):
 # MAIN FETCH LOGIC
 # ---------------------------------------------------------
 
+
 def fetch_all():
     print("Fetching categories...")
 
@@ -133,7 +131,7 @@ def fetch_all():
     result = {}
 
     for group in groups:
-        group_list = grouped[group][:CATEGORY_LIMIT]   # limit categories
+        group_list = grouped[group][:CATEGORY_LIMIT]  # limit categories
         result[group] = []
 
         for cat in group_list:
@@ -141,12 +139,14 @@ def fetch_all():
 
             tags = fetch_tags_for_category(cat["id"], TAG_LIMIT)
 
-            result[group].append({
-                "id": cat["id"],
-                "name": cat["name"],
-                "description": cat["description"],
-                "tags": tags
-            })
+            result[group].append(
+                {
+                    "id": cat["id"],
+                    "name": cat["name"],
+                    "description": cat["description"],
+                    "tags": tags,
+                }
+            )
 
     # Save output
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)

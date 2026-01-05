@@ -28,11 +28,7 @@ from google.oauth2.service_account import Credentials
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 DATA_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "utils"
-    / "find-duplicates-in-worksheet"
-    / "data"
+    BASE_DIR / "google-sheets" / "utils" / "find-duplicates-in-worksheet" / "data"
 )
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -52,6 +48,7 @@ SCOPES = [
 # =====================================================================
 # GOOGLE SHEETS ACCESS
 # =====================================================================
+
 
 def get_worksheet():
     """
@@ -82,9 +79,11 @@ def fetch_all_cells() -> List[str]:
 
     return values
 
+
 # =====================================================================
 # DUPLICATE DETECTION
 # =====================================================================
+
 
 def find_duplicates() -> Dict[str, int]:
     """
@@ -93,15 +92,13 @@ def find_duplicates() -> Dict[str, int]:
     values = fetch_all_cells()
     counts = Counter(values)
 
-    return {
-        value: count
-        for value, count in counts.items()
-        if count > 1
-    }
+    return {value: count for value, count in counts.items() if count > 1}
+
 
 # =====================================================================
 # OUTPUT
 # =====================================================================
+
 
 def write_duplicates_report(duplicates: Dict[str, int]) -> None:
     """
@@ -112,9 +109,11 @@ def write_duplicates_report(duplicates: Dict[str, int]) -> None:
 
     print(f"📄 Duplicates saved to: {OUTPUT_DUPLICATES_FILE}")
 
+
 # =====================================================================
 # MAIN
 # =====================================================================
+
 
 def main() -> None:
     duplicates = find_duplicates()

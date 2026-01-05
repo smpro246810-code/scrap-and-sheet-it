@@ -31,8 +31,7 @@ CONFIG_PATH = BASE_DIR / "utils" / "config.json"
 # ============================================================
 
 _ROMAN_RE = re.compile(
-    r"^(?=[MDCLXVI])(M{0,4}(CM|CD|D?C{0,3})"
-    r"(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))$",
+    r"^(?=[MDCLXVI])(M{0,4}(CM|CD|D?C{0,3})" r"(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))$",
     re.IGNORECASE,
 )
 
@@ -41,6 +40,7 @@ _ORDINAL_RE = re.compile(r"^(\d+)(ST|ND|RD|TH)$", re.IGNORECASE)
 # ============================================================
 # CONFIG LOADING
 # ============================================================
+
 
 def load_config(path: Path = CONFIG_PATH) -> Dict[str, List[str]]:
     """
@@ -62,11 +62,12 @@ _CFG = load_config()
 # CLEANING UTILITIES
 # ============================================================
 
+
 def remove_invalid_chars(text: str) -> str:
     """
     Remove filesystem-invalid characters and normalize spacing.
     """
-    text = (text or "").replace("\u00A0", " ")
+    text = (text or "").replace("\u00a0", " ")
     text = text.replace(":", " -").replace("/", "&")
     text = re.sub(r'[\\:*?"<>|]', "", text)
     text = re.sub(r"\s{2,}", " ", text).strip()
@@ -82,9 +83,11 @@ def _normalize_for_lookup(word: str) -> str:
     base = re.sub(r"[^A-Za-z0-9]", "", base)
     return base.lower()
 
+
 # ============================================================
 # WORD PROCESSORS
 # ============================================================
+
 
 def _process_hyphenated(word: str, cfg: dict) -> str:
     parts = word.split("-")
@@ -156,9 +159,11 @@ def _process_word(word: str, cfg: dict) -> str:
 
     return word[:1].upper() + word[1:].lower()
 
+
 # ============================================================
 # PUBLIC API
 # ============================================================
+
 
 def to_title_case(text: str) -> str:
     """

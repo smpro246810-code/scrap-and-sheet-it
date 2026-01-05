@@ -58,6 +58,7 @@ DEFAULT_LEVEL = "info"
 # INTERNAL UTILITIES
 # ============================================================
 
+
 def _timestamp() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -72,9 +73,11 @@ def _format_file(message: str, level: str) -> str:
     tag = LOG_TAGS.get(level, "[LOG]")
     return f"[{_timestamp()}] {tag} {message}"
 
+
 # ============================================================
 # PUBLIC API
 # ============================================================
+
 
 def log(message: str, level: str = DEFAULT_LEVEL) -> None:
     """

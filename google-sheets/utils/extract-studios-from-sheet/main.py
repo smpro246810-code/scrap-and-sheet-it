@@ -33,13 +33,7 @@ from googleapiclient.discovery import build
 
 BASE_DIR = Path(__file__).resolve().parents[3]
 
-DATA_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "utils"
-    / "extract-studios-from-sheet"
-    / "data"
-)
+DATA_DIR = BASE_DIR / "google-sheets" / "utils" / "extract-studios-from-sheet" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / "google-sheets" / "credentials.json"
@@ -49,12 +43,13 @@ SPREADSHEET_NAME = "MY PORN"
 WORKSHEET_NAME = "Networks"
 
 # Column indices (0-based)
-COL_NETWORK = 1       # Column B
+COL_NETWORK = 1  # Column B
 COL_SITES_START = 3  # Column D onward
 
 # =====================================================================
 # AUTH & SERVICES
 # =====================================================================
+
 
 def load_credentials(scopes: List[str]) -> Credentials:
     """Load Google service-account credentials."""
@@ -74,9 +69,11 @@ def drive_service():
 def sheets_service(readonly: bool = True):
     """Return Google Sheets API service."""
     scopes = [
-        "https://www.googleapis.com/auth/spreadsheets.readonly"
-        if readonly else
-        "https://www.googleapis.com/auth/spreadsheets"
+        (
+            "https://www.googleapis.com/auth/spreadsheets.readonly"
+            if readonly
+            else "https://www.googleapis.com/auth/spreadsheets"
+        )
     ]
     creds = load_credentials(scopes)
     return build("sheets", "v4", credentials=creds)
@@ -85,6 +82,7 @@ def sheets_service(readonly: bool = True):
 # =====================================================================
 # SPREADSHEET RESOLUTION
 # =====================================================================
+
 
 def find_spreadsheet_id(spreadsheet_name: str) -> str:
     """
@@ -97,10 +95,7 @@ def find_spreadsheet_id(spreadsheet_name: str) -> str:
         "and mimeType = 'application/vnd.google-apps.spreadsheet'"
     )
 
-    result = service.files().list(
-        q=query,
-        fields="files(id,name)"
-    ).execute()
+    result = service.files().list(q=query, fields="files(id,name)").execute()
 
     files = result.get("files", [])
     if not files:
@@ -113,29 +108,30 @@ def find_spreadsheet_id(spreadsheet_name: str) -> str:
 # SHEET DATA FETCH
 # =====================================================================
 
+
 def fetch_row_data(spreadsheet_id: str, worksheet: str) -> List[Dict[str, Any]]:
     """
     Fetch full rowData (including hyperlinks & formatting) from a worksheet.
     """
     service = sheets_service()
 
-    response = service.spreadsheets().get(
-        spreadsheetId=spreadsheet_id,
-        ranges=[worksheet],
-        fields="sheets(data(rowData(values(userEnteredValue,textFormatRuns,hyperlink))))"
-    ).execute()
-
-    return (
-        response
-        .get("sheets", [{}])[0]
-        .get("data", [{}])[0]
-        .get("rowData", [])
+    response = (
+        service.spreadsheets()
+        .get(
+            spreadsheetId=spreadsheet_id,
+            ranges=[worksheet],
+            fields="sheets(data(rowData(values(userEnteredValue,textFormatRuns,hyperlink))))",
+        )
+        .execute()
     )
+
+    return response.get("sheets", [{}])[0].get("data", [{}])[0].get("rowData", [])
 
 
 # =====================================================================
 # CELL EXTRACTION HELPERS
 # =====================================================================
+
 
 def cell_text(cell: Dict[str, Any]) -> str:
     """Extract plain text from a cell."""
@@ -159,6 +155,7 @@ def cell_hyperlink(cell: Dict[str, Any]) -> Optional[str]:
 # =====================================================================
 # PARSER
 # =====================================================================
+
 
 def parse_networks(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
@@ -184,16 +181,20 @@ def parse_networks(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         for cell in values[COL_SITES_START:]:
             title = cell_text(cell).strip()
             if title:
-                sites.append({
-                    "title": title,
-                    "url": cell_hyperlink(cell),
-                })
+                sites.append(
+                    {
+                        "title": title,
+                        "url": cell_hyperlink(cell),
+                    }
+                )
 
-        networks.append({
-            "title": network_title,
-            "url": network_url,
-            "sites": sites,
-        })
+        networks.append(
+            {
+                "title": network_title,
+                "url": network_url,
+                "sites": sites,
+            }
+        )
 
     return networks
 
@@ -201,6 +202,7 @@ def parse_networks(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 # =====================================================================
 # OUTPUT
 # =====================================================================
+
 
 def write_json(path: Path, data: Any) -> None:
     """Write formatted JSON to disk."""
@@ -213,6 +215,7 @@ def write_json(path: Path, data: Any) -> None:
 # =====================================================================
 # MAIN
 # =====================================================================
+
 
 def main() -> None:
     print("🔍 Resolving spreadsheet ID...")

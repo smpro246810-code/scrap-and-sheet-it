@@ -28,13 +28,7 @@ from googleapiclient.discovery import build
 BASE_DIR = Path(__file__).resolve().parents[3]
 
 GOOGLE_CREDENTIALS_FILE = BASE_DIR / "google-sheets" / "credentials.json"
-DATA_DIR = (
-    BASE_DIR
-    / "google-sheets"
-    / "utils"
-    / "find-missing-studios"
-    / "data"
-)
+DATA_DIR = BASE_DIR / "google-sheets" / "utils" / "find-missing-studios" / "data"
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -54,6 +48,7 @@ SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 # GOOGLE SHEETS AUTH
 # =====================================================================
 
+
 def get_sheets_service():
     """
     Return an authenticated Google Sheets API service.
@@ -64,9 +59,11 @@ def get_sheets_service():
     )
     return build("sheets", "v4", credentials=creds)
 
+
 # =====================================================================
 # DATA FETCHING
 # =====================================================================
+
 
 def fetch_sheet_values(sheet_name: str, start_col: str) -> List[str]:
     """
@@ -95,13 +92,16 @@ def fetch_sheet_values(sheet_name: str, start_col: str) -> List[str]:
         if isinstance(cell, str) and cell.strip()
     ]
 
+
 # =====================================================================
 # COMPARISON LOGIC
 # =====================================================================
 
+
 def normalize(value: str) -> str:
     """Normalize text for case-insensitive comparison."""
     return " ".join(value.lower().split())
+
 
 def find_missing_entries(case_insensitive: bool = False) -> List[str]:
     """
@@ -113,9 +113,7 @@ def find_missing_entries(case_insensitive: bool = False) -> List[str]:
     if case_insensitive:
         networks_set: Set[str] = {normalize(v) for v in networks}
         missing = {
-            studio
-            for studio in data18_studios
-            if normalize(studio) not in networks_set
+            studio for studio in data18_studios if normalize(studio) not in networks_set
         }
     else:
         networks_set = set(networks)
@@ -123,9 +121,11 @@ def find_missing_entries(case_insensitive: bool = False) -> List[str]:
 
     return sorted(missing)
 
+
 # =====================================================================
 # OUTPUT
 # =====================================================================
+
 
 def write_missing_to_json(values: List[str]) -> Path:
     """
@@ -139,9 +139,11 @@ def write_missing_to_json(values: List[str]) -> Path:
     print(f"✅ Missing studios written to {OUTPUT_JSON_FILE}")
     return OUTPUT_JSON_FILE
 
+
 # =====================================================================
 # MAIN
 # =====================================================================
+
 
 def main() -> None:
     missing = find_missing_entries(case_insensitive=False)
@@ -151,6 +153,7 @@ def main() -> None:
         print(f"⚠️ Found {len(missing)} missing studio(s).")
     else:
         print("✅ All Data18 studios are already present in Networks.")
+
 
 if __name__ == "__main__":
     main()

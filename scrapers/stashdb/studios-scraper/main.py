@@ -53,6 +53,7 @@ query Studios($input: StudioQueryInput!) {
 }
 """
 
+
 def fetch_studios():
     headers = {
         "Cookie": COOKIE_HEADER,
@@ -70,14 +71,12 @@ def fetch_studios():
                 "page": page,
                 "per_page": per_page,
                 "sort": "NAME",
-                "direction": "ASC"
+                "direction": "ASC",
             }
         }
 
         response = requests.post(
-            GRAPHQL_URL,
-            json={"query": QUERY, "variables": query_vars},
-            headers=headers
+            GRAPHQL_URL, json={"query": QUERY, "variables": query_vars}, headers=headers
         )
 
         data = response.json()
@@ -106,6 +105,7 @@ def fetch_studios():
 
     print(f"\nSaved → {OUTPUT_JSON}")
 
+
 def fetch_studios_page1():
     headers = {
         "Cookie": COOKIE_HEADER,
@@ -118,14 +118,12 @@ def fetch_studios_page1():
             "page": 1,
             "per_page": 40,
             "sort": "NAME",
-            "direction": "ASC"
+            "direction": "ASC",
         }
     }
 
     response = requests.post(
-        GRAPHQL_URL,
-        json={"query": QUERY, "variables": query_vars},
-        headers=headers
+        GRAPHQL_URL, json={"query": QUERY, "variables": query_vars}, headers=headers
     )
 
     data = response.json()

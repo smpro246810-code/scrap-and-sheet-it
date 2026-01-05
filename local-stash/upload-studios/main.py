@@ -53,7 +53,9 @@ HEADERS_STASHBOX = {"ApiKey": STASHBOX_KEY, "Accept": "application/json"}
 # Logging (color + file)
 # -----------------------
 from colorama import Fore, Style, init
+
 init(autoreset=True)
+
 
 def log(message: str, level: str = "info", print_console: bool = True):
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
@@ -76,11 +78,20 @@ def log(message: str, level: str = "info", print_console: bool = True):
     except Exception as e:
         print(f"Failed to write log file: {e}")
 
+
 class LoggerAdapter:
-    def info(self, msg): log(msg, "info")
-    def success(self, msg): log(msg, "success")
-    def warning(self, msg): log(msg, "warning")
-    def error(self, msg): log(msg, "error")
+    def info(self, msg):
+        log(msg, "info")
+
+    def success(self, msg):
+        log(msg, "success")
+
+    def warning(self, msg):
+        log(msg, "warning")
+
+    def error(self, msg):
+        log(msg, "error")
+
 
 logger = LoggerAdapter()
 
@@ -160,6 +171,7 @@ mutation CreateTag($input: TagCreateInput!) {
 }
 """
 
+
 # -----------------------
 # Helpers
 # -----------------------
@@ -170,10 +182,14 @@ def gql(query, variables=None, use_stashbox=False):
     try:
         resp = requests.post(url, json=payload, headers=headers, timeout=30)
     except Exception as e:
-        logger.error(f"HTTP REQUEST FAILED ({'stashbox' if use_stashbox else 'local'}): {e}")
+        logger.error(
+            f"HTTP REQUEST FAILED ({'stashbox' if use_stashbox else 'local'}): {e}"
+        )
         return None
     if resp.status_code != 200:
-        logger.error(f"HTTP ERROR: {resp.status_code} ({'stashbox' if use_stashbox else 'local'}) - {resp.text}")
+        logger.error(
+            f"HTTP ERROR: {resp.status_code} ({'stashbox' if use_stashbox else 'local'}) - {resp.text}"
+        )
         return None
     try:
         return resp.json()
@@ -181,10 +197,12 @@ def gql(query, variables=None, use_stashbox=False):
         logger.error(f"Failed to parse JSON response: {resp.text}")
         return None
 
+
 def guess_mime_from_url(url):
     path = urlparse(url).path
     mime, _ = mimetypes.guess_type(path)
     return mime or "application/octet-stream"
+
 
 def download_to_data_url(url, dest_folder=TMP_DIR):
     try:
@@ -207,6 +225,7 @@ def download_to_data_url(url, dest_folder=TMP_DIR):
         logger.warning(f"Could not save remote image to {out_path}")
     return data_url
 
+
 def file_to_data_url(local_path):
     local = Path(local_path)
     if not local.exists():
@@ -218,10 +237,13 @@ def file_to_data_url(local_path):
         b64 = base64.b64encode(f.read()).decode("ascii")
     return f"data:{mime};base64,{b64}"
 
+
 # -----------------------
 # Tag helpers
 # -----------------------
 tag_cache = {}
+
+
 def get_or_create_tag(name):
     if not name:
         return None
@@ -229,7 +251,12 @@ def get_or_create_tag(name):
         return tag_cache[name]
     res = gql(FIND_TAG, {"name": name}, use_stashbox=False)
     tag_id = None
-    if res and res.get("data") and res["data"].get("findTags") and res["data"]["findTags"].get("tags"):
+    if (
+        res
+        and res.get("data")
+        and res["data"].get("findTags")
+        and res["data"]["findTags"].get("tags")
+    ):
         tags = res["data"]["findTags"]["tags"]
         if tags:
             tag_id = tags[0]["id"]
@@ -242,6 +269,7 @@ def get_or_create_tag(name):
             tag_id = None
     tag_cache[name] = tag_id
     return tag_id
+
 
 # -----------------------
 # Studio helpers
@@ -270,11 +298,13 @@ def find_studio_by_name(name):
         return None
     return studios[0]
 
+
 def fetch_full_studio(name, use_stashbox=True):
     res = gql(FIND_STUDIO_FULL, {"name": name}, use_stashbox=use_stashbox)
     if not res or "data" not in res:
         return None
     return res["data"].get("findStudio")
+
 
 def _pick_first_url_from_urlobjs(url_objs):
     if not url_objs:
@@ -287,6 +317,7 @@ def _pick_first_url_from_urlobjs(url_objs):
         elif isinstance(u, str):
             return u
     return None
+
 
 def _collect_all_urls_from_urlobjs(url_objs):
     out = []
@@ -301,6 +332,7 @@ def _collect_all_urls_from_urlobjs(url_objs):
             out.append(u)
     return out
 
+
 def _pick_first_image_url(images):
     if not images:
         return None
@@ -308,6 +340,7 @@ def _pick_first_image_url(images):
         if isinstance(img, dict) and img.get("url"):
             return img.get("url")
     return None
+
 
 def create_studio_payload(st, remote_full=None):
     # main single url preference: source JSON first, then remote_full
@@ -328,7 +361,9 @@ def create_studio_payload(st, remote_full=None):
             if ru not in all_urls:
                 all_urls.append(ru)
     if all_urls:
-        details_text = (details_text + "\n\nAll URLs:\n" + "\n".join(f"- {u}" for u in all_urls)).strip()
+        details_text = (
+            details_text + "\n\nAll URLs:\n" + "\n".join(f"- {u}" for u in all_urls)
+        ).strip()
 
     # tags
     tag_ids = []
@@ -383,6 +418,7 @@ def create_studio_payload(st, remote_full=None):
     payload = {k: v for k, v in payload.items() if v is not None}
     return payload
 
+
 def ensure_parent_id(st):
     parent = st.get("parent")
     if not parent:
@@ -397,10 +433,14 @@ def ensure_parent_id(st):
         logger.info(f"Parent found locally: {parent_name} (id={pid})")
         return pid
 
-    logger.info(f"Parent missing locally — fetching full details for '{parent_name}' from StashDB")
+    logger.info(
+        f"Parent missing locally — fetching full details for '{parent_name}' from StashDB"
+    )
     full = fetch_full_studio(parent_name, use_stashbox=True)
     if not full:
-        logger.warning(f"Remote lookup failed for parent '{parent_name}', creating minimal parent locally")
+        logger.warning(
+            f"Remote lookup failed for parent '{parent_name}', creating minimal parent locally"
+        )
         minimal = {"name": parent_name}
         created = gql(CREATE_STUDIO, {"input": minimal}, use_stashbox=False)
         if created and created.get("data") and "errors" not in created:
@@ -462,6 +502,7 @@ def ensure_parent_id(st):
     logger.error(f"Failed to create parent '{payload.get('name')}': {created}")
     return None
 
+
 # -----------------------
 # Main import loop
 # -----------------------
@@ -495,7 +536,6 @@ def main():
 
         logger.info(f"→ Processing studio: {name}")
 
-
         # Attempt to fetch remote full info (non-fatal)
         remote_full = None
         try:
@@ -515,7 +555,11 @@ def main():
         if remote_full and remote_full.get("id"):
             sid_obj = {"stash_id": remote_full["id"], "endpoint": STASHBOX_URL}
             if "stash_ids" in payload:
-                if not any(x.get("endpoint") == sid_obj["endpoint"] and x.get("stash_id") == sid_obj["stash_id"] for x in payload["stash_ids"]):
+                if not any(
+                    x.get("endpoint") == sid_obj["endpoint"]
+                    and x.get("stash_id") == sid_obj["stash_id"]
+                    for x in payload["stash_ids"]
+                ):
                     payload.setdefault("stash_ids", []).append(sid_obj)
             else:
                 payload["stash_ids"] = [sid_obj]
@@ -552,6 +596,7 @@ def main():
         logger.info("Failed items:")
         for f in failed:
             logger.info(f" - {f}")
+
 
 if __name__ == "__main__":
     main()
