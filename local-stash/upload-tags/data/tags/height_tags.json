@@ -1,0 +1,80 @@
+[
+  {
+    "id": "121c8fd9-83fd-44b3-aa90-f62e63f0c664",
+    "name": "Average Height Man",
+    "description": "Male performer with a height taller than 5'7'' (170 cm) and shorter than 6' (182 cm)",
+    "aliases": [
+      "Average Height Male"
+    ]
+  },
+  {
+    "id": "e7c91598-6272-4594-95d1-d59bc78511d3",
+    "name": "Average Height Woman",
+    "description": "Female performer with a height taller than 5'5'' (165 cm) and shorter than 5'9'' (175 cm)",
+    "aliases": [
+      "Average Height Female",
+      "Medium Height",
+      "Medium Woman"
+    ]
+  },
+  {
+    "id": "87b8e618-02a1-4f47-a8f6-424e35ba2e27",
+    "name": "Short Man",
+    "description": "Male performer with a height shorter than 5'7'' (170 cm)",
+    "aliases": [
+      "Short Male"
+    ]
+  },
+  {
+    "id": "cd00f10c-5f20-4b43-a75c-3c81467b7610",
+    "name": "Short Woman",
+    "description": "Female performer with a height taller than 5'1'' (155 cm) and shorter than 5'5'' (165 cm)",
+    "aliases": [
+      "Body - Petite",
+      "Fun Sized",
+      "Mini",
+      "Petite",
+      "Petite Female",
+      "Petite Girl",
+      "Petite Woman",
+      "Short",
+      "Short Female",
+      "Short Girl",
+      "Short Girls",
+      "Small",
+      "Small Build",
+      "Small Height",
+      "Spinner",
+      "矮个女人"
+    ]
+  },
+  {
+    "id": "8ef5255f-a357-4b2e-bfc7-39d8193fd7d4",
+    "name": "Tall Man",
+    "description": "Male performer with a height taller than 6' (182 cm)",
+    "aliases": []
+  },
+  {
+    "id": "aedcf26f-42b3-4b26-9432-9929d08a5ea9",
+    "name": "Tall Woman",
+    "description": "Female performer with a height taller than 5'9'' (175 cm)",
+    "aliases": [
+      "Height - Tall",
+      "Tall Female",
+      "Tall Girls",
+      "Tall Women",
+      "tall heigh"
+    ]
+  },
+  {
+    "id": "2220c4b8-0022-4920-b73a-1d94a26b5287",
+    "name": "Tiny Woman",
+    "description": "Female performer with a height shorter than 5'1'' (155 cm)",
+    "aliases": [
+      "Tiny",
+      "Tiny Female",
+      "Tiny Girl",
+      "Tiny Height"
+    ]
+  }
+]

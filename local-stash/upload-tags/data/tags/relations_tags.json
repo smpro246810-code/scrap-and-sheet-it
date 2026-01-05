@@ -1,0 +1,714 @@
+[
+  {
+    "id": "2dfa31f3-c9f9-4bca-be96-5449a170a8a8",
+    "name": "Aunt",
+    "description": "Female character is [a biological] aunt.",
+    "aliases": [
+      "Auntie",
+      "叔母さん"
+    ]
+  },
+  {
+    "id": "e4f98dac-a6ac-45fe-a53d-91b3b40963c8",
+    "name": "Boss",
+    "description": "Character who has a position of power over their scene partner in a shared place of business.",
+    "aliases": [
+      "Employer",
+      "Manager",
+      "Supervisor"
+    ]
+  },
+  {
+    "id": "f07132ca-fcdf-40a5-a7b9-674611c968e6",
+    "name": "Boyfriend",
+    "description": "Male character who is in a committed, unmarried relationship with a scene partner.",
+    "aliases": [
+      "BF",
+      "Boyfriends"
+    ]
+  },
+  {
+    "id": "0e5d627c-f6b1-4388-9c07-6e3593050d15",
+    "name": "Brother",
+    "description": "Character is biological brother to scene partner",
+    "aliases": [
+      "Bro"
+    ]
+  },
+  {
+    "id": "e92d5e78-6b8f-4ceb-a85a-cfdc81d43a3a",
+    "name": "Brother In Law",
+    "description": "Character presented as brother-in-law to a scene partner",
+    "aliases": [
+      "Brother-In-Law"
+    ]
+  },
+  {
+    "id": "6387c930-ae08-4570-ab74-0868dc3ee431",
+    "name": "Classmates",
+    "description": "Characters who attend the same class or school as their scene partner.",
+    "aliases": [
+      "Class Mate",
+      "Class Mates",
+      "Classmate",
+      "Fellow Students",
+      "School Friends"
+    ]
+  },
+  {
+    "id": "b48d4527-c916-414b-9883-10e9ad52c178",
+    "name": "Client",
+    "description": "Character who has commissioned the services of their scene partner.",
+    "aliases": [
+      "Clientelle"
+    ]
+  },
+  {
+    "id": "200e03c2-73cb-45d7-b9e0-47b3079955c1",
+    "name": "Couple",
+    "description": "Characters who are in a committed relationship with their scene partner.",
+    "aliases": [
+      "Couple Sex",
+      "Couples",
+      "Couples Fantasies",
+      "カップル"
+    ]
+  },
+  {
+    "id": "33ab1d95-a0c8-4d5b-835a-705578d58ecc",
+    "name": "Cousins",
+    "description": "Characters presented as cousins to their scene partner.",
+    "aliases": [
+      "Cousin"
+    ]
+  },
+  {
+    "id": "4b705630-c3fb-45e1-9fa5-391a067eeced",
+    "name": "Co-Workers",
+    "description": "Characters who work a job alongside their scene partner.",
+    "aliases": [
+      "Co Worker",
+      "Co-Worker",
+      "Coworker",
+      "Coworkers"
+    ]
+  },
+  {
+    "id": "dc9773cd-8536-4fe5-9f4a-89b2414144f7",
+    "name": "Customer",
+    "description": "Character who is a patron of their scene partner's place of business.",
+    "aliases": []
+  },
+  {
+    "id": "c144cd0e-9c12-4f5d-82bd-7abebc32c602",
+    "name": "Dating",
+    "description": "Characters who are in a committed, unmarried relationship with each other.",
+    "aliases": []
+  },
+  {
+    "id": "8774d0b0-5c9e-403d-8ed0-6fc24bccd464",
+    "name": "Daughter",
+    "description": "Character is biological daughter to scene partner.",
+    "aliases": []
+  },
+  {
+    "id": "bc89861b-760d-4f64-a26e-ec7c22d9ce68",
+    "name": "Daughter In Law",
+    "description": "Character presented as daughter in law to a scene partner",
+    "aliases": [
+      "Daughter-In-Law"
+    ]
+  },
+  {
+    "id": "03a705ed-e669-44ae-baed-1dcc48f3ddfa",
+    "name": "Employee",
+    "description": "Character who works underneath their scene partner in a shared place of business.",
+    "aliases": [
+      "Employee (Catch-All)",
+      "Employee (Neutral)",
+      "Employee (Vague)"
+    ]
+  },
+  {
+    "id": "370ef828-07ad-47cd-8a97-8d325e9e0f07",
+    "name": "Employee (Female)",
+    "description": "Female character who works underneath their scene partner in a shared place of business.",
+    "aliases": []
+  },
+  {
+    "id": "cf7c5b14-7689-41a2-a7de-3743eb351e82",
+    "name": "Employee (Male)",
+    "description": "Male character who works underneath their scene partner in a shared place of business.",
+    "aliases": []
+  },
+  {
+    "id": "81684c13-4422-4f2f-a772-b19e1a9a44a6",
+    "name": "Employee's Wife",
+    "description": "Scene partner is the wife of the other scene partner's employee.",
+    "aliases": []
+  },
+  {
+    "id": "3f599e75-78c9-4eca-8181-b7bc822221d5",
+    "name": "Exes",
+    "description": "Characters who were previously in a committed relationship with their scene partner.",
+    "aliases": [
+      "Ex",
+      "Ex BF",
+      "Ex Boyfriend",
+      "Ex GF",
+      "Ex Girlfriend",
+      "Ex Husband",
+      "Ex Wife",
+      "Ex-BF",
+      "Ex-Boyfriend",
+      "Ex-GF",
+      "Ex-Girlfriend",
+      "Ex-Husband",
+      "Ex-Wife"
+    ]
+  },
+  {
+    "id": "cea2f1d8-a454-4c4c-be8e-66d66af3401e",
+    "name": "Father",
+    "description": "Character is biological father to scene partner",
+    "aliases": [
+      "Biological Dad"
+    ]
+  },
+  {
+    "id": "23c0ecaf-15d9-41cd-8404-5ecf0225d717",
+    "name": "Father In Law",
+    "description": "Character presented as father in law to a scene partner",
+    "aliases": [
+      "Father-In-Law"
+    ]
+  },
+  {
+    "id": "6cf9be14-0fa6-43d9-b731-ffd5d2df12d2",
+    "name": "Female Boss",
+    "description": "Female character who has a position of power over their scene partner in a shared place of business.",
+    "aliases": [
+      "女上司"
+    ]
+  },
+  {
+    "id": "2902ea5a-9426-407f-a8ff-ffdec9259dbe",
+    "name": "Female Teacher",
+    "description": "Female character who is the teacher of a scene partner.",
+    "aliases": [
+      "女教師"
+    ]
+  },
+  {
+    "id": "37513608-2398-463f-940f-e29d57b0b3da",
+    "name": "Fluid Bonded",
+    "description": "Fluid bonding is when consenting sexual partners choose to no longer use condoms when having intercourse",
+    "aliases": [
+      "fluid-bonded"
+    ]
+  },
+  {
+    "id": "e9ac3c6a-8816-4077-b179-d839882efcfc",
+    "name": "Friends",
+    "description": "Characters who are in a friendly, platonic relationship with their scene partner.",
+    "aliases": [
+      "Best Friend",
+      "Best Friends",
+      "Childhood Friend",
+      "Friend",
+      "Friendly",
+      "Old Playmates",
+      "幼なじみ"
+    ]
+  },
+  {
+    "id": "711422d8-2e80-4369-9c62-d1fc01443842",
+    "name": "Girlfriend",
+    "description": "Female character who is in a committed, unmarried relationship with a scene partner.",
+    "aliases": [
+      "GF"
+    ]
+  },
+  {
+    "id": "54b9e7ea-3761-419e-a293-0972a37cc72f",
+    "name": "Grandfather",
+    "description": "Character is biological grandfather to scene partner.",
+    "aliases": [
+      "Grandad",
+      "Granddad"
+    ]
+  },
+  {
+    "id": "c1f071e5-1b61-44c9-ad67-5f0ddf6f6b68",
+    "name": "Grandmother",
+    "description": "Character is biological grandmother to scene partner.",
+    "aliases": [
+      "Grandmom"
+    ]
+  },
+  {
+    "id": "80e95314-0905-40d0-b13f-f736c7add9f3",
+    "name": "Husband",
+    "description": "Male character who is married to a scene partner.",
+    "aliases": [
+      "Hubby"
+    ]
+  },
+  {
+    "id": "92656550-2aee-42a3-817d-2769f443cebb",
+    "name": "In Laws",
+    "description": "Characters in scene are in-laws",
+    "aliases": [
+      "In-Laws",
+      "Inlaws"
+    ]
+  },
+  {
+    "id": "872ce95f-354e-43b2-87c5-85d2f061062d",
+    "name": "Landlord",
+    "description": "Character is the owner of the property where scene partner is living",
+    "aliases": []
+  },
+  {
+    "id": "f6de2b10-ab8c-49a4-8a94-c31705c4f961",
+    "name": "Male Boss",
+    "description": "Male character who has a position of power over their scene partner in a shared place of business.",
+    "aliases": []
+  },
+  {
+    "id": "d6583604-efc2-4f4f-964e-5eba3f248901",
+    "name": "Male Teacher",
+    "description": "Male character who is the teacher of a scene partner.",
+    "aliases": []
+  },
+  {
+    "id": "23cac3f5-f6d5-404d-bd50-cae895f3309b",
+    "name": "Mother",
+    "description": "Character is biological mother to scene partner",
+    "aliases": [
+      "Biological Mom",
+      "MommyRoleplay",
+      "お母さん"
+    ]
+  },
+  {
+    "id": "83de57b3-8fc4-44fa-8a25-56316a8f77b6",
+    "name": "Mother In Law",
+    "description": "Character presented as mother-in-law to a scene partner",
+    "aliases": [
+      "Mom In Law",
+      "Mom-In-Law",
+      "Mother-In-Law"
+    ]
+  },
+  {
+    "id": "1d07676a-4f36-49af-9e32-d225e1b450bc",
+    "name": "Neighbors",
+    "description": "Characters who live close to each other.",
+    "aliases": [
+      "Neighbor",
+      "Neighbor Affair",
+      "Neighbour",
+      "Neighbours"
+    ]
+  },
+  {
+    "id": "05031644-04b1-45e5-944f-3611280d3b3f",
+    "name": "Nephew",
+    "description": "Male character presented as a biological nephew to a scene partner, whether that relationship is recent or not.",
+    "aliases": []
+  },
+  {
+    "id": "48edf827-a6b6-4eb5-a854-30231d7889cd",
+    "name": "Niece",
+    "description": "Female character presented as a biological niece to a scene partner, whether that relationship is recent or not.",
+    "aliases": []
+  },
+  {
+    "id": "6946343d-2df6-4bf9-b2b5-999806c9dc39",
+    "name": "Other Person's Brother",
+    "description": "Character who is the brother of someone other than their scene partner.",
+    "aliases": [
+      "Boyfriend's Brother",
+      "Friend's Brother"
+    ]
+  },
+  {
+    "id": "5d2b99b1-2c01-4154-b58d-1d0d0f5d3004",
+    "name": "Other Person's Daughter",
+    "description": "Character who is the daughter of someone other than their scene partner.",
+    "aliases": [
+      "Friend's Daughter",
+      "Neighbor's Daughter"
+    ]
+  },
+  {
+    "id": "3a299f99-db56-43fd-b184-9bf921f90002",
+    "name": "Other Person's Friend",
+    "description": "Character who is the friend of someone other than their scene partner",
+    "aliases": [
+      "Boyfriend's Friend",
+      "Brother's Friend",
+      "Dad's Friend",
+      "Girlfriend's Friend",
+      "Husband's Friend",
+      "Mom's Friend",
+      "Sister's Friend",
+      "Wife's Friend"
+    ]
+  },
+  {
+    "id": "4f81cd80-3fb4-4036-9789-dbe4c6367b41",
+    "name": "Other Person's Girlfriend",
+    "description": "Character who is the girlfriend of someone other than their scene partner",
+    "aliases": [
+      "Brother's Girlfriend",
+      "Friend's Girlfriend"
+    ]
+  },
+  {
+    "id": "6cadd5b2-9dad-4d13-93cc-da36765699e2",
+    "name": "Other Person's Mom",
+    "description": "Character who is the mother of someone other than their scene partner.",
+    "aliases": [
+      "Friend's Mom",
+      "Girlfriend's Mom",
+      "Mom",
+      "Mommy"
+    ]
+  },
+  {
+    "id": "c23c51b4-fa2f-48b3-87ee-3ad7b37e17c1",
+    "name": "Other Person's Sister",
+    "description": "Character who is the sister of someone other than their scene partner.",
+    "aliases": [
+      "Friend's Sister",
+      "Girlfriend's Sister"
+    ]
+  },
+  {
+    "id": "871f11f9-295e-4ad2-aa71-98a948b313ae",
+    "name": "Other Person's Son",
+    "description": "Character who is the son of someone other than their scene partner.",
+    "aliases": [
+      "Friend's Son",
+      "Neighbor's Son"
+    ]
+  },
+  {
+    "id": "807ebb26-c749-474e-9c47-d5e0d99f086e",
+    "name": "Other Person's Wife",
+    "description": "Character who is the wife of someone other than their scene partner.",
+    "aliases": [
+      "Co-Worker's Wife",
+      "Friend's Wife"
+    ]
+  },
+  {
+    "id": "c475b7da-0073-4111-be54-68037aff9e05",
+    "name": "Roommates",
+    "description": "Characters who are living with their scene partner, but are not in a committed relationship with each other.",
+    "aliases": [
+      "Flatmate",
+      "Flatmates",
+      "Housemate",
+      "Housemates",
+      "Roommate"
+    ]
+  },
+  {
+    "id": "1a233a0a-156e-4ec5-977b-8cd466fe6bcf",
+    "name": "Secretary",
+    "description": "Character working as a professional assistant to a scene partner.",
+    "aliases": [
+      "Executive Assistant",
+      "Personal Assistant",
+      "Receptionist"
+    ]
+  },
+  {
+    "id": "02b063a1-896c-4895-8b54-03e588ace4d1",
+    "name": "Sister",
+    "description": "Character is biological sister to scene partner",
+    "aliases": [
+      "Sis",
+      "妹",
+      "姉",
+      "姉・妹"
+    ]
+  },
+  {
+    "id": "2f776c4e-8c1a-4514-86b1-9e507a4d1077",
+    "name": "Sister In Law",
+    "description": "Female character presented as sister-in-law to a scene partner",
+    "aliases": [
+      "Sister-In-Law"
+    ]
+  },
+  {
+    "id": "c3699670-4f00-4a1f-87a3-0a2bdca81d8e",
+    "name": "Son",
+    "description": "Character is biological son to scene partner.",
+    "aliases": []
+  },
+  {
+    "id": "496b99fe-37d0-4757-a5a7-b83c8965c9a6",
+    "name": "Step Aunt",
+    "description": "Female character presented as a non-biological aunt to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-aunt"
+    ]
+  },
+  {
+    "id": "047d3f13-1d4b-49c5-8677-824cc5cf8331",
+    "name": "Step Brother",
+    "description": "Male character presented as a non-biological brother to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-bro",
+      "Step-brother",
+      "Stepbro",
+      "Stepbrother"
+    ]
+  },
+  {
+    "id": "9c968a80-9d80-41c0-aa8b-612082f8a839",
+    "name": "Step Cousin",
+    "description": "Character(s) presented as a non-biological cousin to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Cousins",
+      "Step-cousin",
+      "Step-cousins",
+      "Stepcousin",
+      "Stepcousins"
+    ]
+  },
+  {
+    "id": "a27d1d71-16e8-4110-ba9c-41a2353ed44e",
+    "name": "Step Dad",
+    "description": "Male character presented as a non-biological father to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Daddy",
+      "Step Father",
+      "Step-dad",
+      "Step-father",
+      "Stepdad",
+      "Stepfather"
+    ]
+  },
+  {
+    "id": "8c3b252e-cff5-49ec-b204-93a372a9b8b9",
+    "name": "Step Daughter",
+    "description": "Female character presented as a non-biological daughter to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-daughter",
+      "Stepdaughter"
+    ]
+  },
+  {
+    "id": "f64211d5-bf0d-4f95-aeec-af71bdba53cf",
+    "name": "Step Granddaughter",
+    "description": "Female character presented as a non-biological granddaughter to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-granddaughter"
+    ]
+  },
+  {
+    "id": "8af5702f-0931-4973-b4e6-d32ef77f6a94",
+    "name": "Step Grandmother",
+    "description": "Female character presented as a non-biological grandmother to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Grandma",
+      "Step-Grandma",
+      "Step-Grandmother"
+    ]
+  },
+  {
+    "id": "e39ea908-0ff9-465b-b0df-91a14625e3d1",
+    "name": "Step Grandpa",
+    "description": "Male character presented as a non-biological grandpa to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-grandpa"
+    ]
+  },
+  {
+    "id": "5d5e6d37-1dc0-4928-8591-71c26ee2a421",
+    "name": "Step Grandson",
+    "description": "Male character presented as a non-biological grandson to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-Grandson"
+    ]
+  },
+  {
+    "id": "57cec57a-d4ec-477c-b675-bf4c672c9cba",
+    "name": "Step Mother",
+    "description": "Female character presented as a non-biological mother to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Mom",
+      "Step-mom",
+      "Step-mother",
+      "Stepmom",
+      "Stepmother",
+      "義母"
+    ]
+  },
+  {
+    "id": "831d5d0f-7601-41eb-898f-2154d28aca04",
+    "name": "Step Nephew",
+    "description": "Male character presented as a non-biological nephew to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-Nephew"
+    ]
+  },
+  {
+    "id": "07589844-7bb7-47a9-aed0-d1ee9d1d6d22",
+    "name": "Step Niece",
+    "description": "Female character presented as a non-biological niece to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-niece"
+    ]
+  },
+  {
+    "id": "d2b6c2bd-15a0-4609-a779-9e09e8901ed4",
+    "name": "Step Siblings",
+    "description": "Character presented as a non-biological sibling to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Sibling",
+      "Step-bro-Step-sis",
+      "Step-brother-Step-sister",
+      "Step-sibling",
+      "Step-siblings",
+      "Stepsibling",
+      "Stepsiblings"
+    ]
+  },
+  {
+    "id": "21fdb10d-c1f4-4ded-a0d2-7f40360ecd87",
+    "name": "Step Sister",
+    "description": "Female character presented as a non-biological sister to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step Sis",
+      "Step-sis",
+      "Step-sister",
+      "Stepsis",
+      "Stepsister"
+    ]
+  },
+  {
+    "id": "df18d5a6-3727-45ad-9c21-4901ba755f2f",
+    "name": "Step Son",
+    "description": "Male character presented as a non-biological son to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-son",
+      "Stepson"
+    ]
+  },
+  {
+    "id": "7276c5fc-5ef0-4bab-9ec0-3c31ddb6ae67",
+    "name": "Step Uncle",
+    "description": "Male character presented as a non-biological uncle to a scene partner, whether that relationship is recent or not.",
+    "aliases": [
+      "Step-uncle"
+    ]
+  },
+  {
+    "id": "e23b1507-94c0-4441-a007-ced1c78dcc86",
+    "name": "Student",
+    "description": "Character who is the student of a scene partner.",
+    "aliases": [
+      "Students"
+    ]
+  },
+  {
+    "id": "aaaf5dd7-1f5d-4854-bae6-d8207466b40c",
+    "name": "Sugar Daddy",
+    "description": "Character who is in a sexual relationship with a scene partner based on the promise of continued financial assistance.",
+    "aliases": [
+      "Sugar Babes",
+      "Sugar Baby",
+      "Sugarbabes"
+    ]
+  },
+  {
+    "id": "d4d25983-dc6d-45f5-af00-0649052293c6",
+    "name": "Teacher",
+    "description": "Character who is the teacher of a scene partner.",
+    "aliases": [
+      "Private Tutor",
+      "Professor",
+      "Teacher Fantasy",
+      "Teacher Fetish",
+      "TeacherFetish",
+      "Tutor"
+    ]
+  },
+  {
+    "id": "6900555b-d5c9-48aa-977f-94ba626beb31",
+    "name": "Teammates",
+    "description": "Characters who work or play on the same team as their scene partner.",
+    "aliases": [
+      "Team",
+      "Team Member",
+      "Team Members",
+      "Teammate"
+    ]
+  },
+  {
+    "id": "3840765b-3972-4e32-977b-b565d9023347",
+    "name": "Tenant",
+    "description": "Character who is living somewhere that is owned or managed by a scene partner.",
+    "aliases": [
+      "Resident",
+      "Residents",
+      "Tenants"
+    ]
+  },
+  {
+    "id": "b45ac8bd-e1ce-4bb0-abce-8062197cf5ec",
+    "name": "Therapist",
+    "description": "Character serving as a therapist or counselor of some kind for a scene partner.",
+    "aliases": [
+      "Couples Counselor",
+      "Family Counselor",
+      "Family Therapy",
+      "Marriage Counselor",
+      "Psychiatrist",
+      "Psychologist",
+      "Sex Therapist",
+      "Shrink",
+      "Therapist / Counselor",
+      "Therapy"
+    ]
+  },
+  {
+    "id": "c63aedd8-78b9-429c-a6b5-5d625ccb7ca6",
+    "name": "Twins",
+    "description": "Characters who are twin siblings of each other.",
+    "aliases": [
+      "Fraternal Twin",
+      "Fraternal Twins",
+      "Identical Twin",
+      "Identical Twins",
+      "Twin",
+      "Twin Brother",
+      "Twin Brothers",
+      "Twin Siblings",
+      "Twin Sister",
+      "Twin Sisters"
+    ]
+  },
+  {
+    "id": "1a1506bc-8a78-4729-96f5-23c1caf20697",
+    "name": "Uncle",
+    "description": "Male character is [a biological] uncle.",
+    "aliases": []
+  },
+  {
+    "id": "b0182762-527b-4e75-a30d-df86cdf3701e",
+    "name": "Wife",
+    "description": "Female character who is married to a scene partner.",
+    "aliases": [
+      "Bride, Young Wife",
+      "Wives"
+    ]
+  }
+]

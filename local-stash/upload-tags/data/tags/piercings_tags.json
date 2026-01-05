@@ -1,0 +1,195 @@
+[
+  {
+    "id": "8bc438ce-9545-4bef-9fe5-eda5095500f4",
+    "name": "Arm Piercing",
+    "description": "Performers with at least one visible piercing in their arms.",
+    "aliases": []
+  },
+  {
+    "id": "300e7194-ea18-4fde-a9bd-c2a56a67c42e",
+    "name": "Cheekbone Piercing",
+    "description": "Performers with at least one visible piercing by a cheekbone.",
+    "aliases": []
+  },
+  {
+    "id": "58789249-db5f-4ab9-9b5a-c6634aa3ddcd",
+    "name": "Clavicle Piercing",
+    "description": "Performers with at least one visible piercing above the chest in the clavicle area",
+    "aliases": [
+      "Collar Bone Piercing",
+      "Collarbone Piercing",
+      "Sub Clavicle Piercing"
+    ]
+  },
+  {
+    "id": "147bbe50-ac63-4a68-a881-88ad6f1cbbe8",
+    "name": "Dimples of Venus Piercing",
+    "description": "Performers with at least one visible piercing in their dimples of Venus.",
+    "aliases": []
+  },
+  {
+    "id": "8dfe0fe0-257d-434a-87ee-46d82f751a7d",
+    "name": "Ear Piercing",
+    "description": "Performers with at least one visible piercing by an ear that is not an earring.",
+    "aliases": [
+      "Conch",
+      "Helix",
+      "Helix Piercing",
+      "Industrial Piercing"
+    ]
+  },
+  {
+    "id": "6ee35393-adff-448e-abaf-f9080a99730d",
+    "name": "Eyebrow Piercing",
+    "description": "Performers with at least one visible piercing in their eyebrows",
+    "aliases": [
+      "Eyebrow Piercings"
+    ]
+  },
+  {
+    "id": "91e27ada-15bb-41b7-b210-bcf57cbaa708",
+    "name": "Gauges",
+    "description": "Performers with significantly wide earlobe piercings, often leaving an open space inside the gauges.",
+    "aliases": [
+      "Ear Gauges"
+    ]
+  },
+  {
+    "id": "ddf53877-69f9-4586-ae47-695d3f1ae1d1",
+    "name": "Hip Piercing",
+    "description": "Performers with at least one visible piercing in the hip area. Excluding the navel.",
+    "aliases": []
+  },
+  {
+    "id": "62d50c5f-5831-4575-9818-e80c95fa4845",
+    "name": "Lip Piercing",
+    "description": "Performers with at least one visible piercing in their lips.",
+    "aliases": [
+      "Mouth Piercing",
+      "Pierced Lips"
+    ]
+  },
+  {
+    "id": "687b4eaf-0f30-417a-978a-59c54092ab5c",
+    "name": "Monroe Piercing",
+    "description": "Performers with at least one visible piercing above the upper lips.",
+    "aliases": [
+      "Single stud piercing"
+    ]
+  },
+  {
+    "id": "f9dc8958-6d81-4f9f-95a4-226cdd6140ab",
+    "name": "Navel Piercing",
+    "description": "Performers with at least one visible piercing in their navel.",
+    "aliases": [
+      "Belly Button Piercing",
+      "Belly Button Piercings",
+      "Belly-button Piercing",
+      "Pierced Belly",
+      "Pierced Navel",
+      "Piercing (Navel)"
+    ]
+  },
+  {
+    "id": "285a6a52-c34a-4654-b000-eccb648ad121",
+    "name": "Nipple Piercing",
+    "description": "Performers with at least one visible piercing in a nipple, often both.",
+    "aliases": [
+      "Nipple Piercings",
+      "Nipples (Pierced)",
+      "Pierced Nipple",
+      "Pierced Nipples",
+      "Pierced Tits",
+      "Piercing (Nipple)",
+      "Piercing (Nipples)",
+      "Piercing - Nipple",
+      "Piercings (Nipple)",
+      "乳头穿孔"
+    ]
+  },
+  {
+    "id": "bc6d3482-6d56-4eb0-85c2-02034ec027f6",
+    "name": "No Piercing",
+    "description": "Performers not wearing their piercings, or from before they had piercings.",
+    "aliases": [
+      "No Piercings"
+    ]
+  },
+  {
+    "id": "10c24ff9-de85-4fe4-84d7-2a4250475a7a",
+    "name": "Nose Piercing",
+    "description": "Performers with at least one visible piercing in their nose.",
+    "aliases": [
+      "Nose Piercings",
+      "Nostril Piercing",
+      "Pierced Nose",
+      "Pierced Nostril",
+      "Pierced Septum",
+      "Septum Piercing",
+      "鼻穿孔"
+    ]
+  },
+  {
+    "id": "abf6ee13-682f-44d8-b945-8c4a20329034",
+    "name": "Piercing",
+    "description": "Performers with at least one visible piercing, not including female performers with extremely common ear piercings.",
+    "aliases": [
+      "Body Piercings",
+      "Pierced",
+      "Piercing - Other",
+      "Piercings",
+      "穿孔"
+    ]
+  },
+  {
+    "id": "1915a181-4362-43a9-87f9-54eaeaf91123",
+    "name": "Prince Albert Piercing",
+    "description": "Penis piercing inserted through the urethra and out of the underside behind the glans.",
+    "aliases": [
+      "Prince Albert"
+    ]
+  },
+  {
+    "id": "19c0c257-aaf8-4999-87ef-e287e0f100db",
+    "name": "Pussy Piercing",
+    "description": "Performers with at least one visible piercing around the vulva, typically by the clitoris.",
+    "aliases": [
+      "Clit Piercing",
+      "Pierced Clit",
+      "Pierced Hood",
+      "Pierced Pussy",
+      "Piercing (Pussy)"
+    ]
+  },
+  {
+    "id": "3c9d0c7c-ca92-4d77-ab51-0a1f9f23c361",
+    "name": "Split Tongue",
+    "description": "Performer has a tongue which has been surgically split down the middle.",
+    "aliases": [
+      "Bifurcated Tongue",
+      "Snake Tongue"
+    ]
+  },
+  {
+    "id": "acab72de-5bf4-444f-bc4f-d135b4470bc2",
+    "name": "Sternum Piercing",
+    "description": "Performers with at least one visible piercing above the chest in the sternum area",
+    "aliases": [
+      "Between Clavicle Piercing",
+      "Between Collarbone Piercing",
+      "Breast Bone Piercing",
+      "Breastbone Piercing"
+    ]
+  },
+  {
+    "id": "b8a3c2bf-d28b-436f-b2cb-5c906c1e4e51",
+    "name": "Tongue Piercing",
+    "description": "Performers with at least one visible piercing in their tongue.",
+    "aliases": [
+      "Pierced Tongue",
+      "Piercing (Tongue)",
+      "Tongue Ring",
+      "Tongue Stud"
+    ]
+  }
+]

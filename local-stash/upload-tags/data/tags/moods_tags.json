@@ -1,0 +1,382 @@
+[
+  {
+    "id": "df1d053f-0f4a-4181-88d0-724445793f67",
+    "name": "Aggressive",
+    "description": "Features at least one character displaying a forceful or hostile attitude.",
+    "aliases": []
+  },
+  {
+    "id": "05b909f6-da46-490c-8b7b-22f9952462e3",
+    "name": "Angry",
+    "description": "Features at least one character who is acting hostile and visibly angry about the situation.",
+    "aliases": [
+      "Anger",
+      "Mad",
+      "Rage",
+      "Wrath"
+    ]
+  },
+  {
+    "id": "26148a27-9d66-40e8-b22c-f213e04490da",
+    "name": "Artistic",
+    "description": "Features situations or techniques of a particularly artistic or surreal nature.",
+    "aliases": [
+      "Art",
+      "Artsy",
+      "Atmospheric",
+      "Creative",
+      "Impressionistic",
+      "Surreal",
+      "Surrealist"
+    ]
+  },
+  {
+    "id": "41842d18-1dfb-4699-8fdd-d7da66868bef",
+    "name": "Artistic Lighting",
+    "description": "Scene shot with particular creative attention to the illumination of performers and scenery.",
+    "aliases": [
+      "Lights"
+    ]
+  },
+  {
+    "id": "519b080b-edce-46b0-98e2-856ee94ef63a",
+    "name": "Bizarre",
+    "description": "Scenes that are strikingly out of the ordinary, such as odd, extravagant, or eccentric.",
+    "aliases": [
+      "Crazy",
+      "Weird"
+    ]
+  },
+  {
+    "id": "92d819df-e472-4e9f-b38d-5426b266d045",
+    "name": "Bored",
+    "description": "Performer looking bored or disinterested whilst performing a sexual act",
+    "aliases": []
+  },
+  {
+    "id": "ea0006db-8987-46db-9cbe-6cd2cf9147dd",
+    "name": "Boudoir",
+    "description": "Scenes featuring some combination of intimacy, sensuality, romance, and confidence.",
+    "aliases": [
+      "Boudior",
+      "Boudoire",
+      "Budeaux",
+      "Budoir"
+    ]
+  },
+  {
+    "id": "687fa01e-034d-43f2-850e-c250f1771cbd",
+    "name": "Brutal",
+    "description": "Features action with an exceptional amount of physicality, typically falling under the umbrella of BDSM.",
+    "aliases": [
+      "Brutal Punishment",
+      "Brutal Sex",
+      "鬼畜"
+    ]
+  },
+  {
+    "id": "aa5e0a87-7327-46ff-a15c-dbc8c8d9d25e",
+    "name": "Crying",
+    "description": "Features a character crying during the action.",
+    "aliases": [
+      "Sobbing",
+      "Tears",
+      "Weeping"
+    ]
+  },
+  {
+    "id": "57318078-0d59-430a-a66f-92ad7c75f688",
+    "name": "Dirty Talk",
+    "description": "Features at least one character providing a significant amount of lewd or demeaning dialogue during the action.",
+    "aliases": [
+      "Confession",
+      "Dirty Talking",
+      "Dirty Words",
+      "DirtyTalk",
+      "DirtyTalking",
+      "淫語"
+    ]
+  },
+  {
+    "id": "bb2c8ff1-2159-4856-85d2-682b3f036b28",
+    "name": "Disgust",
+    "description": "Features at least one character who is disgusted by the situation or another performer/viewer.",
+    "aliases": [
+      "Grossed Out"
+    ]
+  },
+  {
+    "id": "1be802e5-826b-40f5-a02a-f1803c009fc1",
+    "name": "Eager",
+    "description": "Strong desire or interest in the act to the point of anxiety or impatience.",
+    "aliases": [
+      "Eager for Anal",
+      "Eager to Fuck"
+    ]
+  },
+  {
+    "id": "77d64a74-4609-4832-af92-59f3ffe0b8e0",
+    "name": "Erotica",
+    "description": "Scenes that are meant to be relatively inoffensive, often intended for relatively new viewers or for couples to watch together.",
+    "aliases": [
+      "Couple Friendly",
+      "Erotic",
+      "Female Friendly",
+      "Love Making",
+      "Making Love",
+      "Safe",
+      "Sensual",
+      "Sensuality",
+      "Soft Erotic"
+    ]
+  },
+  {
+    "id": "485d61d6-8e20-431f-81ec-c8e336afc853",
+    "name": "Giggles",
+    "description": "Performers giggling or laughing",
+    "aliases": [
+      "Giggle",
+      "Giggling",
+      "Laugh",
+      "Laughing",
+      "Laughs"
+    ]
+  },
+  {
+    "id": "884cd932-8059-4a2e-b46f-68c80e50dc67",
+    "name": "Glamour",
+    "description": "Features characters and situations of a particularly glamorous, elegant, or luxurious nature.",
+    "aliases": [
+      "Classy",
+      "Elegant",
+      "Glamor",
+      "Glamorous",
+      "Glamourous",
+      "Luxurious",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "ac608ec9-1dd2-4df7-ab0e-64cc3b89e735",
+    "name": "Hardcore",
+    "description": "Features detailed depictions of sexual organs or sexual acts such as vaginal, anal or oral intercourse.",
+    "aliases": [
+      "Full Sex",
+      "Shoot Type - Hardcore",
+      "ハード系",
+      "硬核"
+    ]
+  },
+  {
+    "id": "72ef5c94-6825-4718-8e68-77119631b51e",
+    "name": "Hard Fuck",
+    "description": "Features action with a significant amount of speed or force.",
+    "aliases": [
+      "Fast",
+      "Hard",
+      "Hard Fucking",
+      "Intense",
+      "Pounding",
+      "hard and fast fucking"
+    ]
+  },
+  {
+    "id": "4f06909d-7957-450b-b53c-de402b28da61",
+    "name": "High Energy",
+    "description": "",
+    "aliases": []
+  },
+  {
+    "id": "d4c371d0-5e2d-4e27-a3a8-c2a20f96b52b",
+    "name": "Horny",
+    "description": "Character portrayed as strongly sexually aroused.",
+    "aliases": [
+      "Aroused",
+      "Sexually Aroused"
+    ]
+  },
+  {
+    "id": "caffbcd8-5d23-46e6-8b63-6ae34effb556",
+    "name": "Laughing Humiliation",
+    "description": "Features a character laughing at someone. Often when seeing them naked.",
+    "aliases": []
+  },
+  {
+    "id": "82eae810-73e5-457f-be2d-8ea5ede7b231",
+    "name": "Messy",
+    "description": "Features performers who are dirty in a literal sense for a significant amount of the action, either naturally or artificially.",
+    "aliases": [
+      "Wet and Messy"
+    ]
+  },
+  {
+    "id": "86678566-6066-4a50-915f-6b0c3aa658c8",
+    "name": "Nervous",
+    "description": "Features at least one character who is particularly nervous about the situation.",
+    "aliases": [
+      "Anxious",
+      "Nerves"
+    ]
+  },
+  {
+    "id": "f165c494-d9ce-4b8b-88a4-7cf8d5556b20",
+    "name": "Night",
+    "description": "Scenes with lighting that highlights they take place at night and/or in the dark.",
+    "aliases": [
+      "Nighttime"
+    ]
+  },
+  {
+    "id": "d13b7a3b-837c-4e23-8392-f1a11eb3aeeb",
+    "name": "Passion",
+    "description": "Characters portrayed with a strong physical or emotional attraction to each other.",
+    "aliases": [
+      "Attraction",
+      "Chemistry",
+      "Desire",
+      "Mutual Attraction",
+      "Mutual Desire",
+      "Passionate"
+    ]
+  },
+  {
+    "id": "2a24d292-321e-4255-90bc-a9578e7e642f",
+    "name": "Playful",
+    "description": "Scenes and characters that are some combination of relaxed, happy, and fun.",
+    "aliases": [
+      "Fun",
+      "Funny"
+    ]
+  },
+  {
+    "id": "4082f6f1-de4e-4f5f-8846-f13f74df36ee",
+    "name": "Relaxed",
+    "description": "Performer is calm and not anxious or worried.",
+    "aliases": []
+  },
+  {
+    "id": "6fc5b66d-d749-4f3e-ae61-4b896a0e5098",
+    "name": "Reluctance",
+    "description": "Features at least one character who does not want to be involved in the action at first.",
+    "aliases": [
+      "Hesitant",
+      "Reluctant",
+      "Reluctant / Hesitant"
+    ]
+  },
+  {
+    "id": "41963f8b-a2bc-46a5-b7ea-6c21e341f1a2",
+    "name": "Romance",
+    "description": "Scenes featuring some combination of love, sweetness, and emotion.",
+    "aliases": [
+      "Intimate",
+      "Romantic"
+    ]
+  },
+  {
+    "id": "b7dd3694-1f8b-4a05-a301-76fe182c464d",
+    "name": "Rough",
+    "description": "Features action with a significant amount of physicality, often including hair pulling, slapping, and choking.",
+    "aliases": [
+      "Manhandle",
+      "Manhandling",
+      "Rough Gangbang",
+      "Rough Sex",
+      "RoughSex",
+      "Sex - Rough",
+      "Vigorous Sex",
+      "狂野",
+      "粗暴",
+      "粗鲁"
+    ]
+  },
+  {
+    "id": "bd1b94a8-009a-46d6-9df2-f6ece4a40984",
+    "name": "Smiling",
+    "description": "Performer(s) are predominately or noticably smiling throughout",
+    "aliases": [
+      "Smile"
+    ]
+  },
+  {
+    "id": "fc85cc9a-bc76-4698-a0d2-fb93b9bf67e7",
+    "name": "Sneaky",
+    "description": "Shows at least one character worried about being caught doing something naughty.",
+    "aliases": [
+      "Almost Caught",
+      "Don't Get Caught",
+      "Hiding",
+      "Secret Sex",
+      "Sneaky Sex",
+      "偷摸",
+      "鬼祟",
+      "鬼鬼祟祟"
+    ]
+  },
+  {
+    "id": "3276fe72-0361-4aa4-ae12-b7f65bc8c914",
+    "name": "Softcore",
+    "description": "Scenes sexualty suggestive or erotic without explicit sex acts.",
+    "aliases": []
+  },
+  {
+    "id": "79de9d97-705b-400a-b30e-5dac62a06fd9",
+    "name": "Sultry",
+    "description": "Features strong, sexually charged glances and exchanges intended to be irresistible to at least one character.",
+    "aliases": [
+      "Alluring",
+      "Arousing",
+      "Bedroom Eyes",
+      "Come Hither",
+      "Lustful",
+      "Seduction",
+      "Seductive",
+      "Tempting"
+    ]
+  },
+  {
+    "id": "106d11c3-83ad-43ac-b8fb-8daed1a682f7",
+    "name": "Sunlit",
+    "description": "Scene is lit primarily by natural sunlight.",
+    "aliases": [
+      "Day Light",
+      "Daylight",
+      "Natural Light",
+      "Sun Light",
+      "Sun Lit",
+      "Sunlight"
+    ]
+  },
+  {
+    "id": "a29498cb-8aff-4dc0-ba56-f3734b817596",
+    "name": "Sweaty",
+    "description": "Features a significant amount of visible sweat on at least one performer.",
+    "aliases": [
+      "Sweat",
+      "Sweating",
+      "Sweaty Body",
+      "汗だく"
+    ]
+  },
+  {
+    "id": "826b3e6c-5055-4146-a6a7-de1ba076baae",
+    "name": "Touching",
+    "description": "Capable of arousing emotions of tenderness or compassion.",
+    "aliases": []
+  },
+  {
+    "id": "ee194a86-2751-4eed-ba58-728050335f93",
+    "name": "Whispering",
+    "description": "Performer speaking in a low soft voice in a non-ASMR scene.",
+    "aliases": []
+  },
+  {
+    "id": "b4491406-da3b-45cd-8470-a2a42da4ccb0",
+    "name": "Wild",
+    "description": "Sex in a wild and energetic fashion",
+    "aliases": [
+      "Crazy Sex",
+      "Wild Sex"
+    ]
+  }
+]

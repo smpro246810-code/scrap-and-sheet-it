@@ -1,0 +1,187 @@
+[
+  {
+    "id": "a0779f29-529e-4286-83fb-76f69764232e",
+    "name": "Beauty Mark",
+    "description": "Performers with a small, dark spot or mole on their face.",
+    "aliases": [
+      "Beauty Marks",
+      "Beauty Spot",
+      "Beauty Spots",
+      "Mole",
+      "Moles"
+    ]
+  },
+  {
+    "id": "a7f84e41-6042-4527-b2aa-068fcbacaa23",
+    "name": "Big Eyes",
+    "description": "Performer with big eyes.",
+    "aliases": []
+  },
+  {
+    "id": "c2b74b35-6581-4427-baae-5300c290c608",
+    "name": "Big Mouth",
+    "description": "Performers with a big mouth.",
+    "aliases": []
+  },
+  {
+    "id": "c9a9124d-cb38-4053-8faf-7a1032a805ce",
+    "name": "Blue Eyes",
+    "description": "Performers with blue eyes (and scenes featuring them)",
+    "aliases": [
+      "Blue Eye",
+      "Blue-Eyed",
+      "Eye Color - Blue",
+      "Eyes - Blue"
+    ]
+  },
+  {
+    "id": "3883f291-d1a5-40b2-b49d-492e56459829",
+    "name": "Brown Eyes",
+    "description": "Performers with brown eyes (and scenes featuring them)",
+    "aliases": [
+      "Brown Eye",
+      "Brown-Eyed",
+      "Eye Color - Brown",
+      "Eyes - Brown"
+    ]
+  },
+  {
+    "id": "2eab053d-0e65-4162-b6ce-4c96f7aeb20b",
+    "name": "Crooked Teeth",
+    "description": "Performer has noticeably crooked, gapped or missing teeth.",
+    "aliases": [
+      "Gapped Teeth",
+      "Missing Teeth",
+      "Missing Tooth",
+      "Tooth Gap"
+    ]
+  },
+  {
+    "id": "20ddf7a9-2272-43cc-88f4-42d09b4c4f8e",
+    "name": "Dark Lipstick",
+    "description": "Features a performer wearing dark or black lipstick.",
+    "aliases": [
+      "Black Lipstick"
+    ]
+  },
+  {
+    "id": "4bc88176-fd20-40b8-a0a1-8d998fc1f995",
+    "name": "Enhanced Lips",
+    "description": "Cosmetically altered lips.",
+    "aliases": [
+      "Fake Lips",
+      "Lip Filler",
+      "Lip Injection"
+    ]
+  },
+  {
+    "id": "2538afe8-1ab7-4a44-b7ee-f6f5f682b470",
+    "name": "Eye Makeup",
+    "description": "Cosmetics applied around the eyes to beautify or alter appearances.",
+    "aliases": [
+      "Eye Make Up",
+      "Eye Make-up",
+      "Eyeliner",
+      "Eyeshadow",
+      "Mascara"
+    ]
+  },
+  {
+    "id": "cfc9d4d5-2003-4d43-99eb-bc72f1a70a8a",
+    "name": "Fangs",
+    "description": "Performer has elongated incisors.",
+    "aliases": [
+      "Fang"
+    ]
+  },
+  {
+    "id": "489db5c0-50aa-4675-8f9e-1677d5c92f70",
+    "name": "Green Eyes",
+    "description": "Performers with green eyes (and scenes featuring them)",
+    "aliases": [
+      "Eye Color - Green",
+      "Eyes - Green",
+      "Green Eye",
+      "Green-Eyed"
+    ]
+  },
+  {
+    "id": "a668d6b2-6c7c-4d78-8103-04a5fa834765",
+    "name": "Grey Eyes",
+    "description": "Performers with grey eyes (and scenes featuring them)",
+    "aliases": [
+      "Eye Color - Gray",
+      "Eye Color - Grey",
+      "Eyes - Gray",
+      "Eyes - Grey",
+      "Gray Eyes",
+      "Gray-Eyed",
+      "Grey-Eyed"
+    ]
+  },
+  {
+    "id": "23bae31a-29af-442c-a60c-8be453b40507",
+    "name": "Hazel Eyes",
+    "description": "Performers with hazel eyes (and scenes featuring them)",
+    "aliases": [
+      "Eye Color - Hazel",
+      "Eyes - Hazel",
+      "Hazel Eye",
+      "Hazel-Eyed"
+    ]
+  },
+  {
+    "id": "0818cfd2-77d8-46bd-a9d3-4e3a1eae233a",
+    "name": "Lipstick",
+    "description": "Features a performer wearing lipstick.",
+    "aliases": []
+  },
+  {
+    "id": "2d82af4d-7c20-4528-8d56-2a2558d2b906",
+    "name": "Pink Lipstick",
+    "description": "Features a performer wearing pink lipstick.",
+    "aliases": [
+      "Pink Lips"
+    ]
+  },
+  {
+    "id": "95eea1cb-ee57-4ff8-a8c9-c24e9a9cec7b",
+    "name": "Pouty Lips",
+    "description": "",
+    "aliases": [
+      "Big Lips",
+      "Blow Job Lips",
+      "Blowjob Lips",
+      "DSL",
+      "DSLs",
+      "Dick Sucking Lips",
+      "Dick-Sucking Lips"
+    ]
+  },
+  {
+    "id": "f14fa034-67dc-4a09-8ebe-a992797c3918",
+    "name": "Red Lipstick",
+    "description": "Features a performer wearing red lipstick.",
+    "aliases": [
+      "Red Lips"
+    ]
+  },
+  {
+    "id": "62691732-fe5d-40bb-9f15-ae9f2a089a6a",
+    "name": "Running Makeup",
+    "description": "Makeup streaming down a performer's face, typically due to crying.",
+    "aliases": [
+      "Ruined Make Up",
+      "Ruined Makeup",
+      "Running Make Up",
+      "Smeared Make Up",
+      "Smeared Makeup"
+    ]
+  },
+  {
+    "id": "79216e0f-ab57-4794-8e52-260f60b2446f",
+    "name": "Smeared Lipstick",
+    "description": "Smeared lipstick from aggressive kissing/oral",
+    "aliases": []
+  }
+]

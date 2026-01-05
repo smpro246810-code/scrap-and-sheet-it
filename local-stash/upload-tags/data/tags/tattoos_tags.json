@@ -1,0 +1,71 @@
+[
+  {
+    "id": "df3eb2d7-f657-40d0-9747-35a3b28b8dba",
+    "name": "Chinese Tattoo",
+    "description": "Tattoo of Chinese characters.",
+    "aliases": []
+  },
+  {
+    "id": "0c1eb9ed-9d8f-430f-8bd6-08999d768f4b",
+    "name": "Degrading Tattoo",
+    "description": "Tattoos that feature degrading language or imagery.",
+    "aliases": []
+  },
+  {
+    "id": "710a03a5-806d-4ae6-b5ac-f58396a4ffef",
+    "name": "Heavily Tattooed",
+    "description": "Performers with a substantial amount of tattoos, at least one very large tattoo, or tattoos on the face or neck.",
+    "aliases": [
+      "Ink Queens",
+      "Lots of Tattoos",
+      "Many Tattoos",
+      "Tatted Up",
+      "Tatted-Up",
+      "Tattoos (Heavy)",
+      "Tattoos (Many)"
+    ]
+  },
+  {
+    "id": "1a2aa02e-c992-4762-b439-5763c087ec72",
+    "name": "No Tattoos",
+    "description": "Describes performers who do not have any visible tattoos.",
+    "aliases": [
+      "No Tattoo",
+      "Tattoos - None"
+    ]
+  },
+  {
+    "id": "7bded732-133c-4007-b4d1-2fe08d01dabc",
+    "name": "Tattoos",
+    "description": "Performers who have at least one visible tattoo.",
+    "aliases": [
+      "Tattoo",
+      "Tattoo Girl",
+      "Tattooed",
+      "Tattooed Female",
+      "Tattooed Male",
+      "Tattooed Man",
+      "Tattooed Women",
+      "Tattoos - Few",
+      "文身"
+    ]
+  },
+  {
+    "id": "813300fc-b22d-4832-ab0e-c5f74561b7e4",
+    "name": "Textual Tattoo",
+    "description": "Performers featuring tattoos with written text.",
+    "aliases": [
+      "Poem Tattoo"
+    ]
+  },
+  {
+    "id": "430ed898-7dd5-47d9-92d9-fa81818b7ec5",
+    "name": "Tramp Stamp",
+    "description": "Tattoo on a performer's lower back.",
+    "aliases": [
+      "Tattoo - Tramp Stamp",
+      "Tramp Stamp - Tattoo",
+      "Tramp Stamp Tattoo"
+    ]
+  }
+]

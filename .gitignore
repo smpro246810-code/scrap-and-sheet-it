@@ -1,0 +1,7 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.log
+# Google credentials
+google-sheets/credentials.json

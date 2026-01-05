@@ -1,0 +1,251 @@
+[
+  {
+    "id": "81115c23-8352-44e5-ba73-9189ec44a2c6",
+    "name": "Bald Head",
+    "description": "Performers with no hair on their head.",
+    "aliases": [
+      "Bald Male"
+    ]
+  },
+  {
+    "id": "4b0bd717-97fd-4426-a1fc-322ad6ee4442",
+    "name": "Bangs",
+    "description": "Hair that hangs in front of the forehead.",
+    "aliases": [
+      "Fringe",
+      "Straight Bangs",
+      "Straight Bangs Haircut"
+    ]
+  },
+  {
+    "id": "a98a3567-4cd5-4422-a5be-78704e8a052d",
+    "name": "Beard",
+    "description": "Facial hair on the jaw, chin, upper lip, lower lip, cheeks, and neck",
+    "aliases": [
+      "Facial Hair",
+      "Facial Hair On HIM",
+      "胡须"
+    ]
+  },
+  {
+    "id": "ffc2f4ec-ce2a-432b-8d03-4eb3e20801ca",
+    "name": "Braids",
+    "description": "Hair that is braided in some way.",
+    "aliases": [
+      "Braid",
+      "Braided Hair",
+      "French Braid",
+      "Hair Braids"
+    ]
+  },
+  {
+    "id": "cfab6604-f675-4b03-98e4-965bbe9de613",
+    "name": "Curly Hair",
+    "description": "Hair with significantly tighter curls along most of its length.",
+    "aliases": [
+      "Curly",
+      "Narrow Curls",
+      "Ringlets",
+      "Small Curls",
+      "Thin Curls",
+      "Tight Curls",
+      "Very Curly"
+    ]
+  },
+  {
+    "id": "3414cab3-718d-4203-855a-c32d75e253a2",
+    "name": "Dreadlocks",
+    "description": "Hairstyle made of rope-like strands of hair.",
+    "aliases": [
+      "Dreads",
+      "Locked Hair",
+      "Locs",
+      "Rasta Hair",
+      "Rasta-Hair"
+    ]
+  },
+  {
+    "id": "3ebfc5cd-c814-43a4-9548-7cdb9767649f",
+    "name": "Hair Bun",
+    "description": "Hair tied back and kept up high.",
+    "aliases": [
+      "Bun",
+      "Hair Up",
+      "Top Bun",
+      "Updo"
+    ]
+  },
+  {
+    "id": "4075e8ee-b0f7-41bd-9ded-a76b125da524",
+    "name": "Hair Pouf",
+    "description": "Hair flipped back from the centre front hairline",
+    "aliases": [
+      "Aughts Pouf",
+      "Hair Bump"
+    ]
+  },
+  {
+    "id": "12fd17c1-0e42-4c58-b187-7c2c34e4c529",
+    "name": "Kinky Hair",
+    "description": "Extremely dense, curly hair that often grows upward and outward more than it hangs down.",
+    "aliases": [
+      "Afro"
+    ]
+  },
+  {
+    "id": "df9ead0e-43cf-4c56-9c36-292b6c03e47d",
+    "name": "Long Hair",
+    "description": "Hair that would roughly hang below their shoulders if left loose.",
+    "aliases": [
+      "Hair - Long",
+      "Long Haired Male",
+      "长发"
+    ]
+  },
+  {
+    "id": "5ba365dd-c520-4dbf-9193-308ac240ae5a",
+    "name": "Long Hair (Female)",
+    "description": "Female hair that would roughly hang below their shoulders if left loose.",
+    "aliases": []
+  },
+  {
+    "id": "5c181c30-a83c-4be3-a9e8-4a458643e7c3",
+    "name": "Medium Hair",
+    "description": "Hair that would roughly hang at shoulder-length if left loose.",
+    "aliases": [
+      "Hair - Medium Length",
+      "Mid-length Hair"
+    ]
+  },
+  {
+    "id": "afd9d1f6-df15-4cbf-8c2a-1599e9050a7d",
+    "name": "Medium Hair (Female)",
+    "description": "Female hair that would roughly hang at shoulder-length if left loose.",
+    "aliases": []
+  },
+  {
+    "id": "72980779-e2c1-4148-bf3f-9b7cb131c538",
+    "name": "Mustache",
+    "description": "Men's facial hair on the upper lip",
+    "aliases": [
+      "Moustache",
+      "Stache"
+    ]
+  },
+  {
+    "id": "8fa12b23-4a00-4808-9d18-dd5475ec2612",
+    "name": "Pigtails",
+    "description": "Hair tied back into two separate hanging tails, on either side of the head.",
+    "aliases": [
+      "Hair (Pigtails)",
+      "Hair - Pigtails",
+      "Pig Tail",
+      "Pig Tails",
+      "Pigtail"
+    ]
+  },
+  {
+    "id": "a446da56-10db-499c-a11b-8e914cb82642",
+    "name": "Ponytail",
+    "description": "Hair tied back into a single hanging tail.",
+    "aliases": [
+      "Pony",
+      "Pony Tail"
+    ]
+  },
+  {
+    "id": "46d54e6a-e800-4804-8199-ebda9eb5e872",
+    "name": "Quiff",
+    "description": "Men's hair style with short sides and a longer, voluminous top that is styled upward and back",
+    "aliases": []
+  },
+  {
+    "id": "8833fed5-7406-4c4f-9fe6-a3b67022090c",
+    "name": "Shaved Head",
+    "description": "Hair that has been shaved or buzzed very close to the scalp.",
+    "aliases": [
+      "Shave-head"
+    ]
+  },
+  {
+    "id": "619e376b-10d2-4126-806f-d08c152b7920",
+    "name": "Short Hair",
+    "description": "Hair that is only long enough to frame the face, at most.",
+    "aliases": [
+      "Bobbed Hair",
+      "Hair - Short",
+      "短发"
+    ]
+  },
+  {
+    "id": "575520ec-6437-4986-9e82-7b8cb3813b2b",
+    "name": "Short Hair (Female)",
+    "description": "Female performers with hair that is only long enough to frame the face, at most.",
+    "aliases": [
+      "Pixie Cut",
+      "Pixie Haircut",
+      "短发（女）"
+    ]
+  },
+  {
+    "id": "68cd43bc-3f86-47ad-bc51-19958d9f2186",
+    "name": "Short Hair (Male)",
+    "description": "Male performers with hair that is only long enough to frame the face, at most.",
+    "aliases": [
+      "短发（男）"
+    ]
+  },
+  {
+    "id": "ddd73051-bff7-40c1-981e-862a2daaede5",
+    "name": "Sidecut",
+    "description": "Performer has a hair style that features a shaved section on one side.",
+    "aliases": []
+  },
+  {
+    "id": "e066c993-b78a-4a7f-9995-4c079503269f",
+    "name": "Space Buns",
+    "description": "Hairstyle characterised by two equal-sized buns either side of the head",
+    "aliases": [
+      "Double Bun",
+      "Double Buns"
+    ]
+  },
+  {
+    "id": "44582735-0acf-42b8-a046-4ff535a4e503",
+    "name": "Straight Hair",
+    "description": "Hair that would hang straight down if left loose.",
+    "aliases": []
+  },
+  {
+    "id": "217cd717-69d9-4efe-aea6-63fb7fbc86e5",
+    "name": "Waist-length Hair",
+    "description": "Hair that is long enough to approximately reach the waist",
+    "aliases": [
+      "Waist Length Hair"
+    ]
+  },
+  {
+    "id": "ab33d72c-25e8-4770-b53a-1d9c78d01f30",
+    "name": "Wavy Hair",
+    "description": "Hair that has wider, looser curls or waves for at least some of its length.",
+    "aliases": [
+      "Big Hair",
+      "Curled",
+      "Large Curls",
+      "Loose Curls",
+      "Some Curls",
+      "Waves",
+      "Wide Curls"
+    ]
+  },
+  {
+    "id": "fbc8309f-af80-4ff9-84a4-fc5d61ba14e7",
+    "name": "Wig",
+    "description": "A manufactured covering of natural or synthetic hair for the head.",
+    "aliases": [
+      "Hairpiece",
+      "Toupee",
+      "假发"
+    ]
+  }
+]

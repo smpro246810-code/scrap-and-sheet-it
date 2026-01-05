@@ -1,0 +1,349 @@
+[
+  {
+    "id": "8534d108-1f4c-42f9-8caa-5ca9064f560d",
+    "name": "18+",
+    "description": "Primary performer (not character) is between 18 and 20.",
+    "aliases": [
+      "18 Plus",
+      "Over 18"
+    ]
+  },
+  {
+    "id": "1a8516f9-ae32-469a-99d3-830de60e1060",
+    "name": "20+",
+    "description": "Primary performer (not character) is in their 20s.",
+    "aliases": [
+      "20 Plus",
+      "20s",
+      "Over 20"
+    ]
+  },
+  {
+    "id": "7fdb769e-fbcd-4d80-83d7-ca286bc98344",
+    "name": "30+",
+    "description": "Primary performer (not character) is in their 30s.",
+    "aliases": [
+      "30 Plus",
+      "30s",
+      "Over 30",
+      "Over-30"
+    ]
+  },
+  {
+    "id": "b8d9dbc4-7e66-4c11-9b51-d484248e53db",
+    "name": "40+",
+    "description": "Primary performer (not character) is in their 40s.",
+    "aliases": [
+      "40 Plus",
+      "Over 40"
+    ]
+  },
+  {
+    "id": "0e59e35f-0e2c-464b-b05d-7a8837ce84b8",
+    "name": "50+",
+    "description": "Primary performer (not character) is in their 50s.",
+    "aliases": [
+      "50 Plus",
+      "Over 50"
+    ]
+  },
+  {
+    "id": "46a09f48-535d-4b26-900c-c6dc5dc7a69b",
+    "name": "60+",
+    "description": "Primary performer (not character) is in their 60s.",
+    "aliases": [
+      "60 Plus",
+      "Over 60"
+    ]
+  },
+  {
+    "id": "46106f0c-52ff-4b87-a7e4-c0f5e7379d30",
+    "name": "70+",
+    "description": "Primary performer (not character) is in their 70s.",
+    "aliases": [
+      "70 Plus",
+      "Over 70"
+    ]
+  },
+  {
+    "id": "ea550585-5f14-46e9-a1a8-d9be4fe6c18f",
+    "name": "DILF (30+)",
+    "description": "Older male character implied to be at least 30, often presented as a fatherly figure.",
+    "aliases": [
+      "D.I.L.F.",
+      "DILF",
+      "DILF (Catch-all)",
+      "DILF (Neutral)",
+      "DILF (Vague)",
+      "DILF Male",
+      "DILFs",
+      "Mature Guy",
+      "Mature Male",
+      "Mature Man",
+      "Older Guy",
+      "Older Male",
+      "Older Man",
+      "成熟男性",
+      "成熟的男人",
+      "熟男（30+）"
+    ]
+  },
+  {
+    "id": "c0021711-ad29-4e52-bb16-f22e3959c252",
+    "name": "DILF (Role)",
+    "description": "\"Dad I'd Like to Fuck.\" A conventionally attractive older male character.",
+    "aliases": []
+  },
+  {
+    "id": "bd1bf527-0c56-4aa7-858e-c82b9187125b",
+    "name": "Experienced (30–40)",
+    "description": "Character presented as a little older, a mix of youth and experience. Implied age (of character not performer) 30–40.",
+    "aliases": [
+      "Experienced",
+      "Experienced (Catch-all)",
+      "Experienced (Neutral)",
+      "Experienced (Vague)"
+    ]
+  },
+  {
+    "id": "8d7e2c66-2f32-44b9-8be6-b9c050bd51b5",
+    "name": "Experienced Man (30–40)",
+    "description": "Male character presented as a little older, a mix of youth and experience. Implied age (of character not performer) 30–40.",
+    "aliases": [
+      "Experienced Guy",
+      "Experienced Male",
+      "Experienced Man"
+    ]
+  },
+  {
+    "id": "880d4079-4ec0-4ee2-b116-6c44bd4ae2fd",
+    "name": "Experienced Woman (30–40)",
+    "description": "Female character presented as a little older, a mix of youth and experience. Implied age (of character not performer) 30–40.",
+    "aliases": [
+      "Experienced Female",
+      "Experienced Lady",
+      "Experienced Woman"
+    ]
+  },
+  {
+    "id": "b2329596-0f6c-4953-94c5-82de77d0bb56",
+    "name": "Mature (30+)",
+    "description": "Older character implied to be at least 30, often presented as a parental figure.",
+    "aliases": [
+      "35 Plus",
+      "Mature",
+      "Mature (Catch-all)",
+      "Mature (Neutral)",
+      "Mature (Vague)",
+      "Mature Looking",
+      "Older",
+      "熟女"
+    ]
+  },
+  {
+    "id": "da99ea76-37c8-4d7c-988b-d0cbc5674045",
+    "name": "Middle-aged (40–60)",
+    "description": "Character presented as generally older, but not quite retirement age. Implied age (of character not performer) 40–60.",
+    "aliases": [
+      "Middle-aged",
+      "Middle-aged (Catch-all)",
+      "Middle-aged (Neutral)",
+      "Middle-aged (Vague)"
+    ]
+  },
+  {
+    "id": "804da87b-5bdf-4c92-a59e-7f41f2c07857",
+    "name": "Middle-aged Man (40–60)",
+    "description": "Male character presented as generally older, but not quite retirement age. Implied age (of character not performer) 40–60.",
+    "aliases": [
+      "Middle-aged Guy",
+      "Middle-aged Male",
+      "Middle-aged Man"
+    ]
+  },
+  {
+    "id": "f1c13829-6ad2-498f-8738-2e318805ee45",
+    "name": "Middle-aged Woman (40–60)",
+    "description": "Female character presented as generally older, but not quite retirement age. Implied age (of character not performer) 40–60.",
+    "aliases": [
+      "Middle-aged Female",
+      "Middle-aged Lady",
+      "Middle-aged Woman"
+    ]
+  },
+  {
+    "id": "22a1b674-758b-46af-96cd-d34d3ef1a3f8",
+    "name": "MILF (30+)",
+    "description": "Older female character implied to be at least 30, often presented as a motherly figure.",
+    "aliases": [
+      "M.I.L.F.",
+      "M.I.L.F.s",
+      "MILF",
+      "MILF (Catch-all)",
+      "MILF (Neutral)",
+      "MILF (Vague)",
+      "Mature & Milf",
+      "Mature Beauty",
+      "Mature Female",
+      "Mature Lady",
+      "Mature Woman",
+      "Mature/Milf",
+      "Milf Pornstar",
+      "Milfs",
+      "Older Female",
+      "Older Lady",
+      "Older Woman"
+    ]
+  },
+  {
+    "id": "f38afc38-f662-4b72-bc93-3ee258c9dee5",
+    "name": "Old (60+)",
+    "description": "Character presented as significantly older, nearing or past retirement age. Implied age (of character not performer) 60+.",
+    "aliases": [
+      "Elderly",
+      "Old",
+      "Old (Catch-all)",
+      "Old (Neutral)",
+      "Old (Vague)"
+    ]
+  },
+  {
+    "id": "d6c82d75-fecb-4df9-9371-6f56c20d738d",
+    "name": "Old Man (60+)",
+    "description": "Male character presented as significantly older, nearing or past retirement age. Implied age (of character not performer) 60+.",
+    "aliases": [
+      "Elder Male",
+      "Elderly Man",
+      "Grandpa",
+      "Old Guy",
+      "Old Male",
+      "Old Man"
+    ]
+  },
+  {
+    "id": "31ecef3a-e2b4-48a2-9189-7dee5090e5a9",
+    "name": "Old Woman (60+)",
+    "description": "Female character presented as significantly older, nearing or past retirement age. Implied age (of character not performer) 60+.",
+    "aliases": [
+      "Elderly Woman",
+      "G.I.L.F.",
+      "GILF",
+      "Grandma",
+      "Old Female",
+      "Old Lady",
+      "Old Woman"
+    ]
+  },
+  {
+    "id": "6ddb272f-4701-4914-a07e-de917274d308",
+    "name": "Teen (18–22)",
+    "description": "Character presented as very young, close to high school or college age. Implied age (of character not performer) 18–22.",
+    "aliases": [
+      "18",
+      "18 & 19 Years Old",
+      "18 Years Old",
+      "18+ Teen",
+      "18-24",
+      "Teen",
+      "Teen (18+)",
+      "Teen (18-22)",
+      "Teen (Catch-All)",
+      "Teen (Neutral)",
+      "Teen (Vague)",
+      "Teen / Young",
+      "Teen 18+",
+      "Teen18+",
+      "Teenager",
+      "青少年（18-22）"
+    ]
+  },
+  {
+    "id": "399f1b82-e414-4287-815e-24289e7669f9",
+    "name": "Teen Boy (18–22)",
+    "description": "Male character presented as very young, close to high school or college age. Implied age (of character not performer) 18–22.",
+    "aliases": [
+      "Male Teen",
+      "Male Teenager",
+      "Teen Boy",
+      "Teen Guy",
+      "Teen Male",
+      "Teenage Boy",
+      "Teenage Guy",
+      "Teenage Male",
+      "少年男孩（18-22）"
+    ]
+  },
+  {
+    "id": "48c8621b-032c-448b-becc-26df8e488add",
+    "name": "Teen Girl (18–22)",
+    "description": "Female character presented as very young, close to high school or college age. Implied age (of character not performer) 18–22.",
+    "aliases": [
+      "Female Teen",
+      "Female Teenager",
+      "Teen Chick",
+      "Teen Female",
+      "Teen Girl",
+      "Teen18+ Role",
+      "Teenage Chick",
+      "Teenage Female",
+      "Teenage Girl"
+    ]
+  },
+  {
+    "id": "04bb363e-7ec5-48ad-a780-468c21264ffb",
+    "name": "Young (22–30)",
+    "description": "Character presented as generally young, but no longer around college age. Implied age (of character not performer) 22–30.",
+    "aliases": [
+      "25-34",
+      "Young",
+      "Young (23–30)",
+      "Young (Catch-all)",
+      "Young (Neutral)",
+      "Young (Vague)",
+      "Young Looking",
+      "Younger",
+      "Younger Looking",
+      "Youthful"
+    ]
+  },
+  {
+    "id": "e7f1f848-4350-4bda-925c-b0123521b4de",
+    "name": "Young Man (22–30)",
+    "description": "Male presented as generally young, but no longer around college age. Implied age (of character not performer) 22–30.",
+    "aliases": [
+      "Young Guy",
+      "Young Male",
+      "Young Man",
+      "Young Man (23–30)",
+      "Younger Guy",
+      "Younger Male",
+      "Younger Man",
+      "Youthful Guy",
+      "Youthful Male",
+      "Youthful Man",
+      "美少年",
+      "青年男子 (22–30)"
+    ]
+  },
+  {
+    "id": "84ba8ef1-084c-46f8-b352-31154f5bfbbc",
+    "name": "Young Woman (22–30)",
+    "description": "Female character presented as generally young, but no longer around college age. Implied age (of character not performer) 22–30.",
+    "aliases": [
+      "Chick",
+      "Woman (20-29)",
+      "Young Chick",
+      "Young Female",
+      "Young Girl",
+      "Young Woman",
+      "Young Woman (22-30)",
+      "Young Woman (23-30)",
+      "Young Woman (23–30)",
+      "Younger Girl",
+      "Younger Woman",
+      "Youthful Chick",
+      "Youthful Girl",
+      "Youthful Woman"
+    ]
+  }
+]

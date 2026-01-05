@@ -1,0 +1,488 @@
+[
+  {
+    "id": "9441c3ad-41d2-4d6e-bc97-54ad8cc227d5",
+    "name": "120 FPS",
+    "description": "Scenes offered at 120 frames per second.",
+    "aliases": [
+      "120帧"
+    ]
+  },
+  {
+    "id": "103a1f16-83e1-4b9f-ab14-e85e0405e715",
+    "name": "180°",
+    "description": "Virtual reality scenes with a 180° field of vision.",
+    "aliases": [
+      "180",
+      "180 FOV",
+      "180 VR",
+      "180VR",
+      "180° FOV",
+      "180° VR",
+      "FOV: 180",
+      "FOV: 180°",
+      "FOV:180",
+      "FOV:180°",
+      "VR 180",
+      "VR180"
+    ]
+  },
+  {
+    "id": "e3338b1d-63f8-42ea-b617-37b0acf0eea5",
+    "name": "190°",
+    "description": "Virtual reality scenes with a 190° field of vision.",
+    "aliases": [
+      "190",
+      "RF52"
+    ]
+  },
+  {
+    "id": "823219a4-41a6-48f0-ab1b-de9ed82927c3",
+    "name": "200°",
+    "description": "Virtual reality scenes with a 200° field of vision.",
+    "aliases": [
+      "200"
+    ]
+  },
+  {
+    "id": "eb6e1816-36b7-459c-9881-fb2d315d1d08",
+    "name": "220°",
+    "description": "Virtual reality scenes with a 220° field of vision.",
+    "aliases": [
+      "220"
+    ]
+  },
+  {
+    "id": "64c564c8-bb95-41fd-a138-7ad1aa9663bd",
+    "name": "24 FPS",
+    "description": "Scenes offered at 24 frames per second.",
+    "aliases": []
+  },
+  {
+    "id": "e3ea23c8-344b-496a-94b0-b9115abc156a",
+    "name": "25 FPS",
+    "description": "Scenes offered at 25 frames per second.",
+    "aliases": [
+      "25FPS"
+    ]
+  },
+  {
+    "id": "6e6aa9ee-356e-4d4a-922f-2ecd48b02c2f",
+    "name": "30 FPS",
+    "description": "Scenes offered at 30 frames per second.",
+    "aliases": [
+      "30FPS"
+    ]
+  },
+  {
+    "id": "99985259-c544-412a-870c-e51e26a46cda",
+    "name": "360°",
+    "description": "Virtual reality scenes with a 360° field of vision.",
+    "aliases": [
+      "360"
+    ]
+  },
+  {
+    "id": "6958c8ed-1948-46d2-89e0-cb48919bf8f1",
+    "name": "4:3 Aspect Ratio",
+    "description": "Footage shot in a 4:3 (1.33:1) aspect ratio.",
+    "aliases": [
+      "1.33:1",
+      "1.33:1 Aspect Ratio",
+      "1.33x1",
+      "4:3",
+      "4x3",
+      "4x3 Aspect Ratio",
+      "Fullscreen"
+    ]
+  },
+  {
+    "id": "4134dc80-f7f0-442d-a7a5-aad4a2cbdb84",
+    "name": "50 FPS",
+    "description": "Scenes offered at 50 frames per second.",
+    "aliases": [
+      "50FPS"
+    ]
+  },
+  {
+    "id": "80d5680f-309c-4439-b706-c1696a01d0d3",
+    "name": "60 FPS",
+    "description": "Scenes offered at 60 frames per second.",
+    "aliases": [
+      "60 Frames",
+      "60FPS",
+      "60p",
+      "High Frame Rate"
+    ]
+  },
+  {
+    "id": "e705dd0b-dd1d-494a-bb49-309e8f397edd",
+    "name": "90 FPS",
+    "description": "Scenes offered at 90 frames per second.",
+    "aliases": []
+  },
+  {
+    "id": "e022d5a8-9dfb-4e5f-ae47-2f9578d7b6a6",
+    "name": "Articulated Camera",
+    "description": "The scene is filmed with a moving camera most often operated by someone not necessarily participating in the action.",
+    "aliases": [
+      "Moving Camera",
+      "Operated Camera"
+    ]
+  },
+  {
+    "id": "c19e87a2-4fe9-4eb2-abde-ea26ee808281",
+    "name": "Augmented Reality",
+    "description": "Video or CGI content designed to be combined with your current visual surroundings, e.g. DeoVR / SexLikeReal using chroma key (\"green screen\") or alpha transparency",
+    "aliases": [
+      "AR",
+      "Passthrough",
+      "Passthrough AR"
+    ]
+  },
+  {
+    "id": "cbd33281-6265-4f15-b13c-e1aa7613b0f1",
+    "name": "Back Shot",
+    "description": "When the performer back is facing the camera",
+    "aliases": [
+      "Back View",
+      "Back View Shot",
+      "From Behind View",
+      "Rear View"
+    ]
+  },
+  {
+    "id": "15b74aab-7961-4d25-b7ea-9fd70b7f7031",
+    "name": "Blacklight",
+    "description": "Scene uses ultraviolet (UV) light.",
+    "aliases": [
+      "BLB",
+      "Black Light",
+      "UV Light",
+      "Ultraviolet Light"
+    ]
+  },
+  {
+    "id": "cc5b9865-5f7a-4b12-9308-1f024946e02c",
+    "name": "CGI",
+    "description": "Features digitally created special effects or backgrounds.",
+    "aliases": [
+      "C.G.I.",
+      "Computer Generated Imagery",
+      "Computer-generated Imagery"
+    ]
+  },
+  {
+    "id": "baaa0840-dcc7-450e-a386-403b8f7743e9",
+    "name": "Chroma Key",
+    "description": "Video with artificial background.",
+    "aliases": [
+      "Blue Screen",
+      "Green Screen",
+      "VFX Background"
+    ]
+  },
+  {
+    "id": "18993a85-0fb6-4bfc-99c5-38dbc10d37e8",
+    "name": "Close Up",
+    "description": "Performer's body-part (unspecified) fills most of the screen.",
+    "aliases": [
+      "Close ups",
+      "Close-up",
+      "Close-ups",
+      "CloseUps",
+      "close.up",
+      "局部アップ"
+    ]
+  },
+  {
+    "id": "e3fb1d8d-471e-464c-9100-3b7819a184b0",
+    "name": "Close Up Ass",
+    "description": "Performer's ass fills most of the screen.",
+    "aliases": [
+      "Ass Close Up",
+      "Ass Shot"
+    ]
+  },
+  {
+    "id": "0d3c01e6-444a-4023-8bc2-68ed2d8d9e34",
+    "name": "Close Up Breasts",
+    "description": "Performer's breasts fill most of the screen.",
+    "aliases": [
+      "Breasts Close Up",
+      "Close Up Nipples"
+    ]
+  },
+  {
+    "id": "ae49465f-6cb3-4bd8-9a5b-5ec1c4448efd",
+    "name": "Close Up Face",
+    "description": "Performer's face fills most of the screen.",
+    "aliases": []
+  },
+  {
+    "id": "471c68e2-582e-4ab8-b0af-8ef2c505a325",
+    "name": "Close Up Feet",
+    "description": "Performer's feet fill most of the screen.",
+    "aliases": [
+      "Feet Close Up"
+    ]
+  },
+  {
+    "id": "1141381e-c60f-4602-84b7-414ba276f30e",
+    "name": "Close Up Pussy",
+    "description": "Performer's pussy fills most of the screen.",
+    "aliases": [
+      "Pussy Close Up",
+      "Pussy Shots",
+      "pussy closeup",
+      "pussy shot",
+      "showing pussy"
+    ]
+  },
+  {
+    "id": "d29b168d-2bdf-4de2-b43a-adcbec95e09d",
+    "name": "Cuckold - POV",
+    "description": "Scenes shot from the perspective of the cuckholded party.",
+    "aliases": [
+      "Cuckold Filming",
+      "Cuckold POV"
+    ]
+  },
+  {
+    "id": "610335aa-dac8-4006-9c77-d6ea4df9ec3b",
+    "name": "Deep Fake",
+    "description": "Usage of AI and ML techniques to replace one person's likeness convincingly with that of another",
+    "aliases": []
+  },
+  {
+    "id": "84141442-a7df-4546-bd30-7bce476b909e",
+    "name": "Depth of Field",
+    "description": "Camera effect that simulates the focal properties of a real-world camera lens by blurring the background of an image while objects in the foreground stay in focus.",
+    "aliases": [
+      "Blurry Background",
+      "Camera Focus"
+    ]
+  },
+  {
+    "id": "91067813-276b-4cef-8ce8-ff0baa080393",
+    "name": "Fisheye",
+    "description": "Virtual reality scenes shot using a fisheye lens",
+    "aliases": []
+  },
+  {
+    "id": "a39648cf-b626-4eaa-89ec-318daa05996a",
+    "name": "Fixed Camera",
+    "description": "Recorded from a camera that does not have an operator/cameraman.",
+    "aliases": [
+      "Static Camera"
+    ]
+  },
+  {
+    "id": "b1282cca-01e0-42bc-b6b1-53caedc9a596",
+    "name": "Front Shot",
+    "description": "Performer is seen facing the camera",
+    "aliases": [
+      "Front Side",
+      "Front Side View",
+      "Front View",
+      "Front View Shot",
+      "Frontview"
+    ]
+  },
+  {
+    "id": "79a2656a-b430-4a4b-aa72-ebaa28474482",
+    "name": "Grayscale",
+    "description": "Features video entirely in shades of black, white, and gray.",
+    "aliases": [
+      "Black and White Video",
+      "Colorless",
+      "Colourless",
+      "Gray Scale",
+      "Grey Scale",
+      "Greyscale",
+      "No Color",
+      "No Colour"
+    ]
+  },
+  {
+    "id": "0183a002-9622-4e0b-b4f6-d5e6b899f24b",
+    "name": "High Angle",
+    "description": "A high-angle shot is a cinematography technique where the camera points down on the subject from above.",
+    "aliases": [
+      "Bird's Eye",
+      "Diving View",
+      "From Above",
+      "Top Shot"
+    ]
+  },
+  {
+    "id": "c8f16e13-2c9a-4ddb-ae98-16fc0203433b",
+    "name": "High Dynamic Range",
+    "description": "The video is shot and encoded in a way that allows a wider gamut of colours to be stored using a different or extended coulour space than normal",
+    "aliases": [
+      "Dolby Vision",
+      "HDR",
+      "HDR10",
+      "HDR10+",
+      "HLG",
+      "expanded dynamic range",
+      "extended dynamic range",
+      "wide dynamic range"
+    ]
+  },
+  {
+    "id": "ed1bde94-ddcc-4524-87fe-077f1b864687",
+    "name": "Low Ambient Lighting",
+    "description": "Footage shot in a low ambient lighting environment, such as a darkened room lit by an existing lamp or outside at night underneath a streetlamp, with either no or minimal added lighting.",
+    "aliases": [
+      "Ambient Lighting",
+      "Available Light",
+      "Dark Room",
+      "Dim Lighting",
+      "Dimly Lit",
+      "Low Light"
+    ]
+  },
+  {
+    "id": "25f9b324-f458-4683-a8ac-d91786eb45dc",
+    "name": "Low Angle",
+    "description": "A low-angle shot is when the camera is positioned low on the vertical axis, below the level of the eyeline, and looks up at an object or subject above.",
+    "aliases": [
+      "Below Shot",
+      "Below View",
+      "From Below",
+      "Low Angle Shot",
+      "Low View Angle",
+      "Upshot",
+      "Upshots"
+    ]
+  },
+  {
+    "id": "78c48cda-a5e9-44b7-9ec3-6e7cfeee4ef1",
+    "name": "Motion Blur",
+    "description": "When the image is blurry due to movement",
+    "aliases": []
+  },
+  {
+    "id": "e33962b1-5d90-4cd4-841c-1d4aa2e106b4",
+    "name": "One Shot",
+    "description": "Scenes filmed in one take by a single camera without any apparent cuts.",
+    "aliases": [
+      "Continuous Shot",
+      "No Cuts",
+      "One Take",
+      "One-shot",
+      "One-take",
+      "Single Take",
+      "Single-take",
+      "Without Cuts"
+    ]
+  },
+  {
+    "id": "b09587d4-abbd-4f7b-b11f-bcab83f40101",
+    "name": "Plow Cam",
+    "description": "Doggy Style or Prone Bone while filming from the front",
+    "aliases": [
+      "Frontview Doggystyle"
+    ]
+  },
+  {
+    "id": "ddb9d608-e635-43b3-ae75-6463e560fc29",
+    "name": "Sepia",
+    "description": "Orange looking filter",
+    "aliases": [
+      "Sepia Filter"
+    ]
+  },
+  {
+    "id": "b7423441-5b33-4b8f-a95e-e0c4a62d67cd",
+    "name": "Side Shot",
+    "description": "Performer is seen from their side",
+    "aliases": [
+      "Profile",
+      "Side View",
+      "Side View Shot"
+    ]
+  },
+  {
+    "id": "b7f6064c-0845-4869-b279-dddc0128e636",
+    "name": "Silhouette",
+    "description": "Use of backlight to cast shadows or obscure details of the shot.",
+    "aliases": []
+  },
+  {
+    "id": "59a4cb62-008f-4f42-b690-45f2b614d3bf",
+    "name": "Slow Mo",
+    "description": "A shot in which time appears to be slowed down.",
+    "aliases": [
+      "Slow Motion"
+    ]
+  },
+  {
+    "id": "968ef5fe-8113-459f-b4a0-337b6e673b40",
+    "name": "Soft Glow",
+    "description": "Video effect which gives footage a dream-like appearance, similar to a light Gaussian blur filter; “Vaseline on camera lens”",
+    "aliases": [
+      "Cinesoft",
+      "Dreamy Effect",
+      "Dreamy Soft Glow",
+      "Soap Opera Effect",
+      "Soft Glow Effect"
+    ]
+  },
+  {
+    "id": "3ca00948-bc28-45a7-b4cb-256ad9ffbda4",
+    "name": "Split Screen",
+    "description": "Shows multiple camera angles at the same time.",
+    "aliases": [
+      "Multicam",
+      "Picture in Picture",
+      "Picture-in-Picture",
+      "Split-screen",
+      "Splitscreen",
+      "Splitview"
+    ]
+  },
+  {
+    "id": "565a5c88-8454-403c-af89-b785eb68f4fb",
+    "name": "Thigh Focus",
+    "description": "A closeup or an emphasis on the Thigh area of the performer",
+    "aliases": [
+      "Thigh"
+    ]
+  },
+  {
+    "id": "7f92bf1d-5a7b-415a-8c9a-ddb0500f6118",
+    "name": "Toe Focus",
+    "description": "When the toes are the emphasis of the scene or image. This include the performer grabbing objects with his toes.",
+    "aliases": [
+      "Close up Toes",
+      "Object Between Toes",
+      "Toe Play",
+      "Toes Focus"
+    ]
+  },
+  {
+    "id": "e574da6d-e645-4ac5-b69c-56bd00ecde92",
+    "name": "Upper-body Shot",
+    "description": "A shot where only the head to waist part of the performer are visible",
+    "aliases": [
+      "Close Shot"
+    ]
+  },
+  {
+    "id": "0c4936d0-e3df-4727-af14-1ac7f53684b2",
+    "name": "Vertical Video",
+    "description": "Scene in an upright video format, e. g. shot with a cellphone",
+    "aliases": [
+      "Snap",
+      "Snapchat",
+      "Vertical Videos"
+    ]
+  },
+  {
+    "id": "3acf364a-db60-4811-a7b3-fe98e6d77b3a",
+    "name": "X-Ray",
+    "description": "Internal organs being visible through the skin or from the inside. Mostly used in Hentai",
+    "aliases": []
+  }
+]

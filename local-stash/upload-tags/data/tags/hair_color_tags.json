@@ -1,0 +1,314 @@
+[
+  {
+    "id": "fdd8fd9b-a7fd-4bd9-a8fe-4487c3aba3be",
+    "name": "Auburn Hair",
+    "description": "Performers with hair colors that have both reddish and brownish shades.",
+    "aliases": [
+      "Auburn",
+      "红棕色头发"
+    ]
+  },
+  {
+    "id": "c4b69863-0724-4991-875e-fe7ebcf81f13",
+    "name": "Black Hair",
+    "description": "Performers with extremely dark hair colors.",
+    "aliases": [
+      "Black Haired",
+      "Dark Hair",
+      "Hair - Black",
+      "Hair Black",
+      "Raven",
+      "Raven Hair",
+      "Raven Haired",
+      "黑发"
+    ]
+  },
+  {
+    "id": "61c44d73-dcb7-4b38-9389-3771321e616e",
+    "name": "Black Hair (Female)",
+    "description": "Female performers with extremely dark hair colors.",
+    "aliases": [
+      "Raven Hair (Female)",
+      "黑发（女）"
+    ]
+  },
+  {
+    "id": "9df1407a-14e6-47a7-bbd9-949d5ed3f534",
+    "name": "Black Hair (Male)",
+    "description": "Male performers with extremely dark hair colors.",
+    "aliases": [
+      "Raven Hair (Male)",
+      "黑发（男）"
+    ]
+  },
+  {
+    "id": "8fe1920a-3584-462d-ae38-5e583a4e1dc5",
+    "name": "Blonde Hair (Female)",
+    "description": "Female performers with light, yellowish hair colors.",
+    "aliases": [
+      "Blond Hair (Female)",
+      "rubias",
+      "金发（女）"
+    ]
+  },
+  {
+    "id": "e0bfd548-a226-4d76-a939-07b67c10c656",
+    "name": "Blond Hair",
+    "description": "Performers with light, yellowish hair colors.",
+    "aliases": [
+      "Blond",
+      "Blonde",
+      "Blonde Hair",
+      "Blondes",
+      "Blonds",
+      "Hair - Blonde",
+      "Hair Blond",
+      "Hair Blonde",
+      "金发"
+    ]
+  },
+  {
+    "id": "ab29b72b-9ef6-4d2a-b1d4-05b7fa2df49d",
+    "name": "Blond Hair (Male)",
+    "description": "Male performers with light, yellowish hair colors.",
+    "aliases": [
+      "Blonde Hair (Male)",
+      "blond male",
+      "blond man",
+      "blond men",
+      "blonde man",
+      "blonde men",
+      "金发（男）"
+    ]
+  },
+  {
+    "id": "8399c489-88fe-4b77-be56-dc679c3043f6",
+    "name": "Blue Hair (Female)",
+    "description": "Female performers with a blue hair color",
+    "aliases": []
+  },
+  {
+    "id": "6399c0b4-3273-4efb-b6dc-91b43e201c21",
+    "name": "Brown Hair",
+    "description": "Performers with brownish hair colors.",
+    "aliases": [
+      "Brunette",
+      "Brunettes",
+      "Chestnut",
+      "Hair - Brunette",
+      "Hair Brown",
+      "棕发"
+    ]
+  },
+  {
+    "id": "d0786ad0-359c-493c-ba9e-d4143156c304",
+    "name": "Brown Hair (Female)",
+    "description": "Female performers with brownish hair colors.",
+    "aliases": [
+      "Brunette (Female)",
+      "Brunette Female",
+      "morena",
+      "morenas",
+      "棕发（女）"
+    ]
+  },
+  {
+    "id": "305acb67-64df-48c5-832a-141087b9a453",
+    "name": "Brown Hair (Male)",
+    "description": "Male performers with brownish hair colors.",
+    "aliases": [
+      "Brunette (Male)",
+      "Brunette Male",
+      "棕发（男）"
+    ]
+  },
+  {
+    "id": "fe86a36e-cd95-4f24-a441-774c4e2815a4",
+    "name": "Colored Hair",
+    "description": "Performers with a hair color that does not occur naturally.",
+    "aliases": [
+      "Alternative Hair Colors",
+      "Coloured Hair",
+      "Dyed Hair",
+      "Fancy Color Hair",
+      "Fancy Colour Hair",
+      "Hair - Colored",
+      "Hair - Coloured",
+      "Hair Colored",
+      "Unnatural Dye",
+      "Unnatural Hair Color",
+      "Unnatural Hair Colour"
+    ]
+  },
+  {
+    "id": "21ebb52e-09ea-44d0-9241-50e4e47d56b3",
+    "name": "Colored Hair (Female)",
+    "description": "Female performers with a hair color that does not occur naturally.",
+    "aliases": []
+  },
+  {
+    "id": "879f3ad7-fa97-42ec-aad3-e32dbcfa12db",
+    "name": "Dark Blond Hair",
+    "description": "Performers with dark blond or light brown hair colors.",
+    "aliases": [
+      "Light Brown Hair"
+    ]
+  },
+  {
+    "id": "bd3e08b1-efae-43f2-bc23-adf243ed658c",
+    "name": "Gray Hair",
+    "description": "Performers with gray or graying hair colors.",
+    "aliases": [
+      "Gray",
+      "Grey",
+      "Grey Hair",
+      "Hair Gray",
+      "Hair Grey",
+      "灰白发"
+    ]
+  },
+  {
+    "id": "c5395b41-8c2c-45f8-9324-19ec9b542a81",
+    "name": "Gray Hair (Female)",
+    "description": "Female performers with gray or graying hair colors.",
+    "aliases": [
+      "Grey Hair (Female)",
+      "灰白发（女）"
+    ]
+  },
+  {
+    "id": "a1dac244-e1a5-4583-81ac-ddc3da1c9e73",
+    "name": "Gray Hair (Male)",
+    "description": "Male performers with gray or graying hair colors.",
+    "aliases": [
+      "Grey Hair (Male)",
+      "灰白发（男）"
+    ]
+  },
+  {
+    "id": "e58b3c57-9350-4819-9fb0-633a2c419063",
+    "name": "Green Hair (Female)",
+    "description": "Female performers with a green hair color",
+    "aliases": []
+  },
+  {
+    "id": "fa31e15e-70fc-49c8-bd11-508288c1cd76",
+    "name": "Multicolored Hair",
+    "description": "Performers with two distinct and separate hair colors at the same time.",
+    "aliases": [
+      "Hair - Multicolored",
+      "Hair Multicolored",
+      "Highlights",
+      "Multicolored",
+      "Multicoloured",
+      "Multicoloured Hair"
+    ]
+  },
+  {
+    "id": "7ce0d3cd-ccfb-464a-81db-e930b58c9ca6",
+    "name": "Multicolored Hair (Female)",
+    "description": "Female performers with two distinct and separate hair colors at the same time.",
+    "aliases": [
+      "Multicolored Female"
+    ]
+  },
+  {
+    "id": "f1c55e0d-3652-4d87-ad04-cdd6bf0d50b1",
+    "name": "Pink Hair (Female)",
+    "description": "Female performers with a pink hair color",
+    "aliases": []
+  },
+  {
+    "id": "d3207e0c-db1c-43ad-8453-7d1d50126b3c",
+    "name": "Pink Hair (Male)",
+    "description": "Male performers with a pink hair color",
+    "aliases": []
+  },
+  {
+    "id": "6f213676-5c32-4737-af39-bb69f185d284",
+    "name": "Platinum Blond Hair",
+    "description": "Performers with exceptionally pale yellow hair colors.",
+    "aliases": [
+      "Bleached Blond",
+      "Bleached Blonde",
+      "Hair Blatinum Blonde",
+      "Hair Bleached Blond",
+      "Hair Bleached Blonde",
+      "Hair Platinum Blond",
+      "Pale Blond",
+      "Pale Blonde",
+      "Platinum Blond",
+      "Platinum Blonde",
+      "White Blond",
+      "White Blonde"
+    ]
+  },
+  {
+    "id": "e1c6e6e8-1018-4321-a2a5-19010b45937a",
+    "name": "Platinum Blond Hair (Female)",
+    "description": "Female performers with exceptionally pale yellow hair colors.",
+    "aliases": [
+      "Bleached Blond Female",
+      "Platinum Blond Female"
+    ]
+  },
+  {
+    "id": "04f097fc-7009-48b9-b4ec-6013fb8260d1",
+    "name": "Purple Hair (Female)",
+    "description": "Female performers with a purple hair color",
+    "aliases": []
+  },
+  {
+    "id": "964d602d-d944-43d2-b3c5-c62bc340f553",
+    "name": "Red Hair",
+    "description": "Performers with reddish/orangeish hair colors.",
+    "aliases": [
+      "Ginger",
+      "Gingers",
+      "Hair - Red",
+      "Hair - Redhead",
+      "Hair Hazel",
+      "Hair Red",
+      "Hazel Hair",
+      "Red Head",
+      "Red Heads",
+      "Redhead",
+      "Redheads",
+      "红发"
+    ]
+  },
+  {
+    "id": "18128157-e068-474c-a478-8fbe6a9ad741",
+    "name": "Red Hair (Female)",
+    "description": "Female performers with reddish/orangeish hair colors.",
+    "aliases": [
+      "Ginger (Female)",
+      "Red Head (Female)",
+      "Redhead (Female)",
+      "红发（女）"
+    ]
+  },
+  {
+    "id": "60bd7094-9ee8-4888-ae28-9a7a5c92c69f",
+    "name": "Red Hair (Male)",
+    "description": "Male performers with reddish/orangeish hair colors.",
+    "aliases": [
+      "Ginger (Male)",
+      "Red Head (Male)",
+      "Redhead (Male)",
+      "Redhead Male",
+      "红发（男）"
+    ]
+  },
+  {
+    "id": "5b7d242c-3d3a-4d9e-a850-fad045e6d74f",
+    "name": "Strawberry Blond Hair",
+    "description": "Performers with hair colors that have both reddish and yellowish shades.",
+    "aliases": [
+      "Hair Strawberry Blond",
+      "Hair Strawberry Blonde",
+      "Strawberry Blond",
+      "Strawberry Blonde"
+    ]
+  }
+]

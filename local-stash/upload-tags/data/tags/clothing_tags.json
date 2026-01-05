@@ -1,0 +1,3043 @@
+[
+  {
+    "id": "2a8aa3cf-c28b-4d08-b111-7807ced2184e",
+    "name": "Animal Ears",
+    "description": "Costume ears shaped like an animal's, usually attached to a headband of some kind.",
+    "aliases": [
+      "Bunny Ears",
+      "Cat Ears",
+      "獣耳"
+    ]
+  },
+  {
+    "id": "479f5266-ad2d-439c-b27f-3d3a37c2df3f",
+    "name": "Animal Mask",
+    "description": "A face Mask with animalistic features like animal ears or a snout. Often used for Pet-Play",
+    "aliases": [
+      "Cow Mask",
+      "Dog Mask",
+      "Pig Mask",
+      "animalmask"
+    ]
+  },
+  {
+    "id": "43466542-cc7c-44d0-97fe-02d8a025a805",
+    "name": "Animal Print",
+    "description": "Clothing designed to resemble the fur or skin of an animal, most commonly a leopard.",
+    "aliases": [
+      "Leopard Print"
+    ]
+  },
+  {
+    "id": "418c409d-6d25-4802-8cb3-cba3892121a6",
+    "name": "Ankle Boots",
+    "description": "Boots that end at or just above the ankle.",
+    "aliases": [
+      "Ankle High Boots"
+    ]
+  },
+  {
+    "id": "906b7e65-6772-4a98-a6df-24d57d0153b0",
+    "name": "Ankle Bracelet",
+    "description": "Jewelry worn around the ankle.",
+    "aliases": [
+      "Anklet",
+      "Anklets"
+    ]
+  },
+  {
+    "id": "07e499a8-7f0e-4c99-b705-91e113dd8e2f",
+    "name": "Ankle Socks",
+    "description": "Socks that end at or just above the ankle.",
+    "aliases": [
+      "Ankle-High Socks",
+      "Ankle-Length Socks",
+      "Bobby Socks",
+      "Low Socks",
+      "Short Socks"
+    ]
+  },
+  {
+    "id": "85190f77-c204-4a01-8afa-cdf4d0420065",
+    "name": "Ankle Wrap Shoes",
+    "description": "Women's shoe with a strap, ribbon, or lace that wraps around the wearer's ankle and/or calf as a fastening mechanism.",
+    "aliases": [
+      "Ankle Strap Heels",
+      "Ankle Strap Sandals",
+      "Ankle Strap Shoes",
+      "Ankle Wrap Around Heels",
+      "Ankle Wrap Around Sandals",
+      "Ankle Wrap Around Shoes",
+      "Ankle Wrap Heels",
+      "Ankle Wrap Sandals",
+      "Ankle Wraparound Heels",
+      "Ankle Wraparound Sandals",
+      "Ankle Wraparound Shoes",
+      "Lace Up Heels",
+      "Lace Up Sandals",
+      "Multi-Strap Heels",
+      "Multi-Strap Sandals",
+      "Multi-Strap Shoes",
+      "Strappy Heels",
+      "Strappy Sandals",
+      "Strappy Shoes",
+      "Tie Up Heels",
+      "Tie Up Sandals",
+      "Tie Up Shoes",
+      "Wrap Around Heels",
+      "Wrap Around Sandals",
+      "Wrap Around Shoes",
+      "Wrap Arounds",
+      "Wraparound Heels",
+      "Wraparound Sandals",
+      "Wraparound Shoes",
+      "Wraparounds"
+    ]
+  },
+  {
+    "id": "a7ab5fcb-d41e-4171-9836-b68ee187c648",
+    "name": "Apron",
+    "description": "Wearing an apron over a scantily clad or outright nude body.",
+    "aliases": [
+      "Naked Apron",
+      "裸エプロン"
+    ]
+  },
+  {
+    "id": "a1918a20-f2a8-4802-b407-2b596f0f7890",
+    "name": "Armlet",
+    "description": "A band or bracelet worn around the upper part of a person's arm.",
+    "aliases": []
+  },
+  {
+    "id": "8c113958-2b17-4e74-ae1c-30473fcbf07c",
+    "name": "Arm Warmers",
+    "description": "Sleeves unattached to other pieces of clothing, often leaving fingers exposed.",
+    "aliases": [
+      "Arm Warmer"
+    ]
+  },
+  {
+    "id": "806b2347-4a56-41c7-94c0-824e728303fb",
+    "name": "Babydoll",
+    "description": "Sleeveless loose-fitting nightgown with an attached skirt ending around the upper thigh.",
+    "aliases": [
+      "Baby Doll"
+    ]
+  },
+  {
+    "id": "678b20a2-ab2e-42d6-bc28-f4ddc096977c",
+    "name": "Backpack",
+    "description": "Large bag carried on the back, typically secured with two shoulder straps.",
+    "aliases": [
+      "Back Pack",
+      "Haversack",
+      "Knapsack",
+      "Rucksack",
+      "Rucsac"
+    ]
+  },
+  {
+    "id": "dcc9de8a-6572-4dfe-ad72-e906f3726c81",
+    "name": "Bag",
+    "description": "A flexible container with an opening at the top, used for carrying things.",
+    "aliases": [
+      "Handbag"
+    ]
+  },
+  {
+    "id": "f27842ab-1c66-49a4-ac14-90bd32274a0d",
+    "name": "Baggy Pants",
+    "description": "Long pants caught in at the ankle. Early on, the style was also called a harem skirt.",
+    "aliases": [
+      "Harem Pants",
+      "Harem Skirt",
+      "Harem Trousers"
+    ]
+  },
+  {
+    "id": "4127a6bd-03fe-471e-80a0-65ccda99528d",
+    "name": "Baggy Shirt",
+    "description": "Large shirt or t-shirt that is loosely fitted and typically falls below the waistline",
+    "aliases": [
+      "Large Shirt",
+      "Large T-Shirt",
+      "Oversize Shirt",
+      "Oversize T-Shirt",
+      "Oversized Shirt",
+      "Oversized T-Shirt"
+    ]
+  },
+  {
+    "id": "60ccb3c8-c609-40ee-938d-704c8a26da5c",
+    "name": "Ballet Boots",
+    "description": "Boots that force the wearer to be en pointe, like a ballet dancer.",
+    "aliases": [
+      "Ballet Heels",
+      "Balletboots",
+      "Balletheels"
+    ]
+  },
+  {
+    "id": "1f100d08-318e-45bf-adb2-b791d9f9b790",
+    "name": "Ballet Shoes",
+    "description": "Lightweight shoes designed for ballet dancing, sometimes with a reinforced toe.",
+    "aliases": [
+      "Ballet Slippers",
+      "Pointe Shoes"
+    ]
+  },
+  {
+    "id": "a9330550-9167-4c1c-b445-d2cf63ab3e81",
+    "name": "Bandana",
+    "description": "Small handkerchief tied around the head and hair.",
+    "aliases": [
+      "Handkerchief",
+      "Head Scarf",
+      "Head Scarves",
+      "Headscarf",
+      "Headscarves"
+    ]
+  },
+  {
+    "id": "5381c5d6-ffad-44c6-92c8-7ac63a72a184",
+    "name": "Bandeau",
+    "description": "Narrow top without straps or sleeves, often worn as swimwear, athletic wear, or underwear.",
+    "aliases": [
+      "Strapless Bikini",
+      "Strapless Bra"
+    ]
+  },
+  {
+    "id": "6d34deaf-9823-41fc-a705-a137d7471e5d",
+    "name": "Bangles",
+    "description": "Rigid bracelet worn around the wrist or arm.",
+    "aliases": [
+      "Bangle"
+    ]
+  },
+  {
+    "id": "57efd6b9-67c3-4b99-a079-4e43c5ffa6b6",
+    "name": "Barefoot",
+    "description": "No socks or shoes of any kind.",
+    "aliases": [
+      "Bare Feet",
+      "Bare Foot",
+      "Barefeet",
+      "No Shoes"
+    ]
+  },
+  {
+    "id": "3c746dc0-3365-4628-b00e-197cb1a125ea",
+    "name": "Bare Shoulders",
+    "description": "When you can see the skin of the performer shoulders",
+    "aliases": [
+      "Bare Shoulder",
+      "Bareshoulder",
+      "Naked Shoulder",
+      "Visible Shoulder",
+      "Visible Shoulders"
+    ]
+  },
+  {
+    "id": "2c6aad45-2403-4cd9-afa6-ca031de02617",
+    "name": "Beads",
+    "description": "Beaded necklace, regardless of size or material.",
+    "aliases": [
+      "Beaded Necklace"
+    ]
+  },
+  {
+    "id": "c3323e62-5b01-4229-b255-3cbf2dba6b59",
+    "name": "Bell Bottoms",
+    "description": "Pants that widen considerably below the knee, forming a bell-like shape.",
+    "aliases": [
+      "Bell-Bottoms",
+      "Flares"
+    ]
+  },
+  {
+    "id": "8b67fc03-730f-4f8f-b251-0c7da97f2478",
+    "name": "Belly Chain",
+    "description": "Thin chain worn loose around the waist, similar to a belt.",
+    "aliases": [
+      "Waist Chain"
+    ]
+  },
+  {
+    "id": "14bc128d-861b-4e0c-8003-fdd9208d5e5b",
+    "name": "Belly Dance Outfit",
+    "description": "Female performer(s) wears a belly dance outfit.",
+    "aliases": [
+      "Arab Dancer",
+      "Belly Dancer",
+      "Middle Eastern Dancer",
+      "Oriental Dancer"
+    ]
+  },
+  {
+    "id": "8f128f24-97a4-4f90-b67b-231faedd89de",
+    "name": "Belt",
+    "description": "Flexible band or strap worn around the waist and held together with a buckle.",
+    "aliases": []
+  },
+  {
+    "id": "e11bf983-bc9a-49f7-b466-ffe2895abee8",
+    "name": "Bikini",
+    "description": "Small top intended to be part of a two-piece swimsuit, but sometimes worn alone with other clothing.",
+    "aliases": [
+      "Bikini Top",
+      "Two Piece",
+      "Two-Piece"
+    ]
+  },
+  {
+    "id": "21fa7e40-88f1-4efb-878b-340f91f4fee9",
+    "name": "Bikini Panties",
+    "description": "Short underwear bottoms with a low waistband and a back that fully covers the buttocks.",
+    "aliases": [
+      "Bikini Bottom",
+      "Bikini Panty",
+      "Cotton Panties",
+      "Full Panties"
+    ]
+  },
+  {
+    "id": "7bb9ec73-b113-446b-b7b1-03aea7c41dae",
+    "name": "Bitchsuit",
+    "description": "Full body suit that binds the upper arms to the lower arms and upper legs to the lower legs.",
+    "aliases": [
+      "Bitch Suit"
+    ]
+  },
+  {
+    "id": "c58672dc-162a-4ac6-b1f8-c497235902c5",
+    "name": "Blackout Contacts",
+    "description": "Contact lenses which are designed to fully or partially block the Performer's vision",
+    "aliases": [
+      "Blackout Contact Lenses",
+      "Blind Contact Lenses"
+    ]
+  },
+  {
+    "id": "aab398ff-6751-4311-8a88-a7c0b560cc94",
+    "name": "Black Stockings",
+    "description": "Scene contains a performer who wears black colored stockings",
+    "aliases": [
+      "Stockings (Black)"
+    ]
+  },
+  {
+    "id": "1d5c2f98-6836-429f-b6bd-c41626fb65fb",
+    "name": "Blazer",
+    "description": "Jacket that resembles a suit jacket, but may be worn or styled more casually.",
+    "aliases": [
+      "Sport Coat",
+      "Suit Jacket"
+    ]
+  },
+  {
+    "id": "b89ec6a0-ec09-4e2a-9e13-6d6b17f01687",
+    "name": "Bloomers",
+    "description": "High-cut and close-fitting gym shorts from Japan, typically worn as part of a school's uniform.",
+    "aliases": []
+  },
+  {
+    "id": "f3505f08-383c-460c-9ecb-66da377f01db",
+    "name": "Blouse",
+    "description": "Loose-fitting shirt with a feminine cut.",
+    "aliases": [
+      "Satin Blouse"
+    ]
+  },
+  {
+    "id": "73de0e27-1d70-4dbc-aae6-b05fc69b2b6b",
+    "name": "Boa",
+    "description": "Long and rounded fashion accessory worn around the neck like a scarf.",
+    "aliases": [
+      "Feather Boa"
+    ]
+  },
+  {
+    "id": "53ab5288-1ce6-4a8c-aa5e-2ecb0f320aec",
+    "name": "Body Conscious",
+    "description": "Fashion focusing on tight fitting clothing which accentuates one's curves.",
+    "aliases": [
+      "Tight Dress"
+    ]
+  },
+  {
+    "id": "e3c09df4-d249-488d-9470-4034ebbfb783",
+    "name": "Body Jewelry",
+    "description": "Jewelry that is attached to, through or around any part of a performer's body.",
+    "aliases": []
+  },
+  {
+    "id": "b6283598-9886-430c-88bd-3cd64c73cb29",
+    "name": "Body Paint",
+    "description": "Paint directly applied to a performer's body, not including face paint.",
+    "aliases": [
+      "Body Painting",
+      "Bodypaint"
+    ]
+  },
+  {
+    "id": "99569412-6944-481d-8adb-098cdd925620",
+    "name": "Bodystocking",
+    "description": "Sheer close-fitting garment that covers the torso as well as the legs.",
+    "aliases": [
+      "Body Stocking",
+      "Body Stockings",
+      "Bodystockings"
+    ]
+  },
+  {
+    "id": "18fefe54-bc89-460f-9170-eaf47550617a",
+    "name": "Bondage Mitts",
+    "description": "Gloves that constrict the hand into a fist.",
+    "aliases": [
+      "Bondage Mittens",
+      "Mitts"
+    ]
+  },
+  {
+    "id": "82327278-9fe8-472a-bf80-cde556c2a3cc",
+    "name": "Boots",
+    "description": "Shoes that extend above the ankle if not higher, often have a separated heel of some kind.",
+    "aliases": [
+      "Boot"
+    ]
+  },
+  {
+    "id": "3cb5b84b-dee6-4bd9-a717-913af2a5f086",
+    "name": "Bottomless",
+    "description": "Wearing nothing to cover the genitals or buttocks.",
+    "aliases": []
+  },
+  {
+    "id": "9987e600-9125-42b1-805b-04b86fdb0e3d",
+    "name": "Bottomless Female",
+    "description": "A woman wearing nothing to cover the genitals or buttocks.",
+    "aliases": [
+      "Bottomless Girl",
+      "Bottomless Woman"
+    ]
+  },
+  {
+    "id": "cda04f06-7654-43c7-b558-ad33de2f989f",
+    "name": "Bottomless Male",
+    "description": "A man wearing nothing to cover the genitals or buttocks.",
+    "aliases": [
+      "Bottomless Guy",
+      "Bottomless Man"
+    ]
+  },
+  {
+    "id": "f18f49d7-b77d-4c67-aa51-76b087ad6530",
+    "name": "Bow",
+    "description": "Ribbon tied in a bow and worn in the hair.",
+    "aliases": [
+      "Hair Bow",
+      "Hairbow"
+    ]
+  },
+  {
+    "id": "ea1e26a9-4811-4cb6-87a5-df373277d3ab",
+    "name": "Bow Tie",
+    "description": "Worn around the neck and tied in a bow, typically more formal than a standard necktie.",
+    "aliases": [
+      "Bowtie"
+    ]
+  },
+  {
+    "id": "6dbae99d-b2ba-4cae-96f0-08e6617401ca",
+    "name": "Boxers",
+    "description": "Loose shorts typically worn as underwear by men.",
+    "aliases": [
+      "Boxer Shorts"
+    ]
+  },
+  {
+    "id": "a53cad60-e755-4460-b97c-f668293752b8",
+    "name": "Boyshorts",
+    "description": "Women's wear resembling men's boxer briefs with a lower cut, worn as shorts or underwear.",
+    "aliases": [
+      "Boy Short Panties",
+      "Boy Shorts",
+      "Boyleg Briefs",
+      "Boys' Cut",
+      "Shorties",
+      "Tap Panties"
+    ]
+  },
+  {
+    "id": "c58f4d6b-3288-4782-88b2-855fb09022f0",
+    "name": "Bra",
+    "description": "Form-fitting underwear designed to support and cover the breasts.",
+    "aliases": [
+      "Bras"
+    ]
+  },
+  {
+    "id": "fb513b27-1665-4bfe-abfb-57a18e9ba5ee",
+    "name": "Bra and Panties",
+    "description": "Two-piece underwear of bra on top and panties on bottom, regardless of type.",
+    "aliases": [
+      "Bra & Panties",
+      "BraAndPanties"
+    ]
+  },
+  {
+    "id": "302a2a02-a41c-44c0-865d-a6302eccbcc0",
+    "name": "Bracelet",
+    "description": "Jewelry worn around the wrist.",
+    "aliases": [
+      "Beaded Bracelet",
+      "Bracelets",
+      "Charm Bracelet",
+      "Link Bracelet",
+      "Tennis Bracelet"
+    ]
+  },
+  {
+    "id": "f5553a8b-0b25-433e-beef-79982fdb3745",
+    "name": "Braces",
+    "description": "Metal wires and brackets attached to a performer's teeth to better align and straighten them.",
+    "aliases": [
+      "Cases",
+      "Dental Braces",
+      "Dental Cases",
+      "Orthodontic Braces",
+      "Orthodontic Cases"
+    ]
+  },
+  {
+    "id": "ac0e0d08-02e3-482e-afdc-669cbeca8dbb",
+    "name": "Bralette",
+    "description": "Lightweight bra without an underwire, sometimes worn as a casual top.",
+    "aliases": [
+      "Wireless Bra"
+    ]
+  },
+  {
+    "id": "001f651a-6f5f-4225-b59f-4fdb311bdb69",
+    "name": "Briefs",
+    "description": "Short underwear bottoms with a relatively high waistband and a back that fully covers the buttocks.",
+    "aliases": []
+  },
+  {
+    "id": "7a4cac0d-2980-4f34-9bf6-8128df5f44eb",
+    "name": "Bunched Up Skirt",
+    "description": "A performer's skirt or dress that has been bunched or pulled up around their waist, exposing themselves, and worn as such during part of the scene.",
+    "aliases": [
+      "Bunched Up Dress",
+      "Dress Around Waist",
+      "Hiked Up Dress",
+      "Hiked Up Skirt",
+      "Pulled Up Dress",
+      "Pulled Up Skirt",
+      "Skirt Around Waist"
+    ]
+  },
+  {
+    "id": "67043880-c343-4bc4-b27f-146ec4efd2c8",
+    "name": "Bunny Costume",
+    "description": "Rabbit-themed costume reminiscent of the classic Playboy Bunny uniform.",
+    "aliases": [
+      "Bunny Girl",
+      "Bunny Suit",
+      "Playboy Bunny"
+    ]
+  },
+  {
+    "id": "34a2bcea-8c5b-4365-afc8-309f6a2bcafb",
+    "name": "Burqa",
+    "description": "Enveloping outer garment covering the body and face, worn by women in some Islamic traditions.",
+    "aliases": [
+      "Boshiya",
+      "Burka",
+      "Chadaree",
+      "Paranja"
+    ]
+  },
+  {
+    "id": "fac7fa0f-8b82-4158-9432-47a1d033e8a3",
+    "name": "Button-Up Shirt",
+    "description": "Shirt with buttons down the front, usually somewhat formal.",
+    "aliases": [
+      "Button Down",
+      "Button Down Shirt",
+      "Button Shirt",
+      "Button Up",
+      "Button Up Shirt",
+      "Button-Down",
+      "Button-Down Shirt",
+      "Button-Front",
+      "Button-Front Shirt",
+      "Button-Up",
+      "Collared Shirt",
+      "Dress Shirt"
+    ]
+  },
+  {
+    "id": "15f7375b-7aae-431f-917b-16765840fa6c",
+    "name": "Camisole",
+    "description": "Sleeveless underwear that ends above the hips like a thin tank top, sometimes worn as casual wear.",
+    "aliases": [
+      "Cami"
+    ]
+  },
+  {
+    "id": "38589525-d693-4dfb-8b11-8a88ce6792b0",
+    "name": "Camo",
+    "description": "Features camouflage patterns similar to military uniforms.",
+    "aliases": [
+      "Camouflage"
+    ]
+  },
+  {
+    "id": "ea3dc3b3-a65a-43e1-805a-c5f66fb7875a",
+    "name": "Cape",
+    "description": "Both capes and cloaks are sleeveless outer garments made of a single piece of fabric that hangs loose",
+    "aliases": [
+      "Cloak"
+    ]
+  },
+  {
+    "id": "ac55ca1a-7fd0-43b3-b6e4-365ddece85f0",
+    "name": "Capri Pants",
+    "description": "Slim cropped pants, ending above the ankle.",
+    "aliases": [
+      "Capris",
+      "Clam-Diggers",
+      "Crop Pants",
+      "Flood Pants",
+      "Highwaters",
+      "Three Quarter Legs",
+      "Toreador Pants"
+    ]
+  },
+  {
+    "id": "d0c45e21-bccd-48e6-887c-17bbc03f221f",
+    "name": "Cardigan",
+    "description": "Knitted sweater with an open front, worn like a jacket.",
+    "aliases": [
+      "Cardigan Sweater",
+      "Cardigans"
+    ]
+  },
+  {
+    "id": "3af47011-5b67-4757-8e2e-28e9dd906404",
+    "name": "Casual Wear",
+    "description": "Relaxed clothing suited for everyday use.",
+    "aliases": [
+      "Casual Attire",
+      "Casual Clothes",
+      "Casual Clothing",
+      "Everyday Attire",
+      "Everyday Clothes",
+      "Everyday Clothing"
+    ]
+  },
+  {
+    "id": "14617830-0733-4bb7-a85c-2a380bd76ae6",
+    "name": "Catsuit",
+    "description": "Form-fitting one-piece garment covering the torso, legs, and often arms as well.",
+    "aliases": [
+      "Cat Suit",
+      "Cat Suits",
+      "Catsuits",
+      "Latex-Catsuit",
+      "Latexanzug",
+      "Latexcatsuit",
+      "Rubbercatsuit",
+      "Rubbersuit"
+    ]
+  },
+  {
+    "id": "4566592a-e81c-4843-846f-f31573267303",
+    "name": "Chain Harness",
+    "description": "A harness made from chains.",
+    "aliases": []
+  },
+  {
+    "id": "92c38a8d-3b68-4f2b-a2cf-f29ccd6b9ca7",
+    "name": "Change Clothes",
+    "description": "Performer is shown changing into at least one new outfit.",
+    "aliases": [
+      "Changing Clothes",
+      "Changing Costume",
+      "Clothes Changing",
+      "Clothes Trying",
+      "Costume Change",
+      "Costume Changing",
+      "Multiple Outfits",
+      "Try Haul",
+      "Try-on",
+      "Try-on Haul",
+      "Trying Clothes",
+      "Wardrobe Change"
+    ]
+  },
+  {
+    "id": "e106faa0-d10b-49b8-b6fd-72c6a725d2a7",
+    "name": "Chemise",
+    "description": "Sleeveless underwear that extends past the hips like a thin dress.",
+    "aliases": [
+      "Full Slip",
+      "Shift",
+      "Slip",
+      "Underslip"
+    ]
+  },
+  {
+    "id": "838306a5-49f4-4643-9b0f-4543c1a1e518",
+    "name": "Chest Harness",
+    "description": "A harness on the performer's chest.",
+    "aliases": []
+  },
+  {
+    "id": "1ba1bec1-eaa7-4d59-bfcb-c7e5ad939609",
+    "name": "Chinese Dress",
+    "description": "Form-fitting one-piece dress with a standing collar and two side slits.",
+    "aliases": [
+      "Banner Gown",
+      "Cheongsam",
+      "Mandarin Gown",
+      "Qipao",
+      "チャイナドレス"
+    ]
+  },
+  {
+    "id": "9c92ec15-3803-4c08-980b-1c659ad283ff",
+    "name": "Choker",
+    "description": "Close-fitting necklace, typically made from a flexible material.",
+    "aliases": [
+      "Choker Necklace",
+      "Chokers",
+      "Collar/Choker"
+    ]
+  },
+  {
+    "id": "edae495c-b79b-46f1-9344-3b1aabb22379",
+    "name": "Coat",
+    "description": "Long outer garment with sleeves and an open front, worn for warmth or fashion.",
+    "aliases": [
+      "Coats",
+      "Over Coat",
+      "Overcoat",
+      "Rain Coat",
+      "Raincoat"
+    ]
+  },
+  {
+    "id": "7fc7cf2c-8c68-47cf-85b6-b22f8ec316bb",
+    "name": "Colored Contacts",
+    "description": "At least one contact lens worn to change a performer's eye to a different color or design.",
+    "aliases": [
+      "Colored Contact Lens",
+      "Colored Contact Lenses",
+      "Colored Lens Eye",
+      "Colored Lenses Eye",
+      "Contacts Colored"
+    ]
+  },
+  {
+    "id": "21933f6f-97a7-4ed7-8c73-3c7e25f1d426",
+    "name": "Colored Stockings",
+    "description": "Scene contains a performer who wears colored stockings",
+    "aliases": [
+      "Coloured Stockings",
+      "Stockings (Blue)",
+      "Stockings (Colored)",
+      "Stockings (Green)",
+      "Stockings (Other)",
+      "Stockings (Purple)",
+      "Stockings (Red)",
+      "Stockings (Yellow)"
+    ]
+  },
+  {
+    "id": "1a42f302-e7ad-4c44-b524-68e2153b10e5",
+    "name": "Corset",
+    "description": "Structured torso-hugging top ending at the waist or top of the hips.",
+    "aliases": [
+      "Basque",
+      "Bustier",
+      "Corset / Bustier"
+    ]
+  },
+  {
+    "id": "b8d4b0c8-c72d-4d15-bda6-87f5d8aecd21",
+    "name": "Cosplay",
+    "description": "Costumed role playing of a particular character outside of a staged environment, often inspired by pre-existing characters from pop culture.",
+    "aliases": [
+      "Cosplaying",
+      "Costume Role Play",
+      "Costume Role Playing",
+      "Costume Roleplay",
+      "Costume Roleplaying",
+      "コスプレ"
+    ]
+  },
+  {
+    "id": "77a1f0d8-2241-4934-9095-9792bbb921c7",
+    "name": "Costume",
+    "description": "Unusual, out-of-date, or impractically sexy clothing intended to evoke a change in identity.",
+    "aliases": [
+      "Costumes",
+      "Costuming",
+      "Seasonal / Costume"
+    ]
+  },
+  {
+    "id": "edfb22d3-7e3d-4a05-983b-7e002b8442af",
+    "name": "Coveralls",
+    "description": "One-piece protective garment worn for manual work.",
+    "aliases": [
+      "Boiler Suit",
+      "Boilersuit"
+    ]
+  },
+  {
+    "id": "c7eb7b93-f0af-48ad-b96e-5ea444354558",
+    "name": "Cowboy Boots",
+    "description": "Riding boot with a pointed toe, high shaft, and no lacing, closely associated with the cowboys of western North America.",
+    "aliases": [
+      "Cow Boy Boots",
+      "Cow Girl Boots",
+      "Cowgirl Boots"
+    ]
+  },
+  {
+    "id": "340483c0-f72d-49ab-be24-70b19ab12f7e",
+    "name": "Cowboy Hat",
+    "description": "Hat with a high crown and wide brim, closely associated with the cowboys of western North America.",
+    "aliases": [
+      "Cow Boy Hat",
+      "Cow Girl Hat",
+      "Cowgirl Hat",
+      "Stetson",
+      "Ten-Gallon Hat"
+    ]
+  },
+  {
+    "id": "370f0e86-bf1d-43b6-94e2-b5143ea26cf3",
+    "name": "Crop Top",
+    "description": "Short top that leaves the waist, navel, or abdomen exposed.",
+    "aliases": [
+      "Cropped Top",
+      "Croptop",
+      "Cutoff Shirt",
+      "Half Shirt",
+      "Midriff Top"
+    ]
+  },
+  {
+    "id": "f62bb13f-4855-4b97-8f4b-ac3741f18357",
+    "name": "Cross Necklace",
+    "description": "A performer is wearing a cross necklace or rosary.",
+    "aliases": []
+  },
+  {
+    "id": "91723bfa-0784-47c1-bee3-28769f559d71",
+    "name": "Crotchless Panties",
+    "description": "Panties that leave an opening for the genitals.",
+    "aliases": []
+  },
+  {
+    "id": "1577b27f-fbeb-4cfa-a2f6-f458c6d56c8c",
+    "name": "Crotchless Pantyhose",
+    "description": "Pantyhose that leave an opening for the genitals.",
+    "aliases": [
+      "Crotchless Panty Hose",
+      "Crotchless Stockings",
+      "Panty Hose (Crotchless)",
+      "Pantyhose (Crotchless)",
+      "Stockings (Crotchless)"
+    ]
+  },
+  {
+    "id": "fb178fa4-0f7c-49cd-b83d-36b731248057",
+    "name": "Crown",
+    "description": "Metallic headwear that is closely associated with royalty and often adorned with jewels.",
+    "aliases": [
+      "Tiara"
+    ]
+  },
+  {
+    "id": "a9948084-5483-45dc-beb5-3335fd05c28e",
+    "name": "Cut-offs",
+    "description": "Shorts with a ragged edge where longer pant legs appear to have been cut off.",
+    "aliases": [
+      "Cut Off Jeans",
+      "Cut Off Shorts",
+      "Cut Offs",
+      "Cut-off Jeans",
+      "Cut-off Shorts"
+    ]
+  },
+  {
+    "id": "6ea1f0b3-ffdd-4e86-bc23-f27df2d39963",
+    "name": "Denim",
+    "description": "Thick sturdy fabric made from cotton, often dyed blue.",
+    "aliases": []
+  },
+  {
+    "id": "c392353c-b347-42a5-ab8b-1b5eeb105c95",
+    "name": "Denim Jacket",
+    "description": "Jacket made from denim, often dyed blue.",
+    "aliases": [
+      "Jean Jacket"
+    ]
+  },
+  {
+    "id": "988be2cf-5925-40af-8815-7693fa33975a",
+    "name": "Denim Shorts",
+    "description": "Shorts made from denim, often dyed blue.",
+    "aliases": [
+      "Daisy Dukes",
+      "Jean Shorts"
+    ]
+  },
+  {
+    "id": "50b23185-a76d-416c-9b14-3803878d0a7c",
+    "name": "Denim Skirt",
+    "description": "Skirt made from denim, often dyed blue.",
+    "aliases": [
+      "Jean Skirt",
+      "Skirt (Denim)"
+    ]
+  },
+  {
+    "id": "b0d19cf4-fd53-4f26-857a-64d83c7b01a4",
+    "name": "Doll Shoes",
+    "description": "Closed, low-cut shoe with a strap across the instep, often worn with socks or hosiery.",
+    "aliases": [
+      "Bar Shoes",
+      "Mary Janes",
+      "Mary-Janes",
+      "Maryjanes",
+      "School Girl Shoes",
+      "School Shoes",
+      "School-girl Shoes",
+      "Schoolgirl Shoes"
+    ]
+  },
+  {
+    "id": "ac54016c-67c5-4a6b-906e-ce94f5b8e259",
+    "name": "Dolphin Shorts",
+    "description": "Very short athletic shorts with side slits, rounded corners, and a waistband.",
+    "aliases": [
+      "Dolfins",
+      "Hooters Shorts"
+    ]
+  },
+  {
+    "id": "09cf7c7e-ce45-4d80-a66e-ba2418eb9c60",
+    "name": "Dress",
+    "description": "Consists of a bodice attached to a skirt, traditionally worn by women and girls.",
+    "aliases": [
+      "Frock",
+      "Gown",
+      "Sexy Dress"
+    ]
+  },
+  {
+    "id": "fbaa6b0b-e15b-428d-aa09-5634c445df1d",
+    "name": "Dressed Up",
+    "description": null,
+    "aliases": []
+  },
+  {
+    "id": "dc86860e-e97c-4f1e-9d0b-0cccdacc78a9",
+    "name": "Earrings",
+    "description": "Jewelry attached to the ear.",
+    "aliases": []
+  },
+  {
+    "id": "336cc790-e054-4705-af8f-26f9c53b9735",
+    "name": "Elbow Gloves",
+    "description": "Long gloves that reach the elbow at least.",
+    "aliases": [
+      "Evening Gloves",
+      "Opera Gloves"
+    ]
+  },
+  {
+    "id": "01c77314-efb2-45f1-8f1f-0d354d088ea7",
+    "name": "Fake Eyelashes",
+    "description": "Tag used for fake/false eyelashes.",
+    "aliases": [
+      "Fake Lashes",
+      "False Eyelashes",
+      "False Lashes"
+    ]
+  },
+  {
+    "id": "ded2d7a2-7c3e-4456-84ec-8db400b16577",
+    "name": "Fake Face Mask",
+    "description": "Mask that crudely mimics a human face, often made out of latex or silicone.",
+    "aliases": [
+      "Fake Face"
+    ]
+  },
+  {
+    "id": "69dc3832-c171-4aad-ba51-761c24d678f6",
+    "name": "Fake Nails",
+    "description": "Extensions placed over fingernails as fashion accessories.",
+    "aliases": [
+      "Acrylic Nails",
+      "Artificial Nails"
+    ]
+  },
+  {
+    "id": "debf2b65-aa33-42e0-9acc-a412e10f3866",
+    "name": "Fetishwear",
+    "description": "Clothing used to assist in or give the appearance of BDSM activities.",
+    "aliases": [
+      "Bondage Wear",
+      "Bondagewear",
+      "Fetish Clothing",
+      "Fetish Wear"
+    ]
+  },
+  {
+    "id": "c2c1b05c-01f6-4341-ae5e-d42f48ebfc56",
+    "name": "Fighting Gloves",
+    "description": "Cushioned gloves that fighters wear on their hands.",
+    "aliases": [
+      "Boxing Gloves",
+      "Grappling Gloves",
+      "MMA Gloves"
+    ]
+  },
+  {
+    "id": "e1f39336-6eef-42d4-949a-fd68d6b5893a",
+    "name": "Fishnet",
+    "description": "Garments with an open, diamond-shaped knit",
+    "aliases": [
+      "Fishnets"
+    ]
+  },
+  {
+    "id": "dadd1d52-f1f7-4b34-8bb4-0de5df8efaf2",
+    "name": "Fishnet Dress",
+    "description": "Dress with an open, diamond-shaped knit.",
+    "aliases": []
+  },
+  {
+    "id": "64663012-fbfc-43ea-a3fa-de97f1f2c8bc",
+    "name": "Fishnet One-Piece",
+    "description": "Single tight-fitting material covering the torso and the crotch with open, diamond-shaped knits",
+    "aliases": [
+      "Fishnet Bodysuit"
+    ]
+  },
+  {
+    "id": "84eab630-d6ea-4fe0-bf4a-3784dde67c55",
+    "name": "Fishnet Pantyhose",
+    "description": "Pantyhose with an open, diamond-shaped knit.",
+    "aliases": [
+      "Fishnets - Pantyhose",
+      "Pantyhose (Fishnet)",
+      "Pantyhose (Fishnets)"
+    ]
+  },
+  {
+    "id": "f427d474-ce60-49ed-8739-48c550057e2f",
+    "name": "Fishnet Stockings",
+    "description": "Stockings with an open, diamond-shaped knit.",
+    "aliases": [
+      "Fishnets - Stockings",
+      "Fishnets Stockings",
+      "Stockings (Fishnet)",
+      "Stockings (Fishnets)",
+      "Stockings - Fishnet",
+      "網タイツ"
+    ]
+  },
+  {
+    "id": "3a4d26de-ad45-4d07-9dcc-b383bb8fc1eb",
+    "name": "Fishnet Top",
+    "description": "A garment covering the torso with an open, diamond-shaped knit.",
+    "aliases": [
+      "Fishnet Shirt",
+      "Shirt (Fishnet)",
+      "Shirt (Fishnets)"
+    ]
+  },
+  {
+    "id": "20559bd4-b504-4281-90f2-82048e6d62e8",
+    "name": "Flannel Shirt",
+    "description": "A shirt made of soft woven fabric with a lightly napped surface.",
+    "aliases": [
+      "Flannel",
+      "Plaid Shirt"
+    ]
+  },
+  {
+    "id": "20246fff-8e5f-41c8-8ffb-85248e802af6",
+    "name": "Flats",
+    "description": "Flats are women's shoes for everyday wear which are similar to/inspired by a women's ballet shoes, with a very thin heel or the appearance of no heel at all.",
+    "aliases": [
+      "Ballet flat",
+      "Flat Shoes"
+    ]
+  },
+  {
+    "id": "eb8eb46d-f556-47c7-8f90-7aed2cd30b39",
+    "name": "Floral Crown",
+    "description": "A decorative circular headpiece made of flowers (real or artificial) worn on top of the head as an accessory or ceremonial item.",
+    "aliases": [
+      "Floral Headpiece",
+      "Floral Wreath",
+      "Flower Crown",
+      "Flower Garland",
+      "Flower Headpiece",
+      "Flower Wreath"
+    ]
+  },
+  {
+    "id": "f2ad391f-9856-4c96-a3ee-c595deb9b7e0",
+    "name": "Formal Wear",
+    "description": "Elegant clothing suited for formal occasions.",
+    "aliases": [
+      "Evening Wear",
+      "Formal"
+    ]
+  },
+  {
+    "id": "93ea8f79-596f-41b7-a9f5-624c2997a8d3",
+    "name": "Full-Body Harness",
+    "description": "A harness on the performer's full torso, sometimes on the hips and legs as well.",
+    "aliases": [
+      "Body Harness",
+      "Full Body Harness",
+      "Harness (Full Body)",
+      "Harness (Full-Body)"
+    ]
+  },
+  {
+    "id": "1cfc32d3-0167-401b-b343-787a9fa36d90",
+    "name": "Full Body Latex",
+    "description": "Performer wearing Latex on the whole body, including head, hands, feet and sexual organs, leaving almost no skin exposed",
+    "aliases": [
+      "Full Body Rubber",
+      "Full Encasement",
+      "Full Enclosure",
+      "Full Latex",
+      "Full Latex Enclosure",
+      "Full Rubber",
+      "Fully Encased",
+      "Fullyencased",
+      "Total Enclosure"
+    ]
+  },
+  {
+    "id": "282340b5-4ac4-4001-bc0f-e48ec50b0240",
+    "name": "Fur",
+    "description": "Clothing featuring real or imitation fur.",
+    "aliases": [
+      "Fur Clothes",
+      "Fur Clothing"
+    ]
+  },
+  {
+    "id": "379fa99c-f1f1-4b10-abdd-9a0ef7fbbf8c",
+    "name": "Fur Coat",
+    "description": "",
+    "aliases": []
+  },
+  {
+    "id": "734baafa-6ad2-4030-bae9-8f338449dec3",
+    "name": "Garter",
+    "description": "Stocking supporter",
+    "aliases": [
+      "Garter & Stockings",
+      "Garter Stockings",
+      "Garter&Stockings",
+      "GarterAndStockings",
+      "Garters",
+      "Garters & Stockings",
+      "Stockings Garters",
+      "Stockings&Garter"
+    ]
+  },
+  {
+    "id": "54b72e19-afe9-4314-b61f-7b21bc542a68",
+    "name": "Garter Belt",
+    "description": "Waist belt to which garters (for supporting stockings) attach",
+    "aliases": [
+      "Garter Belts",
+      "Suspender Belt",
+      "Suspenders"
+    ]
+  },
+  {
+    "id": "291abfa4-8e96-4068-b437-29deef145aa6",
+    "name": "Glasses",
+    "description": "One or more performers wearing glasses for a portion of the scene, or the whole time.",
+    "aliases": [
+      "Eye Glasses",
+      "Eyeglasses",
+      "めがね",
+      "眼鏡"
+    ]
+  },
+  {
+    "id": "04f07b23-8013-47cc-9537-29c10d459ee5",
+    "name": "Gloves",
+    "description": "Garment covering the hand with sheaths or openings for fingers",
+    "aliases": [
+      "Glove"
+    ]
+  },
+  {
+    "id": "c56359bf-9c0f-452c-ae2a-d845812ce16d",
+    "name": "Goth",
+    "description": "One or more performers dressed in a goth style",
+    "aliases": []
+  },
+  {
+    "id": "315c109f-d3ee-40bf-9f6e-188ea6cd9c0f",
+    "name": "G-string",
+    "description": "Bottoms with an extremely narrow string-like back, leaving the buttocks completely exposed.",
+    "aliases": [
+      "G String",
+      "G String Panties",
+      "G-string Panties",
+      "String Panties"
+    ]
+  },
+  {
+    "id": "a413e875-58d6-4582-a366-3b98a7af70f0",
+    "name": "Gym Shorts",
+    "description": "Shorts worn for athletics.",
+    "aliases": [
+      "Workout Bottoms"
+    ]
+  },
+  {
+    "id": "e3b5aea7-28b5-4b9e-9d91-a89eba6e6fba",
+    "name": "Hair Accessories",
+    "description": null,
+    "aliases": []
+  },
+  {
+    "id": "d82e4ca2-3110-4157-8e3c-0b59957a2856",
+    "name": "Hair In Towel",
+    "description": "",
+    "aliases": []
+  },
+  {
+    "id": "57bf7ba3-f4c3-4c6e-a8a4-900a227952bd",
+    "name": "Harness",
+    "description": "Harnesses often made of leather, rope, or latex and usually worn on either the performer's chest or their entire torso and sometimes legs/arms.",
+    "aliases": [
+      "Harnesses"
+    ]
+  },
+  {
+    "id": "4fcd61cb-7962-4675-b822-5bd52e3831f7",
+    "name": "Hat",
+    "description": "A garment that rests on top of one's head, partially or completely covering the hair.",
+    "aliases": [
+      "Ascot",
+      "Baseball Cap",
+      "Baseball Hat",
+      "Beanie",
+      "Beret",
+      "Bonnet",
+      "Cap",
+      "Caps",
+      "Deerstalker",
+      "Fedora",
+      "Hats",
+      "Straw Hat",
+      "Sun Hat",
+      "Top Hat"
+    ]
+  },
+  {
+    "id": "4231d2d4-e2bd-4ee2-8b6e-d6a5d13038a5",
+    "name": "Hazmat Suit",
+    "description": "Whole-body garment worn as protection against hazardous materials",
+    "aliases": [
+      "Haz Suit",
+      "Haz-Suit"
+    ]
+  },
+  {
+    "id": "bd857ec2-5993-43eb-9a75-4a6d8c01ad3b",
+    "name": "Headband",
+    "description": "An elastic or horseshoe-shaped loop worn around the forehead to hold hair away from the face and/or eyes.",
+    "aliases": [
+      "Alice Band",
+      "Hair Band",
+      "Head Band"
+    ]
+  },
+  {
+    "id": "b7af0e68-1c17-49f5-8d41-acd10dcd9989",
+    "name": "Headphones",
+    "description": "A pair of small loudspeaker drivers worn on or around the head over a user's ears.",
+    "aliases": [
+      "Earphones"
+    ]
+  },
+  {
+    "id": "fe09e73a-40b5-414e-979c-131383e54b64",
+    "name": "Heavy Rubber",
+    "description": "Very strong latex clothing, often near full enclosure and/or multiple layers",
+    "aliases": [
+      "Heavy-rubber",
+      "Heavyrubber"
+    ]
+  },
+  {
+    "id": "0a4cfaa6-de4c-4275-a30d-579f9a7fed56",
+    "name": "Helmet",
+    "description": "Protective gear worn to protect the head",
+    "aliases": [
+      "Hard Hat",
+      "Motorcycle Helmet"
+    ]
+  },
+  {
+    "id": "914f987a-3bfe-4353-b1d6-e590096f14e7",
+    "name": "High-heeled Sandals",
+    "description": "Sandals with a raised heel.",
+    "aliases": [
+      "High Heel Sandals",
+      "High Heeled Sandals",
+      "High Heels Sandals"
+    ]
+  },
+  {
+    "id": "cd175bda-4a82-4354-8c82-a07104c84486",
+    "name": "Hijab",
+    "description": "Cloth wrapped around the head and neck, covering the hair but leaving the face visible.",
+    "aliases": [
+      "Hijāb",
+      "Khimar",
+      "Khimār"
+    ]
+  },
+  {
+    "id": "7b606f30-63ff-4179-994f-a540343b3f74",
+    "name": "Hip Harness",
+    "description": "A harness on the performer's hip.",
+    "aliases": []
+  },
+  {
+    "id": "f5db0207-1ce6-40dc-822f-c901ab68d1d3",
+    "name": "Hoodie",
+    "description": "Performer wearing a jacket or a sweatshirt with a hood.",
+    "aliases": [
+      "Hooded Jacket",
+      "Hooded Sweatshirt"
+    ]
+  },
+  {
+    "id": "20d64bd2-08db-42d6-93c0-3022c7dec322",
+    "name": "Hoods",
+    "description": "Head coverings made from materials like leather or latex that enhance sensory deprivation, sometimes featuring openings for the eyes or mouth.",
+    "aliases": [
+      "Hood",
+      "Hooded",
+      "Latex Hood",
+      "Latex-hood",
+      "Latexhood",
+      "Leather Hood",
+      "Rubber Hood",
+      "Rubberhood"
+    ]
+  },
+  {
+    "id": "d19b9668-49c9-4b9d-be6d-e532f1f5affd",
+    "name": "Hot Pants",
+    "description": "Very brief, tight shorts mainly worn by women and girls.",
+    "aliases": [
+      "Booty Shorts",
+      "Hotpants",
+      "Short Shorts",
+      "hot.pants"
+    ]
+  },
+  {
+    "id": "fb21f73f-cbd9-46c2-add7-c952ca1fe74d",
+    "name": "Jacket",
+    "description": "A garment for the upper body, usually extending below the hips.",
+    "aliases": []
+  },
+  {
+    "id": "5e609c17-e019-4217-a632-8e7ca5ef2afd",
+    "name": "Jeans",
+    "description": "Trousers that are traditionally made out of denim but can be made of any material",
+    "aliases": [
+      "Blue Jeans",
+      "Bluejeans",
+      "Denim Jeans",
+      "Skinny Jeans",
+      "Tight Jeans"
+    ]
+  },
+  {
+    "id": "cc1ce4a5-e389-4f2f-94dc-f2b577f71b68",
+    "name": "Jewelry",
+    "description": "Durable ornaments worn as fashion accessories, often made from metal or gemstones.",
+    "aliases": [
+      "Jewellery"
+    ]
+  },
+  {
+    "id": "a261ea5f-3880-4cf8-a2a5-dbd0a8edc0b3",
+    "name": "Jockstrap",
+    "description": "Undergarment originally designed for supporting the male genitalia",
+    "aliases": [
+      "Athletic Supporter",
+      "Jock",
+      "漏臀内裤"
+    ]
+  },
+  {
+    "id": "985dd3d8-ae26-49c3-8ea1-18562db44f96",
+    "name": "Kimono",
+    "description": "A long, loose traditional Japanese robe with wide sleeves, tied with a sash. Worn on formal occasions.",
+    "aliases": [
+      "Kimono, Mourning",
+      "Yukata",
+      "浴衣"
+    ]
+  },
+  {
+    "id": "042575b6-0f07-404c-8c65-d59c43055128",
+    "name": "Knee High Boots",
+    "description": "Boots that end at or just below the knee.",
+    "aliases": [
+      "Boots (Knee High)",
+      "Knee-high Boots",
+      "Long Boots",
+      "Under the Knee Boots",
+      "Under-the-Knee Boots"
+    ]
+  },
+  {
+    "id": "e75b3216-bd3c-4ce8-8e33-4ae589885d1f",
+    "name": "Knee High Stockings",
+    "description": "Stockings that end at or just below the knee.",
+    "aliases": [
+      "Knee Length Stockings",
+      "Knee Stockings",
+      "Knee-High Stockings",
+      "Stockings - Knee-High",
+      "Under the Knee Stockings",
+      "Under-the-Knee Stockings"
+    ]
+  },
+  {
+    "id": "6289808e-0668-4430-a6e5-57fb6aacd15f",
+    "name": "Lab Coat",
+    "description": "A loose-fitting usually white coat that is worn in a laboratory or medical facility.",
+    "aliases": [
+      "Doctor's Coat",
+      "Medical Coat",
+      "White Coat"
+    ]
+  },
+  {
+    "id": "eac10d50-fa96-4a93-b314-75f266de2a22",
+    "name": "Lace",
+    "description": "Delicate fabric made of yarn or thread in an open weblike pattern.",
+    "aliases": [
+      "Lace Lingerie",
+      "LaceLingerie",
+      "Lacey",
+      "Lacy"
+    ]
+  },
+  {
+    "id": "b29becfb-32aa-4817-93b1-35b58466c8ca",
+    "name": "Lace Dress",
+    "description": "Dresses featuring lace patterns or decorations",
+    "aliases": [
+      "Crochet Dress"
+    ]
+  },
+  {
+    "id": "fed1f143-4352-4f46-9b7e-73772c78f853",
+    "name": "Lace Panties",
+    "description": "Short underwear bottoms worn by women in an open web of different symmetrical patterns and figures.",
+    "aliases": []
+  },
+  {
+    "id": "6fea777c-daca-42b2-862d-5dfc368036b8",
+    "name": "Latex",
+    "description": "A kind of rubber used in skin-tight clothing, often shiny.",
+    "aliases": [
+      "Black Latex",
+      "Blue Latex",
+      "Bronze Latex",
+      "Golden Latex",
+      "Green Latex",
+      "Grey Latex",
+      "Jade Latex",
+      "Metallic Latex",
+      "Orange Latex",
+      "Pink Latex",
+      "Purple Latex",
+      "Red Latex",
+      "Silver Latex",
+      "Skintone Latex",
+      "Turquoise Latex",
+      "White Latex",
+      "Yellow Latex"
+    ]
+  },
+  {
+    "id": "408b852c-86f3-4a10-8070-1f555b1c36bf",
+    "name": "Latex Clothing (Female)",
+    "description": "Female performer wearing latex clothing.",
+    "aliases": []
+  },
+  {
+    "id": "7917cf70-ceaa-4db0-8343-a2fbbd56f122",
+    "name": "Latex Clothing (Male)",
+    "description": "Male performer wearing latex clothing.",
+    "aliases": []
+  },
+  {
+    "id": "5fc4f883-a8aa-40ec-9b57-04db342819e2",
+    "name": "Latex Dress",
+    "description": "Dress made out of latex",
+    "aliases": [
+      "Rubber Dress",
+      "Rubberdress"
+    ]
+  },
+  {
+    "id": "4d3e262f-d264-409c-a6d6-2d4b991ec63c",
+    "name": "Latex Lingerie",
+    "description": "Bra, panties, garter belt or other lingerie items made from latex",
+    "aliases": [
+      "Latex Dessous"
+    ]
+  },
+  {
+    "id": "5c228c57-7729-4114-8f6e-65526ae310d0",
+    "name": "Latex Mask",
+    "description": "Mask made of latex, that covers parts or the full face of a performer",
+    "aliases": [
+      "Latex-mask",
+      "Latexmask",
+      "Latexmaske",
+      "Rubber Mask",
+      "Rubber-mask",
+      "Rubbermask"
+    ]
+  },
+  {
+    "id": "2a76f748-70d9-4863-ab4e-6c9e08547230",
+    "name": "Latex Pants",
+    "description": "Pants/Trousers made of Latex",
+    "aliases": [
+      "Latex Trousers"
+    ]
+  },
+  {
+    "id": "6051df30-d143-4779-bfd7-ea90bc79c7c3",
+    "name": "Latex Stockings",
+    "description": "Stockings made out of latex.",
+    "aliases": [
+      "Stockings (Latex)"
+    ]
+  },
+  {
+    "id": "8a5c1a86-5a9a-4352-b375-ad5e38d75a22",
+    "name": "Latex Under Clothes",
+    "description": "Latex clothing worn under normal clothing",
+    "aliases": []
+  },
+  {
+    "id": "bccd8a7f-28cc-4ad6-a68c-cfa7caff291b",
+    "name": "Leather",
+    "description": "A material made by treating animal hides, often used in clothing and in BDSM gear.",
+    "aliases": [
+      "Leather and Jacket"
+    ]
+  },
+  {
+    "id": "60f63ea8-0a8b-491d-8296-7ddde737d9be",
+    "name": "Leather Dress",
+    "description": "Dress made out of leather.",
+    "aliases": []
+  },
+  {
+    "id": "006c65a2-4231-413c-9419-6a5be41aab28",
+    "name": "Leather Harness",
+    "description": "A harness made from leather.",
+    "aliases": []
+  },
+  {
+    "id": "7617c27e-4566-4bda-ab13-8bbd4ed90862",
+    "name": "Leather Jacket",
+    "description": "Jacket made out of leather.",
+    "aliases": []
+  },
+  {
+    "id": "af828319-5cf3-4325-8008-1b913721507a",
+    "name": "Leather Pants",
+    "description": "Pants made out of leather.",
+    "aliases": []
+  },
+  {
+    "id": "b74c0d76-a8e0-4e48-ab6d-9ffb2530d822",
+    "name": "Leather Skirt",
+    "description": "Skirt made out of leather",
+    "aliases": [
+      "Leather Mini Skirt",
+      "Leather Short Skirt"
+    ]
+  },
+  {
+    "id": "74f5397a-a9a0-4adc-89a2-d58ceda78558",
+    "name": "Leggings",
+    "description": "Flexible and form-fitting fabric that ends at or above the ankle, can be outerwear or underwear.",
+    "aliases": [
+      "Yoga Pants"
+    ]
+  },
+  {
+    "id": "e44aab07-7b6a-44c3-9581-2cc117a3b727",
+    "name": "Leg Warmers",
+    "description": "Generally footless coverings for the lower legs",
+    "aliases": [
+      "Gaiters"
+    ]
+  },
+  {
+    "id": "a0c5d6d3-aa58-4f04-8a2e-1d106163b717",
+    "name": "Legwear",
+    "description": "Garments worn primarily over the legs, including pantyhose, stockings, leg warmers, etc.",
+    "aliases": [
+      "Hose",
+      "Hosiery",
+      "Leg Wear",
+      "Pantyhose / Stockings"
+    ]
+  },
+  {
+    "id": "83794d67-0af5-46a8-9614-ee1eec2f61dc",
+    "name": "Lingerie",
+    "description": "Women's underwear and nightclothes intended to be sexually appealing.",
+    "aliases": [
+      "Clothing - Lingerie",
+      "Sexy underwear",
+      "ランジェリー"
+    ]
+  },
+  {
+    "id": "403fedc4-daae-44e1-a03a-e77fe98f0399",
+    "name": "Lip Gloss",
+    "description": "Features a performer wearing lip gloss.",
+    "aliases": [
+      "Glossy Lips",
+      "Shiny Lips"
+    ]
+  },
+  {
+    "id": "031ff7d6-1b26-49ec-97e4-8c37bfb86192",
+    "name": "Little Black Dress",
+    "description": "A tight-fitting, short black dress, often seen as classy and worn for business or cocktail parties.",
+    "aliases": [
+      "LBD"
+    ]
+  },
+  {
+    "id": "fa2c2ac3-3d59-4670-aef8-f18a46aff3f6",
+    "name": "Loincloth",
+    "description": "Undergarment made from a single length of piece of cloth.",
+    "aliases": [
+      "Fundoshi",
+      "ふんどし",
+      "褌"
+    ]
+  },
+  {
+    "id": "5c002f8f-fe0e-485a-8556-ea260147316a",
+    "name": "Long Dress",
+    "description": "Calf-length or longer dress",
+    "aliases": [
+      "Long Dresses",
+      "Maxi Dress",
+      "Maxidress"
+    ]
+  },
+  {
+    "id": "f8600b0d-2b4a-4b0a-83f2-f570f0c7e00e",
+    "name": "Long Skirt",
+    "description": "A skirt that ends below the knees.",
+    "aliases": [
+      "Long Skirts"
+    ]
+  },
+  {
+    "id": "71779ca1-e674-4b0c-bbae-3443ec2da360",
+    "name": "Long Sleeves",
+    "description": "Any clothing with long sleeves",
+    "aliases": [
+      "Long Sleeve",
+      "Sleeve",
+      "Sleeves"
+    ]
+  },
+  {
+    "id": "a1cce420-8bc2-4822-b659-7a4b0322b728",
+    "name": "Loop Earrings",
+    "description": "Circular or semi-circular rings that pass through the ear piercing.",
+    "aliases": [
+      "Circle Earrings",
+      "Hoop Earrings",
+      "Ring Earrings",
+      "Wire-Loop Earrings"
+    ]
+  },
+  {
+    "id": "be21b2fa-b14a-44fa-b6cc-d8779fb61374",
+    "name": "Louboutin Shoes",
+    "description": "Female performer wearing Louboutin high heels or boots in the scene.",
+    "aliases": [
+      "Louboutin",
+      "Louboutin Boots",
+      "Louboutin Heels",
+      "Louboutin High Heels",
+      "Louboutins"
+    ]
+  },
+  {
+    "id": "4bd9e8ae-bb83-4e8b-bd3d-aeb374398e6a",
+    "name": "Maid Outfit",
+    "description": "Clothes typically worn by a maid.",
+    "aliases": [
+      "French Maid",
+      "French Maid Outfit",
+      "French Maid Uniform",
+      "Maid Sexy Outfit",
+      "Maid Uniform",
+      "Outfit (Maid)"
+    ]
+  },
+  {
+    "id": "6650811b-42d8-4614-b713-d2d9f1c2d048",
+    "name": "Manicured",
+    "description": "Trimmed and well-groomed fingernails, usually also painted.",
+    "aliases": [
+      "French Tip Manicure",
+      "French Tips",
+      "Long Nails",
+      "Manicure",
+      "Painted Fingernails",
+      "Painted Nails"
+    ]
+  },
+  {
+    "id": "1e305c3c-3b74-4bfd-a313-ab30b1ce72d8",
+    "name": "Mask",
+    "description": "Any full or partial face covering, whether ceremonial, protective, decorative, or used as disguise",
+    "aliases": [
+      "Masked",
+      "Masks",
+      "Ski Mask",
+      "Sleep Mask"
+    ]
+  },
+  {
+    "id": "6c97a824-8fa1-4deb-a3a5-fdf4fb96fa01",
+    "name": "Medical Gloves",
+    "description": "Latex or Nitrile gloves short and single use",
+    "aliases": [
+      "Nitrile Gloves"
+    ]
+  },
+  {
+    "id": "8a650126-b584-40a0-91a7-2f08628edc9b",
+    "name": "Men's Clothing",
+    "description": "",
+    "aliases": [
+      "Men's Shirt"
+    ]
+  },
+  {
+    "id": "1c8ff229-0a0e-4141-8b23-d02b2e9b5ab1",
+    "name": "Mermaid Tail",
+    "description": "Costume fishtail made to resemble a mermaid.",
+    "aliases": []
+  },
+  {
+    "id": "92aa116a-f0b6-4dfc-a2f3-c42b5472a6b0",
+    "name": "Mesh",
+    "description": "Garments with closely spaced holes, not necessarily diamond-shaped",
+    "aliases": [
+      "Clothing - Mesh",
+      "Mesh Clothing"
+    ]
+  },
+  {
+    "id": "37b9e065-712d-4626-b31e-fa69c6d3cb1d",
+    "name": "Mesh Shirt",
+    "description": "A top made of loosely woven or knitted fabric that has many closely spaced holes.",
+    "aliases": [
+      "Mesh Top"
+    ]
+  },
+  {
+    "id": "a9ff63d0-0532-4ede-8762-202f59f91945",
+    "name": "Micro Skirt",
+    "description": "A skirt that ends just below the crotch level",
+    "aliases": [
+      "Micro-Mini Skirt"
+    ]
+  },
+  {
+    "id": "e8db336e-1947-4ec6-8009-00ebef9837a2",
+    "name": "Mules",
+    "description": "Mule is a style of shoe that has no back or constraint around the foot's heel.",
+    "aliases": []
+  },
+  {
+    "id": "a68ddeec-c56f-46b8-aa41-e04f551c7df0",
+    "name": "Nail Polish",
+    "description": "Varnish applied to the fingernails or toenails to colour them or make them shiny.",
+    "aliases": [
+      "Nail Art"
+    ]
+  },
+  {
+    "id": "1e4d50e5-2d86-4e17-b13e-0d41dee5f12c",
+    "name": "Necklace",
+    "description": "Jewelry worn around the neck.",
+    "aliases": [
+      "Necklaces"
+    ]
+  },
+  {
+    "id": "84c9dfbd-ca0f-4f2a-8924-2fc2701da725",
+    "name": "Necktie",
+    "description": "Worn around the neck and tied in a knot, leaving the ends hanging down the chest.",
+    "aliases": [
+      "Neck Tie",
+      "Tie"
+    ]
+  },
+  {
+    "id": "8e2c6926-94eb-495d-b0ae-e355b65691c7",
+    "name": "Nightgown",
+    "description": "A light, loose garment worn by a performer in bed.",
+    "aliases": [
+      "Negligee",
+      "Night Gown",
+      "Nightie",
+      "Négligée"
+    ]
+  },
+  {
+    "id": "2928b644-b7de-4a4f-8d4c-5211f3fbbba6",
+    "name": "Nipple Tape",
+    "description": "Electrical or duct tape on the nipples, usually in an X shape.",
+    "aliases": [
+      "Duct Taped Nipples",
+      "Taped Nipples"
+    ]
+  },
+  {
+    "id": "6e8c2436-d029-44a5-8011-2841aae68c23",
+    "name": "Niqab",
+    "description": "A garment, usually black, that covers the face, leaving only the eyes visible.",
+    "aliases": [
+      "Niqāb",
+      "Ruband"
+    ]
+  },
+  {
+    "id": "fe3eb275-224a-4916-92bb-f40b3a6daa01",
+    "name": "No Bra",
+    "description": "When a performer chooses to wear an outfit without the use of a support brassiere.",
+    "aliases": [
+      "Bra Less",
+      "Braless",
+      "ノーブラ"
+    ]
+  },
+  {
+    "id": "b548e325-1bbb-4823-9fe2-33166fa90c03",
+    "name": "Non-Nude",
+    "description": "Scene does not contain any visible nudity.",
+    "aliases": [
+      "No Nude",
+      "Non Nude",
+      "NonNude",
+      "SFW"
+    ]
+  },
+  {
+    "id": "36df445d-2916-41d1-9a72-d90edcf76c57",
+    "name": "Non-Nude Female",
+    "description": "The female is not shown nude.",
+    "aliases": [
+      "Clothed Female",
+      "Clothed Girl"
+    ]
+  },
+  {
+    "id": "d76d4a4b-3531-4b9e-8639-f7cefc8ff464",
+    "name": "No Show Socks",
+    "description": "Socks that are cut well below the ankle, designed to be invisible in a standard tennis shoe.",
+    "aliases": [
+      "Liner Socks",
+      "Liners",
+      "Ped Socks",
+      "Peds"
+    ]
+  },
+  {
+    "id": "a8131e36-d915-497a-9cd6-e927bb46669c",
+    "name": "No Underwear",
+    "description": "A performer going without their underwear, i.e without their underpants or panties.",
+    "aliases": [
+      "Go Commando",
+      "Going Commando",
+      "No Panties",
+      "No Underpants",
+      "Pantyless",
+      "ノーパン"
+    ]
+  },
+  {
+    "id": "ef7805df-c857-4de5-b3fd-7e82c0a9f424",
+    "name": "Nude",
+    "description": "Showing unclothed genitals, asses, or female breasts.",
+    "aliases": [
+      "Full Naked",
+      "Full Nude",
+      "Fully Naked",
+      "Fully Nude",
+      "Naked",
+      "Nudity"
+    ]
+  },
+  {
+    "id": "ab00b651-7825-4f1e-a3d5-2bdddc3e0577",
+    "name": "Nude Stockings",
+    "description": "Scene contains a performer who wears nude colored stockings",
+    "aliases": [
+      "Stockings (Nude)"
+    ]
+  },
+  {
+    "id": "95b56038-06a6-4e70-9079-226c98121bb5",
+    "name": "One-piece",
+    "description": "Covers the torso and crotch in a single piece of tight-fitting material, often as sportswear, swimwear, underwear, or a casual top.",
+    "aliases": [
+      "Body Suit",
+      "Bodysuit",
+      "Competitive Swimsuit",
+      "Jump Suit",
+      "Jumpsuit",
+      "Leotard",
+      "Leotard / One Piece",
+      "One-piece Swimsuit",
+      "Singlet"
+    ]
+  },
+  {
+    "id": "f86c744f-5e07-461b-9e57-132145fae8cc",
+    "name": "Onesie PJs",
+    "description": "A full body jumpsuit that occasionally has a butt flap",
+    "aliases": [
+      "Onesie Pajamas",
+      "Onesie Pyjamas"
+    ]
+  },
+  {
+    "id": "f922415f-bd1e-4e3a-bab5-b41d7db39caf",
+    "name": "Open Cup Shelf Bra",
+    "description": "A bra which leaves the breast exposed from the nipples up",
+    "aliases": [
+      "Open Cup Bra"
+    ]
+  },
+  {
+    "id": "2c249085-765d-44bc-aa6a-98bf0cc90074",
+    "name": "Overalls",
+    "description": "Clothing item that consists of a bib-like flap held up by straps that is connected to lower body clothing",
+    "aliases": [
+      "Denim Jumper",
+      "Dungarees",
+      "Overall Shorts",
+      "Overall Skirt"
+    ]
+  },
+  {
+    "id": "ecf2f310-485b-4c2e-a423-5298c16b3396",
+    "name": "Over-Shoulder Suspenders",
+    "description": "Straps worn over the shoulders to hold up skirts or trousers",
+    "aliases": [
+      "Over-Shoulder Braces"
+    ]
+  },
+  {
+    "id": "a8eecfc4-f180-43f9-b73a-46f21a127111",
+    "name": "Over-the-Knee Socks",
+    "description": "Socks that end just above the knee, not quite reaching mid-thigh.",
+    "aliases": [
+      "OTK Socks",
+      "Over the Knee High Socks",
+      "Over the Knee Socks",
+      "Over-the-Knee High Socks",
+      "Over-the-Knee-high Socks",
+      "Parigina Socks"
+    ]
+  },
+  {
+    "id": "a96f7af4-d452-4a43-b395-594c8716e830",
+    "name": "Panties",
+    "description": "Short underwear bottoms worn by women of various shapes and materials.",
+    "aliases": [
+      "Panty"
+    ]
+  },
+  {
+    "id": "c3804c85-746a-4826-9104-06584a26c97e",
+    "name": "Pants",
+    "description": null,
+    "aliases": []
+  },
+  {
+    "id": "ce884189-c63f-424e-a4da-74d889724a24",
+    "name": "Pantyhose",
+    "description": "Sheer close-fitting leggings all in one piece, starting at the waist and reaching down to the toes.",
+    "aliases": [
+      "Nylon Pantyhose",
+      "Panty Hose",
+      "Pantyhose (Sheer)",
+      "Tights",
+      "タイツ",
+      "パンスト",
+      "パンスト・タイツ"
+    ]
+  },
+  {
+    "id": "ecc6689b-a204-444e-9061-da5071548e51",
+    "name": "Pasties",
+    "description": "Small adhesive garments that cover the nipples while leaving the rest of the breasts exposed.",
+    "aliases": [
+      "Tassels"
+    ]
+  },
+  {
+    "id": "7c78e686-e2c8-4292-9e6e-4b542cd47238",
+    "name": "Pearls",
+    "description": "A necklace made of pearls.",
+    "aliases": [
+      "Jewelry - Pearl Necklace",
+      "Pearl Necklace (Jewelry)"
+    ]
+  },
+  {
+    "id": "3719b936-c6a3-4404-86e9-38cc020aef2b",
+    "name": "Pedicured",
+    "description": "Trimmed and well-groomed toenails, usually also painted.",
+    "aliases": [
+      "Painted Toe Nails",
+      "Painted Toenails",
+      "Pedicure"
+    ]
+  },
+  {
+    "id": "f86bbe9c-0bdd-478e-b140-f254242bf64d",
+    "name": "Peekaboo Bra",
+    "description": "A type of bra featuring cutouts or sheer panels that reveal skin and/or the nipples/areolas.",
+    "aliases": [
+      "Nipple Cutout Bra",
+      "Nipple Window",
+      "Nipple Window Bra",
+      "Open Front Bra",
+      "Open Tip Bra",
+      "Open Tipped Bra",
+      "Open-Front Bra",
+      "Open-Tip Bra",
+      "Open-Tipped Bra"
+    ]
+  },
+  {
+    "id": "1dc7990d-e964-4731-8170-fbe892f03ab1",
+    "name": "Pencil Skirt",
+    "description": "A pencil skirt is a slim-fitting skirt with a straight, narrow cut. Generally the hem falls to, or is just below, the knee and is tailored for a close fit.",
+    "aliases": [
+      "Skirt (Pencil)",
+      "Vinyl Pencil Skirt"
+    ]
+  },
+  {
+    "id": "6dcd829b-4bc0-4e62-8dd0-f2fabf24c7f3",
+    "name": "Pendant Necklace",
+    "description": "Jewelry worn around the neck that features an ornamental piece suspended from a chain",
+    "aliases": [
+      "Charm Necklace"
+    ]
+  },
+  {
+    "id": "15e105d5-3beb-4035-9ea7-fc02d939ac23",
+    "name": "Plaid Skirt",
+    "description": "Skirts with a patterned crossing of horizonal and veritcal bands in multiple colors",
+    "aliases": [
+      "Plaid School Girl Skirt"
+    ]
+  },
+  {
+    "id": "3ba147bc-5ca3-4a15-ae87-1f7a0b6c36a1",
+    "name": "Platform Boots",
+    "description": "Boots with a significantly raised sole",
+    "aliases": []
+  },
+  {
+    "id": "5e723ed6-37bd-4825-82f9-3d4f4231a42a",
+    "name": "Platform Shoes",
+    "description": "Shoes with an obvious thick sole",
+    "aliases": [
+      "Platform",
+      "Platform Heels"
+    ]
+  },
+  {
+    "id": "5031d291-0927-40df-8eb9-087a1fedb27d",
+    "name": "Pleated Skirt",
+    "description": "A skirt with pleats",
+    "aliases": []
+  },
+  {
+    "id": "e2ad9beb-4c77-4a27-aff7-828b40f3af58",
+    "name": "Polka Dots",
+    "description": "Performer wearing clothing that features a pattern of filled colored circles.",
+    "aliases": [
+      "Polka Dot"
+    ]
+  },
+  {
+    "id": "953026b1-3a07-4e07-a12e-23eab0ea3b76",
+    "name": "PVC",
+    "description": "A synthetic, shiny clothing material",
+    "aliases": [
+      "Outfit (PVC)",
+      "Vinyl"
+    ]
+  },
+  {
+    "id": "a1cbf14b-d1b5-4fa6-a949-f61d6debc57f",
+    "name": "Pyjamas",
+    "description": "Any clothing suitable for wearing in bed; nightclothes.",
+    "aliases": [
+      "PJs",
+      "Pajamas",
+      "Sleep Wear",
+      "Sleepwear"
+    ]
+  },
+  {
+    "id": "f4aa4e0e-21c8-4fa8-80d0-bc6515c9e8c1",
+    "name": "Rainbow Stockings",
+    "description": "Scene contains a performer who wears rainbow colored stockings",
+    "aliases": [
+      "Stockings (Rainbow)"
+    ]
+  },
+  {
+    "id": "10a92b1a-a4a0-49db-a6cc-2cc552440033",
+    "name": "Revealing Clothes",
+    "description": "Any clothes that would be considered \"sexy\" often used by a woman to show off her body and/or sexuality.",
+    "aliases": [
+      "Clothing - Slutwear",
+      "Provocative Clothing",
+      "Provocative Outfit",
+      "Provocative Outfits",
+      "Provocative clothes",
+      "Revealing Clothing",
+      "Revealing Outfit",
+      "Revealing Outfits",
+      "Sexy Clothes",
+      "Sexy Clothing",
+      "Sexy Cloths",
+      "Sexy Outfit",
+      "Sexy Outfits",
+      "Slut Clothes",
+      "Slut Wear",
+      "Slut-Wear",
+      "Slutty Clothes",
+      "Slutty Clothing",
+      "Slutwear",
+      "Slutwear (Clothing)"
+    ]
+  },
+  {
+    "id": "342a91cf-30d7-4549-934d-9ccba4db4216",
+    "name": "Ribbon",
+    "description": "A long, narrow strip of material, used primarily as decorative binding and tying.",
+    "aliases": []
+  },
+  {
+    "id": "d3f09ea4-d577-4e2a-87cf-acd8d3510cbd",
+    "name": "Rigid Metal Harness",
+    "description": "A harness made from rigid metal bars and plates.",
+    "aliases": [
+      "Metal Harness"
+    ]
+  },
+  {
+    "id": "17814fd6-c5e2-4905-aee3-84b07377ae01",
+    "name": "Rings",
+    "description": "A performer wearing one or more rings during the scene.",
+    "aliases": [
+      "Ring"
+    ]
+  },
+  {
+    "id": "eddbfaef-df14-479e-84d2-d896ebdc0d44",
+    "name": "Ripped",
+    "description": "Any clothing that has been torn. ripped or damaged, before or during the scene.",
+    "aliases": [
+      "Grungy",
+      "Ripped Clothes",
+      "Ripped Clothing",
+      "Ripped Jeans",
+      "Ripped Shirt",
+      "Torn Cloth",
+      "Torn Clothes",
+      "Worn-out"
+    ]
+  },
+  {
+    "id": "ddac5e4e-b422-4e96-aaf2-0fadc8d03494",
+    "name": "Ripped Pantyhose",
+    "description": "Pantyhose with intentional tears or holes.",
+    "aliases": [
+      "Ripped Stockings"
+    ]
+  },
+  {
+    "id": "342c7baa-0a10-489e-80e8-0ab1e15e3911",
+    "name": "Robe",
+    "description": "A loose garment (such as a bathrobe) for informal wear especially at home.",
+    "aliases": [
+      "Bath Robe",
+      "Bathrobe",
+      "Robe (Satin)",
+      "Satin Robe",
+      "Silk Robe",
+      "Terry Cloth Robe",
+      "Terrycloth Robe"
+    ]
+  },
+  {
+    "id": "5fce031b-c927-4dca-96d4-bb44cb0e0e00",
+    "name": "Romper",
+    "description": "One-piece or two-piece combination of shorts and a shirt.",
+    "aliases": [
+      "Playsuit",
+      "Romper Suit"
+    ]
+  },
+  {
+    "id": "635a90c3-d4e6-48ab-9569-b64058ed917b",
+    "name": "Rope Harness",
+    "description": "A tied harness.",
+    "aliases": []
+  },
+  {
+    "id": "5b3fd51a-881e-4412-9175-67e49bf65b85",
+    "name": "Rubber Boots",
+    "description": "Waterproof Rubber Boots",
+    "aliases": [
+      "Wellies",
+      "Wellington Boots",
+      "Wellingtons"
+    ]
+  },
+  {
+    "id": "4a2c0ff0-ce76-49f3-a4b3-4319123b2e72",
+    "name": "Ruffle Skirt",
+    "description": "Skirt with a frilled wavy edge, typically layered.",
+    "aliases": [
+      "Frilly Skirt"
+    ]
+  },
+  {
+    "id": "29b26928-5cc3-48d3-93f2-acb21ab27fb5",
+    "name": "Ruffle Socks",
+    "description": "Socks with a frilled edge across the top.",
+    "aliases": []
+  },
+  {
+    "id": "0e75faa8-c218-45b2-9b78-8d653e423327",
+    "name": "Sandals",
+    "description": "Sandals are an open type of footwear, consisting of a sole held to the wearer's foot by straps going over the instep and around the ankle.",
+    "aliases": [
+      "Flip Flops",
+      "Flip-flops",
+      "Flips Flops - (open Toed)",
+      "Sandals - (open Toed)"
+    ]
+  },
+  {
+    "id": "8277930c-db97-47ee-9b00-fdfd627e0f37",
+    "name": "Sarong",
+    "description": "A length of cloth that is wrapped around the waist and tied, worn by women as a skirt.",
+    "aliases": []
+  },
+  {
+    "id": "1889f037-be44-46e3-b7ee-f73201e73926",
+    "name": "Satin",
+    "description": "Fabric that is glossy and smooth. Used for clothing items such as blouses or scarfs.",
+    "aliases": []
+  },
+  {
+    "id": "842dd0a4-ea12-41ea-811f-08f165548abc",
+    "name": "Scarves",
+    "description": "A long and narrow fabric typically wrapped around the neck.",
+    "aliases": [
+      "Scarf"
+    ]
+  },
+  {
+    "id": "e74d4850-9ff9-441f-910e-471e05ac2236",
+    "name": "Schoolgirl Outfit",
+    "description": "Clothes typically worn by a schoolgirl.",
+    "aliases": [
+      "Academy Uniform",
+      "College Uniform",
+      "Outfit (College Uniform)",
+      "Sailor Suit",
+      "Sailor Uniform",
+      "School Girl Outfit",
+      "School Skirt",
+      "School Uniform",
+      "SchoolUniform",
+      "Schoolgirl Skirt",
+      "Uniform (College)",
+      "Uniform (School)",
+      "セーラー服",
+      "学生服"
+    ]
+  },
+  {
+    "id": "cde81b87-0d0c-4619-8b04-7e8b25668063",
+    "name": "School Swimsuit",
+    "description": "A traditional Japanese school-issued one-piece swimsuit.",
+    "aliases": [
+      "School Swimsuits",
+      "Sukumizu",
+      "スクール水着",
+      "スク水"
+    ]
+  },
+  {
+    "id": "dca3b956-3db1-414b-a5a1-c28f80857b7c",
+    "name": "Scrubs",
+    "description": "Loose, colored garments commonly worn by medical professionals for sanitary purposes. Also sometimes used as a uniform for prison inmates due to their low cost.",
+    "aliases": [
+      "Hospital Scrubs",
+      "Hospital Uniform",
+      "Inmate Scrubs",
+      "Inmate Uniform",
+      "Nurse Scrubs",
+      "Nurse's Scrubs",
+      "Nurses Scrubs",
+      "Nurses' Scrubs",
+      "Nursing Scrubs",
+      "Surgical Scrubs",
+      "Theatre Blues"
+    ]
+  },
+  {
+    "id": "bad0e6af-e931-4084-9160-a1913827a112",
+    "name": "Scrunch Bikini",
+    "description": "Scrunch Bikini has a piece of high performance elastic sewn down the entire center back",
+    "aliases": [
+      "scrunch.bikini"
+    ]
+  },
+  {
+    "id": "4ac29776-0fd0-4178-9759-90e2be17b117",
+    "name": "Scrunchy",
+    "description": "A fabric-covered elastic hair tie used to fasten medium to long hair types.",
+    "aliases": [
+      "Scrunchie"
+    ]
+  },
+  {
+    "id": "b95c9131-1176-44fc-b463-16431e8d31c2",
+    "name": "See-Through Bra",
+    "description": "Nipples visible through bra",
+    "aliases": [
+      "Transparent Bra"
+    ]
+  },
+  {
+    "id": "97bf0655-ba0e-400d-9bd0-971f35fd726c",
+    "name": "See-through Panties",
+    "description": "Panties through which genitals are reasonably visible while wearing.",
+    "aliases": [
+      "See Through Panties",
+      "Sheer Panties",
+      "Transparent Panties"
+    ]
+  },
+  {
+    "id": "cff61151-ef32-4344-a8b4-84b649656f1d",
+    "name": "See-through Shirt",
+    "description": "Shirt that is at least somewhat transparent.",
+    "aliases": [
+      "See Through Shirt",
+      "Sheer Top"
+    ]
+  },
+  {
+    "id": "879a55fb-b1bc-496e-9a20-95d29be987f9",
+    "name": "Shawl",
+    "description": "A long and wide fabric typically draped across the shoulders.",
+    "aliases": []
+  },
+  {
+    "id": "eba1aea5-084d-43e6-9117-19f504a246ff",
+    "name": "Shiny Clothing",
+    "description": "Features a performer wearing shiny clothing",
+    "aliases": []
+  },
+  {
+    "id": "561a31ed-07f0-41ec-8467-9c8c63303371",
+    "name": "Shoes",
+    "description": "Features at least one character who is wearing shoes during the scene.",
+    "aliases": []
+  },
+  {
+    "id": "0fc4eff6-baa9-4873-a574-416863e11f8a",
+    "name": "Short Dress",
+    "description": "A dress that ends above the knees",
+    "aliases": [
+      "Club Dress",
+      "Mini Dress"
+    ]
+  },
+  {
+    "id": "5abd1a9b-4465-4395-87be-75de0f9d203c",
+    "name": "Shorts",
+    "description": "A garment worn by both men and women over their pelvic area and the upper part of the upper legs or more, sometimes extending as far as mid-calf, but not covering the entire length of the leg.",
+    "aliases": [
+      "Short Trousers"
+    ]
+  },
+  {
+    "id": "25836329-5d89-4573-866d-0ef00f609e1f",
+    "name": "Short Skirt",
+    "description": "A skirt that ends above the knees",
+    "aliases": [
+      "Mini Skirt",
+      "Mini Skirts",
+      "Mini-skirt",
+      "Mini-skirts",
+      "Miniskirt",
+      "Miniskirts",
+      "ミニスカ"
+    ]
+  },
+  {
+    "id": "e541136b-bf84-48a1-b3b9-26737aa3ba98",
+    "name": "Short Sleeves",
+    "description": "Any clothing with short sleeves.",
+    "aliases": [
+      "Short Sleeve"
+    ]
+  },
+  {
+    "id": "baac815d-101c-4b56-b6ae-cb51fe13cb74",
+    "name": "Shoulder Harness",
+    "description": "A harness on the performer's shoulder.",
+    "aliases": []
+  },
+  {
+    "id": "0bfc3c9a-3e69-4c46-851c-c3009ee1029d",
+    "name": "Sideboob",
+    "description": "The outer curve of a breast when revealed by clothing cut low under the arms",
+    "aliases": [
+      "Side Boob",
+      "Side-Boob"
+    ]
+  },
+  {
+    "id": "6d256585-f7f0-4177-a490-a0b3007495d5",
+    "name": "Silk",
+    "description": "Clothing made out of silk, usually robes and underwear",
+    "aliases": []
+  },
+  {
+    "id": "d4a26e88-295a-45d9-83b5-1a24e1f6d590",
+    "name": "Skirt",
+    "description": "Open garment of various sizes that covers the legs, but not attached to a dress.",
+    "aliases": [
+      "Skirts"
+    ]
+  },
+  {
+    "id": "8fdd49b8-0e81-43ff-88c5-50abaa39da8f",
+    "name": "Skirt and Blouse",
+    "description": "Scenes in which a performer wears both a skirt and blouse.",
+    "aliases": []
+  },
+  {
+    "id": "83a8ef47-f012-4503-aa2f-9c23199c799c",
+    "name": "Skirt Suit",
+    "description": "A women's suit consisting of a jacket and a matching skirt.",
+    "aliases": []
+  },
+  {
+    "id": "be762b81-81a8-4967-a55b-fbf782adb5d9",
+    "name": "Sling Bikini",
+    "description": "One-peice swimsuit support by fabric/string at the neck, usually leaving the sides of the torso uncovered and resembling the 'y' shape of a slingshot.",
+    "aliases": [
+      "Sling Swimsuit",
+      "Slingkini",
+      "Slingshot Bikini",
+      "Slingshot Swimsuit",
+      "Suspender Bikini",
+      "Suspender Thong"
+    ]
+  },
+  {
+    "id": "7febf83d-59af-4793-8a82-d8ad893e5a3d",
+    "name": "Slippers",
+    "description": "Slippers are light footwear that are easy to put on and off and are intended to be worn indoors, particularly at home.",
+    "aliases": []
+  },
+  {
+    "id": "2cbc076e-79d3-4eb0-adbf-5eacc67953c0",
+    "name": "Sneakers",
+    "description": "Casual, athletic shoes",
+    "aliases": [
+      "Athletic shoes",
+      "Basketball Shoes",
+      "Cross-trainers",
+      "Gym shoes",
+      "Shoes (Trainers)",
+      "Sports Shoes",
+      "Tennies",
+      "Tennis Shoes",
+      "Trainers"
+    ]
+  },
+  {
+    "id": "d67524e7-a6e7-4abb-bfa7-3ef8c9650414",
+    "name": "Socks",
+    "description": "Foot coverings of various lengths that are not made of sheer material and do not require garters.",
+    "aliases": []
+  },
+  {
+    "id": "ff1b95de-3cb4-425a-adcf-463f1e1009ef",
+    "name": "Spandex",
+    "description": "Very elastic synthetic fiber",
+    "aliases": [
+      "Elastane",
+      "Shiny Spandex"
+    ]
+  },
+  {
+    "id": "5f44c74e-15c5-43e5-92cb-a1ff9dd710b6",
+    "name": "Speedo",
+    "description": "Briefs style of male swimsuit",
+    "aliases": [
+      "Budgie Smugglers",
+      "Swim Briefs"
+    ]
+  },
+  {
+    "id": "ed3d3d8b-caa0-43ab-a98a-bb9022fb17e0",
+    "name": "Sports Bra",
+    "description": "A bra that provides support to the breasts during physical exercise.",
+    "aliases": [
+      "Bra (Sports)"
+    ]
+  },
+  {
+    "id": "a28b5b51-1cbe-4978-92e5-b8695a537243",
+    "name": "Sports Jersey",
+    "description": "Loose fitting shirt that typically represents affiliation to a sports team.",
+    "aliases": [
+      "Kit",
+      "Sports Guernsey",
+      "Sports Jumper",
+      "Sports Uniform",
+      "Unies",
+      "Unis"
+    ]
+  },
+  {
+    "id": "7544be4f-9754-4b2f-8c61-4f569a9b541c",
+    "name": "Sportswear",
+    "description": "Clothes intended to be worn while playing sports or exercising.",
+    "aliases": [
+      "Active Wear",
+      "Activewear",
+      "Athletic Wear",
+      "Fitness Clothes",
+      "Fitness Clothing",
+      "Fitness Wear",
+      "Fitnesswear",
+      "Gym Clothes",
+      "Gym Clothing",
+      "Sports Wear",
+      "Tracksuit"
+    ]
+  },
+  {
+    "id": "032d8067-5eed-44d0-8684-229b6c07cf63",
+    "name": "Stockings",
+    "description": "Sheer close-fitting leggings in two separate pieces, starting at the upper thigh and reaching down to the toes.",
+    "aliases": [
+      "Lingerie - Stockings",
+      "Nylon Stockings",
+      "Nylons",
+      "Nylons Stockings",
+      "Seamed Stockings",
+      "Stocking",
+      "Stockings (Sheer)",
+      "Vintage Stocking",
+      "VintageStocking",
+      "thigh high stockings"
+    ]
+  },
+  {
+    "id": "961c30a0-f3ee-465e-81c9-287f6f424c09",
+    "name": "Straitjacket",
+    "description": "A restraint garment designed to restrict a person's movement by tightly binding their arms to their body.",
+    "aliases": [
+      "Straight Jacket",
+      "Straight-Jacket",
+      "Straightjacket",
+      "Strait Jacket",
+      "Strait-Jacket"
+    ]
+  },
+  {
+    "id": "2dbb722a-0d07-44fd-97aa-dee96accccca",
+    "name": "Strapless Top",
+    "description": "Top without shoulder straps, often worn as casual wear without a bra underneath.",
+    "aliases": [
+      "Boob Tube",
+      "Strapless",
+      "Tube Top"
+    ]
+  },
+  {
+    "id": "02c1a57b-f89f-4470-8f3e-ac981dbe57e8",
+    "name": "String Bikini",
+    "description": "Particularly revealing swimsuit designs consisting of little more than thin strings or straps.",
+    "aliases": [
+      "Micro Bikini",
+      "Micro Swimsuit",
+      "Mirco-Bikini",
+      "Stringkini"
+    ]
+  },
+  {
+    "id": "4730998b-58bb-4eff-bc84-568cc65a7d48",
+    "name": "Suit",
+    "description": "Matching suit jacket and trousers of identical textiles",
+    "aliases": [
+      "Business Suit",
+      "Suit Sex",
+      "ビジネススーツ",
+      "正装",
+      "西装"
+    ]
+  },
+  {
+    "id": "08e61d34-ef95-4ae6-b328-93329246d012",
+    "name": "Sundress",
+    "description": "Casual sleeveless dress, usually with a wide neckline and thin shoulder straps.",
+    "aliases": [
+      "Summer Dress",
+      "Sun Dress"
+    ]
+  },
+  {
+    "id": "80748959-15ff-4216-ad94-95db71fe0e79",
+    "name": "Sunglasses",
+    "description": "One or more performers wearing sunglasses for a portion of the scene, or the whole time.",
+    "aliases": [
+      "Shades",
+      "Sun Glasses"
+    ]
+  },
+  {
+    "id": "b7d47485-2f9a-4171-a8d8-045b3a318b6a",
+    "name": "Sweater",
+    "description": "A top, typically long sleeved, made of knitted or crocheted material.",
+    "aliases": [
+      "Jumper",
+      "Jumpers",
+      "Sweaters"
+    ]
+  },
+  {
+    "id": "893d447d-154a-4477-a4f0-cd1ea9a418d1",
+    "name": "Sweat Pants",
+    "description": "Soft, casual trousers, usually in grey.",
+    "aliases": [
+      "Jogging Pants",
+      "Sweatpants",
+      "Trackpants",
+      "Tracksuit Bottoms"
+    ]
+  },
+  {
+    "id": "07c58f2e-1772-470b-947e-dc9e2191a498",
+    "name": "Sweatshirt",
+    "description": "Long-sleeved pullover shirt or jacket fashioned out of thick cloth material.",
+    "aliases": []
+  },
+  {
+    "id": "c28f8a99-03ac-4019-824e-1ebe80cdd029",
+    "name": "Swimsuit",
+    "description": "Set of clothing worn without any outerwear and intended to be used in the water.",
+    "aliases": [
+      "Bathers",
+      "Bathing Costume",
+      "Bathing Suit",
+      "Beach Wear",
+      "Beachwear",
+      "Swim Suit",
+      "Swim Wear",
+      "Swimmers",
+      "Swimming Costume",
+      "Swimming Suit",
+      "Swimsuits",
+      "Swimwear",
+      "水着",
+      "競泳・スクール水着"
+    ]
+  },
+  {
+    "id": "07611693-f255-4e12-8cd7-ea749ddf3f24",
+    "name": "Tall Socks",
+    "description": "Socks that end anywhere above the ankle, from knee-high to thigh-high.",
+    "aliases": [
+      "High Socks"
+    ]
+  },
+  {
+    "id": "16c54076-3c3e-4070-bf00-da367b7e564c",
+    "name": "Tank Top",
+    "description": "A sleeveless upper garment with shoulder straps and a low neck",
+    "aliases": [
+      "Halter",
+      "Halter Top",
+      "Sando",
+      "Sleeveless Top",
+      "Spaghetti Strap",
+      "Undershirt"
+    ]
+  },
+  {
+    "id": "cfb82ebf-c963-46f0-aa43-335265b5a88c",
+    "name": "Teddy",
+    "description": "A woman's one-piece undergarment combining a chemise and underpants, sometimes having a snap crotch.",
+    "aliases": [
+      "Camiknickers",
+      "Envelope Chemise"
+    ]
+  },
+  {
+    "id": "9b348d11-d357-4f1f-b944-2f1de2298aae",
+    "name": "Thigh-high Boots",
+    "description": "Boots that end above the knee.",
+    "aliases": [
+      "Fuck me boots",
+      "Over the Knee Boots",
+      "Over-the-Knee Boots",
+      "Tall Boots",
+      "Thigh High Boots"
+    ]
+  },
+  {
+    "id": "da983823-db86-49eb-8e6f-cc58d0d768f1",
+    "name": "Thigh Highs",
+    "description": "A garment for the lower body, as a stocking or boot, that reaches the thigh.",
+    "aliases": []
+  },
+  {
+    "id": "88e81793-bfc2-41f7-972c-292d7e1e57d1",
+    "name": "Thigh-high Socks",
+    "description": "Socks that end at mid-thigh or higher, similar in height to stockings.",
+    "aliases": [
+      "Thigh High Socks",
+      "Thigh Socks"
+    ]
+  },
+  {
+    "id": "3db13840-bc09-4ba4-a58d-cc1dd8baea42",
+    "name": "Thong",
+    "description": "Bottoms with a narrow triangular back, leaving much of the buttocks exposed.",
+    "aliases": [
+      "Thong Panties",
+      "Thong Panty",
+      "Thongs"
+    ]
+  },
+  {
+    "id": "3ce15003-966a-4da5-b254-d60eaaf005e9",
+    "name": "Tie-dyed Clothing",
+    "description": "Clothing dyed via tying to produce colorful circles.",
+    "aliases": [
+      "Tie Dye",
+      "Tie-dye",
+      "Tie-dyed",
+      "Tiedye"
+    ]
+  },
+  {
+    "id": "59bd76d1-9854-402d-a484-040b54a65ba1",
+    "name": "Toe Ring",
+    "description": "Performer wears at least 1 ring on their toes.",
+    "aliases": [
+      "Toe Rings"
+    ]
+  },
+  {
+    "id": "a1dec92f-ec1c-4ccd-a359-9a041e04efee",
+    "name": "Toe Socks",
+    "description": "Socks with individual toes",
+    "aliases": [
+      "Toesocks"
+    ]
+  },
+  {
+    "id": "9878bdf9-efcb-4e42-b549-4694bcaa393c",
+    "name": "Topless",
+    "description": "Wearing nothing to cover the chest.",
+    "aliases": []
+  },
+  {
+    "id": "fc5ceacd-3cfe-4336-8115-1a512a22dc7c",
+    "name": "Transparent Clothing",
+    "description": "Clothing that is at least somewhat transparent.",
+    "aliases": [
+      "See Through",
+      "See-through",
+      "Sheer",
+      "Sheer Outfit",
+      "Transparent Latex"
+    ]
+  },
+  {
+    "id": "167c8622-6efa-46f7-96f8-aee67980f95a",
+    "name": "T-shirt",
+    "description": "A fabric, usually short-sleeved, top. May be plain or feature a graphic printed on the front and/or back.",
+    "aliases": [
+      "T Shirt"
+    ]
+  },
+  {
+    "id": "7f54071b-cd4d-4990-9108-109ed5a9155b",
+    "name": "Tube Dress",
+    "description": "Strapless form-fitting dress",
+    "aliases": [
+      "Strapless Bodycon Dress",
+      "Strapless Dresses",
+      "Tube Top Dresses"
+    ]
+  },
+  {
+    "id": "362e357a-3fd2-450a-8445-bb9498d3d815",
+    "name": "Tutu",
+    "description": "A very short skirt made of many layers of very thin, stiff material, worn by female ballet dancers.",
+    "aliases": []
+  },
+  {
+    "id": "57e3cef6-a97c-49dc-bcc9-71072dd7251f",
+    "name": "Underboob",
+    "description": "The lower part of a breast uncovered or revealed by clothing",
+    "aliases": [
+      "Under Boob",
+      "Under-Boob"
+    ]
+  },
+  {
+    "id": "53edc7f4-d6c3-497e-868e-80c0ccf25911",
+    "name": "Under-the-Knee Socks",
+    "description": "Socks that end just below the knee.",
+    "aliases": [
+      "Knee High Socks",
+      "Knee Highs",
+      "Knee Socks",
+      "Knee-high Socks",
+      "OTC Socks",
+      "Socks (Knee High)",
+      "Under the Knee High Socks",
+      "Under-the-Knee High Socks",
+      "Under-the-Knee-high Socks"
+    ]
+  },
+  {
+    "id": "2eaac7f2-7880-4269-805e-453d0338ac53",
+    "name": "Underwear",
+    "description": "Features performer in just their underwear, regardless of type.",
+    "aliases": []
+  },
+  {
+    "id": "a921a1aa-c284-4419-8f93-2126574cae89",
+    "name": "Uniform",
+    "description": "Appropriate clothing worn by a member of a particular organization or occupation.",
+    "aliases": [
+      "Uniforms",
+      "制服",
+      "校服"
+    ]
+  },
+  {
+    "id": "7ebc9d77-c244-4caf-b5d9-ae2663f747fa",
+    "name": "Vedgie",
+    "description": "Performer has a vaginal wedgie.",
+    "aliases": [
+      "Vagina Wedgie",
+      "Vedgy"
+    ]
+  },
+  {
+    "id": "12c2e51e-de40-482d-897b-09ba55a53de3",
+    "name": "Veil",
+    "description": "A piece of thin clothing worn by women to cover their faces or heads.",
+    "aliases": [
+      "Wedding Veil"
+    ]
+  },
+  {
+    "id": "9b1dc712-0ce6-43ad-8445-8b5df746e9f5",
+    "name": "Vest",
+    "description": "Scene features a performer wearing a sleeveless garment, often worn over a shirt or blouse.",
+    "aliases": [
+      "Fur Vest",
+      "Vest Top"
+    ]
+  },
+  {
+    "id": "3c0ad0a6-f2de-4031-b3b2-a0dd72d76ad2",
+    "name": "Virgin Killer Sweater",
+    "description": "Halter top sweater with a large open back",
+    "aliases": [
+      "Sweater That Kills Virgins",
+      "Virgin-Killing Sweater"
+    ]
+  },
+  {
+    "id": "7e72ba00-1284-44c5-8d17-b76899087653",
+    "name": "Watch",
+    "description": "Scene features a performer wearing a watch",
+    "aliases": [
+      "Wrist Watch",
+      "Wristwatch"
+    ]
+  },
+  {
+    "id": "2c14fd96-9ac4-4251-8268-14bbc4ec9191",
+    "name": "Wedding Dress",
+    "description": "The dress worn by the bride during a wedding ceremony.",
+    "aliases": [
+      "Bridal Gown"
+    ]
+  },
+  {
+    "id": "7f3a9924-601a-4a37-91ce-dbabdc5d5beb",
+    "name": "Wedding Ring",
+    "description": "A performer is seen wearing a ring or wedding band",
+    "aliases": []
+  },
+  {
+    "id": "0fd7b110-5223-47d1-93f6-03c73ebbc700",
+    "name": "Wedges",
+    "description": "Women's shoes with a heel all the way under the shoe.",
+    "aliases": [
+      "Wedge",
+      "Wedge Heels"
+    ]
+  },
+  {
+    "id": "1477f05c-631a-4a7c-a07d-854ca5c11e32",
+    "name": "Wetlook Clothing",
+    "description": "Clothing made of fabric, that appears to be wet",
+    "aliases": [
+      "Wetlook"
+    ]
+  },
+  {
+    "id": "015a5e5d-ee4e-4233-ace9-490a06b27b29",
+    "name": "Wet T-shirt",
+    "description": "Shirt soaked in water or other fluids, making it more transparent.",
+    "aliases": [
+      "T-Shirt (Wet)",
+      "Wet Shirt"
+    ]
+  },
+  {
+    "id": "e23aa24b-fdcc-41fd-a4be-e2ae148567fa",
+    "name": "White Stockings",
+    "description": "Scene contains a performer who wears white colored stockings",
+    "aliases": [
+      "Stockings (White)"
+    ]
+  },
+  {
+    "id": "516ebeec-1c6a-4522-aace-ac36808968ce",
+    "name": "Wings",
+    "description": "At least one performer is wearing wings during parts of the scene.",
+    "aliases": [
+      "Angel Wings"
+    ]
+  },
+  {
+    "id": "cf37312c-06fc-49bd-9537-a13e84ebcf0d",
+    "name": "Woman's Heels",
+    "description": "Woman's shoes with a raised heel.",
+    "aliases": [
+      "Ankle Strap High Heels",
+      "Heels",
+      "High Heel Shoes",
+      "High Heels",
+      "High Heels/Stilhettos",
+      "HighHeels",
+      "Kitten Heels",
+      "Low Heels",
+      "Medium Heels",
+      "Open Toe High Heels",
+      "Slingback High Heels",
+      "Stiletto Heels",
+      "Stilettos",
+      "Ultra-High Heels",
+      "Women's High Heels"
+    ]
+  },
+  {
+    "id": "6c0a2824-acd2-4b64-9a2c-634bd9e4d0d0",
+    "name": "Zentai",
+    "description": "Skin-tight garment that covers the entire body, including the face",
+    "aliases": [
+      "Zentai Suit"
+    ]
+  },
+  {
+    "id": "bed78871-9bb8-40c2-97b1-347c43ca7113",
+    "name": "Zip Front Dress",
+    "description": "A dress where the zipper runs the full length down the front of the dress",
+    "aliases": [
+      "Zipper Dress"
+    ]
+  }
+]

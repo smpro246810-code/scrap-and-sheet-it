@@ -1,0 +1,819 @@
+[
+  {
+    "id": "7f21b00d-6dbd-4037-b2fc-2535037824f2",
+    "name": "Airplane",
+    "description": "At least some of the action takes place on a fixed-wing aircraft.",
+    "aliases": [
+      "Aeroplane",
+      "Aircrafts",
+      "Jet Aircraft",
+      "Jet Plane",
+      "Private Jet"
+    ]
+  },
+  {
+    "id": "e2474967-2522-40dd-a43d-516fc4f61a9e",
+    "name": "Alley",
+    "description": "At least some of the action takes place along the side of a building, somewhat hidden from public view.",
+    "aliases": [
+      "Alleyway"
+    ]
+  },
+  {
+    "id": "4bb13fc7-4764-4108-884b-2efb9062f0ad",
+    "name": "Backroom",
+    "description": "At least some of the action takes place in a seldom-used room, often for storage or supplies.",
+    "aliases": [
+      "Storage Room",
+      "Supply Room",
+      "Utility Closet",
+      "Utility Room"
+    ]
+  },
+  {
+    "id": "ab97bce5-9851-47b6-8293-0f8d92b8ac6a",
+    "name": "Backyard",
+    "description": "At least some of the action takes place in somebody's backyard.",
+    "aliases": [
+      "Back Porch",
+      "Deck",
+      "Patio",
+      "Porch",
+      "Portico",
+      "Veranda"
+    ]
+  },
+  {
+    "id": "6322f1b1-dad9-478a-9143-47b098138026",
+    "name": "Balcony",
+    "description": "At least some of the action takes place on an open balcony.",
+    "aliases": []
+  },
+  {
+    "id": "a0472e08-2ad4-49b5-b043-3aaca482550b",
+    "name": "Bar",
+    "description": "At least some of the action takes place in a bar or pub.",
+    "aliases": [
+      "Brewery",
+      "Dyke Bar",
+      "Gay Bar",
+      "Lesbian Bar",
+      "Pub",
+      "Saloon",
+      "Tavern",
+      "Wine House",
+      "Winery"
+    ]
+  },
+  {
+    "id": "53e1a9b2-d245-4d6d-bae6-0d7c2e2471a3",
+    "name": "Barn",
+    "description": "At least some of the action takes place in a barn.",
+    "aliases": []
+  },
+  {
+    "id": "e5d378fa-2ea7-4061-b950-6613adf9e3fb",
+    "name": "Basement",
+    "description": "At least some of the action takes place in a basement or cellar.",
+    "aliases": [
+      "Cellar"
+    ]
+  },
+  {
+    "id": "ecffe22d-0721-4535-8fb2-8d5d4bcdf9ce",
+    "name": "Bathroom",
+    "description": "At least some of the action takes place in a bathroom.",
+    "aliases": [
+      "Bathroom Sex",
+      "Powder Room",
+      "Sex - Bathroom",
+      "Washroom",
+      "卫生间",
+      "换洗室",
+      "换衣间",
+      "浴室"
+    ]
+  },
+  {
+    "id": "8d259a98-c349-44aa-a4d7-0a2e80ea89c2",
+    "name": "Beach",
+    "description": "At least some of the action takes place on a sandy beach.",
+    "aliases": [
+      "Beach View",
+      "Beach and Sand",
+      "Sand",
+      "Sands",
+      "Sandy"
+    ]
+  },
+  {
+    "id": "e0dc1e9d-2629-4521-b32d-83484e1910dd",
+    "name": "Bedroom",
+    "description": "At least some of the action takes place in a bedroom.",
+    "aliases": [
+      "Bed Room",
+      "Bedroom Sex",
+      "卧室"
+    ]
+  },
+  {
+    "id": "385b7b34-e9e4-441f-bf79-8cdba59cf38e",
+    "name": "Boat",
+    "description": "At least some of the action takes place on a boat or ship.",
+    "aliases": [
+      "Boats",
+      "Sail Boat",
+      "Ship",
+      "Speed Boat",
+      "Yacht"
+    ]
+  },
+  {
+    "id": "672e53f5-b3ea-48a3-9202-fc00c0efa924",
+    "name": "Camping",
+    "description": "At least some of the action takes place outdoors, typically at a campsite, field, or forest, with one or more tents.",
+    "aliases": [
+      "Camp",
+      "Campsite"
+    ]
+  },
+  {
+    "id": "4d8f9b7e-f157-4ddb-95e8-d52de9d367d3",
+    "name": "Carpet",
+    "description": "The scene or image features a carpet",
+    "aliases": [
+      "Animal Skin",
+      "Black Carpet",
+      "Fur Carpet",
+      "Red Carpet",
+      "White Carpet"
+    ]
+  },
+  {
+    "id": "9c614ab4-ad9a-4930-a1e1-8985d288fb7d",
+    "name": "Cave",
+    "description": "At least some of the action takes place in a natural cavern.",
+    "aliases": [
+      "Cavern",
+      "Caverns",
+      "Caves"
+    ]
+  },
+  {
+    "id": "fec61a56-1484-4c9c-ba23-c2744f7eb89b",
+    "name": "Church",
+    "description": "At least some of the action takes place in a Church.",
+    "aliases": []
+  },
+  {
+    "id": "4f501bc9-cb0c-491d-87de-f759c07436ac",
+    "name": "Classroom",
+    "description": "At least some of the action takes place in a school classroom.",
+    "aliases": [
+      "Class Room",
+      "School Room",
+      "Schoolroom"
+    ]
+  },
+  {
+    "id": "ac23eb69-84b3-4698-a5f3-703fe01a12ca",
+    "name": "Club",
+    "description": "At least some of the action takes place in a night club or disco.",
+    "aliases": [
+      "Dance Club",
+      "Disco",
+      "Discotheque",
+      "Night Club"
+    ]
+  },
+  {
+    "id": "700062a5-8fe4-4e4f-a822-98c12f83a024",
+    "name": "College",
+    "description": "At least some of the action takes place in a college or university.",
+    "aliases": [
+      "Academia",
+      "Community College",
+      "Higher Education",
+      "Trade School",
+      "University",
+      "大学",
+      "学院",
+      "社区大学"
+    ]
+  },
+  {
+    "id": "59a39200-c90c-4212-80d3-12c9a051a833",
+    "name": "Cybersex",
+    "description": "Multiple performers remotely connected via a network",
+    "aliases": [
+      "Computer Sex",
+      "Coumputersex",
+      "Cyber Sex",
+      "Cybering",
+      "Internet Sex",
+      "Internetsex",
+      "Netsex"
+    ]
+  },
+  {
+    "id": "85de6be6-27b9-4165-a711-35beb857af9e",
+    "name": "Dining Room",
+    "description": "At least some of the action takes place in a home's dining room.",
+    "aliases": [
+      "Dining Room Sex"
+    ]
+  },
+  {
+    "id": "4fff26d1-7cbb-462f-afdf-48064c8367ba",
+    "name": "Dorm Room",
+    "description": "At least some of the action takes place in a school's dorm room.",
+    "aliases": [
+      "Dorm",
+      "Dormitory",
+      "Residence Hall"
+    ]
+  },
+  {
+    "id": "48efc15a-0db0-47c1-8bff-b425e13fdcde",
+    "name": "Dungeon",
+    "description": "At least some of the action takes place in a dungeon, often built for BDSM purposes.",
+    "aliases": [
+      "BDSM Dungeon",
+      "Sex Dungeon"
+    ]
+  },
+  {
+    "id": "7db0ccc6-dbca-47b5-a4da-a024dab5c223",
+    "name": "Elevator",
+    "description": "At least some of the action takes place in an elevator.",
+    "aliases": []
+  },
+  {
+    "id": "3cee72ec-2e91-47d3-90c8-887fbecc76e7",
+    "name": "Entryway",
+    "description": "At least some of the action takes place in the front room or near the front door.",
+    "aliases": [
+      "Entry Hall",
+      "Foyer",
+      "Front Door",
+      "Genkan",
+      "Lobby",
+      "げんかん",
+      "玄関",
+      "玄關"
+    ]
+  },
+  {
+    "id": "de4929c3-6977-4bb2-89d4-299b94f55e89",
+    "name": "Farm",
+    "description": "At least some of the action takes place on a farm or ranch.",
+    "aliases": []
+  },
+  {
+    "id": "19a9f7e6-51f0-4a9f-afe3-d46c796b38e3",
+    "name": "Fighting Ring",
+    "description": "Space intended for combat sports or martial arts.",
+    "aliases": [
+      "Boxing Ring",
+      "Octagon",
+      "Squared Circle",
+      "Wrestling Ring"
+    ]
+  },
+  {
+    "id": "209d16f2-4f8c-4a15-badd-f1d7a1c42fe0",
+    "name": "Fireplace",
+    "description": "Located close to a fireplace",
+    "aliases": [
+      "Hearth"
+    ]
+  },
+  {
+    "id": "aeb3c6f7-cd28-4034-b72d-8b5ab5c45e19",
+    "name": "Fitting Room",
+    "description": "A public or semi-public location designated for changing one's clothes.",
+    "aliases": [
+      "Changing Room",
+      "Dressing Room"
+    ]
+  },
+  {
+    "id": "6cde45a9-8c82-48c2-bcaa-8b7ddd3312e9",
+    "name": "Forest",
+    "description": "At least some of the action takes place in a forest.",
+    "aliases": [
+      "Forest Sex",
+      "Woods"
+    ]
+  },
+  {
+    "id": "e86d801e-1716-4eaa-a6ea-cdec9c1113cc",
+    "name": "Garage",
+    "description": "At least some of the action takes place in a garage, either private or commercial.",
+    "aliases": []
+  },
+  {
+    "id": "68387d7d-b4e0-40c4-9933-8e943abb2458",
+    "name": "Garden",
+    "description": "At least some of the action takes place in a garden, filled with plants of some kind.",
+    "aliases": [
+      "Gardening"
+    ]
+  },
+  {
+    "id": "de6d0eb2-9a56-47a0-908a-b727f1df6e62",
+    "name": "Gym",
+    "description": "At least some of the action takes place in a gym, either private or public.",
+    "aliases": [
+      "Athletic Center",
+      "Fitness Center",
+      "Fitness Club",
+      "Gymnasium",
+      "Health Club",
+      "Sport Club",
+      "体育中心",
+      "健身中心",
+      "健身俱乐部",
+      "健身房"
+    ]
+  },
+  {
+    "id": "81cd3c20-9a56-4d1f-8b9d-0bc629c0e435",
+    "name": "High School",
+    "description": "At least some of the action takes place in a secondary school of some kind.",
+    "aliases": [
+      "Highschool",
+      "Secondary School"
+    ]
+  },
+  {
+    "id": "4d08e727-fe93-41aa-b61c-efa9b80c7f6e",
+    "name": "Home",
+    "description": "At least some of the action takes place in somebody's home.",
+    "aliases": [
+      "Apartment",
+      "Chateau",
+      "Condo",
+      "Condominium",
+      "Domestic",
+      "House",
+      "Villa"
+    ]
+  },
+  {
+    "id": "5eb81e31-77da-45ea-bd13-bb706a981ac3",
+    "name": "Hospital",
+    "description": "At least some of the action takes place in a medical facility of some kind.",
+    "aliases": [
+      "Clinic",
+      "Doctor's Office",
+      "Hospital / Clinic",
+      "Hospital Sex",
+      "Hospital Ward",
+      "Hospital/Clinic",
+      "Medical Facility"
+    ]
+  },
+  {
+    "id": "43083640-b024-46a2-9b17-ba0c9e3333c9",
+    "name": "Hostel",
+    "description": "At least some of the action takes place in a hostel, low-cost lodging for travelers with shared sleeping spaces.",
+    "aliases": []
+  },
+  {
+    "id": "976c3828-279b-4496-9cd1-26b421d50ec9",
+    "name": "Hotel",
+    "description": "At least some of the action takes place at a hotel, motel, or resort.",
+    "aliases": [
+      "AirBnb",
+      "Bed & Breakfast",
+      "Hotel Experience",
+      "Hotel Room",
+      "Hotel Sex",
+      "Inn",
+      "Motel",
+      "Resort"
+    ]
+  },
+  {
+    "id": "3da367f3-867f-492e-8952-c98e326a4d57",
+    "name": "Hot Spring",
+    "description": "At least some of the action takes place at a hot spring.",
+    "aliases": [
+      "Onsen",
+      "温泉"
+    ]
+  },
+  {
+    "id": "ae21925f-7ea8-4f4e-b151-0c9f6806d916",
+    "name": "Hot Tub Room",
+    "description": "A room with as center piece a hot tub, jacuzzi, whirlpool or a spa.",
+    "aliases": [
+      "Bathhouse",
+      "Hot Tub Suite",
+      "Hot Tubs",
+      "Hottub Room",
+      "Hottub Suite",
+      "Hottubs",
+      "Jacuzzi Room",
+      "Jacuzzi Suite",
+      "Jacuzzis",
+      "Spa",
+      "Spas",
+      "Whirlpool Room",
+      "Whirlpool Suite",
+      "Whirlpools"
+    ]
+  },
+  {
+    "id": "6b30af9e-2949-4984-9215-0c4f59c55969",
+    "name": "Incomplete Building",
+    "description": "At least some of the action takes place in an incomplete building either from abandonment or construction.",
+    "aliases": [
+      "Abandoned Building",
+      "Building Site",
+      "Construction Site",
+      "Rundown",
+      "Rundown Building"
+    ]
+  },
+  {
+    "id": "95e70909-1591-405a-bc34-af443604ab95",
+    "name": "Indoors",
+    "description": "At least some of the action takes place in any kind of indoor space.",
+    "aliases": [
+      "Indoor",
+      "Inside",
+      "室内"
+    ]
+  },
+  {
+    "id": "3fd9cda2-53ea-4586-b08a-27134cc24fde",
+    "name": "Industrial",
+    "description": "At least some of the action takes place in a factory or warehouse.",
+    "aliases": [
+      "Factory",
+      "Ware House",
+      "Warehouse"
+    ]
+  },
+  {
+    "id": "b283144e-c3f1-4a78-b5cf-793dd2293f0b",
+    "name": "In Front of a Window",
+    "description": "Activity in front of a window, potentially where visible to others",
+    "aliases": [
+      "Exhibitionism - Window Sex",
+      "Fucked in the Window",
+      "Window",
+      "Window Sex",
+      "Window Sill",
+      "Windowsill",
+      "Windowsill Sex"
+    ]
+  },
+  {
+    "id": "2044b076-8a02-400e-a53c-8cee2bc4e39f",
+    "name": "Japanese-style Room",
+    "description": "A traditional room in Japanese architecture, often referred to as a \"washitsu\" (和室).",
+    "aliases": [
+      "Washitsu",
+      "和室"
+    ]
+  },
+  {
+    "id": "3d610540-2736-4817-912f-043b51d7b2e9",
+    "name": "Kitchen",
+    "description": "At least some of the action takes place in a kitchen.",
+    "aliases": [
+      "Kitchen Sex",
+      "厨房",
+      "炊事房",
+      "烹饪室"
+    ]
+  },
+  {
+    "id": "22589e55-9e62-4323-b70c-206eef4cfd4e",
+    "name": "Laboratory",
+    "description": "At least some of the action takes place in a laboratory.",
+    "aliases": [
+      "Lab"
+    ]
+  },
+  {
+    "id": "854c061c-c243-4785-9adb-e4b316a0b484",
+    "name": "Laundry",
+    "description": "At least some of the action takes place in a room for washing laundry, either private or commercial.",
+    "aliases": [
+      "Laundromat",
+      "Laundry Room"
+    ]
+  },
+  {
+    "id": "265e29f0-2777-4165-8b74-cfa72e512ce0",
+    "name": "Library",
+    "description": "At least some of the action takes place in a library, including both public and school libraries.",
+    "aliases": [
+      "Public Library",
+      "School Library"
+    ]
+  },
+  {
+    "id": "848fe14d-e912-4c8a-9438-65713fadd875",
+    "name": "Living Room",
+    "description": "At least some of the action takes place in a living room or family room.",
+    "aliases": [
+      "Drawing Room",
+      "Family Room",
+      "Front Room",
+      "Living Room Sex",
+      "Livingroom",
+      "Livingroom Sex",
+      "Lounge",
+      "Lounge Room",
+      "Sitting Room",
+      "客厅"
+    ]
+  },
+  {
+    "id": "8729fa93-8fee-4869-ab88-4ecdede54341",
+    "name": "Locker Room",
+    "description": "At least some of the action takes place in a room with multiple lockers.",
+    "aliases": [
+      "更衣室"
+    ]
+  },
+  {
+    "id": "c3cdc37a-b1cd-42dc-a695-03de4accaf3e",
+    "name": "Massage Parlor",
+    "description": "At least some of the action takes place at a business focused on providing massages, whether it also offers sexual services or not.",
+    "aliases": [
+      "Beauty Shop",
+      "Health Spa",
+      "Massage Parlour",
+      "Spa Sex"
+    ]
+  },
+  {
+    "id": "d1002b75-471c-467e-a803-74f781c63b7c",
+    "name": "Mexico",
+    "description": "Scenes shot in Mexico, or implied to be shot in Mexico.",
+    "aliases": []
+  },
+  {
+    "id": "787e0fc5-a554-445e-aa75-184c7549bbfc",
+    "name": "Moving Vehicle",
+    "description": "At least some of the action takes place in a vehicle while it's moving, often a car or van.",
+    "aliases": [
+      "Bus Sex",
+      "Driver",
+      "Driving",
+      "Traffic Sex"
+    ]
+  },
+  {
+    "id": "51d369db-f7c2-40ad-b5f5-5f4c41057ac8",
+    "name": "Natural Body of Water",
+    "description": "At least some of the action takes place near a large body of water, including lakes and streams.",
+    "aliases": [
+      "Creek",
+      "Lake",
+      "Lakeshore",
+      "Lakeside",
+      "Ocean",
+      "Ocean View",
+      "Pond",
+      "River",
+      "Seaside",
+      "Stream"
+    ]
+  },
+  {
+    "id": "c5cd7abe-c6bc-4113-ba0f-2abae30a6e79",
+    "name": "Nature",
+    "description": "At least some of the action takes place outdoors in the middle of nature.",
+    "aliases": [
+      "Nature Porn"
+    ]
+  },
+  {
+    "id": "aa7116cc-010c-4586-b169-e707a91ec0ca",
+    "name": "Office",
+    "description": "At least some of the action takes place in a professional office.",
+    "aliases": [
+      "Office Sex",
+      "办公室"
+    ]
+  },
+  {
+    "id": "be94149b-36e6-4aef-a469-7f770a7051d8",
+    "name": "Outdoors",
+    "description": "At least some of the action takes place in any kind of outdoor space.",
+    "aliases": [
+      "Other Features - Outdoor",
+      "Outdoor",
+      "Outdoor Fuck",
+      "Outdoor Sex",
+      "Outside",
+      "Outside Fuck",
+      "Outside Sex",
+      "户外",
+      "户外做爱",
+      "户外性爱",
+      "露天"
+    ]
+  },
+  {
+    "id": "754b721d-3e1b-470f-8baa-961ffc9cf8ad",
+    "name": "Park",
+    "description": "At least some of the action takes place outdoors in a grassy public space.",
+    "aliases": [
+      "Public Park"
+    ]
+  },
+  {
+    "id": "e1f02f00-641c-4a07-a165-adc0e2f7eba8",
+    "name": "Parking Lot",
+    "description": "At least some of the action takes place in a shared space for parked cars.",
+    "aliases": [
+      "Car Park",
+      "Parking Garage"
+    ]
+  },
+  {
+    "id": "8e27c981-66e7-4a0d-b6c1-8d927343f6ab",
+    "name": "Picnic",
+    "description": "At least some of the action takes place outdoors involving picnic blankets, picnic tables or picnic baskets",
+    "aliases": [
+      "Picnic Basket",
+      "Picnic Blanket",
+      "Picnic Table"
+    ]
+  },
+  {
+    "id": "70b856a6-1905-42c4-8781-e6b6d1a78976",
+    "name": "Police Station",
+    "description": "At least some of the action takes place in the workplace of law enforcement agents.",
+    "aliases": []
+  },
+  {
+    "id": "faa36250-63f5-4465-8837-aad48f5d6a6c",
+    "name": "Poolside",
+    "description": "At least some of the action takes place near a swimming pool.",
+    "aliases": [
+      "Indoor Pool",
+      "Pool",
+      "Pool Party",
+      "Pool Sex",
+      "Pool Side",
+      "Swimming Pool",
+      "swimming-pool"
+    ]
+  },
+  {
+    "id": "78155444-e560-439a-a48b-2554224b9d1a",
+    "name": "Prison",
+    "description": "At least some of the action takes place in a prison.",
+    "aliases": []
+  },
+  {
+    "id": "b8416f6c-0636-4380-9857-ac92f7324cc4",
+    "name": "Restaurant",
+    "description": "At least some of the action takes place in a restaurant.",
+    "aliases": [
+      "Café",
+      "Diner",
+      "Fast Food"
+    ]
+  },
+  {
+    "id": "61ce0ae8-38f2-450e-9b4b-b2ba2c78962a",
+    "name": "Sauna",
+    "description": "At least some of the action takes place in a heated sauna.",
+    "aliases": [
+      "Sauna Sex",
+      "Steam Room"
+    ]
+  },
+  {
+    "id": "2859d8b4-b878-4a62-a9ae-43af35776f86",
+    "name": "School",
+    "description": "At least some of the action takes place in some sort of academic institution.",
+    "aliases": [
+      "Class",
+      "Education",
+      "School (18+)",
+      "School Fantasies",
+      "School Stuff"
+    ]
+  },
+  {
+    "id": "348f6222-9b14-440c-b7b3-c0ab325d0763",
+    "name": "Soapland",
+    "description": "A Japanese bathhouse that provides sexual services.",
+    "aliases": [
+      "Soapland Girl"
+    ]
+  },
+  {
+    "id": "8954a794-d444-4d9f-afb3-ab1bd7cc76cb",
+    "name": "Store",
+    "description": "At least some of the action takes place in some kind of store, shop, market, or dealership.",
+    "aliases": [
+      "Clothing Store",
+      "Dealership",
+      "Grocery Store",
+      "Market",
+      "Shop",
+      "Supermarket"
+    ]
+  },
+  {
+    "id": "c50e490c-ba00-4fb4-b7df-76057860b0ad",
+    "name": "Street",
+    "description": "At least some of the action takes place outdoors by a street or roadway.",
+    "aliases": [
+      "Road",
+      "Road Side",
+      "Roadside"
+    ]
+  },
+  {
+    "id": "157bb2bf-f246-42ed-a874-a3555e7df5f0",
+    "name": "Strip Club",
+    "description": "At least some of the action takes place in a strip club.",
+    "aliases": [
+      "Stripclub"
+    ]
+  },
+  {
+    "id": "421b853a-e9b5-437e-bbf7-14d3b7473208",
+    "name": "Studio",
+    "description": "At least some of the action takes place in an open workspace, usually dedicated to some craft or art.",
+    "aliases": [
+      "Dance Studio",
+      "Martial Arts Studio",
+      "Music Studio",
+      "Photographic Studio",
+      "Television Studio",
+      "Yoga Studio"
+    ]
+  },
+  {
+    "id": "ab6609ca-bbf9-4e19-a0d7-f4eaeea74ff9",
+    "name": "Tantric Temple",
+    "description": "A Tantric Temple is a space designed for practicing tantric rituals, meditation, and spiritual practices.",
+    "aliases": [
+      "Tantra Temple"
+    ]
+  },
+  {
+    "id": "88ca9ec4-c3c8-4986-a2fa-1b468c7fd637",
+    "name": "Tent",
+    "description": "Fabric-covered shelter, usually placed outdoors for camping",
+    "aliases": [
+      "Sex in a Tent",
+      "Tent Sex",
+      "Tents"
+    ]
+  },
+  {
+    "id": "ac353e12-d45a-4260-a37e-7a104731763d",
+    "name": "Terrace",
+    "description": "At least some of the action takes place on a terrace.",
+    "aliases": []
+  },
+  {
+    "id": "69e02c0a-8d58-475f-8804-ead393f95dd4",
+    "name": "Theater Room",
+    "description": "At least some of the action takes place in a theater room.",
+    "aliases": []
+  },
+  {
+    "id": "ab3b013d-dfe9-43af-a3fd-87f9b27a4ba8",
+    "name": "Train (Rail Transport)",
+    "description": "Some of the action takes place on a train or light rail vehicle.",
+    "aliases": []
+  },
+  {
+    "id": "b04ca3ed-095f-4a88-8750-f5bd1c0ded7d",
+    "name": "Under Table",
+    "description": "Scene features a performer teasing or pleasing another performer under a table",
+    "aliases": [
+      "Under the Table"
+    ]
+  },
+  {
+    "id": "5e249324-d294-4ec0-beae-594600f8d723",
+    "name": "White Room",
+    "description": "Scene is shot in an environment with largely uniform white walls, floors, and backgrounds that, together with soft lighting, give the impression of a seamless white expanse.",
+    "aliases": [
+      "White Backdrop",
+      "White Background",
+      "White Cyclorama",
+      "White Cyclorama Studio",
+      "White Seamless",
+      "White Seamless Room",
+      "White Seamless Studio"
+    ]
+  }
+]

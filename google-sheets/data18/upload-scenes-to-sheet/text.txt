@@ -1,0 +1,19 @@
+┌──────────────────────────────┐
+│ upload_scenes_to_sheet.py    │  ← Orchestrator (FLOW)
+└─────────────┬────────────────┘
+              │
+┌─────────────▼────────────────┐
+│ scene_flatten.py             │  ← Scene → Row mapping (BUSINESS LOGIC)
+└─────────────┬────────────────┘
+              │
+┌─────────────▼────────────────┐
+│ sheet_state.py               │  ← Read-only sheet analysis (STATE)
+└─────────────┬────────────────┘
+              │
+┌─────────────▼────────────────┐
+│ sheet_writer.py              │  ← Write-only sheet mutations (I/O)
+└─────────────┬────────────────┘
+              │
+┌─────────────▼────────────────┐
+│ helpers.py                   │  ← Shared utilities (TOOLS)
+└──────────────────────────────┘

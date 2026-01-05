@@ -1,0 +1,1617 @@
+[
+  {
+    "id": "de53f7a7-de6d-4492-8ead-f08ddd91f143",
+    "name": "Actor",
+    "description": "Male performer who appears on screen or stage.",
+    "aliases": []
+  },
+  {
+    "id": "a0b41779-c168-47a3-9ce0-baf63ee81a9a",
+    "name": "Actress",
+    "description": "Female performer who appears on screen or stage.",
+    "aliases": []
+  },
+  {
+    "id": "4b6ff746-0e29-4169-84d9-8a2ea172ed90",
+    "name": "Adorable",
+    "description": "Female characters presented as some combination of sweet, happy, innocent, and youthful.",
+    "aliases": [
+      "Baby Face",
+      "Cute",
+      "Cute Face",
+      "Cute Girl",
+      "Cutesy",
+      "Cutie",
+      "Kawaii",
+      "Very Cute",
+      "美少女"
+    ]
+  },
+  {
+    "id": "1268585f-c4f8-492d-870e-26d230086734",
+    "name": "Alien",
+    "description": "Character from another planet, humanoid or otherwise.",
+    "aliases": [
+      "Alien Inside",
+      "Aliens"
+    ]
+  },
+  {
+    "id": "66ec95a0-2093-4672-bbf4-49abaafad1c4",
+    "name": "Amish",
+    "description": "Character presented as part of the Amish church, known for shunning modern culture and technology.",
+    "aliases": [
+      "Amish Church",
+      "Amish Man",
+      "Amish Woman",
+      "Old Order Amish"
+    ]
+  },
+  {
+    "id": "483e2c84-7c45-4c53-aba0-52681509a369",
+    "name": "Anchorwoman",
+    "description": "A female character who presents news during a news program on TV.",
+    "aliases": [
+      "Female Anchor"
+    ]
+  },
+  {
+    "id": "5e1d778f-612b-4d71-9161-8058dacead64",
+    "name": "Androgynous",
+    "description": "Character who is presented as neither feminine nor masculine.",
+    "aliases": []
+  },
+  {
+    "id": "60021c58-f013-46c0-b08c-1663a86691d8",
+    "name": "Anime Character",
+    "description": "Performer representing a character from anime, either as parody or cosplay.",
+    "aliases": [
+      "Anime",
+      "Anime Cosplay",
+      "Anime Costume"
+    ]
+  },
+  {
+    "id": "64dc3e97-f402-4ab8-a425-e1c78092412e",
+    "name": "Artist",
+    "description": "Character who is presented as a visual artist.",
+    "aliases": [
+      "Drawing",
+      "Paint Brush",
+      "Painting",
+      "Sketch Pad"
+    ]
+  },
+  {
+    "id": "0491621f-27ae-479d-ab19-3435f8c5cde3",
+    "name": "Babysitter",
+    "description": "Female character who acts as a babysitter or nanny.",
+    "aliases": [
+      "Nanny"
+    ]
+  },
+  {
+    "id": "772cc94f-3237-4015-8233-b5a8938e21ab",
+    "name": "Backpacker",
+    "description": "Character who is travelling on a low budget, typically staying in hostels with a large backpack as luggage.",
+    "aliases": []
+  },
+  {
+    "id": "12c0d3e7-2377-4af4-8f57-8853369296ea",
+    "name": "Bad Girl",
+    "description": "Female character who clearly enjoys breaking the rules.",
+    "aliases": [
+      "Naughty Girls",
+      "Rebellious Girl",
+      "Resistant"
+    ]
+  },
+  {
+    "id": "7b02d352-4a18-4667-857f-8a702bd11be8",
+    "name": "Ballet Dancer",
+    "description": "Character presented as a ballet dancer, professionally or not.",
+    "aliases": [
+      "Ballet",
+      "Ballet Dancing"
+    ]
+  },
+  {
+    "id": "75b25605-ee00-448f-82c5-06a09156ce52",
+    "name": "Bear",
+    "description": "Larger and often hairier man who projects an image of rugged masculinity.",
+    "aliases": []
+  },
+  {
+    "id": "c7bbad47-f9ae-4692-980b-a43011c0e6d2",
+    "name": "Bimbo",
+    "description": "Usually a hyperfeminine woman that is characterized as being ditzy or airheaded.",
+    "aliases": [
+      "Bimbo Doll",
+      "Bimbo Fetish"
+    ]
+  },
+  {
+    "id": "f33ce7b2-827e-48ec-a767-77b8ef7a5bd3",
+    "name": "Bitch",
+    "description": "Female character presented as notably mean or rude.",
+    "aliases": [
+      "Mean",
+      "Rude",
+      "Tsundere",
+      "ツンデレ"
+    ]
+  },
+  {
+    "id": "99b84380-9f92-4f5c-9b8d-02cac30e5d6d",
+    "name": "Blue Collar",
+    "description": "Character who is shown doing some working class trade, including plumbers, mechanics, or janitors.",
+    "aliases": [
+      "Blue-Collar",
+      "Custodian",
+      "Handy Man",
+      "Handyman",
+      "Janitor",
+      "Laborer",
+      "Male Plumber",
+      "Mechanic",
+      "Plumber",
+      "Pool Guy",
+      "Storeclerk",
+      "Tradesman",
+      "Tradie",
+      "Worker"
+    ]
+  },
+  {
+    "id": "df3897ec-e671-4862-ad3d-6ad1d2a1b176",
+    "name": "Bodyguard",
+    "description": "One of the performers plays the role of bodyguard.",
+    "aliases": []
+  },
+  {
+    "id": "6eaf08a8-a990-4b1b-8c38-f4b0856bfa06",
+    "name": "Book Character",
+    "description": "Performer representing a character from a novel or short story, either as parody or cosplay.",
+    "aliases": [
+      "Fiction Character",
+      "Novel Character",
+      "Short Story Character"
+    ]
+  },
+  {
+    "id": "afa9f0f6-2ca9-4127-b730-2ec58ae314f6",
+    "name": "Boss's Daughter",
+    "description": "Scene partner is the daughter of the other scene partner's boss.",
+    "aliases": []
+  },
+  {
+    "id": "c9d2016a-dd55-4c00-9590-3ae20fdc212b",
+    "name": "Boss's Wife",
+    "description": "Scene partner is the wife of the other scene partner's boss.",
+    "aliases": []
+  },
+  {
+    "id": "e40c7f9c-b2da-4357-9d3b-5df1f715b167",
+    "name": "Brat",
+    "description": "Character who is presented as some combination of entitled, rude, arrogant, and misbehaving.",
+    "aliases": [
+      "Brat Girl",
+      "Brat Girls",
+      "BratGirls",
+      "Brats",
+      "Bratty",
+      "Spoiled",
+      "Spoiled Brats"
+    ]
+  },
+  {
+    "id": "5942fe50-f208-4148-bd8c-7a273309d13e",
+    "name": "Bride",
+    "description": "Female character shown at her wedding, or immediately before/after.",
+    "aliases": [
+      "Bride-to-Be",
+      "Brides"
+    ]
+  },
+  {
+    "id": "567e692d-e0d0-4bdb-947e-48bcfebe73e4",
+    "name": "Bridesmaid",
+    "description": "Female member of the bridal party for a wedding.",
+    "aliases": [
+      "Bridesmaids",
+      "Maid of Honor"
+    ]
+  },
+  {
+    "id": "2261053b-49f8-43c1-b45f-da1f6f2827c9",
+    "name": "Business Man",
+    "description": "Male character presented as a professional, often working in an office.",
+    "aliases": [
+      "Businessman",
+      "Office Worker",
+      "Salaryman"
+    ]
+  },
+  {
+    "id": "f09478c8-69d7-4531-935b-4f23d824d2b8",
+    "name": "Business Woman",
+    "description": "Female character presented as a professional, often working in an office.",
+    "aliases": [
+      "Businesswoman",
+      "OL",
+      "Office Girl",
+      "Office Lady"
+    ]
+  },
+  {
+    "id": "b6e6fbd7-f34d-40ca-bcf4-d5c90d7e5532",
+    "name": "Camera Operator",
+    "description": "Person filming (actual or character) is shown on screen and/or participates in the action.",
+    "aliases": [
+      "Cameraman",
+      "Camerawoman",
+      "Crew Participation",
+      "Videographer"
+    ]
+  },
+  {
+    "id": "d80e34b1-a71e-4c08-9913-04d9d9e6cc68",
+    "name": "Cartoon Character",
+    "description": "Performer representing a character from a western cartoon, either as parody or cosplay.",
+    "aliases": [
+      "Western Animated Character",
+      "Western Animation Character",
+      "Western Cartoon Character"
+    ]
+  },
+  {
+    "id": "6cef98e9-a96f-4810-8acf-b805d6a1a379",
+    "name": "Celebrity",
+    "description": "Character presented as a celebrity, either fictional or in reality.",
+    "aliases": [
+      "Celeb",
+      "Entertainer",
+      "Fame",
+      "Famous",
+      "Idol",
+      "Idol & Celebrity",
+      "アイドル",
+      "アイドル・芸能人"
+    ]
+  },
+  {
+    "id": "87bb5eac-de4c-408d-b1d6-b11dd0a89984",
+    "name": "Champion",
+    "description": "Submissive character trying hard to please their dominant.",
+    "aliases": []
+  },
+  {
+    "id": "eceef287-7792-4403-9027-b409f168bef3",
+    "name": "Cheerleader",
+    "description": "Female character who acts as a cheerleader, either at school or professionally.",
+    "aliases": [
+      "Cheer Leader",
+      "Cheerleaders"
+    ]
+  },
+  {
+    "id": "01ef14c5-b587-4494-8074-cc5a2fe728c6",
+    "name": "Chef",
+    "description": "Character presented as a professional cook.",
+    "aliases": [
+      "Cook"
+    ]
+  },
+  {
+    "id": "4536f149-a050-42bd-aec3-97b47f299731",
+    "name": "Coach",
+    "description": "Character presented as a personal trainer or sports coach.",
+    "aliases": [
+      "Instructor",
+      "Personal Trainer",
+      "Trainer"
+    ]
+  },
+  {
+    "id": "f7d22ddd-d3eb-4cbb-bc59-41f0fddb8c6b",
+    "name": "Coed",
+    "description": "Female character currently (or were very recently) attending a college or university.",
+    "aliases": [
+      "Co-ed",
+      "Co-eds",
+      "Coeds",
+      "College Girl",
+      "College Girls",
+      "College Student",
+      "Female College Student",
+      "Female College Students",
+      "女子大生"
+    ]
+  },
+  {
+    "id": "ee36d25f-e612-49ff-8208-6941633c159d",
+    "name": "Comic Character",
+    "description": "Performer representing a character from comics, either as parody or cosplay.",
+    "aliases": [
+      "Comix"
+    ]
+  },
+  {
+    "id": "bf0193a8-6506-4081-b6ba-3c8475f8b387",
+    "name": "Cop",
+    "description": "Character working as an agent of the law.",
+    "aliases": [
+      "Bounty Hunter",
+      "LEO",
+      "Law Enforcement",
+      "Police",
+      "Policemen",
+      "Prison Guard"
+    ]
+  },
+  {
+    "id": "8f6f7d72-e3a7-4189-b0ff-02fc1680f33e",
+    "name": "Cougar",
+    "description": "Older female characters who are sexually aggressive, often seducing younger men.",
+    "aliases": [
+      "Cougars"
+    ]
+  },
+  {
+    "id": "e16f3c4d-15e2-45b5-b4b5-707e11c77977",
+    "name": "Criminal",
+    "description": "Character who is currently committing a crime, or was caught for a previous one.",
+    "aliases": [
+      "Burglar",
+      "Crime",
+      "Male Burglar",
+      "Male Criminal",
+      "Robber"
+    ]
+  },
+  {
+    "id": "9ccbe5fe-102a-43ea-82bd-9c2794bd455f",
+    "name": "Daddy Roleplay",
+    "description": "Strong, dominant, and masculine character often called \"Daddy\" by their scene partner, typically someone younger and less experienced.",
+    "aliases": [
+      "Daddy",
+      "Daddy Role Play",
+      "DaddyRoleplay",
+      "爸爸角色扮演"
+    ]
+  },
+  {
+    "id": "413b3d88-d216-4f34-b51b-a60e80fb5887",
+    "name": "Dancer",
+    "description": "",
+    "aliases": []
+  },
+  {
+    "id": "76eeff5a-b5c3-4732-9b70-07ff5ca87bb2",
+    "name": "Daughter's Friend",
+    "description": "Scene partner is the friend of the male partner's daughter.",
+    "aliases": []
+  },
+  {
+    "id": "68aa3342-ff4a-4d5c-9a2e-fe2339dda051",
+    "name": "Delivery Driver",
+    "description": "Character who works as a package delivery driver.",
+    "aliases": [
+      "Courier",
+      "Delivery",
+      "Delivery Girl",
+      "Delivery Guy",
+      "Pizza Delivery",
+      "UPS Girl",
+      "UPS Guy",
+      "Ups Driver"
+    ]
+  },
+  {
+    "id": "9ed4778d-5398-44f8-aedc-7c00e005b945",
+    "name": "Detective",
+    "description": "Character working to collect information, often attempting to solve a crime or mystery.",
+    "aliases": [
+      "Investigator",
+      "Police Detective",
+      "Police Investigator",
+      "Private Detective",
+      "Private Investigator"
+    ]
+  },
+  {
+    "id": "4b566720-2c6d-493d-b6ae-285ed0cf23dc",
+    "name": "Doctor",
+    "description": "Character who is presented as a medical doctor.",
+    "aliases": []
+  },
+  {
+    "id": "859b0c8d-9152-4c4b-8f98-4996e5c168e4",
+    "name": "Doll",
+    "description": "A performer resembling a Sex Doll, either in appearance or inactivity.",
+    "aliases": [
+      "Living Doll"
+    ]
+  },
+  {
+    "id": "81ea9d95-0d5b-4983-8f05-c2eb1c1b44ed",
+    "name": "Dominant",
+    "description": "At least one performer serves as the dominant role in BDSM activities.",
+    "aliases": [
+      "Dom",
+      "Top"
+    ]
+  },
+  {
+    "id": "b830b672-c3a7-4271-ab26-67516ce50dc8",
+    "name": "Dominatrix",
+    "description": "Female character who takes on the dominant role in BDSM activities as a profession.",
+    "aliases": [
+      "Mistress",
+      "Queen"
+    ]
+  },
+  {
+    "id": "66a62943-8fb4-4d88-8887-b0d89772e01c",
+    "name": "Doppelgangers",
+    "description": "Characters whose close physical resemblance is a major focus of the scene.",
+    "aliases": [
+      "Doppelgaenger",
+      "Doppelgaengers",
+      "Doppelganger",
+      "Doppelgänger",
+      "Doppelgängers",
+      "Look Alike",
+      "Look Alikes",
+      "Look-alike",
+      "Look-alikes",
+      "Lookalike",
+      "Lookalikes"
+    ]
+  },
+  {
+    "id": "4a3d67a9-019a-4e84-9292-b915a15de77c",
+    "name": "E-girl",
+    "description": "Female performer dressed and styled in the \"E-kid\" subculture that combines emo, mall goth, scene, and Japanese street. Typically flirtatious and overtly sexual.",
+    "aliases": [
+      "E Girls",
+      "e girl",
+      "e-girls",
+      "egirl",
+      "egirls"
+    ]
+  },
+  {
+    "id": "67a67747-f836-45e7-9a90-04274195dcc1",
+    "name": "Emergency Medical Technician",
+    "description": "Features character who is working as emergency medical technician or paramedic.",
+    "aliases": [
+      "EMT",
+      "Paramedic"
+    ]
+  },
+  {
+    "id": "09edd802-a7dc-45f1-bfae-217cfeadcc0e",
+    "name": "Emo",
+    "description": "Fashion based around emo music and subculture",
+    "aliases": [
+      "Emo Fashion",
+      "Emos"
+    ]
+  },
+  {
+    "id": "a5f6a8f0-3ad8-4e56-a0b0-0c79b1197f8b",
+    "name": "Escort",
+    "description": "Character who is paid for sexual encounters as a profession.",
+    "aliases": [
+      "Club Hostess",
+      "Club Hostess & Sex Worker",
+      "Full Service Sex Worker",
+      "Hooker",
+      "Intimate Companion",
+      "Lady of the Night",
+      "Pornstar Experience",
+      "Professional Whore",
+      "Prostitute",
+      "Prostitutes",
+      "Sex Worker",
+      "風俗嬢"
+    ]
+  },
+  {
+    "id": "7c215484-366b-43da-8ac7-d02ac462880b",
+    "name": "Fan",
+    "description": "An admirer of a celebrity or a person of some renown.",
+    "aliases": [
+      "Fuck a Fan",
+      "Groupie"
+    ]
+  },
+  {
+    "id": "058d9dda-b498-45e9-94bf-c208b17551a9",
+    "name": "Female Detective",
+    "description": "A female agent taking part in a criminal investigation.",
+    "aliases": [
+      "Female Investigator",
+      "女捜査官"
+    ]
+  },
+  {
+    "id": "02f9bba3-c31d-4b91-a6f3-b18575b2bada",
+    "name": "Female Doctor",
+    "description": "Female character who is presented as a medical doctor.",
+    "aliases": [
+      "女医"
+    ]
+  },
+  {
+    "id": "ef5310f5-31e4-4a37-822e-914a9de9bb37",
+    "name": "Female Handler",
+    "description": "Female performer who stimulates their submissive without receiving any stimulation themselves.",
+    "aliases": [
+      "Female Assistant"
+    ]
+  },
+  {
+    "id": "6fd68630-8195-4e2f-b69b-c33819fac8f5",
+    "name": "Female Ninja",
+    "description": "A female character who is presented in the style of a covert agent in feudal Japan.",
+    "aliases": []
+  },
+  {
+    "id": "de94b759-6770-4b84-9107-de3578936415",
+    "name": "Female Observer",
+    "description": "Female or transfemme performer observes, but does not participate in, sexual acts for a significant portion of the scene.",
+    "aliases": [
+      "Female Spectator",
+      "Girl Observer",
+      "Girl Spectator",
+      "Girl Watching",
+      "Woman Observer",
+      "Woman Spectator",
+      "Woman Watching"
+    ]
+  },
+  {
+    "id": "692f5ebe-9058-4a66-81a6-21cec7a99a86",
+    "name": "Female Rigger",
+    "description": "Female performer who ties up the other performer(s).",
+    "aliases": []
+  },
+  {
+    "id": "d255c5a9-17d5-4d6f-a630-10b369c61ed0",
+    "name": "Female Slave",
+    "description": "Submissive female character who is presented as property of their dominant.",
+    "aliases": []
+  },
+  {
+    "id": "69a370fc-986b-4e7c-981c-6fdb44e04a08",
+    "name": "Female Warrior",
+    "description": "Female character presented as a skilled fighter.",
+    "aliases": [
+      "Huntress",
+      "Warrior Woman"
+    ]
+  },
+  {
+    "id": "30b272c0-dd48-4726-a7f8-3370eea649bd",
+    "name": "Femdom",
+    "description": "Female character playing the dominant role.",
+    "aliases": [
+      "Dominant Female",
+      "Dominant Woman",
+      "Dominating Female",
+      "Dominating Woman",
+      "Fem Dom",
+      "Female Dom",
+      "Female Domination",
+      "FemaleDomination",
+      "FemdomSex"
+    ]
+  },
+  {
+    "id": "45b40096-1791-4ff3-8ca1-9cda9faf713d",
+    "name": "Femsub",
+    "description": "Female character playing the submissive role.",
+    "aliases": [
+      "Female Sub",
+      "M-jo",
+      "M女",
+      "Submissive Female",
+      "Submissive Girl",
+      "Submissive Girls",
+      "Submissive Sluts",
+      "Submissive Woman",
+      "Submissive Women",
+      "SubmissiveSluts",
+      "Woman Following Orders"
+    ]
+  },
+  {
+    "id": "b9f9dcab-a4e0-46e8-a859-e5bb5bbae6c1",
+    "name": "Fictional Character",
+    "description": "Performer representing a character that does not fit into a defined catagory, either as parody or cosplay.",
+    "aliases": [
+      "Elf",
+      "Elf Cosplay",
+      "Other Fictional Character",
+      "Santa",
+      "Santa Clause"
+    ]
+  },
+  {
+    "id": "4abd027a-b6ba-49a4-b7ac-29feb7ba25e5",
+    "name": "Firefighter",
+    "description": "Features character who is working as a firefighter.",
+    "aliases": [
+      "Fire Fighter",
+      "Fireman"
+    ]
+  },
+  {
+    "id": "b1f18388-37f5-4452-ac0d-2ba69b2531be",
+    "name": "Flexible",
+    "description": "Character who is shown to be very flexible.",
+    "aliases": [
+      "Acrobatic",
+      "Flexibility",
+      "Flexible Body",
+      "Flexible Chick",
+      "Flexible Female",
+      "Flexible Girl",
+      "Flexible Legs",
+      "Flexy"
+    ]
+  },
+  {
+    "id": "f5b0f577-9e6e-440b-a30b-435b8224b7ca",
+    "name": "Fluffer",
+    "description": "A fluffer is shown getting or keeping a performer aroused.",
+    "aliases": [
+      "Fluffing"
+    ]
+  },
+  {
+    "id": "a9f6e555-9490-416b-bc1d-c1b1fa7a175c",
+    "name": "Fraternity",
+    "description": "Male characters that are members of a college fraternity.",
+    "aliases": [
+      "Frat",
+      "Frat Brothers",
+      "Fraternity Brothers",
+      "Pledge"
+    ]
+  },
+  {
+    "id": "ed1bfbb9-0513-49d4-b818-5050dc898456",
+    "name": "Friend's Dad",
+    "description": "The father of one of the scene partner's friends.",
+    "aliases": []
+  },
+  {
+    "id": "b10287fa-0170-4f25-94a4-82f6e770b599",
+    "name": "Gal",
+    "description": "A female character that adheres to a Japanese fashion style that includes tanned skin, bleached hair, and heavy makeup.",
+    "aliases": [
+      "Gyaru",
+      "ギャル"
+    ]
+  },
+  {
+    "id": "5132857d-1893-423d-8de8-01afa5beb49d",
+    "name": "Game Character",
+    "description": "Performer representing a character from video games, either as parody or cosplay.",
+    "aliases": [
+      "Videogame"
+    ]
+  },
+  {
+    "id": "b3cb27bd-069d-439b-9980-ec08669d68e0",
+    "name": "Gamer",
+    "description": "Character who is shown to be very interested in video games.",
+    "aliases": [
+      "Gamer Girl",
+      "Girl Gamer",
+      "Video Game"
+    ]
+  },
+  {
+    "id": "57191a5c-a475-40a0-ba4c-3bb463046da5",
+    "name": "Gardener",
+    "description": "Character who is presented as a gardener.",
+    "aliases": []
+  },
+  {
+    "id": "86ded8ac-385b-4ff9-820d-58ad25df05f5",
+    "name": "Genie",
+    "description": "Character presented as a genie.",
+    "aliases": [
+      "Djinn"
+    ]
+  },
+  {
+    "id": "7c196ed2-f191-457f-b45d-8db6cd2d16c4",
+    "name": "Giantess",
+    "description": "Scene contains a female performer portrayed as being a giant",
+    "aliases": [
+      "GTS Fetish",
+      "Macro Fetish",
+      "Macrophilia"
+    ]
+  },
+  {
+    "id": "60abbb43-550b-4a3d-8ba7-6d575540c2a2",
+    "name": "Gimp",
+    "description": "",
+    "aliases": []
+  },
+  {
+    "id": "21d95dad-5304-4d16-af25-43e3221d2ff7",
+    "name": "Girlfriend Experience",
+    "description": "Performer pretends to be viewer's girlfriend",
+    "aliases": [
+      "GFE",
+      "Girlfriend Fantasy"
+    ]
+  },
+  {
+    "id": "0153450b-1293-409b-a6cb-804be374638f",
+    "name": "Girl Next Door",
+    "description": "Female character presented as some combination of approachable, modest, and relatable.",
+    "aliases": [
+      "Demure",
+      "Girl-next-Door",
+      "Next-door"
+    ]
+  },
+  {
+    "id": "d7e28eb3-a66b-4a2f-9c03-ec69736f23a0",
+    "name": "Girl Scout",
+    "description": "Girls part of a group with a green/brown uniform usually with a beret and sash selling cookies or performing community service for badges",
+    "aliases": [
+      "Girl Scout Uniform"
+    ]
+  },
+  {
+    "id": "eacd25b5-7c1e-4da5-bafc-e6ec29333f42",
+    "name": "Goddess",
+    "description": "A woman who is greatly admired, especially for her beauty.",
+    "aliases": [
+      "Enchantress",
+      "Venus"
+    ]
+  },
+  {
+    "id": "c824d31f-d5cc-4337-ab71-eb89f2c0d91b",
+    "name": "Groom",
+    "description": "Male character shown at his wedding, or immediately before/after.",
+    "aliases": [
+      "Bridegroom",
+      "Bridegrooms",
+      "Grooms"
+    ]
+  },
+  {
+    "id": "49e69bc7-8a24-4950-988f-0d7430a5d2af",
+    "name": "Groomsman",
+    "description": "Male member of the bridal party for a wedding.",
+    "aliases": [
+      "Best Man",
+      "Groomsmen"
+    ]
+  },
+  {
+    "id": "8229da78-ccef-4d5b-87cb-7254ca9f40db",
+    "name": "Gymnast",
+    "description": "Character presented as a gymnast, professionally or not.",
+    "aliases": []
+  },
+  {
+    "id": "ffdb1861-0fed-42ad-9008-7c5c7e04d1cf",
+    "name": "Handler",
+    "description": "Dominant performer who stimulates their submissive without receiving any stimulation themselves.",
+    "aliases": []
+  },
+  {
+    "id": "d97d1f32-4908-4793-a22d-80644c30bf4b",
+    "name": "Hippie",
+    "description": "Character who is presented as a follower of the countercultural movement started in the 1960s.",
+    "aliases": [
+      "Bohemian",
+      "Hippies",
+      "Hippy"
+    ]
+  },
+  {
+    "id": "aacda1c2-e2fa-44e0-ad87-097cca026cb8",
+    "name": "Hitchhiker",
+    "description": "Character asking strangers for a ride in their car",
+    "aliases": [
+      "Autostop",
+      "Hitchhiking",
+      "Nude Hitchhiking"
+    ]
+  },
+  {
+    "id": "15e2a5c6-0640-466e-9032-382df1762951",
+    "name": "Homewrecker",
+    "description": "Character accused of breaking up a relationship.",
+    "aliases": [
+      "Home Wrecker"
+    ]
+  },
+  {
+    "id": "800353f6-ad4f-4369-a256-f2ef6664a867",
+    "name": "Hotwife",
+    "description": "Female character who is in an open relationship, seeking sexual encounters without her partner's direct involvement.",
+    "aliases": [
+      "Hot Wife",
+      "Hot Wifing",
+      "HotWives"
+    ]
+  },
+  {
+    "id": "b32628eb-2268-4c4b-bb6c-e586d879e8e2",
+    "name": "Housewife",
+    "description": "Married female character who does not work, focusing on domestic duties instead.",
+    "aliases": [
+      "House Wife",
+      "House Wives",
+      "Housewives",
+      "Stay-at-Home Mom",
+      "主婦"
+    ]
+  },
+  {
+    "id": "d7587f93-b0d9-4c70-affe-e8dd87501b9a",
+    "name": "Husband's Boss",
+    "description": "The boss of a scene partner's husband.",
+    "aliases": []
+  },
+  {
+    "id": "4fa2e6bc-0053-440f-8752-931a72def0b3",
+    "name": "Innocent",
+    "description": "Character who is presented as some combination of wholesome, pure, and naïve.",
+    "aliases": []
+  },
+  {
+    "id": "a7753b96-c6c8-42bf-b3ac-14fd85923b9c",
+    "name": "Jock (Athlete)",
+    "description": "An enthusiastic athlete or sports fan",
+    "aliases": [
+      "Athlete/Jock"
+    ]
+  },
+  {
+    "id": "922d66b2-01b3-44c0-bad3-966f404f4994",
+    "name": "Lawyer",
+    "description": "Character who provides legal services.",
+    "aliases": [
+      "Attorney",
+      "Attorneys",
+      "Attourney",
+      "Councilor",
+      "Lawyers"
+    ]
+  },
+  {
+    "id": "ddd88afb-ae36-4d1a-873c-9b0d15c49766",
+    "name": "Lesbian Character",
+    "description": "Character who identifies as a lesbian, regardless of the scene's orientation.",
+    "aliases": [
+      "Butch",
+      "Carpet Muncher",
+      "Dyke"
+    ]
+  },
+  {
+    "id": "2f3850f5-d4ce-4b83-9130-c2f2e88a4e78",
+    "name": "LezDom",
+    "description": "Female character dominating another female character.",
+    "aliases": [
+      "Girl dommes Girl",
+      "LesDom",
+      "Lesbian Domination"
+    ]
+  },
+  {
+    "id": "1049aaeb-346c-48c8-9516-ea2ecafae4c0",
+    "name": "Librarian",
+    "description": "Character who acts as a librarian",
+    "aliases": [
+      "Librarians"
+    ]
+  },
+  {
+    "id": "949fce0d-2af0-495d-802b-902173eba3a5",
+    "name": "Lifeguard",
+    "description": "Character responsible for the safety of people in an area of water.",
+    "aliases": [
+      "Life Guard"
+    ]
+  },
+  {
+    "id": "bbfd0df9-ac8c-4ae0-b4e4-ac7f95d435ea",
+    "name": "Maid",
+    "description": "Character who is paid to clean a living space.",
+    "aliases": [
+      "Cleaner",
+      "Cleaning Lady",
+      "House Keeper",
+      "House Keeping",
+      "Housekeeper",
+      "Housekeeping",
+      "Maid Fetish",
+      "Maidfetish",
+      "メイド"
+    ]
+  },
+  {
+    "id": "8a346f70-df1a-4d39-8841-91450e56d259",
+    "name": "Male Chef",
+    "description": "Male character presented as a professional cook.",
+    "aliases": [
+      "Male Cook"
+    ]
+  },
+  {
+    "id": "e3a8e9d0-3fdd-46ed-833f-d552f79d0c9c",
+    "name": "Male Doctor",
+    "description": "Male character who is presented as a medical doctor.",
+    "aliases": []
+  },
+  {
+    "id": "17ae1c93-cb8b-4c86-9024-20c484c0c86c",
+    "name": "Maledom",
+    "description": "Male character playing the dominant role.",
+    "aliases": [
+      "Dominant Male",
+      "Dominant Man",
+      "Dominating Man",
+      "Male Dom",
+      "Male Domination"
+    ]
+  },
+  {
+    "id": "6e90479f-c645-40b9-8c64-613cc79a9414",
+    "name": "Male Flight Attendant",
+    "description": "Male character who works as a flight attendant.",
+    "aliases": [
+      "Air Host",
+      "Male Cabin Crew",
+      "Steward"
+    ]
+  },
+  {
+    "id": "0e4d99de-4a69-4007-8fca-96badb88ec69",
+    "name": "Male Handler",
+    "description": "Male performer who stimulates their submissive without receiving any stimulation themselves.",
+    "aliases": [
+      "Male Assistant"
+    ]
+  },
+  {
+    "id": "87891017-7efc-4c3d-919c-5ac091da76aa",
+    "name": "Male Lifeguard",
+    "description": "Male character responsible for the safety of people in an area of water.",
+    "aliases": [
+      "Male Life Guard"
+    ]
+  },
+  {
+    "id": "b036341c-fa59-45a9-9374-6b1156e1266a",
+    "name": "Male Observer",
+    "description": "Male or transmasc performer observers, but does not participate in, sexual acts for a significant portion of the scene.",
+    "aliases": [
+      "Boy Observer",
+      "Boy Spectator",
+      "Boy Watching",
+      "Male Spectator",
+      "Male Watching",
+      "Man Observer",
+      "Man Spectator",
+      "Man Watching"
+    ]
+  },
+  {
+    "id": "a5ec14b6-fd24-412e-8a09-4b6d1107fa24",
+    "name": "Male Rigger",
+    "description": "Male performer who ties up the other performer(s).",
+    "aliases": []
+  },
+  {
+    "id": "ad758424-f0ac-4e7d-9a00-44b29e71cef9",
+    "name": "Male Slave",
+    "description": "Submissive male character who is presented as property of their dominant.",
+    "aliases": []
+  },
+  {
+    "id": "91b9a481-1bfc-4f83-a792-aa5d10cd5110",
+    "name": "Malesub",
+    "description": "Male character playing the submissive role.",
+    "aliases": [
+      "Male Sub",
+      "Masochist Man",
+      "M男",
+      "Submissive Male",
+      "Submissive Man",
+      "Submissive Men"
+    ]
+  },
+  {
+    "id": "797cda03-ddf1-420a-9f21-7f04e8affdb8",
+    "name": "Male Waiter",
+    "description": "Male character shown as a server in a restaurant or dining of some kind.",
+    "aliases": [
+      "Male Server"
+    ]
+  },
+  {
+    "id": "1bb6aca0-c828-4cca-b02a-6b8dfb927ed4",
+    "name": "Married",
+    "description": "Character who is currently married, whether or not their spouse is a scene partner.",
+    "aliases": [
+      "Married Man",
+      "Married Woman",
+      "人妻"
+    ]
+  },
+  {
+    "id": "aafd2dbe-1a14-4820-a151-2397d9b1d7a1",
+    "name": "Masseur",
+    "description": "Male character giving a massage to a scene partner.",
+    "aliases": []
+  },
+  {
+    "id": "48f8e0b2-299d-4e64-bf0b-553f3ebfff3e",
+    "name": "Masseuse",
+    "description": "Female character giving a massage to a scene partner.",
+    "aliases": []
+  },
+  {
+    "id": "fd42b757-5e3d-4301-9561-1c7b9ea97204",
+    "name": "Master",
+    "description": "Dominant character who projects a sense of ownership over their submissive.",
+    "aliases": []
+  },
+  {
+    "id": "fa7a9ba8-fa98-4697-9433-c9ec9298aff5",
+    "name": "Mermaid",
+    "description": "Character presented as a mermaid.",
+    "aliases": []
+  },
+  {
+    "id": "c5adc361-02f7-4b22-96cb-ef05b7f3e9c0",
+    "name": "Military Man",
+    "description": "Features male characters who are members of the military.",
+    "aliases": [
+      "Army Man"
+    ]
+  },
+  {
+    "id": "9bb7b389-f3db-4b1e-a2a4-9fd1cf1f464d",
+    "name": "Military Woman",
+    "description": "Features female characters who are members of the military.",
+    "aliases": [
+      "Soldier Girl"
+    ]
+  },
+  {
+    "id": "c93821e9-e3fb-4e27-a60c-99ea9938db3a",
+    "name": "Modeling",
+    "description": "A character acting as a model with the intent to pose for an artist, photographer, or sculptor.",
+    "aliases": []
+  },
+  {
+    "id": "9b073033-7e8f-460f-a943-3093195fa223",
+    "name": "Monster",
+    "description": "Featuring people playing as monsters",
+    "aliases": [
+      "Monsters"
+    ]
+  },
+  {
+    "id": "3526e24d-c173-49be-b543-ebcc4c015e00",
+    "name": "Movie Character",
+    "description": "Performer representing a character from a movie or short film, either as parody or cosplay.",
+    "aliases": [
+      "Cinema Character",
+      "Feature Film Character",
+      "Film Character",
+      "Short Film Character"
+    ]
+  },
+  {
+    "id": "48c57036-4fc8-4bed-abbc-58e4fb07caad",
+    "name": "Mythical Character",
+    "description": "Performer representing a character from mythology, either as parody or cosplay.",
+    "aliases": [
+      "Angel",
+      "Demon",
+      "Grim Reaper",
+      "Reaper",
+      "Satan"
+    ]
+  },
+  {
+    "id": "3c2336c6-61a8-4c78-bf40-306289bb7819",
+    "name": "Nerd",
+    "description": "Character who is presented as some combination of awkward, smart, and uncool.",
+    "aliases": [
+      "Geek",
+      "Geek / Nerd",
+      "Geeky",
+      "Nerdy"
+    ]
+  },
+  {
+    "id": "c21b800f-7fad-4618-a300-1cf60039b402",
+    "name": "Nun",
+    "description": "Female characters who are members of a religious order, often wearing black-and-white robes and hoods.",
+    "aliases": [
+      "Nun Roleplay"
+    ]
+  },
+  {
+    "id": "df876cc3-0690-427d-9ab3-6e58258d8c62",
+    "name": "Nurse",
+    "description": "Character who is presented as a nurse or medical assistant.",
+    "aliases": [
+      "Nurse Play",
+      "Nurses"
+    ]
+  },
+  {
+    "id": "d5552d6e-d3c0-424b-947e-bc911358c363",
+    "name": "Nympho",
+    "description": "Character who is presented as a somewhat crazed sex addict.",
+    "aliases": [
+      "Nasty, Hardcore",
+      "Nymphomaniac",
+      "Sex Addict",
+      "Sex Addiction"
+    ]
+  },
+  {
+    "id": "c8b9473c-07a9-45af-980c-864669e5b330",
+    "name": "Observer",
+    "description": "A performer who observes, but does not participate in, sexual acts for a significant portion of the scene.",
+    "aliases": [
+      "Sex In Front of Others",
+      "Watching",
+      "Watching Others"
+    ]
+  },
+  {
+    "id": "331fcdfc-9a47-4903-954b-2ae9b27015d0",
+    "name": "Onēsan",
+    "description": "Young woman playing a dominant older sister type, not necessarily a family member.",
+    "aliases": [
+      "Older Sister",
+      "Older Sister (JAV)",
+      "お姉さん"
+    ]
+  },
+  {
+    "id": "2d779ac1-493f-43dd-82f8-b2d3dd3f0dda",
+    "name": "Pain Slut",
+    "description": "Character who visibly enjoys receiving pain.",
+    "aliases": [
+      "Painslut"
+    ]
+  },
+  {
+    "id": "b729c3c6-3233-4df2-a372-cc3946514a06",
+    "name": "Patient",
+    "description": "Character is receiving medical attention, care, or treatment.",
+    "aliases": []
+  },
+  {
+    "id": "16bf3983-98cd-4370-b1bd-616369e85429",
+    "name": "Pilot",
+    "description": "Individual who flies or helps fly an aircraft",
+    "aliases": [
+      "Co-Pilot"
+    ]
+  },
+  {
+    "id": "87b90568-cb88-423f-8ab3-d02268812739",
+    "name": "Power Bottom",
+    "description": "Men, who bottoms and take dominant role",
+    "aliases": [
+      "Power Bottoms",
+      "Powerbottom"
+    ]
+  },
+  {
+    "id": "f229b6be-dee7-4c6b-aae4-87c2449eeb74",
+    "name": "Priest",
+    "description": "Male character who's a member of a religious order, usually wearing black tunics",
+    "aliases": [
+      "Friar",
+      "Minister",
+      "Monk",
+      "Pastor",
+      "Pastor Roleplay",
+      "Priest Roleplay",
+      "Religious Leader"
+    ]
+  },
+  {
+    "id": "6aa08a4f-b4a6-4f78-9d24-5aafc25e5579",
+    "name": "Principal",
+    "description": "Highest-ranking person at an educational institution.",
+    "aliases": [
+      "Head Teacher"
+    ]
+  },
+  {
+    "id": "20c442be-9dfa-4f1e-88c6-3fa3f8c5bfef",
+    "name": "Prisoner",
+    "description": "Character who is currently incarcerated for committing a crime.",
+    "aliases": [
+      "Convict",
+      "Convicted",
+      "Female Prisoner",
+      "Imprisoned",
+      "Incarcerated",
+      "Inmate",
+      "Male Prisoner"
+    ]
+  },
+  {
+    "id": "c08f1add-527a-4f22-9997-52ab58d2f188",
+    "name": "Punk",
+    "description": "Character who is presented with a punk rock aesthetic.",
+    "aliases": []
+  },
+  {
+    "id": "f027f6a3-8242-45e7-a08c-95531550bbac",
+    "name": "Race Queen",
+    "description": "A female promotional model usually present at auto racing events.",
+    "aliases": []
+  },
+  {
+    "id": "c8aea861-c59a-481a-8ab3-8ac171f7245f",
+    "name": "Real Estate Agent",
+    "description": "Features character who is in the business of selling and renting out of buildings and land.",
+    "aliases": [
+      "Estate Agent",
+      "Realtor"
+    ]
+  },
+  {
+    "id": "14f18f49-fa6f-4912-9ea7-bf0b18de1131",
+    "name": "Religious",
+    "description": "One or more characters who are presented as deeply religious, whether clergy (priest, nun, rabbi, etc.) or member of the \"flock\".",
+    "aliases": [
+      "Devout",
+      "Religion"
+    ]
+  },
+  {
+    "id": "753cd8fb-7788-4679-b58d-120170c3582e",
+    "name": "Reporter",
+    "description": "An performer portraying a character that is depicted delivering news, conducting interviews, or investigating stories, often characterized by holding a microphone, notepad, or camera, and engaging in journalistic activities.",
+    "aliases": [
+      "News Reporter"
+    ]
+  },
+  {
+    "id": "53632469-1630-47b9-9837-220b49d49994",
+    "name": "Rigger",
+    "description": "Performer who ties up the other performer(s).",
+    "aliases": []
+  },
+  {
+    "id": "f94ff62f-c9ff-4ff0-ba99-739c8ba3980d",
+    "name": "Robot",
+    "description": "A scene in which one or more actors roleplays as a robot.",
+    "aliases": [
+      "Fembot",
+      "Fembots",
+      "Remote Control",
+      "Roboporn",
+      "Robots"
+    ]
+  },
+  {
+    "id": "32646f74-aed8-4dd5-b884-b45c4257b6f8",
+    "name": "Rockabilly",
+    "description": "Character who is presented with a retro 1950s aesthetic with a punk rock edge.",
+    "aliases": []
+  },
+  {
+    "id": "f0f26ddc-3ea5-4637-8a29-50c2dce8e3b3",
+    "name": "Salesman",
+    "description": "Features character who sell products to potential customers, especially by visiting or door-to-door sales.",
+    "aliases": [
+      "Sales Agent",
+      "Salesperson"
+    ]
+  },
+  {
+    "id": "f0158846-e8dc-46c3-990a-ec1f4fc573c1",
+    "name": "Schoolgirl",
+    "description": "Female character currently (or were very recently) attending a secondary school or high school.",
+    "aliases": [
+      "Homework",
+      "School Girl",
+      "School Girls",
+      "Study",
+      "Study Hard",
+      "Studying",
+      "女子校生"
+    ]
+  },
+  {
+    "id": "c3fdb91e-acf4-4af7-8af7-2626d10b95a6",
+    "name": "Scientist",
+    "description": "A researcher of sciences, typically depicted by wearing a lab coat.",
+    "aliases": []
+  },
+  {
+    "id": "641b3fbf-7162-415d-ab80-710f150cbff6",
+    "name": "Security Guard",
+    "description": "Character hired to protect their employer's assets.",
+    "aliases": [
+      "Protective Agent",
+      "Security Inspector",
+      "Security Officer"
+    ]
+  },
+  {
+    "id": "2d5f1055-f25e-4342-8c9d-3de0c9f003c8",
+    "name": "Servant",
+    "description": "Character who provides a service or performs duties for others",
+    "aliases": [
+      "Assistant",
+      "Attendant",
+      "Concierge",
+      "Helper",
+      "Keeper",
+      "Porter"
+    ]
+  },
+  {
+    "id": "ffd11841-f11e-4019-85a8-550f030eb92d",
+    "name": "Shy",
+    "description": "Character who presents as some combination of awkward, nervous, and self-conscious.",
+    "aliases": []
+  },
+  {
+    "id": "279e83de-b445-4486-a9cc-e0f0be492d12",
+    "name": "Slave",
+    "description": "Submissive character who is presented as property of their dominant.",
+    "aliases": []
+  },
+  {
+    "id": "1792db6e-514c-43d7-aed1-5ed92ec655ae",
+    "name": "Slutty",
+    "description": "Character who is presented as some combination of promiscuous, adventurous, and unashamed.",
+    "aliases": [
+      "Promiscuity",
+      "Slut",
+      "Whore",
+      "痴女"
+    ]
+  },
+  {
+    "id": "5eeb8b5b-dfd9-4477-87a4-012f2fd318e0",
+    "name": "Smart",
+    "description": "At least one performer in the scene is implied to be intelligent.",
+    "aliases": []
+  },
+  {
+    "id": "a98e3fe1-1df5-4b87-8af5-f3117be8ae5a",
+    "name": "Stalker",
+    "description": "Character who is creepily obsessed with a scene partner, often following or spying on them.",
+    "aliases": [
+      "Creeper",
+      "Stalking"
+    ]
+  },
+  {
+    "id": "49c0a47f-458a-40da-8131-1dbe7615b397",
+    "name": "Stewardess",
+    "description": "Female character who works as a flight attendant.",
+    "aliases": [
+      "Air Hostess",
+      "Female Flight Attendant",
+      "Hostie"
+    ]
+  },
+  {
+    "id": "a508aba6-3866-461e-8d1d-b166c28040a7",
+    "name": "Straight Stud",
+    "description": "Male character involved in a gay scene who is presented as straight.",
+    "aliases": []
+  },
+  {
+    "id": "ddb0d968-6f5c-4627-9597-2950cf10a76d",
+    "name": "Stripper",
+    "description": "Character who is paid to dance at least partially nude for an audience.",
+    "aliases": [
+      "Burlesque Dancer",
+      "Erotic Dancer",
+      "Exotic Dancer",
+      "Feature Dancer",
+      "Go-go Dancer",
+      "House Dancer"
+    ]
+  },
+  {
+    "id": "433b0258-9c17-4a6a-a6a7-7ab2816527dd",
+    "name": "Stud",
+    "description": "A young man thought to be very active sexually or regarded as a good sexual partner",
+    "aliases": [
+      "Hunks - Studs",
+      "Studs"
+    ]
+  },
+  {
+    "id": "be36eeb6-8c78-4387-9031-f2f383d310a8",
+    "name": "Submissive",
+    "description": "At least one performer serves as the submissive role in BDSM activities.",
+    "aliases": [
+      "Bottom",
+      "Sub"
+    ]
+  },
+  {
+    "id": "49a4bd85-302e-4439-9044-503268da2c6b",
+    "name": "Succubus",
+    "description": "Character presented as a succubus",
+    "aliases": []
+  },
+  {
+    "id": "4c02d1bf-5458-43b9-8227-c8c639f4bb9a",
+    "name": "Superhero",
+    "description": "Character presented as a superhero, including original characters, parodies, and cosplay.",
+    "aliases": [
+      "Gay Superhero",
+      "Super Hero",
+      "Super Heroes",
+      "Superheroes",
+      "Superheroine",
+      "superheroines"
+    ]
+  },
+  {
+    "id": "4eb099df-594a-40f7-ae1f-061cef245fe3",
+    "name": "Supervillain",
+    "description": "Character presented as a supervillain, including original characters, parodies, and cosplay.",
+    "aliases": [
+      "Super Villain",
+      "Villianess"
+    ]
+  },
+  {
+    "id": "34f9a64b-f125-48ac-a7ca-d207f2f351c8",
+    "name": "Swingers",
+    "description": "Couples who have an open relationship, seeking sexual encounters together.",
+    "aliases": [
+      "Swinger",
+      "Swinger Couple",
+      "Swinging",
+      "Swinging Couple"
+    ]
+  },
+  {
+    "id": "f15d2421-2ee1-4129-a280-b52c433e669f",
+    "name": "Switch",
+    "description": "Performer(s) who can act as both the Top or Bottom",
+    "aliases": [
+      "Vers",
+      "Versatile"
+    ]
+  },
+  {
+    "id": "108db519-3cf9-45f4-83ee-f8f92fbc8193",
+    "name": "Tantric Practitioner",
+    "description": "Character experienced in tantric sexual practices or tantric massage.",
+    "aliases": []
+  },
+  {
+    "id": "2a830970-3eb5-45f0-bba0-935bf3425eb4",
+    "name": "Tour Guide",
+    "description": "Someone who points out the way and leads others on a trip or tour.",
+    "aliases": [
+      "Bus Tour Guide",
+      "Travel Agent"
+    ]
+  },
+  {
+    "id": "35d0daa7-b4cc-4e45-b026-0a9427fc27af",
+    "name": "Transdom",
+    "description": "Trans character playing the dominant role.",
+    "aliases": [
+      "Dominating Trans",
+      "Trans Dom",
+      "Trans Domination",
+      "dominant Trans"
+    ]
+  },
+  {
+    "id": "d51ee1f1-e2ab-40cf-8660-d397023ee0b6",
+    "name": "Transsub",
+    "description": "Trans character playing the submissive role.",
+    "aliases": [
+      "Submissive Trans",
+      "Trans Sub"
+    ]
+  },
+  {
+    "id": "1845652e-41a4-4586-be0a-8b87cccf2eea",
+    "name": "TV Character",
+    "description": "Performer representing a character from television, either as parody or cosplay.",
+    "aliases": [
+      "Mini-Series Character",
+      "T.V. Character",
+      "TV Series Character",
+      "TV Show",
+      "TV Show Character",
+      "Television Character"
+    ]
+  },
+  {
+    "id": "47c38811-4062-470b-a869-7afeca0a4ca4",
+    "name": "Vampire",
+    "description": "Character presented as an undead vampire.",
+    "aliases": []
+  },
+  {
+    "id": "47db201c-b0e0-4a17-ba67-3bb9dd8b1a00",
+    "name": "Virgin",
+    "description": "Character who has not had sex before.",
+    "aliases": []
+  },
+  {
+    "id": "6e746c6c-710b-457e-b69b-1b6c436bb1f1",
+    "name": "Virgin Man",
+    "description": "Male character who has not had sex before.",
+    "aliases": [
+      "Cherry Boy",
+      "Vigin Male",
+      "童貞"
+    ]
+  },
+  {
+    "id": "7717e720-ee78-4ba0-a650-b2a9db2351dc",
+    "name": "Virgin (Roleplay)",
+    "description": "Performer who pretends to be a virgin.",
+    "aliases": []
+  },
+  {
+    "id": "5e7f14d6-d722-41b5-bb11-d201cc735d7d",
+    "name": "Virgin Woman",
+    "description": "Women who has not had sex before.",
+    "aliases": [
+      "Loses her virginity",
+      "Losing her virginity",
+      "Virgin Girl",
+      "処女"
+    ]
+  },
+  {
+    "id": "c4bed7cd-1e6d-4f92-afcb-52bda035f82f",
+    "name": "Waitress",
+    "description": "Character shown as a server in a restaurant of some kind.",
+    "aliases": [
+      "Server",
+      "Waiter"
+    ]
+  },
+  {
+    "id": "8b067fba-efcc-4fe0-9e48-37c5aceec9ed",
+    "name": "Widow",
+    "description": "A female who has lost her spouse by death and has not remarried.",
+    "aliases": []
+  },
+  {
+    "id": "29a70d28-44be-49fe-b613-1c3ce2571d4a",
+    "name": "Witch",
+    "description": "Character presented as a magical witch.",
+    "aliases": []
+  }
+]

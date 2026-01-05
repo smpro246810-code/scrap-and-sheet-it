@@ -1,0 +1,136 @@
+[
+  {
+    "id": "f329d313-a0fe-468e-88c9-6003b5a8cc79",
+    "name": "Acne",
+    "description": "Performer has a fair amount of visible acne typically on the face",
+    "aliases": [
+      "Pimples"
+    ]
+  },
+  {
+    "id": "5d66ffa1-cf0c-42dd-8072-24feb44a0f70",
+    "name": "Dark Skin",
+    "description": "Performers with exceptionally dark skin tones.",
+    "aliases": [
+      "Black Skin",
+      "Darkskin"
+    ]
+  },
+  {
+    "id": "bdde644c-5de2-4fe3-85e5-34442ea98e42",
+    "name": "Dimples",
+    "description": "Performers with noticeable indentations or small hollows in their cheeks, typically appearing when they smile.",
+    "aliases": []
+  },
+  {
+    "id": "7a3ba833-0b2d-469d-8d23-a1b91e04c3ad",
+    "name": "Dimples of Venus",
+    "description": "Symmetrical indentations on the lower back, one on either side of the spine, just above the pelvic bone",
+    "aliases": [
+      "Back Dimple",
+      "Back Dimples",
+      "Butt Dimple",
+      "Butt Dimples",
+      "Dimple of Venus",
+      "Duffy Dimple",
+      "Duffy Dimples",
+      "Veneral Dimple",
+      "Veneral Dimples",
+      "Venus Hole",
+      "Venus Holes"
+    ]
+  },
+  {
+    "id": "17af961b-4820-434d-b343-11a2bae9f1a5",
+    "name": "Freckles",
+    "description": "Performers with a significant number of freckles on the face or body.",
+    "aliases": [
+      "Body Freckles",
+      "Freckled"
+    ]
+  },
+  {
+    "id": "d86b6b27-da14-45f4-961f-123427eb5238",
+    "name": "Light Brown Skin",
+    "description": "Performers with somewhat darker skin tones.",
+    "aliases": [
+      "Brown Skin"
+    ]
+  },
+  {
+    "id": "cce72932-e6a6-4ef0-b7f3-fbbe42843593",
+    "name": "Medium Skin",
+    "description": "Performers with generally light skin tones.",
+    "aliases": [
+      "Fair Skin",
+      "Fair Skinned",
+      "Light Skin",
+      "White Skin"
+    ]
+  },
+  {
+    "id": "0dcd3218-4257-4f25-94e5-d964314a831a",
+    "name": "Pale Skin",
+    "description": "Performers with exceptionally light skin tones.",
+    "aliases": [
+      "Pale",
+      "Pale Female",
+      "Pale White Skin"
+    ]
+  },
+  {
+    "id": "c8c16876-ae46-4146-a97b-da9c520079bd",
+    "name": "Sacral Dimple",
+    "description": "Single depression on the lower back, at the end of the spine",
+    "aliases": [
+      "Sacral Dimples"
+    ]
+  },
+  {
+    "id": "b2d82105-b25f-479c-bf49-74802d2a9ac0",
+    "name": "Scars",
+    "description": "At least one performer has a visible scar",
+    "aliases": [
+      "Scar"
+    ]
+  },
+  {
+    "id": "28785a44-bba5-4ce1-9a6a-7b563dc37db3",
+    "name": "Stretch Marks",
+    "description": "Colored lines or streaks on the skin",
+    "aliases": [
+      "Striae",
+      "Vergetures"
+    ]
+  },
+  {
+    "id": "f8a9c7ac-361d-437c-91c1-696f0fd50aeb",
+    "name": "Sunburn",
+    "description": "Redness of the skin caused by exposure to the sun",
+    "aliases": [
+      "Sunburned",
+      "Sunburnt"
+    ]
+  },
+  {
+    "id": "fc054309-d49b-4d97-a6cf-67ae745fad4a",
+    "name": "Tan Lines",
+    "description": "Performers with significantly visible tan lines.",
+    "aliases": [
+      "Tanlines"
+    ]
+  },
+  {
+    "id": "a8f64312-4cab-4c21-b898-1d19eb75e35f",
+    "name": "Tanned Skin",
+    "description": "Performers with lightly bronzed skin tones.",
+    "aliases": [
+      "Sun Tan",
+      "Suntan",
+      "Swarthy",
+      "Tan",
+      "Tan Skin",
+      "Tanned"
+    ]
+  }
+]
