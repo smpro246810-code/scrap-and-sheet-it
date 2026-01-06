@@ -102,3 +102,44 @@ def console_log(message: str, level: str = DEFAULT_LEVEL) -> None:
     color = LOG_COLORS.get(level, "")
     tag = LOG_TAGS.get(level, "[LOG]")
     print(f"{color}{tag:<12}{Style.RESET_ALL}{message}")
+
+
+# ============================================================
+# LOGGER ADAPTER (logging.Logger compatibility)
+# ============================================================
+
+
+class CustomLoggerAdapter:
+    """
+    Adapter that makes the custom `log()` function compatible
+    with logging.Logger-style APIs.
+
+    This allows usage like:
+        logger.info("message")
+        logger.warning("message")
+        logger.error("message")
+
+    while still using the custom logger internally.
+    """
+
+    def __init__(self, log_func):
+        self._log = log_func
+
+    def info(self, message: str):
+        self._log(message, level="info")
+
+    def success(self, message: str):
+        self._log(message, level="success")
+
+    def warning(self, message: str):
+        self._log(message, level="warning")
+
+    def error(self, message: str):
+        self._log(message, level="error")
+
+    def debug(self, message: str):
+        # Map debug → info (you can change later)
+        self._log(message, level="info")
+
+    def exception(self, message: str):
+        self._log(message, level="error")

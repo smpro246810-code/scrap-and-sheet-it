@@ -113,6 +113,56 @@ CURRENT_RICH_ROW: Dict[int, Dict[str, Any]] = {}
 # ============================================================
 
 
+def extract_performer_links_from_rich_cell(col_index: int) -> Dict[str, str]:
+    """
+    Extract per-performer hyperlinks from a rich-text cell.
+
+    Returns:
+        { normalized_name: pair_url }
+    """
+    cell = CURRENT_RICH_ROW.get(col_index)
+    if not cell:
+        return {}
+
+    text = (
+        cell.get("formattedValue")
+        or cell.get("userEnteredValue", {}).get("stringValue")
+        or ""
+    )
+
+    if not text:
+        return {}
+
+    runs = cell.get("textFormatRuns", [])
+    if not runs:
+        return {}
+
+    links: Dict[str, str] = {}
+
+    for i, run in enumerate(runs):
+        link = run.get("format", {}).get("link")
+        if not link or "uri" not in link:
+            continue
+
+        start = run.get("startIndex", 0)
+
+        # ✅ FIX: calculate end index correctly
+        if i + 1 < len(runs):
+            end = runs[i + 1].get("startIndex", len(text))
+        else:
+            end = len(text)
+
+        linked_text = text[start:end].strip()
+        if not linked_text:
+            continue
+
+        name = linked_text.split("{")[0].strip()
+        if name:
+            links[name.lower()] = link["uri"]
+
+    return links
+
+
 def is_magenta_text(col_index: int) -> bool:
     cell = CURRENT_RICH_ROW.get(col_index)
 
@@ -190,14 +240,33 @@ def parse_excel_date(value):
 _SCENE_COUNT_RE = re.compile(r"^(.*?)\s*\{(\d+)\}$")
 
 
-def parse_performers_with_counts(cell_value: str) -> List[Dict[str, int]]:
+def parse_performers_with_counts(
+    cell_value: str,
+    link_map: Dict[str, str] | None = None,
+) -> List[Dict[str, Any]]:
     performers = []
+    link_map = link_map or {}
+
     for line in cell_to_list(cell_value):
         m = _SCENE_COUNT_RE.match(line)
         if m:
-            performers.append({"name": m.group(1), "scenes_count": int(m.group(2))})
+            name = m.group(1).strip()
+            count = int(m.group(2))
         else:
-            performers.append({"name": line, "scenes_count": 0})
+            name = line.strip()
+            count = 0
+
+        performer = {
+            "name": name,
+            "scenes_count": count,
+        }
+
+        url = link_map.get(name.lower())
+        if url:
+            performer["pair_url"] = url
+
+        performers.append(performer)
+
     return performers
 
 
@@ -207,17 +276,19 @@ def parse_performers_with_counts(cell_value: str) -> List[Dict[str, int]]:
 
 
 def parse_scene_row(row: List[str]) -> Dict[str, Any]:
-    female_and_trans = parse_performers_with_counts(row[COL_FEMALE_AND_TRANS_PARTNERS])
+    female_links = extract_performer_links_from_rich_cell(COL_FEMALE_AND_TRANS_PARTNERS)
+    male_links = extract_performer_links_from_rich_cell(COL_MALE_PARTNERS)
+
+    female_and_trans = parse_performers_with_counts(
+        row[COL_FEMALE_AND_TRANS_PARTNERS],
+        female_links,
+    )
 
     female, trans = [], []
     for p in female_and_trans:
         if "(trans)" in p["name"].lower():
-            trans.append(
-                {
-                    "name": p["name"].replace("(trans)", "").strip(),
-                    "scenes_count": p["scenes_count"],
-                }
-            )
+            p["name"] = p["name"].replace("(trans)", "").strip()
+            trans.append(p)
         else:
             female.append(p)
 
@@ -227,7 +298,10 @@ def parse_scene_row(row: List[str]) -> Dict[str, Any]:
         "scene_id": row[COL_SCENE_ID],
         "release_date": parse_excel_date(row[COL_DATE]),
         "partners": {
-            "male": parse_performers_with_counts(row[COL_MALE_PARTNERS]),
+            "male": parse_performers_with_counts(
+                row[COL_MALE_PARTNERS],
+                male_links,
+            ),
             "female": female,
             "trans": trans,
         },
@@ -242,6 +316,8 @@ def parse_scene_row(row: List[str]) -> Dict[str, Any]:
         "title": row[COL_TITLE],
         "banner": row[COL_BANNER],
         "is_vr_video": yes_no_to_bool(row[COL_IS_VR_VIDEO]),
+        "is_tele_save": yes_no_to_bool(row[COL_IS_TELE_SAVE]),
+        "tele_link": cell_to_list(row[COL_TELE_LINK]),
         "quality": cell_to_list_split_comma(row[COL_QUALITY]),
         "file_size": row[COL_FILE_SIZE],
         "duration": row[COL_DURATION],
@@ -377,6 +453,9 @@ def export_pornstar_tab(spreadsheet_id: str, tab_name: str):
 def main():
     spreadsheet_id = find_spreadsheet_id_by_name(SPREADSHEET_NAME)
     tabs = json.loads(WORKSHEET_LIST_FILE.read_text(encoding="utf-8"))
+
+    # ✅ Sort worksheets alphabetically by title
+    tabs = sorted(tabs, key=lambda t: t["title"].lower())
 
     print("\nSelect worksheet:\n")
     for i, t in enumerate(tabs, 1):

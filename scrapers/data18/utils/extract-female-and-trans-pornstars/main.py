@@ -49,6 +49,22 @@ OUTPUT_FILE = DATA_DIR / "female-and-trans-pornstars.json"
 # ============================================================
 
 
+def extract_data(payload):
+    """
+    Accepts either:
+    - a list of objects
+    - or { "meta": {...}, "data": [...] }
+
+    Returns:
+        List[Dict]
+    """
+    if isinstance(payload, list):
+        return payload
+    if isinstance(payload, dict):
+        return payload.get("data", [])
+    raise TypeError("Unsupported JSON structure")
+
+
 def normalize(text: str) -> str:
     """Normalize strings for safe comparison."""
     return " ".join(text.lower().strip().split())
@@ -128,8 +144,8 @@ def main():
     all_payload = load_json(ALL_PORNSTARS_FILE)
     male_payload = load_json(MALE_PORNSTARS_FILE)
 
-    all_data = all_payload.get("data", [])
-    male_data = male_payload.get("data", [])
+    all_data = extract_data(all_payload)
+    male_data = extract_data(male_payload)
 
     print(f"• All pornstars: {len(all_data)}")
     print(f"• Male pornstars: {len(male_data)}")
