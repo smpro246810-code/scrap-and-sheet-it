@@ -3,6 +3,8 @@ Flatten a single Data18 scene JSON into a Google Sheet row.
 """
 
 from typing import Any, Dict, List, Set, Tuple
+from pathlib import Path
+
 from helpers import (
     to_title_case,
     normalize_name,

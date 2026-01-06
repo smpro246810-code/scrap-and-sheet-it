@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
 from typing import List
-
+import importlib.util
+import sys
 import inquirer
 from gspread.cell import Cell
 
@@ -71,6 +72,23 @@ NETWORKS_FILE = (
     / "data"
     / "studios-from-sheet.json"
 )
+
+TITLE_FORMATTER_HELPER_PATH = (
+    BASE_DIR / "scrapers" / "setup" / "title-formatter" / "main.py"
+)
+
+spec = importlib.util.spec_from_file_location(
+    "title_formatter",
+    TITLE_FORMATTER_HELPER_PATH,
+)
+title_formatter = importlib.util.module_from_spec(spec)
+sys.modules["title_formatter"] = title_formatter
+spec.loader.exec_module(title_formatter)
+
+format_title = title_formatter.format_title
+
+
+print(f"Loading title formatter from: {format_title}")
 
 
 # ============================================================
@@ -144,7 +162,7 @@ def update_google_sheet_from_file(hyperlinks_enabled: bool):
             trans_performers,
             site_to_network,
             hyperlinks_enabled,
-            lambda x: x,
+            format_title,
         )
         rows.append(row + [""] * (MAX_COLS - len(row)))
         performer_link_maps.append(performer_links)

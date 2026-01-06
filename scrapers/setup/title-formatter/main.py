@@ -20,11 +20,11 @@ from typing import Dict, List
 # PATHS & CONFIG
 # ============================================================
 
-BASE_DIR = Path(__file__).resolve().parents[1]
+BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-CONFIG_PATH = BASE_DIR / "utils" / "config.json"
+CONFIG_PATH = BASE_DIR / "config.json"
 
 # ============================================================
 # REGEX PATTERNS
@@ -205,3 +205,36 @@ def format_title(raw_title: str) -> str:
     Clean and format a raw title string.
     """
     return to_title_case(remove_invalid_chars(raw_title or ""))
+
+
+# ============================================================
+# INTERACTIVE CLI TEST
+# ============================================================
+
+
+def interactive_title_test() -> None:
+    """
+    Interactive terminal tester for title formatting.
+    Type text and press Enter to see the formatted result.
+    Ctrl+C or empty input to exit.
+    """
+    print("\nTitle Formatter Interactive Test")
+    print("Type a title and press Enter (empty input to quit)\n")
+
+    while True:
+        try:
+            raw = input("> ").strip()
+            if not raw:
+                print("Exiting.")
+                break
+
+            formatted = format_title(raw)
+            print(f"→ {formatted}\n")
+
+        except KeyboardInterrupt:
+            print("\nExiting.")
+            break
+
+
+if __name__ == "__main__":
+    interactive_title_test()
